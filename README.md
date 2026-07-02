@@ -56,4 +56,4 @@ This validates every provider file against the JSON Schema and regenerates `mani
 
 ## License
 
-[MIT](LICENSE)
+[Apache-2.0](LICENSE)
