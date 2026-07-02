@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-02T19:06:51Z",
+  "providers": {
+    "anthropic": {
+      "file": "providers/anthropic.json",
+      "sha256": "d6019b465ba3c49b934338d533e5f706d87fea5b4de019e520540b8898e90260",
+      "model_count": 16
+    },
+    "charm-hyper": {
+      "file": "providers/charm-hyper.json",
+      "sha256": "038790d5dae6d981b3cf0473a2a5f506d896da02b3dc5c28f44f543f631994b5",
+      "model_count": 11
+    },
+    "commandcode": {
+      "file": "providers/commandcode.json",
+      "sha256": "93175e8be123871376709522d5e9993e2524914a630d4be234a4d136ab0ac4e8",
+      "model_count": 30
+    },
+    "deepseek": {
+      "file": "providers/deepseek.json",
+      "sha256": "996f3961879a3a6ec086586f52c565a3a24de2ab38683fc1719a397c95bd175b",
+      "model_count": 11
+    },
+    "github-copilot": {
+      "file": "providers/github-copilot.json",
+      "sha256": "15900442873300ba4f934f77369cec211939a3ed79b0cb9eacb153e6c0c8ddbc",
+      "model_count": 5
+    },
+    "gitlawb": {
+      "file": "providers/gitlawb.json",
+      "sha256": "f6585a1d4f4649fd2147db392c3221786818cf95d2019c3e92f5bd0607ade490",
+      "model_count": 3
+    },
+    "google-gemini": {
+      "file": "providers/google-gemini.json",
+      "sha256": "5e8b150ef5345c78f5cbae90e016d145b75f93af1fc23af05a3cfa8a639b3302",
+      "model_count": 13
+    },
+    "groq": {
+      "file": "providers/groq.json",
+      "sha256": "4770c6608b3b1cf56e91e58995964cacd47f185b423bbb2fe2522a3186743962",
+      "model_count": 12
+    },
+    "llamacpp": {
+      "file": "providers/llamacpp.json",
+      "sha256": "fe751d3564d259c669f6dd5573518e76a5c61afad089ee63a78519eca1ccccfa",
+      "model_count": 8
+    },
+    "lmstudio": {
+      "file": "providers/lmstudio.json",
+      "sha256": "a7bd18bb610187d5cfdf8f8a764c02b84f52fad95b22717204a2c88cb6b98f02",
+      "model_count": 9
+    },
+    "mimo-anthropic-ams": {
+      "file": "providers/mimo-anthropic-ams.json",
+      "sha256": "a589b6b64ab5a382b4cf9ad82a16d8ada736eaaeda41ed86343ca6f987371c2e",
+      "model_count": 5
+    },
+    "mimo-anthropic-cn": {
+      "file": "providers/mimo-anthropic-cn.json",
+      "sha256": "33815ef37c6a76b7088119094a78075ab2e560f1cd6a36ebdfabc89c574b9cc1",
+      "model_count": 5
+    },
+    "mimo-anthropic-sgp": {
+      "file": "providers/mimo-anthropic-sgp.json",
+      "sha256": "37330c79a6f4f5dce6eca8a748d90090a4d879ea5e43383ce255d6e86485409b",
+      "model_count": 5
+    },
+    "minimax": {
+      "file": "providers/minimax.json",
+      "sha256": "4449cfff5ee36d132b9863588b3508672b802e6e90b021e911576b6e52aa6be7",
+      "model_count": 14
+    },
+    "mistral": {
+      "file": "providers/mistral.json",
+      "sha256": "ea884b44fc2825a2acb477756295f72660f48218d9cc8c5c20e25a98a62d0c0d",
+      "model_count": 27
+    },
+    "moonshot": {
+      "file": "providers/moonshot.json",
+      "sha256": "1cb76746eef7e0c922c8f56ce106d45a16e57421f45e2ef1435ff8ea0f142681",
+      "model_count": 11
+    },
+    "nvidia": {
+      "file": "providers/nvidia.json",
+      "sha256": "93e69ed90b39e0fa9e01aa9a1a943fea529a0c5bf8a28682de175657eee0cf75",
+      "model_count": 10
+    },
+    "ollama": {
+      "file": "providers/ollama.json",
+      "sha256": "46a8d54c047c230f6278ceb86a8b7b1546c194bf5e66557c253f0099a22e0fa3",
+      "model_count": 19
+    },
+    "openai": {
+      "file": "providers/openai.json",
+      "sha256": "c06b31a0a0f5ad24c0437b2b23c203995e2b0d7c1a5f6c5d47662b963ce6202b",
+      "model_count": 28
+    },
+    "opencode": {
+      "file": "providers/opencode.json",
+      "sha256": "8820e0a065593f7480e162002f3033fafe8a609b7a3422e6432e5e1f3d6da880",
+      "model_count": 18
+    },
+    "opencode-go": {
+      "file": "providers/opencode-go.json",
+      "sha256": "e8e6df63094a6bcd3d745f55ec75fc641e8c3fec9db7b30ff9b1afbf0c3e5415",
+      "model_count": 6
+    },
+    "openrouter": {
+      "file": "providers/openrouter.json",
+      "sha256": "e7802d91b7b95d36b35ecb65cacb8b875f7bb4a0824f4b831e703c1ee6f14c90",
+      "model_count": 21
+    },
+    "stepfun": {
+      "file": "providers/stepfun.json",
+      "sha256": "6c13291d6b08011af5b8581e7cbcccbe5e77679f94a7f665b96007b0eb84f6d4",
+      "model_count": 10
+    },
+    "xai": {
+      "file": "providers/xai.json",
+      "sha256": "377186eec71c262293a45d0ebad78dda9cb83dbbf61d891d95f2fd4bb3088c61",
+      "model_count": 12
+    },
+    "xiaomi": {
+      "file": "providers/xiaomi.json",
+      "sha256": "cccc37c52760975f9c558077c6cca1f86127e85ea306f7eada38c68f9277b5ee",
+      "model_count": 5
+    },
+    "zai": {
+      "file": "providers/zai.json",
+      "sha256": "4c26809c2fd4048dfd01b051287aa7a20abca013e147f9229de90f43c0bc766f",
+      "model_count": 15
+    },
+    "zai-coding": {
+      "file": "providers/zai-coding.json",
+      "sha256": "2036664319b1ee8d5ac2d02c9cb754f8cbd51379abb60cc486e20e9afab41363",
+      "model_count": 3
+    }
+  }
+}
