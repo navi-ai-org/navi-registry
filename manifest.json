@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated_at": "2026-07-02T19:06:51Z",
+  "version": 2,
+  "updated_at": "2026-07-02T20:00:11Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -99,12 +99,12 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "8820e0a065593f7480e162002f3033fafe8a609b7a3422e6432e5e1f3d6da880",
+      "sha256": "7aa2b0e210181467aa7f0e7df278c889491d5192963d997b08c85c5a86c77754",
       "model_count": 18
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "e8e6df63094a6bcd3d745f55ec75fc641e8c3fec9db7b30ff9b1afbf0c3e5415",
+      "sha256": "a886ce711ea2db7744ea641bdafd198f6ab642060d871dda7a3ecdad52f3e253",
       "model_count": 6
     },
     "openrouter": {
