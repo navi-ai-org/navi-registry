@@ -41,6 +41,19 @@ def check_type(value, expected_type, field: str) -> None:
         )
 
 
+def validate_attachments(value, field: str) -> None:
+    if value is None:
+        return
+    if not isinstance(value, dict):
+        raise ValidationError(f"{field}: must be an object")
+    known = {"images", "audio", "video", "documents"}
+    unknown = set(value.keys()) - known
+    if unknown:
+        raise ValidationError(f"{field}: unknown fields: {sorted(unknown)}")
+    for key in known:
+        check_type(value.get(key), bool, f"{field}.{key}")
+
+
 def validate_provider(data: dict, filename: str) -> None:
     pid = data.get("id", filename)
 
@@ -50,7 +63,7 @@ def validate_provider(data: dict, filename: str) -> None:
     known_keys = {
         "id", "label", "description", "kind", "api_key_env", "base_url",
         "tool_calling_mode", "default_large_model", "default_small_model",
-        "request_options", "models",
+        "request_options", "defaults", "models",
     }
     unknown = set(data.keys()) - known_keys
     if unknown:
@@ -84,6 +97,12 @@ def validate_provider(data: dict, filename: str) -> None:
     check_type(data.get("default_large_model"), str, "default_large_model")
     check_type(data.get("default_small_model"), str, "default_small_model")
     check_type(data.get("request_options"), dict, "request_options")
+    check_type(data.get("defaults"), dict, "defaults")
+    defaults = data.get("defaults") or {}
+    unknown_defaults = set(defaults.keys()) - {"attachments"}
+    if unknown_defaults:
+        raise ValidationError(f"defaults: unknown fields: {sorted(unknown_defaults)}")
+    validate_attachments(defaults.get("attachments"), "defaults.attachments")
 
     models = data["models"]
     if not isinstance(models, list) or len(models) == 0:
@@ -97,8 +116,9 @@ def validate_provider(data: dict, filename: str) -> None:
         known_model_keys = {
             "name", "label", "task_size", "context_window_tokens",
             "max_output_tokens", "recommended_temperature", "supports_thinking",
-            "supports_attachments", "reasoning_levels", "default_reasoning_effort",
-            "pricing", "capabilities",
+            "supports_attachments", "supports_images", "supports_audio",
+            "supports_video", "supports_documents", "attachments",
+            "reasoning_levels", "default_reasoning_effort", "pricing", "capabilities",
         }
         unknown_m = set(model.keys()) - known_model_keys
         if unknown_m:
@@ -121,6 +141,11 @@ def validate_provider(data: dict, filename: str) -> None:
                    f"models[{i}].recommended_temperature")
         check_type(model.get("supports_thinking"), bool, f"models[{i}].supports_thinking")
         check_type(model.get("supports_attachments"), bool, f"models[{i}].supports_attachments")
+        check_type(model.get("supports_images"), bool, f"models[{i}].supports_images")
+        check_type(model.get("supports_audio"), bool, f"models[{i}].supports_audio")
+        check_type(model.get("supports_video"), bool, f"models[{i}].supports_video")
+        check_type(model.get("supports_documents"), bool, f"models[{i}].supports_documents")
+        validate_attachments(model.get("attachments"), f"models[{i}].attachments")
         check_type(model.get("reasoning_levels"), list, f"models[{i}].reasoning_levels")
         check_type(model.get("default_reasoning_effort"), str,
                    f"models[{i}].default_reasoning_effort")

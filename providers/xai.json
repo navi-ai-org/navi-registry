@@ -84,7 +84,10 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "attachments": {
+        "images": false
+      }
     },
     {
       "name": "grok-2-vision-1212",
@@ -100,7 +103,18 @@
       "context_window_tokens": 256000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "attachments": {
+        "images": false
+      }
     }
-  ]
+  ],
+  "defaults": {
+    "attachments": {
+      "images": true,
+      "audio": false,
+      "video": false,
+      "documents": false
+    }
+  }
 }

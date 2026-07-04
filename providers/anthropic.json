@@ -139,5 +139,13 @@
       "recommended_temperature": 1.0,
       "supports_thinking": false
     }
-  ]
+  ],
+  "defaults": {
+    "attachments": {
+      "images": true,
+      "audio": false,
+      "video": false,
+      "documents": true
+    }
+  }
 }

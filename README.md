@@ -45,6 +45,34 @@ Embedded snapshot (offline)  →  SQLite cache  →  Remote pull (this repo)
 | `anthropic-messages` | Anthropic Messages API |
 | `gemini-generate-content` | Google Gemini Generate Content |
 
+## Attachment metadata
+
+Use `attachments` to describe which attachment modalities a model accepts directly. Provider-level defaults keep large provider files compact, and model-level values override only the differences:
+
+```json
+{
+  "defaults": {
+    "attachments": {
+      "images": false,
+      "audio": false,
+      "video": false,
+      "documents": false
+    }
+  },
+  "models": [
+    {
+      "name": "some-vision-model",
+      "task_size": "large",
+      "attachments": {
+        "images": true
+      }
+    }
+  ]
+}
+```
+
+`documents: true` means the provider/model accepts documents as native attachments. It does not mean NAVI can extract local document text and paste it into the prompt.
+
 ## Validation
 
 ```bash
