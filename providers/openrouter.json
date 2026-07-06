@@ -15,7 +15,9 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "anthropic/claude-sonnet-4",
@@ -26,7 +28,9 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "openai/gpt-5.5",
@@ -37,7 +41,9 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "openai/gpt-5.4",
@@ -48,7 +54,9 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "openai/gpt-4.1",
@@ -59,7 +67,9 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "google/gemini-2.5-pro",
@@ -70,7 +80,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
     },
     {
       "name": "google/gemini-2.5-flash",
@@ -81,7 +95,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
     },
     {
       "name": "deepseek/deepseek-v4-pro",
@@ -89,7 +107,11 @@
       "context_window_tokens": 1048576,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "deepseek/deepseek-chat",
@@ -97,7 +119,11 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16000,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "x-ai/grok-4",
@@ -107,8 +133,15 @@
       "recommended_temperature": 1.0,
       "supports_thinking": true,
       "attachments": {
-        "images": true
-      }
+        "images": true,
+        "audio": false,
+        "video": false,
+        "documents": false
+      },
+      "supports_images": true,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "x-ai/grok-3",
@@ -118,8 +151,15 @@
       "recommended_temperature": 1.0,
       "supports_thinking": true,
       "attachments": {
-        "images": true
-      }
+        "images": true,
+        "audio": false,
+        "video": false,
+        "documents": false
+      },
+      "supports_images": true,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "meta-llama/llama-3.3-70b",
@@ -127,7 +167,11 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 0.7,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "meta-llama/llama-4-maverick",
@@ -138,7 +182,8 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "meta-llama/llama-4-scout",
@@ -149,7 +194,8 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "mistralai/mistral-large",
@@ -157,7 +203,8 @@
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_documents": true
     },
     {
       "name": "mistralai/codestral",
@@ -165,7 +212,11 @@
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "qwen/qwen3-coder",
@@ -173,7 +224,11 @@
       "context_window_tokens": 1048576,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "qwen/qwen3-235b-a22b",
@@ -181,7 +236,11 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 8192,
       "recommended_temperature": 0.7,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "qwen/qwen3-32b",
@@ -189,7 +248,11 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 0.7,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "z-ai/glm-4.5",
@@ -197,7 +260,11 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 98304,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": false,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": false
     },
     {
       "name": "moonshotai/kimi-k2",
@@ -205,7 +272,17 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 32768,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": true,
+      "supports_audio": false,
+      "supports_video": false,
+      "supports_documents": true,
+      "attachments": {
+        "images": true,
+        "audio": false,
+        "video": false,
+        "documents": true
+      }
     }
   ],
   "defaults": {

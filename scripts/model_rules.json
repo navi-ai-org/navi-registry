@@ -1,57 +1,196 @@
 {
   "$comment": "Rules for auto-filling attachment capabilities. Keys are exact model names or glob patterns (e.g. 'gemini-2.*'). Applied after OpenRouter lookup. Keep sorted.",
   "rules": {
-    "gpt-4o": { "supports_images": true, "supports_audio": true },
-    "gpt-4o-mini": { "supports_images": true, "supports_audio": true },
-    "gpt-4.1": { "supports_images": true },
-    "gpt-4.1-mini": { "supports_images": true },
-    "gpt-4.1-nano": { "supports_images": true },
-    "gpt-4.5-preview": { "supports_images": true },
-    "gpt-5": { "supports_images": true, "supports_audio": true, "supports_documents": true },
-    "gpt-5.*": { "supports_images": true, "supports_audio": true, "supports_documents": true },
-    "gpt-oss-120b": { "supports_images": true },
-    "gpt-oss-20b": { "supports_images": true },
-
-    "claude-3-opus-*": { "supports_images": true, "supports_documents": true },
-    "claude-3-sonnet-*": { "supports_images": true, "supports_documents": true },
-    "claude-3-haiku-*": { "supports_images": true, "supports_documents": true },
-    "claude-3.5-sonnet": { "supports_images": true, "supports_documents": true },
-    "claude-3-5-sonnet-*": { "supports_images": true, "supports_documents": true },
-    "claude-3.5-haiku": { "supports_images": true, "supports_documents": true },
-    "claude-3-5-haiku-*": { "supports_images": true, "supports_documents": true },
-    "claude-3.7-sonnet": { "supports_images": true, "supports_documents": true },
-    "claude-3-7-sonnet-*": { "supports_images": true, "supports_documents": true },
-    "claude-sonnet-4": { "supports_images": true, "supports_documents": true },
-    "claude-sonnet-4-*": { "supports_images": true, "supports_documents": true },
-    "claude-opus-4": { "supports_images": true, "supports_documents": true },
-    "claude-opus-4-*": { "supports_images": true, "supports_documents": true },
-    "claude-haiku-4": { "supports_images": true, "supports_documents": true },
-    "claude-haiku-4-*": { "supports_images": true, "supports_documents": true },
-
-    "gemini-1.5-pro": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
-    "gemini-1.5-flash": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
-    "gemini-2.*": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
-
-    "grok-2-vision-*": { "supports_images": true },
-    "grok-3": { "supports_images": true },
-    "grok-3.*": { "supports_images": true },
-    "grok-4": { "supports_images": true, "supports_documents": true },
-    "grok-4.*": { "supports_images": true, "supports_documents": true },
-
+    "claude-3-5-haiku-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3-5-sonnet-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3-7-sonnet-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3-haiku-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3-opus-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3-sonnet-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3.5-haiku": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3.5-sonnet": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-3.7-sonnet": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-haiku-4": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-haiku-4-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-opus-4": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-opus-4-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-sonnet-4": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-sonnet-4-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "codestral": {},
+    "deepseek-chat": {},
+    "deepseek-v4-pro": {},
+    "deepseek/deepseek-chat": {},
+    "deepseek/deepseek-v4-pro": {},
+    "gemini-1.5-flash": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
+    },
+    "gemini-1.5-pro": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
+    },
+    "gemini-2.*": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
+    },
+    "glm-4.5": {},
+    "gpt-4.1": {
+      "supports_images": true
+    },
+    "gpt-4.1-mini": {
+      "supports_images": true
+    },
+    "gpt-4.1-nano": {
+      "supports_images": true
+    },
+    "gpt-4.5-preview": {
+      "supports_images": true
+    },
+    "gpt-4o": {
+      "supports_images": true,
+      "supports_audio": true
+    },
+    "gpt-4o-mini": {
+      "supports_images": true,
+      "supports_audio": true
+    },
+    "gpt-5": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_documents": true
+    },
+    "gpt-5.*": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_documents": true
+    },
+    "gpt-oss-120b": {
+      "supports_images": true
+    },
+    "gpt-oss-20b": {
+      "supports_images": true
+    },
+    "grok-2-vision-*": {
+      "supports_images": true
+    },
+    "grok-3": {
+      "supports_images": true
+    },
+    "grok-3.*": {
+      "supports_images": true
+    },
+    "grok-4": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "grok-4.*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "kimi-k2": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "llama-3.2-11b-vision-*": {
+      "supports_images": true
+    },
+    "llama-3.2-90b-vision-*": {
+      "supports_images": true
+    },
+    "llama-3.3-70b": {},
+    "llama-4-*": {
+      "supports_images": true
+    },
+    "meta-llama/llama-3.3-70b": {},
+    "mistralai/codestral": {},
+    "moonshotai/kimi-k2": {
+      "supports_images": true,
+      "supports_documents": true
+    },
     "o1": {},
     "o1-mini": {},
     "o1-pro": {},
-    "o3": { "supports_images": true },
-    "o3.*": { "supports_images": true },
-    "o4-mini": { "supports_images": true },
-    "o4-mini.*": { "supports_images": true },
-
-    "qwen2.5-vl-*": { "supports_images": true, "supports_video": true },
-    "qwen2-vl-*": { "supports_images": true, "supports_video": true },
-    "qwen3-vl-*": { "supports_images": true, "supports_video": true },
-
-    "llama-3.2-11b-vision-*": { "supports_images": true },
-    "llama-3.2-90b-vision-*": { "supports_images": true },
-    "llama-4-*": { "supports_images": true }
+    "o3": {
+      "supports_images": true
+    },
+    "o3.*": {
+      "supports_images": true
+    },
+    "o4-mini": {
+      "supports_images": true
+    },
+    "o4-mini.*": {
+      "supports_images": true
+    },
+    "qwen/qwen3-235b-a22b": {},
+    "qwen/qwen3-32b": {},
+    "qwen/qwen3-coder": {},
+    "qwen2-vl-*": {
+      "supports_images": true,
+      "supports_video": true
+    },
+    "qwen2.5-vl-*": {
+      "supports_images": true,
+      "supports_video": true
+    },
+    "qwen3-235b-a22b": {},
+    "qwen3-32b": {},
+    "qwen3-coder": {},
+    "qwen3-vl-*": {
+      "supports_images": true,
+      "supports_video": true
+    },
+    "z-ai/glm-4.5": {}
   }
 }

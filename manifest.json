@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "updated_at": "2026-07-04T03:12:45Z",
+  "version": 4,
+  "updated_at": "2026-07-06T20:22:45Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -109,7 +109,7 @@
     },
     "openrouter": {
       "file": "providers/openrouter.json",
-      "sha256": "148cb28eb1b7e70c524405898e2b2b57510f1516bea01c3f0629694650c02a3e",
+      "sha256": "8b594c1a72e146a5c4f54ba7d541f47603b5e84ef2937637657d20e58e8d4022",
       "model_count": 21
     },
     "stepfun": {
