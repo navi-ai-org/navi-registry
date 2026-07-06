@@ -67,11 +67,13 @@ ATTACHMENT_FIELDS = [
 
 class ProbeResult:
     def __init__(self):
-        self.updated = []       # (provider, model, fields_filled)
-        self.new_models = []    # (provider, model_name)
-        self.removed = []       # (provider, model_name)
-        self.needs_review = []  # (provider, model_name, reason)
-        self.errors = []        # (provider, error)
+        self.updated = []            # (provider, model, fields_filled)
+        self.new_models = []         # (provider, model_name)
+        self.removed = []            # (provider, model_name)
+        self.needs_review = []       # (provider, model_name, reason)
+        self.errors = []             # (provider, error)
+        self.unprobed_review = []    # (provider, model_name, reason) for providers without endpoints
+        self.default_ctx = []        # (provider, model_name, ctx) models stuck at 200k default
 
 
 def load_rules() -> dict:
@@ -300,6 +302,61 @@ def probe_all(
         print(f"  probing {pid}...")
         probe_provider(pid, rules, openrouter_caps, result, apply)
 
+    # Also scan providers without API endpoints for rules-based auto-fill.
+    if not only_provider:
+        scan_unprobed_providers(rules, openrouter_caps, result, apply)
+
+
+def scan_unprobed_providers(
+    rules: dict,
+    openrouter_caps: dict,
+    result: ProbeResult,
+    apply: bool,
+) -> None:
+    """Scan providers without API endpoints — auto-fill via rules + OpenRouter, report the rest."""
+    all_providers = sorted(p.stem for p in PROVIDERS_DIR.glob("*.json"))
+    unprobed = [p for p in all_providers if p not in PROVIDER_ENDPOINTS]
+
+    for pid in unprobed:
+        data = load_provider_json(pid)
+        if not data:
+            result.errors.append((pid, "provider JSON not found"))
+            continue
+
+        print(f"  scanning {pid} (no API endpoint)...")
+        changed = False
+        for model in data.get("models", []):
+            name = model["name"]
+
+            # Check for default context window (200000 = NAVI default, likely unset).
+            ctx = model.get("context_window_tokens")
+            if ctx == 200000:
+                result.default_ctx.append((pid, name, ctx))
+
+            # Skip if already has attachment info.
+            if has_attachment_info(model):
+                continue
+
+            # Try OpenRouter capabilities first.
+            or_key = f"{pid}/{name}"
+            fields = openrouter_caps.get(or_key) or openrouter_caps.get(name)
+
+            # Fall back to rules.
+            if not fields:
+                fields = match_rule(name, rules)
+
+            if fields:
+                if apply_attachment_fields(model, fields):
+                    result.updated.append((pid, name, fields))
+                    changed = True
+            else:
+                result.unprobed_review.append(
+                    (pid, name, "no attachment rule or OpenRouter data — needs manual review")
+                )
+
+        if changed and apply:
+            save_provider_json(pid, data)
+
 
 def generate_report(result: ProbeResult) -> str:
     lines = ["# Registry Probe Report", ""]
@@ -307,7 +364,9 @@ def generate_report(result: ProbeResult) -> str:
     lines.append(f"- Auto-filled attachments: **{len(result.updated)}**")
     lines.append(f"- New models (not in registry): **{len(result.new_models)}**")
     lines.append(f"- Removed models (local only): **{len(result.removed)}**")
-    lines.append(f"- Needs manual review: **{len(result.needs_review)}**")
+    lines.append(f"- Needs manual review (probed): **{len(result.needs_review)}**")
+    lines.append(f"- Needs manual review (unprobed): **{len(result.unprobed_review)}**")
+    lines.append(f"- Default context window (200k, likely unset): **{len(result.default_ctx)}**")
     lines.append(f"- Errors: **{len(result.errors)}**")
     lines.append("")
 
@@ -336,10 +395,24 @@ def generate_report(result: ProbeResult) -> str:
         lines.append("")
 
     if result.needs_review:
-        lines.append("## Needs Manual Review (no attachment info)")
+        lines.append("## Needs Manual Review (probed providers, no attachment info)")
         lines.append("")
         for pid, name, reason in sorted(result.needs_review):
             lines.append(f"- `{pid}/{name}` — {reason}")
+        lines.append("")
+
+    if result.unprobed_review:
+        lines.append("## Needs Manual Review (unprobed providers, no attachment info)")
+        lines.append("")
+        for pid, name, reason in sorted(result.unprobed_review):
+            lines.append(f"- `{pid}/{name}` — {reason}")
+        lines.append("")
+
+    if result.default_ctx:
+        lines.append("## Default Context Window (200k — likely unset)")
+        lines.append("")
+        for pid, name, ctx in sorted(result.default_ctx):
+            lines.append(f"- `{pid}/{name}` — context_window_tokens={ctx}")
         lines.append("")
 
     if result.errors:
@@ -380,16 +453,24 @@ def main() -> int:
 
     print(f"\nReport written to {REPORT_PATH.relative_to(ROOT)}")
     print("\n--- Summary ---")
-    print(f"  Auto-filled: {len(result.updated)}")
-    print(f"  New models:  {len(result.new_models)}")
-    print(f"  Removed:     {len(result.removed)}")
-    print(f"  Needs review: {len(result.needs_review)}")
-    print(f"  Errors:      {len(result.errors)}")
+    print(f"  Auto-filled:       {len(result.updated)}")
+    print(f"  New models:        {len(result.new_models)}")
+    print(f"  Removed:           {len(result.removed)}")
+    print(f"  Needs review (probed):   {len(result.needs_review)}")
+    print(f"  Needs review (unprobed): {len(result.unprobed_review)}")
+    print(f"  Default ctx (200k): {len(result.default_ctx)}")
+    print(f"  Errors:            {len(result.errors)}")
 
-    if result.needs_review:
+    all_review = result.needs_review + result.unprobed_review
+    if all_review:
         print("\n--- Needs Manual Review ---")
-        for pid, name, reason in sorted(result.needs_review):
+        for pid, name, reason in sorted(all_review):
             print(f"  {pid}/{name}: {reason}")
+
+    if result.default_ctx:
+        print(f"\n--- Default Context Window (200k, likely unset) ---")
+        for pid, name, ctx in sorted(result.default_ctx):
+            print(f"  {pid}/{name}: ctx={ctx}")
 
     return 0
 
