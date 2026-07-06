@@ -1,12 +1,13 @@
 # Registry Probe Report
 
 ## Summary
-- Auto-filled attachments: **67**
+- Auto-filled attachments: **123**
 - New models (not in registry): **355**
 - Removed models (local only): **33**
-- Needs manual review (probed): **30**
-- Needs manual review (unprobed): **110**
+- Needs manual review (probed): **22**
+- Needs manual review (unprobed): **62**
 - Default context window (200k, likely unset): **48**
+- Needs pricing: **138**
 - Errors: **7**
 
 ## Auto-filled Attachments
@@ -24,62 +25,118 @@
 | anthropic | claude-3.5-sonnet | images, documents |
 | anthropic | claude-3.7-sonnet | images, documents |
 | anthropic | claude-haiku-4 | images, documents |
-| anthropic | claude-opus-4 | images, documents |
+| anthropic | claude-opus-4 | images, documents, pricing |
 | anthropic | claude-opus-4-1-20250805 | images, documents |
 | anthropic | claude-opus-4-20250514 | images, documents |
-| anthropic | claude-sonnet-4 | images, documents |
+| anthropic | claude-sonnet-4 | images, documents, pricing |
 | anthropic | claude-sonnet-4-20250514 | images, documents |
-| charm-hyper | gpt-oss-120b | images |
-| charm-hyper | gpt-oss-20b | images |
-| commandcode | claude-fable-5 | images, documents |
+| charm-hyper | gpt-oss-120b | pricing |
+| charm-hyper | gpt-oss-20b | pricing |
+| commandcode | claude-fable-5 | images, documents, pricing |
 | commandcode | claude-haiku-4-5-20251001 | images, documents |
 | commandcode | claude-opus-4-7 | images, documents |
 | commandcode | claude-opus-4-8 | images, documents |
 | commandcode | claude-sonnet-4-6 | images, documents |
-| commandcode | google/gemini-3.1-flash-lite | images, audio, video, documents |
-| commandcode | google/gemini-3.5-flash | images, audio, video, documents |
-| commandcode | gpt-5.3-codex | images, documents |
-| commandcode | gpt-5.4 | images, documents |
-| commandcode | gpt-5.4-mini | images, documents |
-| commandcode | gpt-5.5 | images, documents |
-| commandcode | xiaomi/mimo-v2.5 | images, audio, video |
-| github-copilot | claude-haiku-4.5 | images, documents |
-| github-copilot | claude-sonnet-4.5 | images, documents |
-| github-copilot | gpt-5-mini | images, documents |
-| github-copilot | gpt-5.1 | images, documents |
-| github-copilot | gpt-5.1-codex | images |
-| gitlawb | google/gemini-3.1-flash-lite-preview | images, audio, video, documents |
-| gitlawb | mimo-v2.5 | images, audio, video |
+| commandcode | deepseek/deepseek-v4-flash | pricing |
+| commandcode | deepseek/deepseek-v4-pro | pricing |
+| commandcode | google/gemini-3.1-flash-lite | images, audio, video, documents, pricing |
+| commandcode | google/gemini-3.5-flash | images, audio, video, documents, pricing |
+| commandcode | gpt-5.3-codex | images, documents, pricing |
+| commandcode | gpt-5.4 | images, documents, pricing |
+| commandcode | gpt-5.4-mini | images, documents, pricing |
+| commandcode | gpt-5.5 | images, documents, pricing |
+| commandcode | nvidia/nemotron-3-ultra-550b-a55b | pricing |
+| commandcode | xiaomi/mimo-v2.5 | images, audio, video, pricing |
+| commandcode | xiaomi/mimo-v2.5-pro | pricing |
+| github-copilot | claude-haiku-4.5 | images, documents, pricing |
+| github-copilot | claude-sonnet-4.5 | images, documents, pricing |
+| github-copilot | gpt-5-mini | images, documents, pricing |
+| github-copilot | gpt-5.1 | images, documents, pricing |
+| github-copilot | gpt-5.1-codex | images, pricing |
+| gitlawb | google/gemini-3.1-flash-lite-preview | images, audio, video, documents, pricing |
+| gitlawb | mimo-v2.5 | images, audio, video, pricing |
+| gitlawb | mimo-v2.5-pro | pricing |
 | google-gemini | gemini-1.5-flash | images, audio, video, documents |
+| google-gemini | gemini-1.5-flash-002 | images, audio, video, documents |
+| google-gemini | gemini-1.5-flash-8b | images, audio, video, documents |
 | google-gemini | gemini-1.5-pro | images, audio, video, documents |
+| google-gemini | gemini-1.5-pro-002 | images, audio, video, documents |
 | google-gemini | gemini-2.0-flash | images, audio, video, documents |
 | google-gemini | gemini-2.0-flash-001 | images, audio, video, documents |
 | google-gemini | gemini-2.0-flash-lite | images, audio, video, documents |
-| google-gemini | gemini-2.5-flash | images, audio, video, documents |
-| google-gemini | gemini-2.5-flash-lite | images, audio, video, documents |
+| google-gemini | gemini-2.5-flash | images, audio, video, documents, pricing |
+| google-gemini | gemini-2.5-flash-lite | images, audio, video, documents, pricing |
 | google-gemini | gemini-2.5-flash-preview-05-20 | images, audio, video, documents |
-| google-gemini | gemini-2.5-pro | images, audio, video, documents |
+| google-gemini | gemini-2.5-pro | images, audio, video, documents, pricing |
 | google-gemini | gemini-2.5-pro-preview-06-05 | images, audio, video, documents |
-| groq | meta-llama/llama-guard-4-12b | images |
-| mimo-anthropic-ams | mimo-v2.5 | images, audio, video |
-| mimo-anthropic-cn | mimo-v2.5 | images, audio, video |
-| mimo-anthropic-sgp | mimo-v2.5 | images, audio, video |
-| opencode | claude-opus-4.5 | images, documents |
-| opencode | claude-sonnet-4.5 | images, documents |
-| opencode | gpt-5.1-codex | images |
-| opencode | gpt-5.2 | images, documents |
-| opencode | grok-build-0.1 | images |
-| opencode | kimi-k2.5 | images |
-| opencode | kimi-k2.6 | images |
-| opencode | qwen3.6-plus | images, video |
-| opencode-go | kimi-k2.5 | images |
-| opencode-go | qwen3.6-plus | images, video |
+| groq | deepseek-r1-distill-llama-70b | pricing |
+| groq | meta-llama/llama-guard-4-12b | images, pricing |
+| groq | openai/gpt-oss-120b | pricing |
+| groq | openai/gpt-oss-20b | pricing |
+| groq | qwen/qwen3-32b | pricing |
+| mimo-anthropic-ams | mimo-v2-flash | images, documents |
+| mimo-anthropic-ams | mimo-v2-omni | images, documents |
+| mimo-anthropic-ams | mimo-v2-pro | images, documents |
+| mimo-anthropic-ams | mimo-v2.5 | images, audio, video, pricing |
+| mimo-anthropic-ams | mimo-v2.5-pro | pricing |
+| mimo-anthropic-cn | mimo-v2-flash | images, documents |
+| mimo-anthropic-cn | mimo-v2-omni | images, documents |
+| mimo-anthropic-cn | mimo-v2-pro | images, documents |
+| mimo-anthropic-cn | mimo-v2.5 | images, audio, video, pricing |
+| mimo-anthropic-cn | mimo-v2.5-pro | pricing |
+| mimo-anthropic-sgp | mimo-v2-flash | images, documents |
+| mimo-anthropic-sgp | mimo-v2-omni | images, documents |
+| mimo-anthropic-sgp | mimo-v2-pro | images, documents |
+| mimo-anthropic-sgp | mimo-v2.5 | images, audio, video, pricing |
+| mimo-anthropic-sgp | mimo-v2.5-pro | pricing |
+| ollama | deepseek-r1 | pricing |
+| ollama | gemma3 | images |
+| ollama | gemma3:12b | images |
+| ollama | gemma3:27b | images |
+| opencode | claude-opus-4.5 | images, documents, pricing |
+| opencode | claude-sonnet-4.5 | images, documents, pricing |
+| opencode | glm-5 | pricing |
+| opencode | glm-5.1 | pricing |
+| opencode | gpt-5.1-codex | images, pricing |
+| opencode | gpt-5.2 | images, documents, pricing |
+| opencode | grok-build-0.1 | images, pricing |
+| opencode | kimi-k2.5 | images, pricing |
+| opencode | kimi-k2.6 | images, pricing |
+| opencode | minimax-m2.1 | pricing |
+| opencode | minimax-m2.5 | pricing |
+| opencode | minimax-m2.7 | pricing |
+| opencode | qwen3.6-plus | images, video, pricing |
+| opencode-go | deepseek-v4-flash | pricing |
+| opencode-go | deepseek-v4-pro | pricing |
+| opencode-go | glm-5 | pricing |
+| opencode-go | kimi-k2.5 | images, pricing |
+| opencode-go | minimax-m2.5 | pricing |
+| opencode-go | qwen3.6-plus | images, video, pricing |
+| stepfun | step-1v | images |
+| stepfun | step-3.5-flash | pricing |
+| xai | grok-2-1212 | images |
 | xai | grok-2-vision-1212 | images |
 | xai | grok-3 | images |
 | xai | grok-4 | images, documents |
-| xai | grok-4.3 | images, documents |
-| xai | grok-build-0.1 | images |
-| xiaomi | mimo-v2.5 | images, audio, video |
+| xai | grok-4.3 | images, documents, pricing |
+| xai | grok-build-0.1 | images, pricing |
+| xiaomi | mimo-v2-flash | images, documents |
+| xiaomi | mimo-v2-omni | images, documents |
+| xiaomi | mimo-v2-pro | images, documents |
+| xiaomi | mimo-v2.5 | images, audio, video, pricing |
+| xiaomi | mimo-v2.5-pro | pricing |
+| zai | glm-4.5 | pricing |
+| zai | glm-4.5-air | pricing |
+| zai | glm-4.5-flash | images |
+| zai | glm-4.5-x | images |
+| zai | glm-4.6 | pricing |
+| zai | glm-4.7 | pricing |
+| zai | glm-5 | pricing |
+| zai | glm-5-turbo | pricing |
+| zai | glm-5.1 | pricing |
+| zai-coding | glm-5 | pricing |
+| zai-coding | glm-5-turbo | pricing |
+| zai-coding | glm-5.1 | pricing |
 
 ## New Models (not in local registry)
 
@@ -477,7 +534,6 @@
 
 ## Needs Manual Review (probed providers, no attachment info)
 
-- `groq/deepseek-r1-distill-llama-70b` — no attachment rule or OpenRouter data
 - `groq/gemma2-9b-it` — no attachment rule or OpenRouter data
 - `groq/llama-3.1-8b-instant` — no attachment rule or OpenRouter data
 - `groq/llama-3.3-70b-versatile` — no attachment rule or OpenRouter data
@@ -485,15 +541,8 @@
 - `groq/meta-llama/llama-4-scout-17b-16e-instruct` — no attachment rule or OpenRouter data
 - `groq/mistral-saba-24b` — no attachment rule or OpenRouter data
 - `groq/moonshotai/kimi-k2-instruct` — no attachment rule or OpenRouter data
-- `groq/openai/gpt-oss-120b` — no attachment rule or OpenRouter data
-- `groq/openai/gpt-oss-20b` — no attachment rule or OpenRouter data
-- `groq/qwen/qwen3-32b` — no attachment rule or OpenRouter data
 - `ollama/codellama` — no attachment rule or OpenRouter data
-- `ollama/deepseek-r1` — no attachment rule or OpenRouter data
 - `ollama/devstral` — no attachment rule or OpenRouter data
-- `ollama/gemma3` — no attachment rule or OpenRouter data
-- `ollama/gemma3:12b` — no attachment rule or OpenRouter data
-- `ollama/gemma3:27b` — no attachment rule or OpenRouter data
 - `ollama/granite-code` — no attachment rule or OpenRouter data
 - `ollama/llama3.1` — no attachment rule or OpenRouter data
 - `ollama/llama3.2` — no attachment rule or OpenRouter data
@@ -526,33 +575,13 @@
 - `commandcode/Qwen/Qwen3.6-Plus` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/Qwen/Qwen3.7-Max` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/Qwen/Qwen3.7-Plus` — no attachment rule or OpenRouter data — needs manual review
-- `commandcode/deepseek/deepseek-v4-flash` — no attachment rule or OpenRouter data — needs manual review
-- `commandcode/deepseek/deepseek-v4-pro` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/moonshotai/Kimi-K2.5` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/moonshotai/Kimi-K2.6` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/moonshotai/Kimi-K2.7-Code` — no attachment rule or OpenRouter data — needs manual review
-- `commandcode/nvidia/nemotron-3-ultra-550b-a55b` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/stepfun/Step-3.5-Flash` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/stepfun/Step-3.7-Flash` — no attachment rule or OpenRouter data — needs manual review
-- `commandcode/xiaomi/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/zai-org/GLM-5` — no attachment rule or OpenRouter data — needs manual review
 - `commandcode/zai-org/GLM-5.1` — no attachment rule or OpenRouter data — needs manual review
-- `gitlawb/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
-- `google-gemini/gemini-1.5-flash-002` — no attachment rule or OpenRouter data — needs manual review
-- `google-gemini/gemini-1.5-flash-8b` — no attachment rule or OpenRouter data — needs manual review
-- `google-gemini/gemini-1.5-pro-002` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-ams/mimo-v2-flash` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-ams/mimo-v2-omni` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-ams/mimo-v2-pro` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-ams/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-cn/mimo-v2-flash` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-cn/mimo-v2-omni` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-cn/mimo-v2-pro` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-cn/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-sgp/mimo-v2-flash` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-sgp/mimo-v2-omni` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-sgp/mimo-v2-pro` — no attachment rule or OpenRouter data — needs manual review
-- `mimo-anthropic-sgp/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
 - `minimax/MiniMax-M2` — no attachment rule or OpenRouter data — needs manual review
 - `minimax/MiniMax-M2.1` — no attachment rule or OpenRouter data — needs manual review
 - `minimax/MiniMax-M2.1-highspeed` — no attachment rule or OpenRouter data — needs manual review
@@ -570,56 +599,28 @@
 - `opencode/big-pickle` — no attachment rule or OpenRouter data — needs manual review
 - `opencode/deepseek-v4-flash-free` — no attachment rule or OpenRouter data — needs manual review
 - `opencode/gemini-3-pro` — no attachment rule or OpenRouter data — needs manual review
-- `opencode/glm-5` — no attachment rule or OpenRouter data — needs manual review
-- `opencode/glm-5.1` — no attachment rule or OpenRouter data — needs manual review
-- `opencode/minimax-m2.1` — no attachment rule or OpenRouter data — needs manual review
-- `opencode/minimax-m2.5` — no attachment rule or OpenRouter data — needs manual review
-- `opencode/minimax-m2.7` — no attachment rule or OpenRouter data — needs manual review
 - `opencode/nemotron-3-super-free` — no attachment rule or OpenRouter data — needs manual review
 - `opencode/qwen3.5-plus` — no attachment rule or OpenRouter data — needs manual review
-- `opencode-go/deepseek-v4-flash` — no attachment rule or OpenRouter data — needs manual review
-- `opencode-go/deepseek-v4-pro` — no attachment rule or OpenRouter data — needs manual review
-- `opencode-go/glm-5` — no attachment rule or OpenRouter data — needs manual review
-- `opencode-go/minimax-m2.5` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-1` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-1-128k` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-1-256k` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-1-32k` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-1-8k` — no attachment rule or OpenRouter data — needs manual review
-- `stepfun/step-1v` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-2` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-2-16k` — no attachment rule or OpenRouter data — needs manual review
 - `stepfun/step-3` — no attachment rule or OpenRouter data — needs manual review
-- `stepfun/step-3.5-flash` — no attachment rule or OpenRouter data — needs manual review
-- `xai/grok-2-1212` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-3-fast` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-3-mini` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-3-mini-fast` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-4-fast` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-4-fast-non-reasoning` — no attachment rule or OpenRouter data — needs manual review
 - `xai/grok-4-fast-reasoning` — no attachment rule or OpenRouter data — needs manual review
-- `xiaomi/mimo-v2-flash` — no attachment rule or OpenRouter data — needs manual review
-- `xiaomi/mimo-v2-omni` — no attachment rule or OpenRouter data — needs manual review
-- `xiaomi/mimo-v2-pro` — no attachment rule or OpenRouter data — needs manual review
-- `xiaomi/mimo-v2.5-pro` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-0520` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-air` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-airx` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-flash` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-long` — no attachment rule or OpenRouter data — needs manual review
 - `zai/glm-4-plus` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.5` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.5-air` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.5-flash` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.5-x` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.6` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-4.7` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-5` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-5-turbo` — no attachment rule or OpenRouter data — needs manual review
-- `zai/glm-5.1` — no attachment rule or OpenRouter data — needs manual review
-- `zai-coding/glm-5` — no attachment rule or OpenRouter data — needs manual review
-- `zai-coding/glm-5-turbo` — no attachment rule or OpenRouter data — needs manual review
-- `zai-coding/glm-5.1` — no attachment rule or OpenRouter data — needs manual review
 
 ## Default Context Window (200k — likely unset)
 
@@ -671,6 +672,147 @@
 - `zai-coding/glm-5` — context_window_tokens=200000
 - `zai-coding/glm-5-turbo` — context_window_tokens=200000
 - `zai-coding/glm-5.1` — context_window_tokens=200000
+
+## Needs Pricing (no pricing data available)
+
+- `anthropic/claude-3-5-haiku-20241022` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-5-sonnet-20240620` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-5-sonnet-20241022` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-7-sonnet-20250219` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-haiku-20240307` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-opus-20240229` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3-sonnet-20240229` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3.5-haiku` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3.5-sonnet` — no pricing data from OpenRouter or rules
+- `anthropic/claude-3.7-sonnet` — no pricing data from OpenRouter or rules
+- `anthropic/claude-haiku-4` — no pricing data from OpenRouter or rules
+- `anthropic/claude-opus-4-1-20250805` — no pricing data from OpenRouter or rules
+- `anthropic/claude-opus-4-20250514` — no pricing data from OpenRouter or rules
+- `anthropic/claude-sonnet-4-20250514` — no pricing data from OpenRouter or rules
+- `charm-hyper/DeepSeek V4 Flash` — no pricing data from OpenRouter or rules
+- `charm-hyper/DeepSeek V4 Pro` — no pricing data from OpenRouter or rules
+- `charm-hyper/GLM-5` — no pricing data from OpenRouter or rules
+- `charm-hyper/GLM-5.1` — no pricing data from OpenRouter or rules
+- `charm-hyper/Gemma 4 26B A4B` — no pricing data from OpenRouter or rules
+- `charm-hyper/Kimi K2.5` — no pricing data from OpenRouter or rules
+- `charm-hyper/Kimi K2.6` — no pricing data from OpenRouter or rules
+- `charm-hyper/MiniMax M2.1` — no pricing data from OpenRouter or rules
+- `charm-hyper/Qwen 3 32B` — no pricing data from OpenRouter or rules
+- `commandcode/MiniMaxAI/MiniMax-M2.5` — no pricing data from OpenRouter or rules
+- `commandcode/MiniMaxAI/MiniMax-M2.7` — no pricing data from OpenRouter or rules
+- `commandcode/MiniMaxAI/MiniMax-M3` — no pricing data from OpenRouter or rules
+- `commandcode/Qwen/Qwen3.6-Max-Preview` — no pricing data from OpenRouter or rules
+- `commandcode/Qwen/Qwen3.6-Plus` — no pricing data from OpenRouter or rules
+- `commandcode/Qwen/Qwen3.7-Max` — no pricing data from OpenRouter or rules
+- `commandcode/Qwen/Qwen3.7-Plus` — no pricing data from OpenRouter or rules
+- `commandcode/claude-haiku-4-5-20251001` — no pricing data from OpenRouter or rules
+- `commandcode/claude-opus-4-7` — no pricing data from OpenRouter or rules
+- `commandcode/claude-opus-4-8` — no pricing data from OpenRouter or rules
+- `commandcode/claude-sonnet-4-6` — no pricing data from OpenRouter or rules
+- `commandcode/moonshotai/Kimi-K2.5` — no pricing data from OpenRouter or rules
+- `commandcode/moonshotai/Kimi-K2.6` — no pricing data from OpenRouter or rules
+- `commandcode/moonshotai/Kimi-K2.7-Code` — no pricing data from OpenRouter or rules
+- `commandcode/stepfun/Step-3.5-Flash` — no pricing data from OpenRouter or rules
+- `commandcode/stepfun/Step-3.7-Flash` — no pricing data from OpenRouter or rules
+- `commandcode/zai-org/GLM-5` — no pricing data from OpenRouter or rules
+- `commandcode/zai-org/GLM-5.1` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-1.5-flash` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-1.5-flash-002` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-1.5-flash-8b` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-1.5-pro` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-1.5-pro-002` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-2.0-flash` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-2.0-flash-001` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-2.0-flash-lite` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-2.5-flash-preview-05-20` — no pricing data from OpenRouter or rules
+- `google-gemini/gemini-2.5-pro-preview-06-05` — no pricing data from OpenRouter or rules
+- `groq/gemma2-9b-it` — no pricing data from OpenRouter or rules
+- `groq/llama-3.1-8b-instant` — no pricing data from OpenRouter or rules
+- `groq/llama-3.3-70b-versatile` — no pricing data from OpenRouter or rules
+- `groq/meta-llama/llama-4-maverick-17b-128e-instruct` — no pricing data from OpenRouter or rules
+- `groq/meta-llama/llama-4-scout-17b-16e-instruct` — no pricing data from OpenRouter or rules
+- `groq/mistral-saba-24b` — no pricing data from OpenRouter or rules
+- `groq/moonshotai/kimi-k2-instruct` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-ams/mimo-v2-flash` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-ams/mimo-v2-omni` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-ams/mimo-v2-pro` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-cn/mimo-v2-flash` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-cn/mimo-v2-omni` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-cn/mimo-v2-pro` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-sgp/mimo-v2-flash` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-sgp/mimo-v2-omni` — no pricing data from OpenRouter or rules
+- `mimo-anthropic-sgp/mimo-v2-pro` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.1` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.1-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.5` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.5-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.7` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M2.7-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-M3` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-Text-01` — no pricing data from OpenRouter or rules
+- `minimax/MiniMax-Text-01-456B` — no pricing data from OpenRouter or rules
+- `minimax/abab6.5-chat` — no pricing data from OpenRouter or rules
+- `minimax/abab6.5g-chat` — no pricing data from OpenRouter or rules
+- `minimax/abab6.5s-chat` — no pricing data from OpenRouter or rules
+- `minimax/abab6.5t-chat` — no pricing data from OpenRouter or rules
+- `ollama/codellama` — no pricing data from OpenRouter or rules
+- `ollama/devstral` — no pricing data from OpenRouter or rules
+- `ollama/gemma3` — no pricing data from OpenRouter or rules
+- `ollama/gemma3:12b` — no pricing data from OpenRouter or rules
+- `ollama/gemma3:27b` — no pricing data from OpenRouter or rules
+- `ollama/granite-code` — no pricing data from OpenRouter or rules
+- `ollama/llama3.1` — no pricing data from OpenRouter or rules
+- `ollama/llama3.2` — no pricing data from OpenRouter or rules
+- `ollama/llama3.3` — no pricing data from OpenRouter or rules
+- `ollama/mistral` — no pricing data from OpenRouter or rules
+- `ollama/phi4` — no pricing data from OpenRouter or rules
+- `ollama/phi4-mini` — no pricing data from OpenRouter or rules
+- `ollama/qwen2.5-coder` — no pricing data from OpenRouter or rules
+- `ollama/qwen2.5-coder:14b` — no pricing data from OpenRouter or rules
+- `ollama/qwen2.5-coder:32b` — no pricing data from OpenRouter or rules
+- `ollama/qwen2.5-coder:7b` — no pricing data from OpenRouter or rules
+- `ollama/qwen3` — no pricing data from OpenRouter or rules
+- `ollama/starcoder2` — no pricing data from OpenRouter or rules
+- `opencode/big-pickle` — no pricing data from OpenRouter or rules
+- `opencode/deepseek-v4-flash-free` — no pricing data from OpenRouter or rules
+- `opencode/gemini-3-pro` — no pricing data from OpenRouter or rules
+- `opencode/nemotron-3-super-free` — no pricing data from OpenRouter or rules
+- `opencode/qwen3.5-plus` — no pricing data from OpenRouter or rules
+- `openrouter/meta-llama/llama-3.3-70b` — no pricing data from OpenRouter or rules
+- `openrouter/mistralai/codestral` — no pricing data from OpenRouter or rules
+- `openrouter/x-ai/grok-3` — no pricing data from OpenRouter or rules
+- `openrouter/x-ai/grok-4` — no pricing data from OpenRouter or rules
+- `stepfun/step-1` — no pricing data from OpenRouter or rules
+- `stepfun/step-1-128k` — no pricing data from OpenRouter or rules
+- `stepfun/step-1-256k` — no pricing data from OpenRouter or rules
+- `stepfun/step-1-32k` — no pricing data from OpenRouter or rules
+- `stepfun/step-1-8k` — no pricing data from OpenRouter or rules
+- `stepfun/step-1v` — no pricing data from OpenRouter or rules
+- `stepfun/step-2` — no pricing data from OpenRouter or rules
+- `stepfun/step-2-16k` — no pricing data from OpenRouter or rules
+- `stepfun/step-3` — no pricing data from OpenRouter or rules
+- `xai/grok-2-1212` — no pricing data from OpenRouter or rules
+- `xai/grok-2-vision-1212` — no pricing data from OpenRouter or rules
+- `xai/grok-3` — no pricing data from OpenRouter or rules
+- `xai/grok-3-fast` — no pricing data from OpenRouter or rules
+- `xai/grok-3-mini` — no pricing data from OpenRouter or rules
+- `xai/grok-3-mini-fast` — no pricing data from OpenRouter or rules
+- `xai/grok-4` — no pricing data from OpenRouter or rules
+- `xai/grok-4-fast` — no pricing data from OpenRouter or rules
+- `xai/grok-4-fast-non-reasoning` — no pricing data from OpenRouter or rules
+- `xai/grok-4-fast-reasoning` — no pricing data from OpenRouter or rules
+- `xiaomi/mimo-v2-flash` — no pricing data from OpenRouter or rules
+- `xiaomi/mimo-v2-omni` — no pricing data from OpenRouter or rules
+- `xiaomi/mimo-v2-pro` — no pricing data from OpenRouter or rules
+- `zai/glm-4-0520` — no pricing data from OpenRouter or rules
+- `zai/glm-4-air` — no pricing data from OpenRouter or rules
+- `zai/glm-4-airx` — no pricing data from OpenRouter or rules
+- `zai/glm-4-flash` — no pricing data from OpenRouter or rules
+- `zai/glm-4-long` — no pricing data from OpenRouter or rules
+- `zai/glm-4-plus` — no pricing data from OpenRouter or rules
+- `zai/glm-4.5-flash` — no pricing data from OpenRouter or rules
+- `zai/glm-4.5-x` — no pricing data from OpenRouter or rules
 
 ## Errors
 

@@ -24,6 +24,11 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 0.435,
+        "output_per_1m": 0.87,
+        "currency": "USD"
       }
     },
     {
@@ -36,6 +41,14 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "pricing": {
+        "input_per_1m": 0.105,
+        "output_per_1m": 0.28,
+        "currency": "USD"
       }
     },
     {
@@ -50,6 +63,15 @@
         "audio": true,
         "video": true,
         "documents": true
+      },
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 1.5,
+        "currency": "USD"
       }
     }
   ]

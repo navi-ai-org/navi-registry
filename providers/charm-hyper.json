@@ -112,6 +112,11 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.15,
+        "currency": "USD"
       }
     },
     {
@@ -123,6 +128,11 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.029,
+        "output_per_1m": 0.14,
+        "currency": "USD"
       }
     }
   ]

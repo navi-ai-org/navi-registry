@@ -20,7 +20,12 @@
       "context_window_tokens": 262144,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.3,
+        "currency": "USD"
+      }
     },
     {
       "name": "step-3",
@@ -87,7 +92,8 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "step-1",

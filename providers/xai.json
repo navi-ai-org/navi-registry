@@ -12,7 +12,14 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 2.5,
+        "currency": "USD"
+      }
     },
     {
       "name": "grok-4",
@@ -20,7 +27,9 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": true,
+      "supports_documents": true
     },
     {
       "name": "grok-4-fast",
@@ -52,7 +61,8 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": true
     },
     {
       "name": "grok-3-fast",
@@ -87,7 +97,8 @@
       "supports_thinking": false,
       "attachments": {
         "images": false
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "grok-2-vision-1212",
@@ -95,7 +106,8 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": true
     },
     {
       "name": "grok-build-0.1",
@@ -106,6 +118,12 @@
       "supports_thinking": false,
       "attachments": {
         "images": false
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 2.0,
+        "currency": "USD"
       }
     }
   ],

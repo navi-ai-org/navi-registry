@@ -74,6 +74,7 @@ class ProbeResult:
         self.errors = []             # (provider, error)
         self.unprobed_review = []    # (provider, model_name, reason) for providers without endpoints
         self.default_ctx = []        # (provider, model_name, ctx) models stuck at 200k default
+        self.needs_pricing = []      # (provider, model_name, reason) models missing pricing
 
 
 def load_rules() -> dict:
@@ -136,9 +137,10 @@ def parse_models_response(data: dict, provider_id: str) -> list[str]:
 
 
 def fetch_openrouter_capabilities() -> dict:
-    """Fetch OpenRouter /api/v1/models and extract attachment capabilities.
+    """Fetch OpenRouter /api/v1/models and extract attachment capabilities + pricing.
 
-    Returns a dict mapping model_id -> {supports_images, supports_audio, ...}.
+    Returns a dict mapping model_id -> {supports_images, supports_audio, ...,
+    pricing: {input_per_1m, output_per_1m, ...}}.
     """
     data = fetch_json(OPENROUTER_MODELS_URL)
     if not data:
@@ -158,6 +160,24 @@ def fetch_openrouter_capabilities() -> dict:
             fields["supports_video"] = True
         if "file" in inputs or "document" in inputs:
             fields["supports_documents"] = True
+
+        # Pricing from OpenRouter is per-token; convert to per-1M.
+        pricing = m.get("pricing", {})
+        prompt_price = pricing.get("prompt")
+        completion_price = pricing.get("completion")
+        if prompt_price and completion_price:
+            try:
+                p = float(prompt_price)
+                c = float(completion_price)
+                if p > 0 and c > 0:
+                    fields["pricing"] = {
+                        "input_per_1m": round(p * 1_000_000, 6),
+                        "output_per_1m": round(c * 1_000_000, 6),
+                        "currency": "USD",
+                    }
+            except ValueError:
+                pass
+
         if fields:
             caps[mid] = fields
         # Also store by bare model name (without provider prefix).
@@ -187,10 +207,28 @@ def has_attachment_info(model: dict) -> bool:
     return any(k in model for k in ATTACHMENT_FIELDS)
 
 
+def has_pricing_info(model: dict) -> bool:
+    return "pricing" in model and isinstance(model["pricing"], dict) and model["pricing"]
+
+
+def apply_pricing_fields(model: dict, fields: dict) -> bool:
+    """Apply pricing fields to a model if not already set. Returns True if changed."""
+    changed = False
+    pricing = fields.get("pricing")
+    if pricing and not has_pricing_info(model):
+        model["pricing"] = pricing
+        changed = True
+    return changed
+
+
 def apply_attachment_fields(model: dict, fields: dict) -> bool:
-    """Apply attachment fields to a model if not already set. Returns True if changed."""
+    """Apply attachment and pricing fields to a model if not already set. Returns True if changed."""
     changed = False
     for k, v in fields.items():
+        if k == "pricing":
+            if apply_pricing_fields(model, fields):
+                changed = True
+            continue
         if k not in model or model[k] is None:
             model[k] = v
             changed = True
@@ -255,14 +293,10 @@ def probe_provider(
     for name in sorted(local_models - api_model_names):
         result.removed.append((provider_id, name))
 
-    # Auto-fill attachment capabilities.
+    # Auto-fill attachment capabilities + pricing.
     changed = False
     for model in data.get("models", []):
         name = model["name"]
-
-        # Skip if already has attachment info.
-        if has_attachment_info(model):
-            continue
 
         # Try OpenRouter capabilities first (most reliable).
         or_key = f"{provider_id}/{name}"
@@ -272,12 +306,22 @@ def probe_provider(
         if not fields:
             fields = match_rule(name, rules)
 
-        if fields:
-            if apply_attachment_fields(model, fields):
-                result.updated.append((provider_id, name, fields))
+        # Attachments
+        if not has_attachment_info(model):
+            if fields:
+                if apply_attachment_fields(model, fields):
+                    result.updated.append((provider_id, name, fields))
+                    changed = True
+            else:
+                result.needs_review.append((provider_id, name, "no attachment rule or OpenRouter data"))
+
+        # Pricing (independent of attachments)
+        if not has_pricing_info(model):
+            if fields and "pricing" in fields:
+                apply_pricing_fields(model, fields)
                 changed = True
-        else:
-            result.needs_review.append((provider_id, name, "no attachment rule or OpenRouter data"))
+            else:
+                result.needs_pricing.append((provider_id, name, "no pricing data from OpenRouter or rules"))
 
     if changed and apply:
         save_provider_json(provider_id, data)
@@ -345,14 +389,24 @@ def scan_unprobed_providers(
             if not fields:
                 fields = match_rule(name, rules)
 
-            if fields:
-                if apply_attachment_fields(model, fields):
-                    result.updated.append((pid, name, fields))
+            # Attachments
+            if not has_attachment_info(model):
+                if fields:
+                    if apply_attachment_fields(model, fields):
+                        result.updated.append((pid, name, fields))
+                        changed = True
+                else:
+                    result.unprobed_review.append(
+                        (pid, name, "no attachment rule or OpenRouter data — needs manual review")
+                    )
+
+            # Pricing (independent of attachments)
+            if not has_pricing_info(model):
+                if fields and "pricing" in fields:
+                    apply_pricing_fields(model, fields)
                     changed = True
-            else:
-                result.unprobed_review.append(
-                    (pid, name, "no attachment rule or OpenRouter data — needs manual review")
-                )
+                else:
+                    result.needs_pricing.append((pid, name, "no pricing data from OpenRouter or rules"))
 
         if changed and apply:
             save_provider_json(pid, data)
@@ -367,6 +421,7 @@ def generate_report(result: ProbeResult) -> str:
     lines.append(f"- Needs manual review (probed): **{len(result.needs_review)}**")
     lines.append(f"- Needs manual review (unprobed): **{len(result.unprobed_review)}**")
     lines.append(f"- Default context window (200k, likely unset): **{len(result.default_ctx)}**")
+    lines.append(f"- Needs pricing: **{len(result.needs_pricing)}**")
     lines.append(f"- Errors: **{len(result.errors)}**")
     lines.append("")
 
@@ -415,6 +470,13 @@ def generate_report(result: ProbeResult) -> str:
             lines.append(f"- `{pid}/{name}` — context_window_tokens={ctx}")
         lines.append("")
 
+    if result.needs_pricing:
+        lines.append("## Needs Pricing (no pricing data available)")
+        lines.append("")
+        for pid, name, reason in sorted(result.needs_pricing):
+            lines.append(f"- `{pid}/{name}` — {reason}")
+        lines.append("")
+
     if result.errors:
         lines.append("## Errors")
         lines.append("")
@@ -459,6 +521,7 @@ def main() -> int:
     print(f"  Needs review (probed):   {len(result.needs_review)}")
     print(f"  Needs review (unprobed): {len(result.unprobed_review)}")
     print(f"  Default ctx (200k): {len(result.default_ctx)}")
+    print(f"  Needs pricing:      {len(result.needs_pricing)}")
     print(f"  Errors:            {len(result.errors)}")
 
     all_review = result.needs_review + result.unprobed_review
@@ -471,6 +534,11 @@ def main() -> int:
         print(f"\n--- Default Context Window (200k, likely unset) ---")
         for pid, name, ctx in sorted(result.default_ctx):
             print(f"  {pid}/{name}: ctx={ctx}")
+
+    if result.needs_pricing:
+        print(f"\n--- Needs Pricing ---")
+        for pid, name, reason in sorted(result.needs_pricing):
+            print(f"  {pid}/{name}: {reason}")
 
     return 0
 

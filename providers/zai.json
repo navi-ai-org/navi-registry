@@ -1,7 +1,7 @@
 {
   "id": "zai",
   "label": "Z.AI",
-  "description": "GLM models by Zhipu AI — flagship, turbo, and cost-optimized language models",
+  "description": "GLM models by Zhipu AI \u2014 flagship, turbo, and cost-optimized language models",
   "kind": "openai-chat-completions",
   "api_key_env": "ZAI_API_KEY",
   "base_url": "https://api.z.ai/api/paas/v4/",
@@ -23,6 +23,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.966,
+        "output_per_1m": 3.036,
+        "currency": "USD"
       }
     },
     {
@@ -34,6 +39,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 1.92,
+        "currency": "USD"
       }
     },
     {
@@ -45,6 +55,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 1.2,
+        "output_per_1m": 4.0,
+        "currency": "USD"
       }
     },
     {
@@ -56,6 +71,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 1.75,
+        "currency": "USD"
       }
     },
     {
@@ -67,6 +87,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.43,
+        "output_per_1m": 1.74,
+        "currency": "USD"
       }
     },
     {
@@ -78,6 +103,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2,
+        "currency": "USD"
       }
     },
     {
@@ -89,6 +119,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.13,
+        "output_per_1m": 0.85,
+        "currency": "USD"
       }
     },
     {
@@ -100,7 +135,8 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "glm-4.5-flash",
@@ -111,7 +147,8 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "glm-4-plus",

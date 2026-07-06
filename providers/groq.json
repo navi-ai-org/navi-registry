@@ -39,6 +39,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.15,
+        "currency": "USD"
       }
     },
     {
@@ -50,6 +55,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.029,
+        "output_per_1m": 0.14,
+        "currency": "USD"
       }
     },
     {
@@ -58,7 +68,12 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 0.6,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.08,
+        "output_per_1m": 0.28,
+        "currency": "USD"
+      }
     },
     {
       "name": "deepseek-r1-distill-llama-70b",
@@ -66,7 +81,12 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 0.6,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 0.8,
+        "currency": "USD"
+      }
     },
     {
       "name": "moonshotai/kimi-k2-instruct",
@@ -108,7 +128,13 @@
       "context_window_tokens": 131072,
       "max_output_tokens": 4096,
       "recommended_temperature": 0.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 0.18,
+        "output_per_1m": 0.18,
+        "currency": "USD"
+      }
     },
     {
       "name": "mistral-saba-24b",

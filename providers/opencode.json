@@ -25,6 +25,13 @@
         "images": true,
         "audio": true,
         "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "currency": "USD"
       }
     },
     {
@@ -38,6 +45,12 @@
         "images": true,
         "audio": true,
         "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 10.0,
+        "currency": "USD"
       }
     },
     {
@@ -50,6 +63,13 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
       }
     },
     {
@@ -62,6 +82,13 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD"
       }
     },
     {
@@ -70,7 +97,12 @@
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD"
+      }
     },
     {
       "name": "gemini-3-pro",
@@ -116,7 +148,14 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": true,
+      "supports_video": true,
+      "pricing": {
+        "input_per_1m": 0.325,
+        "output_per_1m": 1.95,
+        "currency": "USD"
+      }
     },
     {
       "name": "qwen3.5-plus",
@@ -136,6 +175,12 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 0.66,
+        "output_per_1m": 3.41,
+        "currency": "USD"
       }
     },
     {
@@ -148,6 +193,12 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 0.375,
+        "output_per_1m": 2.025,
+        "currency": "USD"
       }
     },
     {
@@ -159,6 +210,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.966,
+        "output_per_1m": 3.036,
+        "currency": "USD"
       }
     },
     {
@@ -170,6 +226,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 1.92,
+        "currency": "USD"
       }
     },
     {
@@ -178,7 +239,12 @@
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.18,
+        "output_per_1m": 0.72,
+        "currency": "USD"
+      }
     },
     {
       "name": "minimax-m2.5",
@@ -186,7 +252,12 @@
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.12,
+        "output_per_1m": 0.48,
+        "currency": "USD"
+      }
     },
     {
       "name": "grok-build-0.1",
@@ -194,7 +265,13 @@
       "context_window_tokens": 256000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
     }
   ]
 }

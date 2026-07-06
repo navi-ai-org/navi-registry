@@ -23,6 +23,11 @@
       "supports_thinking": true,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.966,
+        "output_per_1m": 3.036,
+        "currency": "USD"
       }
     },
     {
@@ -34,6 +39,11 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 1.92,
+        "currency": "USD"
       }
     },
     {
@@ -45,6 +55,11 @@
       "supports_thinking": false,
       "attachments": {
         "images": true
+      },
+      "pricing": {
+        "input_per_1m": 1.2,
+        "output_per_1m": 4.0,
+        "currency": "USD"
       }
     }
   ]
