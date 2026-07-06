@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updated_at": "2026-07-06T20:22:45Z",
+  "version": 5,
+  "updated_at": "2026-07-06T20:34:34Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -9,12 +9,12 @@
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
-      "sha256": "038790d5dae6d981b3cf0473a2a5f506d896da02b3dc5c28f44f543f631994b5",
+      "sha256": "db764467e74608bbf4f772e0091a8444d69e3b2bec3c28ffefeb4e37e29358a9",
       "model_count": 11
     },
     "commandcode": {
       "file": "providers/commandcode.json",
-      "sha256": "93175e8be123871376709522d5e9993e2524914a630d4be234a4d136ab0ac4e8",
+      "sha256": "2ba62ef06a904a4179bbc43e2a98a75249cb1729af540962a70b0e406869fe3d",
       "model_count": 30
     },
     "deepseek": {
@@ -29,7 +29,7 @@
     },
     "gitlawb": {
       "file": "providers/gitlawb.json",
-      "sha256": "f6585a1d4f4649fd2147db392c3221786818cf95d2019c3e92f5bd0607ade490",
+      "sha256": "c9bae8650ea96d92ffdf3cb26b958b1e75f3ae66a5737ce0f1cb884a4ac67a13",
       "model_count": 3
     },
     "google-gemini": {
@@ -39,7 +39,7 @@
     },
     "groq": {
       "file": "providers/groq.json",
-      "sha256": "4770c6608b3b1cf56e91e58995964cacd47f185b423bbb2fe2522a3186743962",
+      "sha256": "bdc5f3dec4a4a0e031dc3de1bf5c11f9e7dbc0e60fdc17fa13a91451e5bf5f20",
       "model_count": 12
     },
     "llamacpp": {
@@ -54,22 +54,22 @@
     },
     "mimo-anthropic-ams": {
       "file": "providers/mimo-anthropic-ams.json",
-      "sha256": "a589b6b64ab5a382b4cf9ad82a16d8ada736eaaeda41ed86343ca6f987371c2e",
+      "sha256": "2f0c501866f39233dc49464191f3494305c83f9500be531262ed8506d305943a",
       "model_count": 5
     },
     "mimo-anthropic-cn": {
       "file": "providers/mimo-anthropic-cn.json",
-      "sha256": "33815ef37c6a76b7088119094a78075ab2e560f1cd6a36ebdfabc89c574b9cc1",
+      "sha256": "c0a42719fe260996d8f319cd429b20e29ca5061f1a05c1f634d4876162ac0fc3",
       "model_count": 5
     },
     "mimo-anthropic-sgp": {
       "file": "providers/mimo-anthropic-sgp.json",
-      "sha256": "37330c79a6f4f5dce6eca8a748d90090a4d879ea5e43383ce255d6e86485409b",
+      "sha256": "6c73886578f435ea6ca0f282bf62aaa1dfacb05c620ac597e9964b516235d795",
       "model_count": 5
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "4449cfff5ee36d132b9863588b3508672b802e6e90b021e911576b6e52aa6be7",
+      "sha256": "51dacb6bbf2bba4b7e5ac6bbd108d3414d5ddcc719f277f598bf10729d8abd33",
       "model_count": 14
     },
     "mistral": {
@@ -89,7 +89,7 @@
     },
     "ollama": {
       "file": "providers/ollama.json",
-      "sha256": "46a8d54c047c230f6278ceb86a8b7b1546c194bf5e66557c253f0099a22e0fa3",
+      "sha256": "4b8ca7f0f8796e22ab650b249bfd9396d2ad3b99bb3de3e2fb7c2a365dbf9c5b",
       "model_count": 19
     },
     "openai": {
@@ -99,12 +99,12 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "7aa2b0e210181467aa7f0e7df278c889491d5192963d997b08c85c5a86c77754",
+      "sha256": "a21ab37bd6fd66022bdc07034bcedbbed5e157fd998bcd4b49a722a70427a385",
       "model_count": 18
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "a886ce711ea2db7744ea641bdafd198f6ab642060d871dda7a3ecdad52f3e253",
+      "sha256": "87267d840b7883cd25d4e58115e3a772302294041dca1562098b2f50b19b0a74",
       "model_count": 6
     },
     "openrouter": {
@@ -114,7 +114,7 @@
     },
     "stepfun": {
       "file": "providers/stepfun.json",
-      "sha256": "6c13291d6b08011af5b8581e7cbcccbe5e77679f94a7f665b96007b0eb84f6d4",
+      "sha256": "750552f1b4997fd81a8643d6a2858fe2eaa3c2a2937c2c59a5ada6836aded915",
       "model_count": 10
     },
     "xai": {
@@ -124,17 +124,17 @@
     },
     "xiaomi": {
       "file": "providers/xiaomi.json",
-      "sha256": "cccc37c52760975f9c558077c6cca1f86127e85ea306f7eada38c68f9277b5ee",
+      "sha256": "acc8b8e8bc03c9d25033e7d6cfde3b4dceee217a2fd87aa2e50bf2f06c68ad67",
       "model_count": 5
     },
     "zai": {
       "file": "providers/zai.json",
-      "sha256": "4c26809c2fd4048dfd01b051287aa7a20abca013e147f9229de90f43c0bc766f",
+      "sha256": "59b04d064c4ab08f3f5caffa5b40b72d0f8a09deeca3132f36f40af99a71c33a",
       "model_count": 15
     },
     "zai-coding": {
       "file": "providers/zai-coding.json",
-      "sha256": "2036664319b1ee8d5ac2d02c9cb754f8cbd51379abb60cc486e20e9afab41363",
+      "sha256": "4dc950f4a91dfd219378da011d6be4dcf12429eb395545ce7afea3b771a3b88d",
       "model_count": 3
     }
   }

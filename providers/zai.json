@@ -5,6 +5,14 @@
   "kind": "openai-chat-completions",
   "api_key_env": "ZAI_API_KEY",
   "base_url": "https://api.z.ai/api/paas/v4/",
+  "defaults": {
+    "attachments": {
+      "images": false,
+      "audio": false,
+      "video": false,
+      "documents": false
+    }
+  },
   "models": [
     {
       "name": "glm-5.1",
@@ -12,7 +20,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-5",
@@ -20,7 +31,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-5-turbo",
@@ -28,7 +42,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.7",
@@ -36,7 +53,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.6",
@@ -44,7 +64,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.5",
@@ -52,7 +75,10 @@
       "context_window_tokens": 128000,
       "max_output_tokens": 98304,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.5-air",
@@ -60,7 +86,10 @@
       "context_window_tokens": 128000,
       "max_output_tokens": 98304,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.5-x",
@@ -68,7 +97,10 @@
       "context_window_tokens": 128000,
       "max_output_tokens": 98304,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4.5-flash",
@@ -76,7 +108,10 @@
       "context_window_tokens": 128000,
       "max_output_tokens": 98304,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-4-plus",

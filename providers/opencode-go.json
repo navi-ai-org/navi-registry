@@ -5,6 +5,14 @@
   "kind": "openai-chat-completions",
   "api_key_env": "OPENCODE_GO_API_KEY",
   "base_url": "https://go.opencode.ai/v1",
+  "defaults": {
+    "attachments": {
+      "images": false,
+      "audio": false,
+      "video": false,
+      "documents": false
+    }
+  },
   "models": [
     {
       "name": "deepseek-v4-flash",
@@ -36,7 +44,10 @@
       "context_window_tokens": 202752,
       "max_output_tokens": 32768,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "kimi-k2.5",
@@ -44,7 +55,11 @@
       "context_window_tokens": 262144,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     {
       "name": "minimax-m2.5",

@@ -5,6 +5,14 @@
   "kind": "openai-chat-completions",
   "api_key_env": "OPENCODE_API_KEY",
   "base_url": "https://api.opencode.ai/v1",
+  "defaults": {
+    "attachments": {
+      "images": false,
+      "audio": false,
+      "video": false,
+      "documents": false
+    }
+  },
   "models": [
     {
       "name": "gpt-5.2",
@@ -12,7 +20,12 @@
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "documents": true
+      }
     },
     {
       "name": "gpt-5.1-codex",
@@ -20,7 +33,12 @@
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "documents": true
+      }
     },
     {
       "name": "claude-opus-4.5",
@@ -28,7 +46,11 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     {
       "name": "claude-sonnet-4.5",
@@ -36,7 +58,11 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     {
       "name": "minimax-m2.1",
@@ -52,7 +78,13 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     {
       "name": "big-pickle",
@@ -100,7 +132,11 @@
       "context_window_tokens": 262144,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     {
       "name": "kimi-k2.5",
@@ -108,7 +144,11 @@
       "context_window_tokens": 262144,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     {
       "name": "glm-5.1",
@@ -116,7 +156,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "glm-5",
@@ -124,7 +167,10 @@
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "minimax-m2.7",

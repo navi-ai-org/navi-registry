@@ -45,11 +45,19 @@
       "supports_images": true,
       "supports_documents": true
     },
+    "claude-haiku-4.*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
     "claude-opus-4": {
       "supports_images": true,
       "supports_documents": true
     },
     "claude-opus-4-*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "claude-opus-4.*": {
       "supports_images": true,
       "supports_documents": true
     },
@@ -61,12 +69,24 @@
       "supports_images": true,
       "supports_documents": true
     },
+    "claude-sonnet-4.*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
     "codestral": {},
     "deepseek-chat": {},
+    "deepseek-r1*": {},
     "deepseek-v4-pro": {},
     "deepseek/deepseek-chat": {},
+    "deepseek/deepseek-v4-flash": {},
     "deepseek/deepseek-v4-pro": {},
     "gemini-1.5-flash": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
+    },
+    "gemini-1.5-flash-*": {
       "supports_images": true,
       "supports_audio": true,
       "supports_video": true,
@@ -78,13 +98,38 @@
       "supports_video": true,
       "supports_documents": true
     },
+    "gemini-1.5-pro-*": {
+      "supports_images": true,
+      "supports_audio": true,
+      "supports_video": true,
+      "supports_documents": true
+    },
     "gemini-2.*": {
       "supports_images": true,
       "supports_audio": true,
       "supports_video": true,
       "supports_documents": true
     },
+    "gemma2*": {},
+    "gemma3*": {
+      "supports_images": true
+    },
+    "gemma-4*": {
+      "supports_images": true
+    },
     "glm-4.5": {},
+    "glm-4.5*": {
+      "supports_images": true
+    },
+    "glm-4.6*": {
+      "supports_images": true
+    },
+    "glm-4.7*": {
+      "supports_images": true
+    },
+    "glm-5*": {
+      "supports_images": true
+    },
     "gpt-4.1": {
       "supports_images": true
     },
@@ -121,6 +166,12 @@
     "gpt-oss-20b": {
       "supports_images": true
     },
+    "grok-2": {
+      "supports_images": true
+    },
+    "grok-2-*": {
+      "supports_images": true
+    },
     "grok-2-vision-*": {
       "supports_images": true
     },
@@ -142,6 +193,11 @@
       "supports_images": true,
       "supports_documents": true
     },
+    "kimi-k2.*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "llama-3.1*": {},
     "llama-3.2-11b-vision-*": {
       "supports_images": true
     },
@@ -153,11 +209,23 @@
       "supports_images": true
     },
     "meta-llama/llama-3.3-70b": {},
+    "mimo-v2*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "minimax-m2*": {},
+    "minimax-text-01*": {},
+    "mistral-saba*": {},
     "mistralai/codestral": {},
     "moonshotai/kimi-k2": {
       "supports_images": true,
       "supports_documents": true
     },
+    "moonshotai/kimi-k2.*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "nemotron*": {},
     "o1": {},
     "o1-mini": {},
     "o1-pro": {},
@@ -173,6 +241,7 @@
     "o4-mini.*": {
       "supports_images": true
     },
+    "qwen/qwen3-*": {},
     "qwen/qwen3-235b-a22b": {},
     "qwen/qwen3-32b": {},
     "qwen/qwen3-coder": {},
@@ -184,6 +253,7 @@
       "supports_images": true,
       "supports_video": true
     },
+    "qwen3-*": {},
     "qwen3-235b-a22b": {},
     "qwen3-32b": {},
     "qwen3-coder": {},
@@ -191,6 +261,16 @@
       "supports_images": true,
       "supports_video": true
     },
-    "z-ai/glm-4.5": {}
+    "step-1v": {
+      "supports_images": true
+    },
+    "xiaomi/mimo-v2*": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "z-ai/glm-4.5": {},
+    "z-ai/glm-5*": {
+      "supports_images": true
+    }
   }
 }

@@ -10,6 +10,14 @@
       "type": "ephemeral"
     }
   },
+  "defaults": {
+    "attachments": {
+      "images": true,
+      "audio": false,
+      "video": false,
+      "documents": true
+    }
+  },
   "models": [
     {
       "name": "mimo-v2.5-pro",
