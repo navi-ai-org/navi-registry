@@ -1,0 +1,57 @@
+{
+  "$comment": "Rules for auto-filling attachment capabilities. Keys are exact model names or glob patterns (e.g. 'gemini-2.*'). Applied after OpenRouter lookup. Keep sorted.",
+  "rules": {
+    "gpt-4o": { "supports_images": true, "supports_audio": true },
+    "gpt-4o-mini": { "supports_images": true, "supports_audio": true },
+    "gpt-4.1": { "supports_images": true },
+    "gpt-4.1-mini": { "supports_images": true },
+    "gpt-4.1-nano": { "supports_images": true },
+    "gpt-4.5-preview": { "supports_images": true },
+    "gpt-5": { "supports_images": true, "supports_audio": true, "supports_documents": true },
+    "gpt-5.*": { "supports_images": true, "supports_audio": true, "supports_documents": true },
+    "gpt-oss-120b": { "supports_images": true },
+    "gpt-oss-20b": { "supports_images": true },
+
+    "claude-3-opus-*": { "supports_images": true, "supports_documents": true },
+    "claude-3-sonnet-*": { "supports_images": true, "supports_documents": true },
+    "claude-3-haiku-*": { "supports_images": true, "supports_documents": true },
+    "claude-3.5-sonnet": { "supports_images": true, "supports_documents": true },
+    "claude-3-5-sonnet-*": { "supports_images": true, "supports_documents": true },
+    "claude-3.5-haiku": { "supports_images": true, "supports_documents": true },
+    "claude-3-5-haiku-*": { "supports_images": true, "supports_documents": true },
+    "claude-3.7-sonnet": { "supports_images": true, "supports_documents": true },
+    "claude-3-7-sonnet-*": { "supports_images": true, "supports_documents": true },
+    "claude-sonnet-4": { "supports_images": true, "supports_documents": true },
+    "claude-sonnet-4-*": { "supports_images": true, "supports_documents": true },
+    "claude-opus-4": { "supports_images": true, "supports_documents": true },
+    "claude-opus-4-*": { "supports_images": true, "supports_documents": true },
+    "claude-haiku-4": { "supports_images": true, "supports_documents": true },
+    "claude-haiku-4-*": { "supports_images": true, "supports_documents": true },
+
+    "gemini-1.5-pro": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
+    "gemini-1.5-flash": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
+    "gemini-2.*": { "supports_images": true, "supports_audio": true, "supports_video": true, "supports_documents": true },
+
+    "grok-2-vision-*": { "supports_images": true },
+    "grok-3": { "supports_images": true },
+    "grok-3.*": { "supports_images": true },
+    "grok-4": { "supports_images": true, "supports_documents": true },
+    "grok-4.*": { "supports_images": true, "supports_documents": true },
+
+    "o1": {},
+    "o1-mini": {},
+    "o1-pro": {},
+    "o3": { "supports_images": true },
+    "o3.*": { "supports_images": true },
+    "o4-mini": { "supports_images": true },
+    "o4-mini.*": { "supports_images": true },
+
+    "qwen2.5-vl-*": { "supports_images": true, "supports_video": true },
+    "qwen2-vl-*": { "supports_images": true, "supports_video": true },
+    "qwen3-vl-*": { "supports_images": true, "supports_video": true },
+
+    "llama-3.2-11b-vision-*": { "supports_images": true },
+    "llama-3.2-90b-vision-*": { "supports_images": true },
+    "llama-4-*": { "supports_images": true }
+  }
+}
