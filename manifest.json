@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updated_at": "2026-07-07T19:11:00Z",
+  "version": 9,
+  "updated_at": "2026-07-07T20:50:01Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -99,8 +99,8 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "dc49ea9d8a401b7fc9c9696f7f53483f558ff84dca9283c6b85f50f28e35f356",
-      "model_count": 53
+      "sha256": "fe65ab2c6e6e5e6b8eed84e99474c7d8e5bcfa469ef5e7ceb17295ebf737c324",
+      "model_count": 61
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",

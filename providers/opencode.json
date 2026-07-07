@@ -492,6 +492,62 @@
       }
     },
     {
+      "name": "gpt-oss-120b",
+      "task_size": "large",
+      "context_window_tokens": 131072,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.178,
+        "output_per_1m": 0.68,
+        "cached_input_per_1m": 0.089,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gemma-4-26b-a4b",
+      "task_size": "small",
+      "context_window_tokens": 256000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.116,
+        "output_per_1m": 0.408,
+        "cached_input_per_1m": 0.058,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "llama-3.3-70b-instruct",
+      "task_size": "large",
+      "context_window_tokens": 128000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.6066,
+        "output_per_1m": 1.0386,
+        "cached_input_per_1m": 0.3033,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "llama-4-maverick-17b-128e-instruct-fp8",
+      "task_size": "large",
+      "context_window_tokens": 430000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.274,
+        "output_per_1m": 0.894,
+        "cached_input_per_1m": 0.137,
+        "currency": "USD"
+      }
+    },
+    {
       "name": "gemini-3.5-flash",
       "task_size": "small",
       "context_window_tokens": 1000000,
@@ -563,6 +619,7 @@
       "pricing": {
         "input_per_1m": 2.5,
         "output_per_1m": 7.5,
+        "cached_input_per_1m": 3.125,
         "currency": "USD"
       }
     },
@@ -579,8 +636,44 @@
       },
       "supports_images": true,
       "pricing": {
-        "input_per_1m": 0.4,
-        "output_per_1m": 1.6,
+        "input_per_1m": 1.2,
+        "output_per_1m": 4.8,
+        "cached_input_per_1m": 1.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "qwen3.6-flash",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 4.0,
+        "cached_input_per_1m": 1.25,
+        "cached_output_per_1m": 0.1,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "qwen3.6-max",
+      "task_size": "large",
+      "context_window_tokens": 256000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "cached_input_per_1m": 2.5,
+        "cached_output_per_1m": 0.2,
         "currency": "USD"
       }
     },
@@ -598,8 +691,10 @@
       "supports_images": true,
       "supports_video": true,
       "pricing": {
-        "input_per_1m": 0.5,
-        "output_per_1m": 3.0,
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "cached_input_per_1m": 2.5,
+        "cached_output_per_1m": 0.2,
         "currency": "USD"
       }
     },
@@ -617,6 +712,34 @@
       }
     },
     {
+      "name": "qwen3-coder-480b-a35b-instruct-int4-mixed-ar",
+      "task_size": "large",
+      "context_window_tokens": 106000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.601,
+        "output_per_1m": 2.085,
+        "cached_input_per_1m": 0.3005,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "qwen3-next-80b-a3b-instruct",
+      "task_size": "small",
+      "context_window_tokens": 262000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.1175,
+        "output_per_1m": 1.136,
+        "cached_input_per_1m": 0.0587,
+        "currency": "USD"
+      }
+    },
+    {
       "name": "deepseek-v4-pro",
       "task_size": "large",
       "context_window_tokens": 1000000,
@@ -626,6 +749,7 @@
       "pricing": {
         "input_per_1m": 1.74,
         "output_per_1m": 3.48,
+        "cached_input_per_1m": 0.15,
         "currency": "USD"
       }
     },
@@ -639,6 +763,7 @@
       "pricing": {
         "input_per_1m": 0.14,
         "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.03,
         "currency": "USD"
       }
     },
@@ -657,6 +782,7 @@
       "pricing": {
         "input_per_1m": 0.95,
         "output_per_1m": 4.0,
+        "cached_input_per_1m": 0.19,
         "currency": "USD"
       }
     },
@@ -675,6 +801,7 @@
       "pricing": {
         "input_per_1m": 0.95,
         "output_per_1m": 4.0,
+        "cached_input_per_1m": 0.16,
         "currency": "USD"
       }
     },
@@ -691,15 +818,16 @@
       },
       "supports_images": true,
       "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 3.0,
+        "input_per_1m": 0.51,
+        "output_per_1m": 2.67,
+        "cached_input_per_1m": 0.255,
         "currency": "USD"
       }
     },
     {
       "name": "glm-5.2",
       "task_size": "large",
-      "context_window_tokens": 200000,
+      "context_window_tokens": 1048000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
@@ -709,13 +837,14 @@
       "pricing": {
         "input_per_1m": 1.4,
         "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
         "currency": "USD"
       }
     },
     {
       "name": "glm-5.1",
       "task_size": "large",
-      "context_window_tokens": 200000,
+      "context_window_tokens": 202000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
@@ -723,15 +852,16 @@
         "images": true
       },
       "pricing": {
-        "input_per_1m": 1.4,
-        "output_per_1m": 4.4,
+        "input_per_1m": 1.3,
+        "output_per_1m": 4.3,
+        "cached_output_per_1m": 0.26,
         "currency": "USD"
       }
     },
     {
       "name": "glm-5",
       "task_size": "large",
-      "context_window_tokens": 200000,
+      "context_window_tokens": 202000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
@@ -739,8 +869,9 @@
         "images": true
       },
       "pricing": {
-        "input_per_1m": 1.0,
-        "output_per_1m": 3.2,
+        "input_per_1m": 0.91,
+        "output_per_1m": 2.836,
+        "cached_input_per_1m": 0.455,
         "currency": "USD"
       }
     },
@@ -767,6 +898,8 @@
       "pricing": {
         "input_per_1m": 0.3,
         "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.375,
+        "cached_output_per_1m": 0.06,
         "currency": "USD"
       }
     },
