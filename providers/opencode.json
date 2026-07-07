@@ -1,10 +1,10 @@
 {
   "id": "opencode",
   "label": "OpenCode Zen",
-  "description": "Recommended",
+  "description": "Curated pay-as-you-go models tested for coding agents",
   "kind": "openai-chat-completions",
   "api_key_env": "OPENCODE_API_KEY",
-  "base_url": "https://api.opencode.ai/v1",
+  "base_url": "https://opencode.ai/zen/v1",
   "defaults": {
     "attachments": {
       "images": false,
@@ -15,46 +15,26 @@
   },
   "models": [
     {
-      "name": "gpt-5.2",
+      "name": "claude-fable-5",
       "task_size": "large",
-      "context_window_tokens": 400000,
+      "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
       "attachments": {
         "images": true,
-        "audio": true,
         "documents": true
       },
       "supports_images": true,
       "supports_documents": true,
       "pricing": {
-        "input_per_1m": 1.75,
-        "output_per_1m": 14.0,
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
         "currency": "USD"
       }
     },
     {
-      "name": "gpt-5.1-codex",
-      "task_size": "large",
-      "context_window_tokens": 400000,
-      "max_output_tokens": 16384,
-      "recommended_temperature": 1.0,
-      "supports_thinking": true,
-      "attachments": {
-        "images": true,
-        "audio": true,
-        "documents": true
-      },
-      "supports_images": true,
-      "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 10.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "name": "claude-opus-4.5",
+      "name": "claude-opus-4-8",
       "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
@@ -73,7 +53,102 @@
       }
     },
     {
-      "name": "claude-sonnet-4.5",
+      "name": "claude-opus-4-7",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-opus-4-6",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-opus-4-5",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-opus-4-1",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-sonnet-5",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 10.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-sonnet-4-6",
       "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
@@ -92,20 +167,351 @@
       }
     },
     {
-      "name": "minimax-m2.1",
-      "task_size": "small",
-      "context_window_tokens": 204800,
-      "max_output_tokens": 8192,
+      "name": "claude-sonnet-4-5",
+      "task_size": "large",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
       "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 1.2,
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
         "currency": "USD"
       }
     },
     {
-      "name": "gemini-3-pro",
+      "name": "claude-sonnet-4",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "claude-haiku-4-5",
+      "task_size": "small",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 5.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.5",
+      "task_size": "large",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 30.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.5-pro",
+      "task_size": "large",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 30.0,
+        "output_per_1m": 180.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.4",
+      "task_size": "large",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.4-pro",
+      "task_size": "large",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 30.0,
+        "output_per_1m": 180.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.4-mini",
+      "task_size": "small",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 4.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.4-nano",
+      "task_size": "small",
+      "context_window_tokens": 272000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": false,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.25,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.3-codex-spark",
+      "task_size": "small",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.3-codex",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.2",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "supports_documents": true,
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.2-codex",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.1",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.1-codex-max",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 10.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.1-codex",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5.1-codex-mini",
+      "task_size": "small",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5-codex",
+      "task_size": "large",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.07,
+        "output_per_1m": 8.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gpt-5-nano",
+      "task_size": "small",
+      "context_window_tokens": 400000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": false,
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gemini-3.5-flash",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 65536,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 9.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "gemini-3.1-pro",
       "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
@@ -116,31 +522,67 @@
         "audio": true,
         "video": true,
         "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "currency": "USD"
       }
     },
     {
-      "name": "big-pickle",
+      "name": "gemini-3-flash",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 65536,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 3.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "qwen3.7-max",
       "task_size": "large",
-      "context_window_tokens": 200000,
-      "max_output_tokens": 16384,
-      "recommended_temperature": 1.0,
-      "supports_thinking": true
-    },
-    {
-      "name": "deepseek-v4-flash-free",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 7.5,
+        "currency": "USD"
+      }
     },
     {
-      "name": "nemotron-3-super-free",
-      "task_size": "small",
+      "name": "qwen3.7-plus",
+      "task_size": "large",
       "context_window_tokens": 1000000,
-      "max_output_tokens": 8192,
+      "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 1.6,
+        "currency": "USD"
+      }
     },
     {
       "name": "qwen3.6-plus",
@@ -149,11 +591,15 @@
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
       "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
       "supports_images": true,
       "supports_video": true,
       "pricing": {
-        "input_per_1m": 0.325,
-        "output_per_1m": 1.95,
+        "input_per_1m": 0.5,
+        "output_per_1m": 3.0,
         "currency": "USD"
       }
     },
@@ -163,7 +609,56 @@
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "deepseek-v4-pro",
+      "task_size": "large",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 1.74,
+        "output_per_1m": 3.48,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "deepseek-v4-flash",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "kimi-k2.7-code",
+      "task_size": "large",
+      "context_window_tokens": 262144,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "supports_images": true,
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
+        "currency": "USD"
+      }
     },
     {
       "name": "kimi-k2.6",
@@ -178,8 +673,8 @@
       },
       "supports_images": true,
       "pricing": {
-        "input_per_1m": 0.66,
-        "output_per_1m": 3.41,
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
         "currency": "USD"
       }
     },
@@ -196,8 +691,24 @@
       },
       "supports_images": true,
       "pricing": {
-        "input_per_1m": 0.375,
-        "output_per_1m": 2.025,
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "glm-5.2",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "attachments": {
+        "images": true
+      },
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
         "currency": "USD"
       }
     },
@@ -212,8 +723,8 @@
         "images": true
       },
       "pricing": {
-        "input_per_1m": 0.966,
-        "output_per_1m": 3.036,
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
         "currency": "USD"
       }
     },
@@ -228,8 +739,21 @@
         "images": true
       },
       "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 1.92,
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "minimax-m3",
+      "task_size": "small",
+      "context_window_tokens": 204800,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
         "currency": "USD"
       }
     },
@@ -241,8 +765,8 @@
       "recommended_temperature": 1.0,
       "supports_thinking": true,
       "pricing": {
-        "input_per_1m": 0.18,
-        "output_per_1m": 0.72,
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
         "currency": "USD"
       }
     },
@@ -254,8 +778,8 @@
       "recommended_temperature": 1.0,
       "supports_thinking": true,
       "pricing": {
-        "input_per_1m": 0.12,
-        "output_per_1m": 0.48,
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
         "currency": "USD"
       }
     },
@@ -270,6 +794,84 @@
       "pricing": {
         "input_per_1m": 1.0,
         "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "big-pickle",
+      "task_size": "large",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "deepseek-v4-flash-free",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "mimo-v2.5-free",
+      "task_size": "small",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "hy3-free",
+      "task_size": "small",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "nemotron-3-ultra-free",
+      "task_size": "small",
+      "context_window_tokens": 1000000,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "name": "north-mini-code-free",
+      "task_size": "small",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 8192,
+      "recommended_temperature": 1.0,
+      "supports_thinking": true,
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
         "currency": "USD"
       }
     }
