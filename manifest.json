@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "updated_at": "2026-07-07T00:27:14Z",
+  "version": 7,
+  "updated_at": "2026-07-07T12:28:45Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -29,8 +29,8 @@
     },
     "gitlawb": {
       "file": "providers/gitlawb.json",
-      "sha256": "aaed9f7b2d629cb623ebeeb8c9bbdbd38ad3d72ef1c25f68c8b406c5a801eaf2",
-      "model_count": 3
+      "sha256": "134889bb5841baadba21c3fa759e9f641c31cfcbbade9f3f2e49ffaab50c3ee3",
+      "model_count": 9
     },
     "google-gemini": {
       "file": "providers/google-gemini.json",
