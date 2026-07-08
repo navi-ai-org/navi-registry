@@ -16,7 +16,6 @@
   "models": [
     {
       "name": "deepseek-v4-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -29,7 +28,6 @@
     },
     {
       "name": "deepseek-v4-pro",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -42,7 +40,6 @@
     },
     {
       "name": "qwen3.6-plus",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -57,7 +54,6 @@
     },
     {
       "name": "glm-5",
-      "task_size": "large",
       "context_window_tokens": 202752,
       "max_output_tokens": 32768,
       "recommended_temperature": 1.0,
@@ -73,7 +69,6 @@
     },
     {
       "name": "kimi-k2.5",
-      "task_size": "large",
       "context_window_tokens": 262144,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -91,7 +86,6 @@
     },
     {
       "name": "minimax-m2.5",
-      "task_size": "small",
       "context_window_tokens": 204800,
       "max_output_tokens": 131072,
       "recommended_temperature": 1.0,

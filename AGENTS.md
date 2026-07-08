@@ -74,10 +74,6 @@ The environment variable name NAVI reads for the API key. Convention is `<PROVID
 
 API base URL. The schema permits `null` for providers resolved at runtime, but **every current provider has a concrete `base_url`**. Don't omit it unless you have a runtime-resolution reason.
 
-### `task_size` (model-level, required)
-
-Only `"small"` or `"large"`. This is a **harness routing hint**, not a model-size description — NAVI uses it to pick which model handles which tasks. Large = flagship/heavy; small = fast/cheap.
-
 ### `tool_calling_mode`
 
 Optional. One of `native`, `text-extracted`, `manifest-only`, `disabled`. Currently only `commandcode.json` sets it (`native`).
@@ -103,7 +99,7 @@ Object with `input_per_1m`, `output_per_1m`, `cached_input_per_1m`, `cached_outp
 ## Formatting styles
 
 Two coexisting styles in `providers/`:
-- **Compact single-line models** — `{ "name": ..., "task_size": ..., "context_window_tokens": ... }` (used by `ollama`, `llamacpp`, `commandcode`)
+- **Compact single-line models** — `{ "name": ..., "context_window_tokens": ... }` (used by `ollama`, `llamacpp`, `commandcode`)
 - **Expanded multi-line models** — one field per line (used by most others: `anthropic`, `openai`, `openrouter`, `google-gemini`, `mistral`, etc.)
 
 Match the style of nearby entries within the same file. There is no enforced formatter.
@@ -157,10 +153,10 @@ If you could not find a verified value:
 
 ```json
 // CORRECT — omit when unknown
-{ "name": "mystery-model", "task_size": "small" }
+{ "name": "mystery-model" }
 
 // WRONG — invented value
-{ "name": "mystery-model", "task_size": "small", "context_window_tokens": 200000 }
+{ "name": "mystery-model", "context_window_tokens": 200000 }
 ```
 
 #### State 3: `populate`
@@ -201,7 +197,6 @@ Review every warning. If the value is correct, the warning can be ignored. If th
 Before committing a model entry, verify each item:
 
 - [ ] `name` — exact model name as returned by the provider's `/models` API
-- [ ] `task_size` — `"small"` for fast/cheap models, `"large"` for flagship/heavy (harness routing hint)
 - [ ] `context_window_tokens` — verified from provider docs, or omitted if unknown
 - [ ] `max_output_tokens` — verified from provider docs, or omitted if unknown
 - [ ] `recommended_temperature` — verified from provider docs, or omitted if unknown

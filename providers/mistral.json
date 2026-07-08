@@ -8,7 +8,6 @@
   "models": [
     {
       "name": "mistral-large-latest",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -16,7 +15,6 @@
     },
     {
       "name": "mistral-large-2411",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -24,7 +22,6 @@
     },
     {
       "name": "mistral-large-2407",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -32,7 +29,6 @@
     },
     {
       "name": "mistral-medium-latest",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -40,7 +36,6 @@
     },
     {
       "name": "mistral-medium-2508",
-      "task_size": "large",
       "context_window_tokens": 262144,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -48,7 +43,6 @@
     },
     {
       "name": "mistral-small-latest",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -56,7 +50,6 @@
     },
     {
       "name": "mistral-small-2506",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -64,7 +57,6 @@
     },
     {
       "name": "mistral-small-2503",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -72,7 +64,6 @@
     },
     {
       "name": "codestral-latest",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.0,
@@ -80,7 +71,6 @@
     },
     {
       "name": "codestral-2508",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.0,
@@ -88,7 +78,6 @@
     },
     {
       "name": "codestral-2501",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.0,
@@ -96,7 +85,6 @@
     },
     {
       "name": "codestral-2405",
-      "task_size": "small",
       "context_window_tokens": 32000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.0,
@@ -104,7 +92,6 @@
     },
     {
       "name": "devstral-medium-latest",
-      "task_size": "large",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.3,
@@ -112,7 +99,6 @@
     },
     {
       "name": "devstral-medium-2507",
-      "task_size": "large",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.3,
@@ -120,7 +106,6 @@
     },
     {
       "name": "devstral-small-latest",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.3,
@@ -128,7 +113,6 @@
     },
     {
       "name": "devstral-small-2507",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.3,
@@ -136,7 +120,6 @@
     },
     {
       "name": "devstral-small-2505",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.3,
@@ -144,7 +127,6 @@
     },
     {
       "name": "magistral-medium-latest",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -152,7 +134,6 @@
     },
     {
       "name": "magistral-small-latest",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -160,7 +141,6 @@
     },
     {
       "name": "pixtral-large-latest",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -168,7 +148,6 @@
     },
     {
       "name": "pixtral-12b-2409",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -176,7 +155,6 @@
     },
     {
       "name": "open-mistral-nemo",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -184,7 +162,6 @@
     },
     {
       "name": "open-mixtral-8x22b",
-      "task_size": "large",
       "context_window_tokens": 65536,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -192,7 +169,6 @@
     },
     {
       "name": "open-mixtral-8x7b",
-      "task_size": "small",
       "context_window_tokens": 32768,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -200,7 +176,6 @@
     },
     {
       "name": "open-mistral-7b",
-      "task_size": "small",
       "context_window_tokens": 32768,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -208,7 +183,6 @@
     },
     {
       "name": "ministral-8b-latest",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
@@ -216,7 +190,6 @@
     },
     {
       "name": "ministral-3b-latest",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,

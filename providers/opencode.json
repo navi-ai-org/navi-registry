@@ -16,7 +16,6 @@
   "models": [
     {
       "name": "claude-fable-5",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -35,7 +34,6 @@
     },
     {
       "name": "claude-opus-4-8",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -54,7 +52,6 @@
     },
     {
       "name": "claude-opus-4-7",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -73,7 +70,6 @@
     },
     {
       "name": "claude-opus-4-6",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -92,7 +88,6 @@
     },
     {
       "name": "claude-opus-4-5",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -111,7 +106,6 @@
     },
     {
       "name": "claude-opus-4-1",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -130,7 +124,6 @@
     },
     {
       "name": "claude-sonnet-5",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -149,7 +142,6 @@
     },
     {
       "name": "claude-sonnet-4-6",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -168,7 +160,6 @@
     },
     {
       "name": "claude-sonnet-4-5",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -187,7 +178,6 @@
     },
     {
       "name": "claude-sonnet-4",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -206,7 +196,6 @@
     },
     {
       "name": "claude-haiku-4-5",
-      "task_size": "small",
       "context_window_tokens": 200000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -225,7 +214,6 @@
     },
     {
       "name": "gpt-5.5",
-      "task_size": "large",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -244,7 +232,6 @@
     },
     {
       "name": "gpt-5.5-pro",
-      "task_size": "large",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -263,7 +250,6 @@
     },
     {
       "name": "gpt-5.4",
-      "task_size": "large",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -282,7 +268,6 @@
     },
     {
       "name": "gpt-5.4-pro",
-      "task_size": "large",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -301,7 +286,6 @@
     },
     {
       "name": "gpt-5.4-mini",
-      "task_size": "small",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -320,7 +304,6 @@
     },
     {
       "name": "gpt-5.4-nano",
-      "task_size": "small",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -339,7 +322,6 @@
     },
     {
       "name": "gpt-5.3-codex-spark",
-      "task_size": "small",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -352,7 +334,6 @@
     },
     {
       "name": "gpt-5.3-codex",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -365,7 +346,6 @@
     },
     {
       "name": "gpt-5.2",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -384,7 +364,6 @@
     },
     {
       "name": "gpt-5.2-codex",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -397,7 +376,6 @@
     },
     {
       "name": "gpt-5.1",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -410,7 +388,6 @@
     },
     {
       "name": "gpt-5.1-codex-max",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -423,7 +400,6 @@
     },
     {
       "name": "gpt-5.1-codex",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -441,7 +417,6 @@
     },
     {
       "name": "gpt-5.1-codex-mini",
-      "task_size": "small",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -454,7 +429,6 @@
     },
     {
       "name": "gpt-5",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -467,7 +441,6 @@
     },
     {
       "name": "gpt-5-codex",
-      "task_size": "large",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -480,7 +453,6 @@
     },
     {
       "name": "gpt-5-nano",
-      "task_size": "small",
       "context_window_tokens": 400000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -493,7 +465,6 @@
     },
     {
       "name": "gpt-oss-120b",
-      "task_size": "large",
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -507,7 +478,6 @@
     },
     {
       "name": "gemma-4-26b-a4b",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -521,7 +491,6 @@
     },
     {
       "name": "llama-3.3-70b-instruct",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -535,7 +504,6 @@
     },
     {
       "name": "llama-4-maverick-17b-128e-instruct-fp8",
-      "task_size": "large",
       "context_window_tokens": 430000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -549,7 +517,6 @@
     },
     {
       "name": "gemini-3.5-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -568,7 +535,6 @@
     },
     {
       "name": "gemini-3.1-pro",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -587,7 +553,6 @@
     },
     {
       "name": "gemini-3-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -606,7 +571,6 @@
     },
     {
       "name": "qwen3.7-max",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -625,7 +589,6 @@
     },
     {
       "name": "qwen3.7-plus",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -644,7 +607,6 @@
     },
     {
       "name": "qwen3.6-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -664,7 +626,6 @@
     },
     {
       "name": "qwen3.6-max",
-      "task_size": "large",
       "context_window_tokens": 256000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -679,7 +640,6 @@
     },
     {
       "name": "qwen3.6-plus",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -700,7 +660,6 @@
     },
     {
       "name": "qwen3.5-plus",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -713,7 +672,6 @@
     },
     {
       "name": "qwen3-coder-480b-a35b-instruct-int4-mixed-ar",
-      "task_size": "large",
       "context_window_tokens": 106000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -727,7 +685,6 @@
     },
     {
       "name": "qwen3-next-80b-a3b-instruct",
-      "task_size": "small",
       "context_window_tokens": 262000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -741,7 +698,6 @@
     },
     {
       "name": "deepseek-v4-pro",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -755,7 +711,6 @@
     },
     {
       "name": "deepseek-v4-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -769,7 +724,6 @@
     },
     {
       "name": "kimi-k2.7-code",
-      "task_size": "large",
       "context_window_tokens": 262144,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -788,7 +742,6 @@
     },
     {
       "name": "kimi-k2.6",
-      "task_size": "large",
       "context_window_tokens": 262144,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -807,7 +760,6 @@
     },
     {
       "name": "kimi-k2.5",
-      "task_size": "large",
       "context_window_tokens": 262144,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -826,7 +778,6 @@
     },
     {
       "name": "glm-5.2",
-      "task_size": "large",
       "context_window_tokens": 1048000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -843,7 +794,6 @@
     },
     {
       "name": "glm-5.1",
-      "task_size": "large",
       "context_window_tokens": 202000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -860,7 +810,6 @@
     },
     {
       "name": "glm-5",
-      "task_size": "large",
       "context_window_tokens": 202000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -877,7 +826,6 @@
     },
     {
       "name": "minimax-m3",
-      "task_size": "small",
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -890,7 +838,6 @@
     },
     {
       "name": "minimax-m2.7",
-      "task_size": "small",
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -905,7 +852,6 @@
     },
     {
       "name": "minimax-m2.5",
-      "task_size": "small",
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -918,7 +864,6 @@
     },
     {
       "name": "grok-build-0.1",
-      "task_size": "small",
       "context_window_tokens": 256000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -932,7 +877,6 @@
     },
     {
       "name": "big-pickle",
-      "task_size": "large",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -945,7 +889,6 @@
     },
     {
       "name": "deepseek-v4-flash-free",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -958,7 +901,6 @@
     },
     {
       "name": "mimo-v2.5-free",
-      "task_size": "small",
       "context_window_tokens": 200000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -971,7 +913,6 @@
     },
     {
       "name": "hy3-free",
-      "task_size": "small",
       "context_window_tokens": 200000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -984,7 +925,6 @@
     },
     {
       "name": "nemotron-3-ultra-free",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,
@@ -997,7 +937,6 @@
     },
     {
       "name": "north-mini-code-free",
-      "task_size": "small",
       "context_window_tokens": 200000,
       "max_output_tokens": 8192,
       "recommended_temperature": 1.0,

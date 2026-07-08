@@ -8,7 +8,6 @@
   "models": [
     {
       "name": "deepseek-v4-pro",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -16,7 +15,6 @@
     },
     {
       "name": "deepseek-v4-flash",
-      "task_size": "small",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -24,7 +22,6 @@
     },
     {
       "name": "deepseek-chat",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -32,7 +29,6 @@
     },
     {
       "name": "deepseek-reasoner",
-      "task_size": "large",
       "context_window_tokens": 1000000,
       "max_output_tokens": 384000,
       "recommended_temperature": 1.0,
@@ -40,7 +36,6 @@
     },
     {
       "name": "deepseek-coder",
-      "task_size": "large",
       "context_window_tokens": 16384,
       "max_output_tokens": 4096,
       "recommended_temperature": 0.6,
@@ -48,7 +43,6 @@
     },
     {
       "name": "deepseek-coder-v2",
-      "task_size": "large",
       "context_window_tokens": 128000,
       "max_output_tokens": 8192,
       "recommended_temperature": 0.6,
@@ -56,7 +50,6 @@
     },
     {
       "name": "deepseek-coder-v2-lite",
-      "task_size": "small",
       "context_window_tokens": 128000,
       "max_output_tokens": 8192,
       "recommended_temperature": 0.6,
@@ -64,7 +57,6 @@
     },
     {
       "name": "deepseek-v3",
-      "task_size": "large",
       "context_window_tokens": 131072,
       "max_output_tokens": 16384,
       "recommended_temperature": 1.0,
@@ -72,7 +64,6 @@
     },
     {
       "name": "deepseek-v3.1",
-      "task_size": "large",
       "context_window_tokens": 131072,
       "max_output_tokens": 65536,
       "recommended_temperature": 0.6,
@@ -80,7 +71,6 @@
     },
     {
       "name": "deepseek-v3.2",
-      "task_size": "large",
       "context_window_tokens": 131072,
       "max_output_tokens": 65536,
       "recommended_temperature": 1.0,
@@ -88,7 +78,6 @@
     },
     {
       "name": "deepseek-r1",
-      "task_size": "large",
       "context_window_tokens": 131072,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.6,

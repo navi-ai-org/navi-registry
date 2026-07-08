@@ -1,140 +1,140 @@
 {
-  "version": 9,
-  "updated_at": "2026-07-07T20:50:01Z",
+  "version": 11,
+  "updated_at": "2026-07-08T23:04:11Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
-      "sha256": "3a2fd42011b607102d9e73d529ab3d8868041bdd9ebbedde8f7aab103e6767c7",
+      "sha256": "f15962197afa6b899bcd89f21b32f850a45aa25a6c63962e69b6d04fc437379a",
       "model_count": 16
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
-      "sha256": "a21987a42e21690b9cb7e4f84650294a11511dec5f375391e36f596f79d0d9a7",
+      "sha256": "86ce0ebc617c0ff29991f07357836bac8e1358d9e595f18095a03dd2ca51013b",
       "model_count": 20
     },
     "commandcode": {
       "file": "providers/commandcode.json",
-      "sha256": "463efcc5dfaee7a0bd53df225d56f5aedf02b2cfc859977d1690834dc4475dd1",
+      "sha256": "cf4fffbc94c0a2bd1f1f459568a68ff23e7d526c7b137b202edc03ee942d8812",
       "model_count": 30
     },
     "deepseek": {
       "file": "providers/deepseek.json",
-      "sha256": "996f3961879a3a6ec086586f52c565a3a24de2ab38683fc1719a397c95bd175b",
+      "sha256": "a93067ee8d93ca3128abd5a75a97bd258e193d5e5788aa21c921b50527286bcc",
       "model_count": 11
     },
     "github-copilot": {
       "file": "providers/github-copilot.json",
-      "sha256": "f2eb16d346b6e66ed157223e2af96f0f8205234fdabef480db2886aae544ac20",
+      "sha256": "b968d02ba7fe87cebd35d0df8326c50a7d045716ec823fc61b76c3c2d6dd46c6",
       "model_count": 5
     },
     "gitlawb": {
       "file": "providers/gitlawb.json",
-      "sha256": "134889bb5841baadba21c3fa759e9f641c31cfcbbade9f3f2e49ffaab50c3ee3",
+      "sha256": "6fb2041a762a178da4ae19bfd6033ec258f3a3d94a1588473e529f333b73ef06",
       "model_count": 9
     },
     "google-gemini": {
       "file": "providers/google-gemini.json",
-      "sha256": "0aeae8dadb6f0d7cd4bdb7300e4330b1bd40c80907285071e4e44a5ed9e4346e",
+      "sha256": "f69e14ccc1777892def14d5592f59857ff53da3f714ff3010fb354f9c3664266",
       "model_count": 13
     },
     "groq": {
       "file": "providers/groq.json",
-      "sha256": "d6e04efe6ba2b3cb2b8df8c9fde6bd4fc0faaf356ca9cf082fd7a24b3520e716",
+      "sha256": "7d42979c18a8800425a6dc6b9be09110ad2406cc732977ea1efc133de45304aa",
       "model_count": 12
     },
     "llamacpp": {
       "file": "providers/llamacpp.json",
-      "sha256": "fe751d3564d259c669f6dd5573518e76a5c61afad089ee63a78519eca1ccccfa",
+      "sha256": "fbcf50465f7ea38fa989ac3a71cc3309189934a4b9477eccb7a5ec78b94effad",
       "model_count": 8
     },
     "lmstudio": {
       "file": "providers/lmstudio.json",
-      "sha256": "a7bd18bb610187d5cfdf8f8a764c02b84f52fad95b22717204a2c88cb6b98f02",
+      "sha256": "124aafa1fed34277f4acf232941ccd3244d7b083ec030dcc8563c9d81e67e338",
       "model_count": 9
     },
     "mimo-anthropic-ams": {
       "file": "providers/mimo-anthropic-ams.json",
-      "sha256": "f89b230e51fc0a9fb24bab6b040f8aac1d9cddc5b3d52e71a7b4c7bdcae8784f",
+      "sha256": "f859b4ff669220db98f16ac1de4b20c615d835243d7ff06ff396f0e6fe3b9199",
       "model_count": 5
     },
     "mimo-anthropic-cn": {
       "file": "providers/mimo-anthropic-cn.json",
-      "sha256": "0049d358dcf7acd8e4617e7c0d6f03083bd248912e5bfec896adad890659cd01",
+      "sha256": "d4cb07c6b2e9a6e3117a64a106c913c556dda951cbd65e29adfe14118da5a0cc",
       "model_count": 5
     },
     "mimo-anthropic-sgp": {
       "file": "providers/mimo-anthropic-sgp.json",
-      "sha256": "362200bb6c525f5d4125328d618e141026436ebbcad40726b809dbc844e3e3dc",
+      "sha256": "fc3e077501a0ffcc1b62c9dc462ecf776d185aca5eb317a795968738a16af107",
       "model_count": 5
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "51dacb6bbf2bba4b7e5ac6bbd108d3414d5ddcc719f277f598bf10729d8abd33",
+      "sha256": "0e6886f713ede0017bd030cc0f85318a1b0bd69b2a945bce50d87dc28ac062cc",
       "model_count": 14
     },
     "mistral": {
       "file": "providers/mistral.json",
-      "sha256": "ea884b44fc2825a2acb477756295f72660f48218d9cc8c5c20e25a98a62d0c0d",
+      "sha256": "8a561a6ea8181fc8a8413ea2e489b913975182ce8f310f83ee9b9b354bbf0012",
       "model_count": 27
     },
     "moonshot": {
       "file": "providers/moonshot.json",
-      "sha256": "1cb76746eef7e0c922c8f56ce106d45a16e57421f45e2ef1435ff8ea0f142681",
+      "sha256": "e89a3eb1db8375cc822f89ce76255c4789f17bc983dd31c3fd25f4c72cc3624a",
       "model_count": 11
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "93e69ed90b39e0fa9e01aa9a1a943fea529a0c5bf8a28682de175657eee0cf75",
+      "sha256": "2a82fcc454ea866ca97c05ecc36d4dd46be455eaa6e7b3b4b263f3e98ed6c133",
       "model_count": 10
     },
     "ollama": {
       "file": "providers/ollama.json",
-      "sha256": "23e899ed54f312d20c3a65eaea344ff361bd2d7fcb260d0a2320ac382166a5f9",
+      "sha256": "5df3e233c26abc2ac54ceee396580e127c83550534531590a5882b4d170473a2",
       "model_count": 19
     },
     "openai": {
       "file": "providers/openai.json",
-      "sha256": "d17094b6a6f152bfe0af67592806e369c3a9dfeb8cc9099b61450f32ddc72a9a",
+      "sha256": "8a75793f7725b76c2031d49dd96da20e60faced167506c33ca2ffa583c20417c",
       "model_count": 28
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "fe65ab2c6e6e5e6b8eed84e99474c7d8e5bcfa469ef5e7ceb17295ebf737c324",
+      "sha256": "86fa7d12038dcda27a09459e51c278ac338a3ec070feea31c46f21f4cc87720c",
       "model_count": 61
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "b4a05f3c5f1bb6f7693ba90789114c019f65afd749ab2a276039f9bfc815dfa7",
+      "sha256": "e41386a134cadbc53a8ae0d962c7da9035de8be4ff081e4cb282be84d6e79bfb",
       "model_count": 6
     },
     "openrouter": {
       "file": "providers/openrouter.json",
-      "sha256": "f66de9856b9725022024760910d38fa0ec535778811ca992359aedd404bb73fa",
+      "sha256": "9be71675ab97c43856a7939289fa6ba0f898f16cdbb36b3ac2a12366f8ff12ba",
       "model_count": 21
     },
     "stepfun": {
       "file": "providers/stepfun.json",
-      "sha256": "b366ccc86900d2d0d4c858f3e0623ed8c6f59656292eb08e774aec4b573f4ed1",
+      "sha256": "ed88a3aa58b724fa81a383be96f9e073eb8c3608e26a88ed1361e7bba2d4e8a1",
       "model_count": 10
     },
     "xai": {
       "file": "providers/xai.json",
-      "sha256": "a04a2d99675f5073838377e6d682d926cc50a3cdf002b20ca1ddb8e989cf5335",
+      "sha256": "4dca070f2ddee0fb52d2262bca894610eee9df201df01a27618c2a5735bad2d3",
       "model_count": 12
     },
     "xiaomi": {
       "file": "providers/xiaomi.json",
-      "sha256": "e8468c95378b5d474434a316110d60348176485b71d0d96e21c316a157f99696",
+      "sha256": "2b005dd4048e322dadff733c35549441c22c90d2a35f40e021b72bddaf80aa61",
       "model_count": 5
     },
     "zai": {
       "file": "providers/zai.json",
-      "sha256": "70f20e2b2e5eaa1c43a5587730828aa2868d97a72c8c196932e771d2b68926e4",
+      "sha256": "1bb981544171bc8cc89e31f146b429c399587e14533b45b56bea3e9f10c9ad51",
       "model_count": 15
     },
     "zai-coding": {
       "file": "providers/zai-coding.json",
-      "sha256": "81696d1a27ffcd4c1bf822de890cdcf20f0f16946f1fbc601c47af6736c124b9",
+      "sha256": "b10405ae27327dd54d5e673898b9dfd59fc0b2c4c1fd1f2f44cdcce1a0a82d41",
       "model_count": 3
     }
   }

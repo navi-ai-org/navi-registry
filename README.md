@@ -29,7 +29,6 @@ Embedded snapshot (offline)  →  SQLite cache  →  Remote pull (this repo)
   "models": [
     {
       "name": "my-model",
-      "task_size": "large",
       "context_window_tokens": 128000
     }
   ]
@@ -62,7 +61,6 @@ Use `attachments` to describe which attachment modalities a model accepts direct
   "models": [
     {
       "name": "some-vision-model",
-      "task_size": "large",
       "attachments": {
         "images": true
       }

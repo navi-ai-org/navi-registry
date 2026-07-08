@@ -20,7 +20,6 @@ VALID_KINDS = {
     "anthropic-messages",
     "gemini-generate-content",
 }
-VALID_TASK_SIZES = {"small", "large"}
 VALID_TOOL_CALLING_MODES = {"native", "text-extracted", "manifest-only", "disabled"}
 
 
@@ -63,7 +62,7 @@ def validate_provider(data: dict, filename: str) -> None:
     known_keys = {
         "id", "label", "description", "kind", "api_key_env", "base_url",
         "tool_calling_mode", "default_large_model", "default_small_model",
-        "request_options", "defaults", "models",
+        "request_options", "defaults", "models", "aggregator",
     }
     unknown = set(data.keys()) - known_keys
     if unknown:
@@ -97,6 +96,7 @@ def validate_provider(data: dict, filename: str) -> None:
     check_type(data.get("default_large_model"), str, "default_large_model")
     check_type(data.get("default_small_model"), str, "default_small_model")
     check_type(data.get("request_options"), dict, "request_options")
+    check_type(data.get("aggregator"), bool, "aggregator")
     check_type(data.get("defaults"), dict, "defaults")
     defaults = data.get("defaults") or {}
     unknown_defaults = set(defaults.keys()) - {"attachments"}
@@ -111,10 +111,10 @@ def validate_provider(data: dict, filename: str) -> None:
     for i, model in enumerate(models):
         if not isinstance(model, dict):
             raise ValidationError(f"models[{i}]: must be an object")
-        require_keys(model, {"name", "task_size"}, f"{pid}/models[{i}]")
+        require_keys(model, {"name"}, f"{pid}/models[{i}]")
 
         known_model_keys = {
-            "name", "label", "task_size", "context_window_tokens",
+            "name", "label", "context_window_tokens",
             "max_output_tokens", "recommended_temperature", "supports_thinking",
             "supports_attachments", "supports_images", "supports_audio",
             "supports_video", "supports_documents", "attachments",
@@ -127,12 +127,6 @@ def validate_provider(data: dict, filename: str) -> None:
             )
 
         check_type(model["name"], str, f"models[{i}].name")
-        check_type(model["task_size"], str, f"models[{i}].task_size")
-        if model["task_size"] not in VALID_TASK_SIZES:
-            raise ValidationError(
-                f"models[{i}].task_size: '{model['task_size']}' is not valid. "
-                f"Must be one of {sorted(VALID_TASK_SIZES)}"
-            )
 
         check_type(model.get("label"), str, f"models[{i}].label")
         check_type(model.get("context_window_tokens"), int, f"models[{i}].context_window_tokens")

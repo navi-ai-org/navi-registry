@@ -70,6 +70,10 @@
       "type": "array",
       "minItems": 1,
       "items": { "$ref": "#/$defs/model" }
+    },
+    "aggregator": {
+      "type": "boolean",
+      "description": "Whether this provider is an aggregator that exposes a models API (optional)"
     }
   },
   "$defs": {
@@ -97,7 +101,7 @@
     },
     "model": {
       "type": "object",
-      "required": ["name", "task_size"],
+      "required": ["name"],
       "additionalProperties": false,
       "properties": {
         "name": {
@@ -108,11 +112,6 @@
         "label": {
           "type": "string",
           "description": "Human-readable model name (optional)"
-        },
-        "task_size": {
-          "type": "string",
-          "enum": ["small", "large"],
-          "description": "Harness routing size"
         },
         "context_window_tokens": {
           "type": "integer",
