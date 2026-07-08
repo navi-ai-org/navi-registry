@@ -136,6 +136,57 @@ def validate_provider(data: dict, filename: str) -> None:
 
         check_type(model.get("label"), str, f"models[{i}].label")
         check_type(model.get("context_window_tokens"), int, f"models[{i}].context_window_tokens")
+
+        # Warn on suspicious context_window_tokens values.
+        # 200000 is the most commonly invented default — it's Claude's real
+        # context window, but agents copy it to other models incorrectly.
+        ctx = model.get("context_window_tokens")
+        if ctx == 200000:
+            model_name = model.get("name", "?")
+            # Known models that genuinely have 200k context — won't warn for these.
+            KNOWN_200K = {
+                # Anthropic Claude family (200k is correct for all Claude 3/3.5/4 models)
+                "claude-opus-4", "claude-opus-4-1", "claude-opus-4-5",
+                "claude-opus-4-6", "claude-opus-4-7", "claude-opus-4-8",
+                "claude-sonnet-4", "claude-sonnet-4-5", "claude-sonnet-4-6",
+                "claude-sonnet-5", "claude-haiku-4-5", "claude-fable-5",
+                "claude-3-5-sonnet", "claude-3-5-haiku", "claude-3-opus",
+                "claude-3-sonnet", "claude-3-haiku", "claude-3.5-sonnet",
+                "claude-3.5-haiku", "claude-3.7-sonnet",
+                # OpenAI o-series (200k is correct for o1/o3)
+                "o1", "o1-pro", "o1-mini", "o3", "o3-pro", "o3-mini", "o4-mini",
+                # Charm Hyper / GLM
+                "GLM-5", "GLM-5.1",
+                # GitHub Copilot
+                "gpt-5.1-codex", "gpt-5.1", "gpt-5-mini",
+                # CommandCode / ZAI
+                "zai-org/GLM-5", "zai-org/GLM-5.1",
+                "MiniMaxAI/MiniMax-M2.7", "MiniMaxAI/MiniMax-M2.5",
+                "Qwen/Qwen3.6-Max-Preview", "Qwen/Qwen3.6-Plus",
+                # MiniMax abab6.5
+                "abab6.5-chat", "abab6.5g-chat", "abab6.5s-chat", "abab6.5t-chat",
+                # OpenCode free models
+                "big-pickle", "mimo-v2.5-free", "hy3-free", "north-mini-code-free",
+                # Anthropic dated versions
+                "claude-opus-4-1-20250805", "claude-opus-4-20250514",
+                "claude-sonnet-4-20250514", "claude-haiku-4",
+                "claude-3-7-sonnet-20250219",
+                "claude-3-5-sonnet-20241022", "claude-3-5-sonnet-20240620",
+                "claude-3-5-haiku-20241022",
+                "claude-3-opus-20240229", "claude-3-sonnet-20240229",
+                "claude-3-haiku-20240307",
+                # CommandCode dated versions
+                "claude-haiku-4-5-20251001", "claude-sonnet-4.5",
+                "claude-haiku-4.5", "gpt-5.5",
+            }
+            if model_name not in KNOWN_200K:
+                print(
+                    f"  WARN  {pid}/models[{i}] ({model_name}): "
+                    f"context_window_tokens=200000 — verify this is correct "
+                    f"and not an invented default. See AGENTS.md § Model Data Integrity.",
+                    file=sys.stderr,
+                )
+
         check_type(model.get("max_output_tokens"), int, f"models[{i}].max_output_tokens")
         check_type(model.get("recommended_temperature"), (int, float),
                    f"models[{i}].recommended_temperature")

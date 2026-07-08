@@ -119,3 +119,103 @@ Match the style of nearby entries within the same file. There is no enforced for
 - No test suite, no CI workflows, no linter, no Makefile.
 - No `jsonschema` dependency despite the README — the validator is self-contained.
 - No code that imports or executes the provider JSON; NAVI (a separate repo/binary) is the consumer.
+
+## Model Data Integrity Rules
+
+**This section is mandatory.** Any agent adding or editing model entries MUST follow these rules. The validator (`scripts/validate.py`) enforces some of them at runtime.
+
+### The Problem
+
+Agents have been inventing `context_window_tokens` values — typically defaulting to `200000` when they don't know the real value. This is **forbidden**. An incorrect context window misleads users and the NAVI harness into thinking a model has more or less capacity than it actually does.
+
+### State Machine for Model Metadata
+
+Every model entry MUST go through this pipeline before it can be committed. No skipping steps.
+
+#### State 1: `research`
+
+For each model field that should have a value (`context_window_tokens`, `max_output_tokens`, `recommended_temperature`, `supports_thinking`, `pricing`, attachment capabilities):
+
+1. **Search the web** for the official provider documentation, model card, or API docs.
+2. Find the exact value from a **primary source** (the provider's own website, HuggingFace model card, or official API docs).
+3. Record the source URL and the exact value found.
+4. If no primary source exists, search for the model name on the provider's `/models` API endpoint or community-verified sources (e.g. OpenRouter model pages).
+5. If no source can be found after diligent search, proceed to State 2.
+
+**Sources that are NOT acceptable:**
+- Other registry repos (e.g. LiteLLM, OpenRouter's internal JSON) unless they cite a primary source
+- AI-generated guesses or "common knowledge"
+- Defaulting to a round number like 200000 because "it's probably fine"
+
+#### State 2: `null_if_unknown`
+
+If you could not find a verified value:
+
+- Set the field to `null` (omit it from JSON — the schema allows missing optional fields).
+- **Do NOT invent a value.** A missing field is always better than a wrong field.
+- NAVI falls back to a conservative default at runtime when `context_window_tokens` is missing.
+
+```json
+// CORRECT — omit when unknown
+{ "name": "mystery-model", "task_size": "small" }
+
+// WRONG — invented value
+{ "name": "mystery-model", "task_size": "small", "context_window_tokens": 200000 }
+```
+
+#### State 3: `populate`
+
+Only fill in a field if you found a verified value from a primary source in State 1.
+
+- `context_window_tokens`: exact integer from the provider's documentation (e.g. `128000`, `1048576`, `200000`). Never round or approximate.
+- `max_output_tokens`: exact integer from the provider's documentation.
+- `recommended_temperature`: from the provider's recommended value, not a guess.
+- `supports_thinking`: `true` only if the provider explicitly documents reasoning/thinking support.
+- `pricing`: from the provider's pricing page. Use `input_per_1m` and `output_per_1m` as exact numbers.
+- `attachments`: `true` only if the provider's docs explicitly mention image/audio/video/document support.
+
+#### State 4: `verify`
+
+Before committing, run the validator:
+
+```bash
+python scripts/validate.py
+```
+
+The validator will **warn** (not error) if `context_window_tokens` is exactly `200000`. This is a flag for human review — it's not always wrong (some Claude models genuinely have 200k), but it's the most commonly invented value, so it gets extra scrutiny.
+
+Review every warning. If the value is correct, the warning can be ignored. If the value was invented, fix it or remove it.
+
+### Forbidden Practices
+
+| Practice | Why it's wrong |
+|---|---|
+| Defaulting `context_window_tokens` to `200000` | 200000 is not a universal default — it's Claude's context window. Other models have wildly different values. |
+| Copying values from a different model | Each model has its own context window. Even models in the same family can differ. |
+| Using "common knowledge" without a source | "Common knowledge" is often wrong or outdated. Always verify. |
+| Rounding approximate values | `128K` should be `128000`, not `131072` (which is 128 KiB). Use the exact number the provider documents. |
+| Filling all optional fields just because they exist | Empty is better than wrong. Only fill what you can verify. |
+
+### Checklist for Adding or Updating a Model
+
+Before committing a model entry, verify each item:
+
+- [ ] `name` — exact model name as returned by the provider's `/models` API
+- [ ] `task_size` — `"small"` for fast/cheap models, `"large"` for flagship/heavy (harness routing hint)
+- [ ] `context_window_tokens` — verified from provider docs, or omitted if unknown
+- [ ] `max_output_tokens` — verified from provider docs, or omitted if unknown
+- [ ] `recommended_temperature` — verified from provider docs, or omitted if unknown
+- [ ] `supports_thinking` — `true` only if provider docs mention reasoning/thinking
+- [ ] `pricing` — verified from provider's pricing page, or omitted if unknown
+- [ ] `attachments` — `true` only if provider docs mention the modality
+- [ ] Validator passes with no unexpected warnings
+- [ ] `manifest.json` regenerated via `python scripts/validate.py`
+
+### Aggregator Providers (OpenRouter, charm-hyper)
+
+Aggregator providers that expose a `/models` API endpoint get their model lists synced dynamically by NAVI at runtime. The JSON in this repo serves as the **fallback/base** set. For aggregator providers:
+
+- Include only the most important models in the JSON (5-20 entries)
+- Focus on models that need metadata the API doesn't return (e.g. pricing, attachment support)
+- Models returned by the API at runtime are merged with these entries
+- Do NOT try to list all 300+ OpenRouter models — NAVI fetches them dynamically
