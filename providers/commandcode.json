@@ -146,7 +146,11 @@
     {
       "name": "MiniMaxAI/MiniMax-M3",
       "context_window_tokens": 1000000,
-      "supports_thinking": true
+      "supports_thinking": true,
+      "supports_images": true,
+      "attachments": {
+        "images": true
+      }
     },
     {
       "name": "deepseek/deepseek-v4-pro",
@@ -233,7 +237,8 @@
         "input_per_1m": 0.435,
         "output_per_1m": 0.87,
         "currency": "USD"
-      }
+      },
+      "supports_images": true
     },
     {
       "name": "xiaomi/mimo-v2.5",

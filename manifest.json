@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "updated_at": "2026-07-08T23:04:11Z",
+  "version": 13,
+  "updated_at": "2026-07-09T06:13:59Z",
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
@@ -14,7 +14,7 @@
     },
     "commandcode": {
       "file": "providers/commandcode.json",
-      "sha256": "cf4fffbc94c0a2bd1f1f459568a68ff23e7d526c7b137b202edc03ee942d8812",
+      "sha256": "cf2fe89141ff4285ab7bd7318a9b66a68ac25d8604c231af4a6d838ba76a61f8",
       "model_count": 30
     },
     "deepseek": {
@@ -29,7 +29,7 @@
     },
     "gitlawb": {
       "file": "providers/gitlawb.json",
-      "sha256": "6fb2041a762a178da4ae19bfd6033ec258f3a3d94a1588473e529f333b73ef06",
+      "sha256": "626f1cae78bdbec800abfe1857daba3e0d35b24c3624cdb6bd5f669c0582fd6d",
       "model_count": 9
     },
     "google-gemini": {
@@ -54,22 +54,22 @@
     },
     "mimo-anthropic-ams": {
       "file": "providers/mimo-anthropic-ams.json",
-      "sha256": "f859b4ff669220db98f16ac1de4b20c615d835243d7ff06ff396f0e6fe3b9199",
+      "sha256": "f5914e3e5b9283bfc3b82e0e980f526c787c101623b1d2956119f1421a94a076",
       "model_count": 5
     },
     "mimo-anthropic-cn": {
       "file": "providers/mimo-anthropic-cn.json",
-      "sha256": "d4cb07c6b2e9a6e3117a64a106c913c556dda951cbd65e29adfe14118da5a0cc",
+      "sha256": "23807bacc57d813b33bf129a466855738ce40bd20175f4d3e56db4b0c2761582",
       "model_count": 5
     },
     "mimo-anthropic-sgp": {
       "file": "providers/mimo-anthropic-sgp.json",
-      "sha256": "fc3e077501a0ffcc1b62c9dc462ecf776d185aca5eb317a795968738a16af107",
+      "sha256": "5ed568cc3155071953e9a64447be2ddf2c454b010a36e6fc1f0c6f789fdfbbbd",
       "model_count": 5
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "0e6886f713ede0017bd030cc0f85318a1b0bd69b2a945bce50d87dc28ac062cc",
+      "sha256": "3ebbc152ba964891d467f6a7b6cc1508bb9b2a7c4b20b8bce19293d90c9e813c",
       "model_count": 14
     },
     "mistral": {
@@ -84,7 +84,7 @@
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "2a82fcc454ea866ca97c05ecc36d4dd46be455eaa6e7b3b4b263f3e98ed6c133",
+      "sha256": "9090bf696c5228a060f25d091ec74c289b5d0f2ffbf030f4a52a66ee789b45c6",
       "model_count": 10
     },
     "ollama": {
@@ -99,7 +99,7 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "86fa7d12038dcda27a09459e51c278ac338a3ec070feea31c46f21f4cc87720c",
+      "sha256": "9ec7c10c1df12b247bec910c35cd1b212b899f595dd32d76bcbc939ec7b05a3d",
       "model_count": 61
     },
     "opencode-go": {
@@ -124,7 +124,7 @@
     },
     "xiaomi": {
       "file": "providers/xiaomi.json",
-      "sha256": "2b005dd4048e322dadff733c35549441c22c90d2a35f40e021b72bddaf80aa61",
+      "sha256": "64e2815378e01dcf16db5331f610aa4a1211b3d79048ed63913bde13a3972fba",
       "model_count": 5
     },
     "zai": {

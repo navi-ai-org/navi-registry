@@ -110,11 +110,11 @@
       "supports_video": true,
       "supports_documents": true
     },
-    "gemma2*": {},
-    "gemma3*": {
+    "gemma-4*": {
       "supports_images": true
     },
-    "gemma-4*": {
+    "gemma2*": {},
+    "gemma3*": {
       "supports_images": true
     },
     "glm-4.5": {},
@@ -213,8 +213,37 @@
       "supports_images": true,
       "supports_documents": true
     },
+    "mimo-v2.5-free": {
+      "supports_images": true,
+      "supports_documents": true
+    },
+    "mimo-v2.5-pro": {
+      "supports_images": true,
+      "supports_documents": true
+    },
     "minimax-m2*": {},
+    "minimax-m3": {
+      "supports_images": true
+    },
+    "MiniMax-M3": {
+      "supports_images": true
+    },
+    "minimax-m3*": {
+      "supports_images": true
+    },
     "minimax-text-01*": {},
+    "minimax/minimax-m3": {
+      "supports_images": true
+    },
+    "minimax/minimax-m3*": {
+      "supports_images": true
+    },
+    "MiniMaxAI/MiniMax-M3": {
+      "supports_images": true
+    },
+    "minimaxai/minimax-m3": {
+      "supports_images": true
+    },
     "mistral-saba*": {},
     "mistralai/codestral": {},
     "moonshotai/kimi-k2": {

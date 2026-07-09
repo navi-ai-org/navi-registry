@@ -74,7 +74,11 @@
       "context_window_tokens": 1048576,
       "max_output_tokens": 32768,
       "recommended_temperature": 0.7,
-      "supports_thinking": false
+      "supports_thinking": false,
+      "supports_images": true,
+      "attachments": {
+        "images": true
+      }
     }
   ]
 }

@@ -834,6 +834,10 @@
         "input_per_1m": 0.3,
         "output_per_1m": 1.2,
         "currency": "USD"
+      },
+      "supports_images": true,
+      "attachments": {
+        "images": true
       }
     },
     {
@@ -909,6 +913,11 @@
         "input_per_1m": 0.0,
         "output_per_1m": 0.0,
         "currency": "USD"
+      },
+      "supports_images": true,
+      "attachments": {
+        "images": true,
+        "documents": true
       }
     },
     {
