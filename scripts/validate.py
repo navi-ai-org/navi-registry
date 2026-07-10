@@ -12,6 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PROVIDERS_DIR = ROOT / "providers"
+TRANSCRIPTION_PROVIDERS_DIR = ROOT / "transcription-providers"
 MANIFEST_PATH = ROOT / "manifest.json"
 
 VALID_KINDS = {
@@ -19,6 +20,10 @@ VALID_KINDS = {
     "openai-chat-completions",
     "anthropic-messages",
     "gemini-generate-content",
+}
+VALID_TRANSCRIPTION_KINDS = {
+    "openai-audio-transcriptions",
+    "wispr-flow",
 }
 VALID_TOOL_CALLING_MODES = {"native", "text-extracted", "manifest-only", "disabled"}
 
@@ -223,6 +228,102 @@ def compute_sha256(path: Path) -> str:
     return h.hexdigest()
 
 
+def validate_transcription_provider(data: dict, filename: str) -> None:
+    """Validate a remote speech-to-text / dictation provider file."""
+    pid = data.get("id", filename)
+
+    require_keys(
+        data,
+        {"id", "label", "kind", "api_key_env", "base_url", "models"},
+        pid,
+    )
+
+    known_keys = {
+        "id",
+        "label",
+        "description",
+        "kind",
+        "api_key_env",
+        "base_url",
+        "transcription_path",
+        "default_model",
+        "supports_streaming",
+        "models",
+    }
+    unknown = set(data.keys()) - known_keys
+    if unknown:
+        raise ValidationError(f"unknown fields: {sorted(unknown)}")
+
+    check_type(data["id"], str, "id")
+    check_type(data["label"], str, "label")
+    check_type(data.get("description", ""), str, "description")
+    check_type(data["kind"], str, "kind")
+    check_type(data["api_key_env"], str, "api_key_env")
+    check_type(data["base_url"], str, "base_url")
+
+    if data["kind"] not in VALID_TRANSCRIPTION_KINDS:
+        raise ValidationError(
+            f"kind: '{data['kind']}' is not valid. "
+            f"Must be one of {sorted(VALID_TRANSCRIPTION_KINDS)}"
+        )
+
+    check_type(data.get("transcription_path"), str, "transcription_path")
+    check_type(data.get("default_model"), str, "default_model")
+    check_type(data.get("supports_streaming"), bool, "supports_streaming")
+
+    models = data["models"]
+    if not isinstance(models, list) or len(models) == 0:
+        raise ValidationError("models: must be a non-empty array")
+
+    for i, model in enumerate(models):
+        if not isinstance(model, dict):
+            raise ValidationError(f"models[{i}]: must be an object")
+        require_keys(model, {"name"}, f"{pid}/models[{i}]")
+
+        known_model_keys = {
+            "name",
+            "label",
+            "description",
+            "languages",
+            "sample_rate_hz",
+            "max_duration_seconds",
+            "max_file_bytes",
+            "pricing",
+        }
+        unknown_m = set(model.keys()) - known_model_keys
+        if unknown_m:
+            raise ValidationError(
+                f"models[{i}] ({model.get('name', '?')}): unknown fields: {sorted(unknown_m)}"
+            )
+
+        check_type(model["name"], str, f"models[{i}].name")
+        check_type(model.get("label"), str, f"models[{i}].label")
+        check_type(model.get("description"), str, f"models[{i}].description")
+        check_type(model.get("languages"), list, f"models[{i}].languages")
+        check_type(model.get("sample_rate_hz"), int, f"models[{i}].sample_rate_hz")
+        check_type(
+            model.get("max_duration_seconds"), int, f"models[{i}].max_duration_seconds"
+        )
+        check_type(model.get("max_file_bytes"), int, f"models[{i}].max_file_bytes")
+
+        pricing = model.get("pricing")
+        if pricing is not None:
+            if not isinstance(pricing, dict):
+                raise ValidationError(f"models[{i}].pricing: must be an object")
+            known_pricing_keys = {"per_minute", "currency"}
+            unknown_p = set(pricing.keys()) - known_pricing_keys
+            if unknown_p:
+                raise ValidationError(
+                    f"models[{i}].pricing: unknown fields: {sorted(unknown_p)}"
+                )
+            check_type(
+                pricing.get("per_minute"),
+                (int, float),
+                f"models[{i}].pricing.per_minute",
+            )
+            check_type(pricing.get("currency"), str, f"models[{i}].pricing.currency")
+
+
 def main() -> int:
     provider_files = sorted(PROVIDERS_DIR.glob("*.json"))
 
@@ -234,6 +335,7 @@ def main() -> int:
     total_models = 0
     errors = 0
 
+    print("LLM providers:")
     for pf in provider_files:
         try:
             with open(pf) as f:
@@ -257,11 +359,42 @@ def main() -> int:
             print(f"  FAIL {pf.name}: {e}", file=sys.stderr)
             errors += 1
 
+    transcription_entries = {}
+    transcription_models = 0
+    transcription_files = sorted(TRANSCRIPTION_PROVIDERS_DIR.glob("*.json")) if TRANSCRIPTION_PROVIDERS_DIR.is_dir() else []
+
+    print("\nTranscription providers:")
+    if not transcription_files:
+        print("  (none)")
+    for pf in transcription_files:
+        try:
+            with open(pf) as f:
+                data = json.load(f)
+            validate_transcription_provider(data, pf.name)
+            pid = data["id"]
+            model_count = len(data.get("models", []))
+            transcription_models += model_count
+            sha = compute_sha256(pf)
+            if pid in transcription_entries:
+                print(f"  FAIL duplicate id '{pid}' in {pf.name}", file=sys.stderr)
+                errors += 1
+                continue
+            transcription_entries[pid] = {
+                "file": f"transcription-providers/{pf.name}",
+                "sha256": sha,
+                "model_count": model_count,
+            }
+            print(f"  OK   {pid:30s}  models={model_count:3d}  sha256={sha[:12]}...")
+        except (ValidationError, json.JSONDecodeError, KeyError) as e:
+            print(f"  FAIL {pf.name}: {e}", file=sys.stderr)
+            errors += 1
+
     if errors:
         print(f"\n{errors} validation error(s)", file=sys.stderr)
         return 1
 
     new_providers = dict(sorted(entries.items()))
+    new_transcription = dict(sorted(transcription_entries.items()))
 
     # Preserve version if content is unchanged; bump if changed.
     version = 1
@@ -271,7 +404,8 @@ def main() -> int:
         with open(MANIFEST_PATH) as f:
             old = json.load(f)
         old_providers = old.get("providers", {})
-        if old_providers == new_providers:
+        old_transcription = old.get("transcription_providers", {})
+        if old_providers == new_providers and old_transcription == new_transcription:
             version = old.get("version", 1)
             now = old.get("updated_at", now)
         else:
@@ -281,14 +415,19 @@ def main() -> int:
         "version": version,
         "updated_at": now,
         "providers": new_providers,
+        "transcription_providers": new_transcription,
     }
 
     with open(MANIFEST_PATH, "w") as f:
         json.dump(manifest, f, indent=2)
         f.write("\n")
 
-    print(f"\nmanifest.json: version={version} "
-          f"providers={len(entries)} models={total_models}")
+    print(
+        f"\nmanifest.json: version={version} "
+        f"providers={len(entries)} models={total_models} "
+        f"transcription_providers={len(transcription_entries)} "
+        f"transcription_models={transcription_models}"
+    )
     return 0
 
 

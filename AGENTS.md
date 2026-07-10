@@ -9,11 +9,13 @@ A **data registry**, not a software project. It holds JSON definitions of LLM in
 ## Repository layout
 
 ```
-providers/*.json           One provider definition per file (27 providers, 332 models)
-schemas/provider.schema.json   JSON Schema for a provider file
-scripts/validate.py        Validator + manifest generator (pure Python, no deps)
-manifest.json              AUTO-GENERATED index — never hand-edit
-README.md                  User-facing docs
+providers/*.json                              LLM provider definitions
+transcription-providers/*.json                Remote STT / dictation providers
+schemas/provider.schema.json                  JSON Schema for LLM providers
+schemas/transcription-provider.schema.json    JSON Schema for STT providers
+scripts/validate.py                           Validator + manifest generator (pure Python, no deps)
+manifest.json                                 AUTO-GENERATED index — never hand-edit
+README.md                                     User-facing docs
 ```
 
 ## Essential command
@@ -58,13 +60,21 @@ Must match `^[a-z0-9][a-z0-9-]*$` — lowercase, hyphen-separated, alphanumeric.
 
 ### `kind` (protocol)
 
-One of exactly four values:
+One of exactly four values for **LLM** providers:
 | Kind | Protocol |
 |---|---|
 | `openai-responses` | OpenAI Responses API |
 | `openai-chat-completions` | OpenAI Chat Completions (most providers) |
 | `anthropic-messages` | Anthropic Messages API |
 | `gemini-generate-content` | Google Gemini Generate Content |
+
+**Transcription / dictation** providers live under `transcription-providers/` with their own kinds:
+| Kind | Protocol |
+|---|---|
+| `openai-audio-transcriptions` | OpenAI-compatible `POST /audio/transcriptions` (OpenAI Whisper, Groq Whisper) |
+| `wispr-flow` | Wispr Flow `POST /api` (base64 WAV) |
+
+Required STT fields: `id`, `label`, `kind`, `api_key_env`, `base_url`, `models`. Optional: `transcription_path`, `default_model`, `supports_streaming`, model `pricing.per_minute`.
 
 ### `api_key_env`
 
