@@ -2,5 +2,11 @@
   "id": "starcoder2",
   "vendor": "local",
   "context_window_tokens": 16000,
-  "status": "removed"
+  "status": "removed",
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  }
 }

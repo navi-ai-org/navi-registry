@@ -8,11 +8,20 @@
   "supports_thinking": true,
   "attachments": {
     "images": true,
-    "documents": true
+    "documents": true,
+    "audio": false,
+    "video": false
   },
   "reasoning_levels": [
     "low",
     "high"
   ],
-  "default_reasoning_effort": "high"
+  "default_reasoning_effort": "high",
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.x.ai/api/models",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
+  }
 }

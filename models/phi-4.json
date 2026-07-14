@@ -7,5 +7,18 @@
   "supports_thinking": false,
   "aliases": [
     "microsoft/phi-4"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://build.nvidia.com/microsoft/phi-4",
+      "verified_at": "2026-07-14",
+      "note": "from NVIDIA Build hosted models docs"
+    }
+  },
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  }
 }

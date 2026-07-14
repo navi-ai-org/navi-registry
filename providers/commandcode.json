@@ -90,7 +90,7 @@
       }
     },
     {
-      "ref": "MiniMax-M3",
+      "ref": "minimax-m3",
       "api_name": "MiniMaxAI/MiniMax-M3"
     },
     {
@@ -113,32 +113,32 @@
       }
     },
     {
-      "ref": "Kimi-K2.7-Code",
+      "ref": "kimi-k2.7-code",
       "api_name": "moonshotai/Kimi-K2.7-Code"
     },
     {
-      "ref": "Kimi-K2.6",
+      "ref": "kimi-k2.6",
       "api_name": "moonshotai/Kimi-K2.6"
     },
     {
-      "ref": "Kimi-K2.5",
+      "ref": "kimi-k2.5",
       "api_name": "moonshotai/Kimi-K2.5"
     },
     {
-      "ref": "GLM-5.1",
+      "ref": "glm-5.1",
       "api_name": "zai-org/GLM-5.1"
     },
     {
-      "ref": "GLM-5",
+      "ref": "glm-5",
       "api_name": "zai-org/GLM-5"
     },
     {
-      "ref": "MiniMax-M2.7",
+      "ref": "minimax-m2.7",
       "api_name": "MiniMaxAI/MiniMax-M2.7",
       "context_window_tokens": 200000
     },
     {
-      "ref": "MiniMax-M2.5",
+      "ref": "minimax-m2.5",
       "api_name": "MiniMaxAI/MiniMax-M2.5",
       "context_window_tokens": 200000
     },
@@ -163,27 +163,27 @@
       }
     },
     {
-      "ref": "Qwen3.6-Max-Preview",
+      "ref": "qwen3.6-max-preview",
       "api_name": "Qwen/Qwen3.6-Max-Preview"
     },
     {
-      "ref": "Qwen3.6-Plus",
+      "ref": "qwen3.6-plus",
       "api_name": "Qwen/Qwen3.6-Plus"
     },
     {
-      "ref": "Qwen3.7-Max",
+      "ref": "qwen3.7-max",
       "api_name": "Qwen/Qwen3.7-Max"
     },
     {
-      "ref": "Qwen3.7-Plus",
+      "ref": "qwen3.7-plus",
       "api_name": "Qwen/Qwen3.7-Plus"
     },
     {
-      "ref": "Step-3.7-Flash",
+      "ref": "step-3.7-flash",
       "api_name": "stepfun/Step-3.7-Flash"
     },
     {
-      "ref": "Step-3.5-Flash",
+      "ref": "step-3.5-flash",
       "api_name": "stepfun/Step-3.5-Flash"
     },
     {

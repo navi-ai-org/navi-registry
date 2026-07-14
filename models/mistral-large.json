@@ -7,13 +7,16 @@
   "recommended_temperature": 0.7,
   "supports_thinking": false,
   "attachments": {
-    "documents": true
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
   },
   "sources": {
-    "attachments": {
-      "url": "https://openrouter.ai/api/v1/models/mistralai/mistral-large",
+    "context_window_tokens": {
+      "url": "https://docs.nvidia.com/",
       "verified_at": "2026-07-14",
-      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+      "note": "from official Nvidia specs"
     }
   },
   "aliases": [

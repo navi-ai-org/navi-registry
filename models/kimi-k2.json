@@ -8,5 +8,18 @@
   "supports_thinking": false,
   "aliases": [
     "moonshotai/kimi-k2"
-  ]
+  ],
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.moonshot.cn/",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
+  }
 }

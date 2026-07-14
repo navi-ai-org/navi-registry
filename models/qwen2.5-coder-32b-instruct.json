@@ -8,5 +8,18 @@
   "supports_thinking": false,
   "aliases": [
     "qwen/qwen2.5-coder-32b-instruct"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://github.com/QwenLM/Qwen2.5-Coder",
+      "verified_at": "2026-07-14",
+      "note": "Official Qwen2.5-Coder repository."
+    }
+  },
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  }
 }

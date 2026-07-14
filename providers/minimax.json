@@ -15,34 +15,34 @@
   },
   "models": [
     {
-      "ref": "MiniMax-M3"
+      "ref": "minimax-m3"
     },
     {
-      "ref": "MiniMax-M2.7"
+      "ref": "minimax-m2.7"
     },
     {
-      "ref": "MiniMax-M2.7-highspeed"
+      "ref": "minimax-m2.7-highspeed"
     },
     {
-      "ref": "MiniMax-M2.5"
+      "ref": "minimax-m2.5"
     },
     {
-      "ref": "MiniMax-M2.5-highspeed"
+      "ref": "minimax-m2.5-highspeed"
     },
     {
-      "ref": "MiniMax-M2.1"
+      "ref": "minimax-m2.1"
     },
     {
-      "ref": "MiniMax-M2.1-highspeed"
+      "ref": "minimax-m2.1-highspeed"
     },
     {
-      "ref": "MiniMax-M2"
+      "ref": "minimax-m2"
     },
     {
-      "ref": "MiniMax-Text-01"
+      "ref": "minimax-text-01"
     },
     {
-      "ref": "MiniMax-Text-01-456B"
+      "ref": "minimax-text-01-456b"
     },
     {
       "ref": "abab6.5-chat"

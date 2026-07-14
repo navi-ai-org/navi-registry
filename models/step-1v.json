@@ -8,5 +8,12 @@
   "supports_thinking": false,
   "attachments": {
     "images": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.stepfun.com/",
+      "verified_at": "2026-07-14",
+      "note": "from official platform docs"
+    }
   }
 }

@@ -1,8 +1,0 @@
-{
-  "id": "MiniMax-Text-01-456B",
-  "vendor": "minimax",
-  "context_window_tokens": 1000000,
-  "max_output_tokens": 128000,
-  "recommended_temperature": 1.0,
-  "supports_thinking": false
-}

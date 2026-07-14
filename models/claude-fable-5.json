@@ -13,7 +13,20 @@
     "max_output_tokens": {
       "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5",
       "verified_at": "2026-07-14",
-      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+      "note": "from OpenRouter spec"
+    },
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5",
+      "verified_at": "2026-07-14",
+      "note": "from OpenRouter spec"
     }
-  }
+  },
+  "recommended_temperature": 1.0,
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+  ],
+  "default_reasoning_effort": "high"
 }

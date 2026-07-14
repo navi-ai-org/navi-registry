@@ -7,7 +7,19 @@
   "recommended_temperature": 1.0,
   "supports_thinking": false,
   "attachments": {
-    "images": true,
-    "documents": true
+    "images": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.anthropic.com/en/docs/about-claude/models",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
   }
 }

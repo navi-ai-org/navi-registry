@@ -7,7 +7,10 @@
   "recommended_temperature": 1.0,
   "supports_thinking": true,
   "attachments": {
-    "images": true
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
   },
   "reasoning_levels": [
     "low",
@@ -16,5 +19,12 @@
   "default_reasoning_effort": "high",
   "aliases": [
     "x-ai/grok-3"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.x.ai/api/models",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
+  }
 }

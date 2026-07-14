@@ -8,6 +8,15 @@
   "supports_thinking": false,
   "attachments": {
     "images": true,
-    "documents": true
+    "documents": true,
+    "audio": false,
+    "video": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://token-plan-sgp.xiaomimimo.com/anthropic",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
   }
 }

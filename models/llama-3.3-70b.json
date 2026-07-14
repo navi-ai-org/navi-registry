@@ -15,5 +15,12 @@
   "status": "removed",
   "aliases": [
     "meta-llama/llama-3.3-70b"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://github.com/meta-llama/llama-models/blob/main/models/llama3_3/MODEL_CARD.md",
+      "verified_at": "2026-07-14",
+      "note": "from Meta's official model card"
+    }
+  }
 }

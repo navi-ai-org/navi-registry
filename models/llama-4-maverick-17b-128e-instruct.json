@@ -7,10 +7,20 @@
   "recommended_temperature": 0.7,
   "supports_thinking": false,
   "attachments": {
-    "images": true
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
   },
   "status": "removed",
   "aliases": [
     "meta-llama/llama-4-maverick-17b-128e-instruct"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://github.com/meta-llama/llama-models",
+      "verified_at": "2026-07-14",
+      "note": "from official specifications"
+    }
+  }
 }

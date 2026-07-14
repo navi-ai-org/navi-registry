@@ -8,10 +8,19 @@
   "supports_thinking": false,
   "attachments": {
     "images": true,
-    "documents": true
+    "documents": true,
+    "audio": false,
+    "video": false
   },
   "status": "removed",
   "aliases": [
     "moonshotai/kimi-k2-instruct"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.moonshot.cn/",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
+  }
 }

@@ -14,5 +14,12 @@
   },
   "aliases": [
     "xiaomi/mimo-v2.5"
-  ]
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://token-plan-sgp.xiaomimimo.com/anthropic",
+      "verified_at": "2026-07-14",
+      "note": "from official docs"
+    }
+  }
 }

@@ -2,18 +2,21 @@
   "id": "codestral-2508",
   "vendor": "mistral",
   "family": "codestral",
-  "context_window_tokens": 128000,
+  "context_window_tokens": 256000,
   "max_output_tokens": 32768,
   "recommended_temperature": 0.0,
   "supports_thinking": false,
   "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
     "documents": true
   },
   "sources": {
-    "attachments": {
-      "url": "https://openrouter.ai/api/v1/models/mistralai/codestral-2508",
+    "context_window_tokens": {
+      "url": "https://docs.mistral.ai/getting-started/models/models_overview/",
       "verified_at": "2026-07-14",
-      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+      "note": "from official docs"
     }
   }
 }

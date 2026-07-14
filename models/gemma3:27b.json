@@ -5,5 +5,21 @@
   "attachments": {
     "images": true
   },
-  "status": "removed"
+  "status": "removed",
+  "family": "gemma",
+  "max_output_tokens": 8192,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "verified_at": "2026-07-14",
+      "note": "from official Hugging Face model card"
+    },
+    "max_output_tokens": {
+      "url": "https://huggingface.co/google/gemma-3-27b-it",
+      "verified_at": "2026-07-14",
+      "note": "from official Hugging Face model card"
+    }
+  }
 }

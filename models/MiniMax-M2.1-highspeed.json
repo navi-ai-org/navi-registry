@@ -1,8 +1,0 @@
-{
-  "id": "MiniMax-M2.1-highspeed",
-  "vendor": "minimax",
-  "context_window_tokens": 204800,
-  "max_output_tokens": 128000,
-  "recommended_temperature": 1.0,
-  "supports_thinking": true
-}
