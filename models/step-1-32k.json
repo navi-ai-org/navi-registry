@@ -1,0 +1,9 @@
+{
+  "id": "step-1-32k",
+  "vendor": "stepfun",
+  "family": "step",
+  "context_window_tokens": 32768,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 0.7,
+  "supports_thinking": false
+}

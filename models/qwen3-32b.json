@@ -1,0 +1,13 @@
+{
+  "id": "qwen3-32b",
+  "vendor": "groq",
+  "family": "qwen",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 0.6,
+  "supports_thinking": true,
+  "status": "removed",
+  "aliases": [
+    "qwen/qwen3-32b"
+  ]
+}

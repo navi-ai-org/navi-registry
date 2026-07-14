@@ -1,0 +1,7 @@
+{
+  "id": "deepseek-r1-distill-llama-8b",
+  "vendor": "local",
+  "family": "deepseek",
+  "context_window_tokens": 32000,
+  "supports_thinking": true
+}

@@ -1,0 +1,16 @@
+{
+  "id": "claude-sonnet-4",
+  "vendor": "anthropic",
+  "family": "claude",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 64000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "aliases": [
+    "anthropic/claude-sonnet-4"
+  ]
+}

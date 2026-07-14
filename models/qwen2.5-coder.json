@@ -1,0 +1,7 @@
+{
+  "id": "qwen2.5-coder",
+  "vendor": "local",
+  "family": "qwen",
+  "context_window_tokens": 128000,
+  "status": "removed"
+}

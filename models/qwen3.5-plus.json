@@ -1,0 +1,9 @@
+{
+  "id": "qwen3.5-plus",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

@@ -1,0 +1,10 @@
+{
+  "id": "Qwen3.6-Plus",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 200000,
+  "supports_thinking": true,
+  "aliases": [
+    "Qwen/Qwen3.6-Plus"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "gpt-oss-120b",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false
+  },
+  "aliases": [
+    "openai/gpt-oss-120b"
+  ]
+}

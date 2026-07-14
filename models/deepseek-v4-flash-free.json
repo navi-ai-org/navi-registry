@@ -1,0 +1,9 @@
+{
+  "id": "deepseek-v4-flash-free",
+  "vendor": "aggregator",
+  "family": "deepseek",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

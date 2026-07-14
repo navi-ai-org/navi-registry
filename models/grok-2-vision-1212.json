@@ -1,0 +1,12 @@
+{
+  "id": "grok-2-vision-1212",
+  "vendor": "xai",
+  "family": "grok",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "id": "mistral",
+  "vendor": "local",
+  "family": "mistral",
+  "context_window_tokens": 32000,
+  "status": "removed"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "gemini-3.1-flash-lite",
+  "vendor": "aggregator",
+  "family": "gemini",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 65536,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": true,
+    "documents": true
+  },
+  "sources": {
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/google/gemini-3.1-flash-lite",
+      "verified_at": "2026-07-14",
+      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+    }
+  },
+  "aliases": [
+    "google/gemini-3.1-flash-lite"
+  ]
+}

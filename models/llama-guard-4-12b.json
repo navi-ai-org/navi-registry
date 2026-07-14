@@ -1,0 +1,16 @@
+{
+  "id": "llama-guard-4-12b",
+  "vendor": "groq",
+  "family": "llama",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 4096,
+  "recommended_temperature": 0.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true
+  },
+  "status": "removed",
+  "aliases": [
+    "meta-llama/llama-guard-4-12b"
+  ]
+}

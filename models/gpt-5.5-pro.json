@@ -1,0 +1,13 @@
+{
+  "id": "gpt-5.5-pro",
+  "vendor": "aggregator",
+  "family": "gpt",
+  "context_window_tokens": 272000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

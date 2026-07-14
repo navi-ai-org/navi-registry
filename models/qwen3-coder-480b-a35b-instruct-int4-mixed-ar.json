@@ -1,0 +1,9 @@
+{
+  "id": "qwen3-coder-480b-a35b-instruct-int4-mixed-ar",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 106000,
+  "max_output_tokens": 10600,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

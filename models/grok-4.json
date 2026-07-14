@@ -1,0 +1,21 @@
+{
+  "id": "grok-4",
+  "vendor": "xai",
+  "family": "grok",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "reasoning_levels": [
+    "low",
+    "high"
+  ],
+  "default_reasoning_effort": "high",
+  "aliases": [
+    "x-ai/grok-4"
+  ]
+}

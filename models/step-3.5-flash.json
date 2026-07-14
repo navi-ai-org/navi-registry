@@ -1,0 +1,9 @@
+{
+  "id": "step-3.5-flash",
+  "vendor": "stepfun",
+  "family": "step",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

@@ -1,0 +1,5 @@
+{
+  "id": "tinyllama",
+  "vendor": "local",
+  "context_window_tokens": 2048
+}

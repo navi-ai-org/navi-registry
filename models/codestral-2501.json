@@ -1,0 +1,9 @@
+{
+  "id": "codestral-2501",
+  "vendor": "mistral",
+  "family": "codestral",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 0.0,
+  "supports_thinking": false
+}

@@ -1,0 +1,6 @@
+{
+  "id": "llama3",
+  "vendor": "local",
+  "family": "llama",
+  "context_window_tokens": 128000
+}

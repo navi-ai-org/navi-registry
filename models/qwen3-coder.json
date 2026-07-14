@@ -1,0 +1,18 @@
+{
+  "id": "qwen3-coder",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3-coder"
+  ]
+}

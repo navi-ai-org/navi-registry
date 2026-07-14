@@ -1,0 +1,6 @@
+{
+  "id": "mistral-small-instruct",
+  "vendor": "local",
+  "family": "mistral",
+  "context_window_tokens": 32000
+}

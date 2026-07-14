@@ -1,0 +1,11 @@
+{
+  "id": "mixtral-8x7b-instruct",
+  "vendor": "nvidia",
+  "context_window_tokens": 32768,
+  "max_output_tokens": 4096,
+  "recommended_temperature": 0.7,
+  "supports_thinking": false,
+  "aliases": [
+    "mistralai/mixtral-8x7b-instruct"
+  ]
+}

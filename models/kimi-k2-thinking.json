@@ -1,0 +1,9 @@
+{
+  "id": "kimi-k2-thinking",
+  "vendor": "moonshot",
+  "family": "kimi",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

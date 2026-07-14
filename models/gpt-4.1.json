@@ -1,0 +1,23 @@
+{
+  "id": "gpt-4.1",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 1047576,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-4.1",
+      "verified_at": "2026-07-14",
+      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+    }
+  },
+  "aliases": [
+    "openai/gpt-4.1"
+  ]
+}

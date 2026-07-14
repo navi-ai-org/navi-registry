@@ -1,0 +1,18 @@
+{
+  "id": "gemma-4-26b-a4b",
+  "vendor": "aggregator",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "scripts/model_rules.json",
+      "verified_at": "2026-07-14",
+      "note": "matched model_rules entry for gemma-4-26b-a4b"
+    }
+  }
+}

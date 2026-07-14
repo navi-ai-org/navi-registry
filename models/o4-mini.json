@@ -1,0 +1,20 @@
+{
+  "id": "o4-mini",
+  "vendor": "openai",
+  "family": "o4",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 100000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/openai/o4-mini",
+      "verified_at": "2026-07-14",
+      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "codestral",
+  "vendor": "aggregator",
+  "family": "codestral",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "status": "removed",
+  "aliases": [
+    "mistralai/codestral"
+  ]
+}

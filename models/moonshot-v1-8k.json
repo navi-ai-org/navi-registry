@@ -1,0 +1,8 @@
+{
+  "id": "moonshot-v1-8k",
+  "vendor": "moonshot",
+  "context_window_tokens": 8192,
+  "max_output_tokens": 4096,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "nemotron-3-ultra-550b-a55b:free",
+  "vendor": "aggregator",
+  "family": "nemotron",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "aliases": [
+    "nvidia/nemotron-3-ultra-550b-a55b:free"
+  ]
+}

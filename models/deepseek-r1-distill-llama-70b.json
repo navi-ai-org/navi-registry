@@ -1,0 +1,10 @@
+{
+  "id": "deepseek-r1-distill-llama-70b",
+  "vendor": "groq",
+  "family": "deepseek",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 0.6,
+  "supports_thinking": true,
+  "status": "removed"
+}

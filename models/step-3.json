@@ -1,0 +1,9 @@
+{
+  "id": "step-3",
+  "vendor": "stepfun",
+  "family": "step",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "kimi-k2.7-code",
+  "vendor": "aggregator",
+  "family": "kimi",
+  "context_window_tokens": 262000,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  }
+}

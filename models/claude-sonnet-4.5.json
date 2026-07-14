@@ -1,0 +1,13 @@
+{
+  "id": "claude-sonnet-4.5",
+  "vendor": "github",
+  "family": "claude",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

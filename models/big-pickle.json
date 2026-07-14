@@ -1,0 +1,8 @@
+{
+  "id": "big-pickle",
+  "vendor": "aggregator",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

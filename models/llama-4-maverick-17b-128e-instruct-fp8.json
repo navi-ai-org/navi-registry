@@ -1,0 +1,19 @@
+{
+  "id": "llama-4-maverick-17b-128e-instruct-fp8",
+  "vendor": "aggregator",
+  "family": "llama",
+  "context_window_tokens": 430000,
+  "max_output_tokens": 43000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "scripts/model_rules.json",
+      "verified_at": "2026-07-14",
+      "note": "matched model_rules entry for llama-4-maverick-17b-128e-instruct-fp8"
+    }
+  }
+}

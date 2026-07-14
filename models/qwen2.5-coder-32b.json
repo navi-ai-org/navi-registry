@@ -1,0 +1,6 @@
+{
+  "id": "qwen2.5-coder-32b",
+  "vendor": "local",
+  "family": "qwen",
+  "context_window_tokens": 128000
+}

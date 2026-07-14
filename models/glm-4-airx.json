@@ -1,0 +1,9 @@
+{
+  "id": "glm-4-airx",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 4096,
+  "recommended_temperature": 0.9,
+  "supports_thinking": false
+}

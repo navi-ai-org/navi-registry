@@ -1,0 +1,17 @@
+{
+  "id": "hy3",
+  "vendor": "aggregator",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": true,
+    "documents": true
+  },
+  "aliases": [
+    "tencent/hy3"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "gpt-4.5-preview",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "scripts/model_rules.json",
+      "verified_at": "2026-07-14",
+      "note": "matched model_rules entry for gpt-4.5-preview"
+    }
+  }
+}

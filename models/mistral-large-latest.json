@@ -1,0 +1,9 @@
+{
+  "id": "mistral-large-latest",
+  "vendor": "mistral",
+  "family": "mistral",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 0.7,
+  "supports_thinking": false
+}

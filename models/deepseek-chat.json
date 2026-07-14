@@ -1,0 +1,12 @@
+{
+  "id": "deepseek-chat",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 384000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "aliases": [
+    "deepseek/deepseek-chat"
+  ]
+}

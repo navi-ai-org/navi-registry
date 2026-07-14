@@ -1,0 +1,9 @@
+{
+  "id": "deepseek-coder-v2",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 8192,
+  "recommended_temperature": 0.6,
+  "supports_thinking": false
+}

@@ -1,0 +1,19 @@
+{
+  "id": "kimi-k2.6",
+  "vendor": "moonshot",
+  "family": "kimi",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/moonshotai/kimi-k2.6",
+      "verified_at": "2026-07-14",
+      "note": "auto-filled by probe from OpenRouter /api/v1/models"
+    }
+  }
+}

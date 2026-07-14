@@ -1,0 +1,15 @@
+{
+  "id": "glm-4.5",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 98304,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "aliases": [
+    "z-ai/glm-4.5"
+  ]
+}

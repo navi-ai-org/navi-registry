@@ -1,0 +1,9 @@
+{
+  "id": "kimi-k2-0711-preview",
+  "vendor": "moonshot",
+  "family": "kimi",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false
+}

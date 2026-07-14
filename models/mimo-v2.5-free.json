@@ -1,0 +1,13 @@
+{
+  "id": "mimo-v2.5-free",
+  "vendor": "aggregator",
+  "family": "mimo",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 8192,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

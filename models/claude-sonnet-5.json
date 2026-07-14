@@ -1,0 +1,13 @@
+{
+  "id": "claude-sonnet-5",
+  "vendor": "aggregator",
+  "family": "claude",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 16384,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

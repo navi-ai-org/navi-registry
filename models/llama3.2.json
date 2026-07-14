@@ -1,0 +1,7 @@
+{
+  "id": "llama3.2",
+  "vendor": "local",
+  "family": "llama",
+  "context_window_tokens": 128000,
+  "status": "removed"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mimo-v2-omni",
+  "vendor": "xiaomi",
+  "family": "mimo",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

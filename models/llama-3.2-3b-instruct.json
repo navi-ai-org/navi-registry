@@ -1,0 +1,6 @@
+{
+  "id": "llama-3.2-3b-instruct",
+  "vendor": "local",
+  "family": "llama",
+  "context_window_tokens": 128000
+}

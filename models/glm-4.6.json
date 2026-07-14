@@ -1,0 +1,12 @@
+{
+  "id": "glm-4.6",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  }
+}

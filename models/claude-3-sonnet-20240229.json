@@ -1,0 +1,13 @@
+{
+  "id": "claude-3-sonnet-20240229",
+  "vendor": "anthropic",
+  "family": "claude",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 4096,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "documents": true
+  }
+}

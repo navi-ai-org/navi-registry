@@ -1,0 +1,8 @@
+{
+  "id": "minimax-m2.7",
+  "vendor": "aggregator",
+  "context_window_tokens": 204800,
+  "max_output_tokens": 20480,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true
+}

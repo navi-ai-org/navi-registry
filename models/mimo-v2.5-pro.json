@@ -1,0 +1,16 @@
+{
+  "id": "mimo-v2.5-pro",
+  "vendor": "xiaomi",
+  "family": "mimo",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "aliases": [
+    "xiaomi/mimo-v2.5-pro"
+  ]
+}

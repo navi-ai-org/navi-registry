@@ -1,0 +1,15 @@
+{
+  "id": "gemini-3-flash",
+  "vendor": "aggregator",
+  "family": "gemini",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 65536,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": true,
+    "documents": true
+  }
+}

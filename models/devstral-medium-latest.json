@@ -1,0 +1,8 @@
+{
+  "id": "devstral-medium-latest",
+  "vendor": "mistral",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 0.3,
+  "supports_thinking": false
+}

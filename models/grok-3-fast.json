@@ -1,0 +1,12 @@
+{
+  "id": "grok-3-fast",
+  "vendor": "xai",
+  "family": "grok",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true
+  }
+}

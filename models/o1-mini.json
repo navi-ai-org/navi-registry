@@ -1,0 +1,12 @@
+{
+  "id": "o1-mini",
+  "vendor": "openai",
+  "family": "o1",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 100000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false
+  }
+}
