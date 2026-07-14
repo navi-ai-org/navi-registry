@@ -1,77 +1,123 @@
 {
-  "$comment": "Rules for auto-filling attachment capabilities. Keys are exact model names or glob patterns (e.g. 'gemini-2.*'). Applied after OpenRouter lookup. Keep sorted.",
+  "$comment": "Rules for auto-filling attachment capabilities and related metadata. Keys are exact model names or glob patterns (e.g. 'gemini-2.*'). Use modern attachments objects. Applied after OpenRouter lookup. Keep sorted.",
   "rules": {
+    "MiniMax-M3": {
+      "attachments": {
+        "images": true
+      }
+    },
+    "MiniMaxAI/MiniMax-M3": {
+      "attachments": {
+        "images": true
+      }
+    },
     "claude-3-5-haiku-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3-5-sonnet-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3-7-sonnet-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3-haiku-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3-opus-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3-sonnet-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3.5-haiku": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3.5-sonnet": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-3.7-sonnet": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-haiku-4": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-haiku-4-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-haiku-4.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-opus-4": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-opus-4-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-opus-4.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-sonnet-4": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-sonnet-4-*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "claude-sonnet-4.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "codestral": {},
     "deepseek-chat": {},
@@ -81,225 +127,325 @@
     "deepseek/deepseek-v4-flash": {},
     "deepseek/deepseek-v4-pro": {},
     "gemini-1.5-flash": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_video": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     "gemini-1.5-flash-*": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_video": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     "gemini-1.5-pro": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_video": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     "gemini-1.5-pro-*": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_video": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     "gemini-2.*": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_video": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "video": true,
+        "documents": true
+      }
     },
     "gemma-4*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gemma2*": {},
     "gemma3*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "glm-4.5": {},
     "glm-4.5*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "glm-4.6*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "glm-4.7*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "glm-5*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-4.1": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-4.1-mini": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-4.1-nano": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-4.5-preview": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-4o": {
-      "supports_images": true,
-      "supports_audio": true
+      "attachments": {
+        "images": true,
+        "audio": true
+      }
     },
     "gpt-4o-mini": {
-      "supports_images": true,
-      "supports_audio": true
+      "attachments": {
+        "images": true,
+        "audio": true
+      }
     },
     "gpt-5": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "documents": true
+      }
     },
     "gpt-5.*": {
-      "supports_images": true,
-      "supports_audio": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "audio": true,
+        "documents": true
+      }
     },
     "gpt-oss-120b": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "gpt-oss-20b": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-2": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-2-*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-2-vision-*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-3.*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "grok-4": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "grok-4.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "kimi-k2": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "kimi-k2.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "llama-3.1*": {},
     "llama-3.2-11b-vision-*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "llama-3.2-90b-vision-*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "llama-3.3-70b": {},
     "llama-4-*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "meta-llama/llama-3.3-70b": {},
     "mimo-v2*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "mimo-v2.5-free": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "mimo-v2.5-pro": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "minimax-m2*": {},
     "minimax-m3": {
-      "supports_images": true
-    },
-    "MiniMax-M3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "minimax-m3*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "minimax-text-01*": {},
     "minimax/minimax-m3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "minimax/minimax-m3*": {
-      "supports_images": true
-    },
-    "MiniMaxAI/MiniMax-M3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "minimaxai/minimax-m3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "mistral-saba*": {},
     "mistralai/codestral": {},
     "moonshotai/kimi-k2": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "moonshotai/kimi-k2.*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "nemotron*": {},
     "o1": {},
     "o1-mini": {},
     "o1-pro": {},
     "o3": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "o3.*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "o4-mini": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "o4-mini.*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "qwen/qwen3-*": {},
     "qwen/qwen3-235b-a22b": {},
     "qwen/qwen3-32b": {},
     "qwen/qwen3-coder": {},
     "qwen2-vl-*": {
-      "supports_images": true,
-      "supports_video": true
+      "attachments": {
+        "images": true,
+        "video": true
+      }
     },
     "qwen2.5-vl-*": {
-      "supports_images": true,
-      "supports_video": true
+      "attachments": {
+        "images": true,
+        "video": true
+      }
     },
     "qwen3-*": {},
     "qwen3-235b-a22b": {},
     "qwen3-32b": {},
     "qwen3-coder": {},
     "qwen3-vl-*": {
-      "supports_images": true,
-      "supports_video": true
+      "attachments": {
+        "images": true,
+        "video": true
+      }
     },
     "step-1v": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     },
     "xiaomi/mimo-v2*": {
-      "supports_images": true,
-      "supports_documents": true
+      "attachments": {
+        "images": true,
+        "documents": true
+      }
     },
     "z-ai/glm-4.5": {},
     "z-ai/glm-5*": {
-      "supports_images": true
+      "attachments": {
+        "images": true
+      }
     }
   }
 }

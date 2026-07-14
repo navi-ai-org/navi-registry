@@ -1,0 +1,30 @@
+name: Validate Registry
+
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+  workflow_dispatch: {}
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate providers and regenerate manifest
+        run: python scripts/validate.py
+
+      - name: Ensure manifest is committed
+        run: |
+          if [ -n "$(git status --porcelain manifest.json)" ]; then
+            echo "manifest.json is out of date. Run: python scripts/validate.py"
+            git diff -- manifest.json
+            exit 1
+          fi
+          echo "manifest.json is up to date"

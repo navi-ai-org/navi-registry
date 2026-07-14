@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run probe (detect + auto-fill attachments)
+      - name: Run probe (detect + auto-fill metadata)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
@@ -38,94 +38,153 @@ jobs:
       - name: Check for changes
         id: changes
         run: |
-          if [ -n "$(git diff --name-only)" ]; then
+          if [ -n "$(git status --porcelain)" ]; then
             echo "changed=true" >> "$GITHUB_OUTPUT"
             echo "files=$(git diff --name-only | tr '\n' ' ')" >> "$GITHUB_OUTPUT"
           else
             echo "changed=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Commit changes
+      - name: Create or update probe pull request
         if: steps.changes.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          BRANCH="chore/probe-auto-update"
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add providers/ manifest.json probe_report.md
+
+          git checkout -B "$BRANCH"
+          git add providers/ bases/ manifest.json probe_report.md scripts/model_rules.json || true
+          # Do not force-add if nothing staged
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No staged changes after add"
+            exit 0
+          fi
+
           git commit -m "chore: auto-update registry from probe
 
-  Auto-filled attachment capabilities and detected model changes.
+          Auto-filled attachment/pricing/context metadata and detected model changes.
 
-  Files changed: ${{ steps.changes.outputs.files }}
+          Files changed: ${{ steps.changes.outputs.files }}
 
-  See probe_report.md for details."
-          git push
+          See probe_report.md for details."
 
-      - name: Create issue for models needing manual review
+          git push -u origin "$BRANCH" --force
+
+          # Open PR if none exists for this branch
+          if gh pr list --head "$BRANCH" --state open --json number --jq 'length' | grep -q '^0$'; then
+            gh pr create \
+              --title "chore: registry probe auto-update" \
+              --body "$(cat <<'EOF'
+          ## Probe auto-update
+
+          This PR was opened by the daily `probe.yml` workflow.
+
+          - Review `probe_report.md` for new/removed models and fill gaps
+          - Prefer modern `attachments` objects and `sources` provenance
+          - Do **not** invent `context_window_tokens` — omit if unknown
+          - Run `python scripts/validate.py` after manual edits
+
+          EOF
+          )"
+          else
+            echo "PR already open for $BRANCH"
+          fi
+
+      - name: Create or update issue for models needing manual review
         if: always()
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 -c "
+          python3 <<'PY'
           import json, subprocess, sys
+          from pathlib import Path
 
-          # Read the probe report and check if there are models needing review
-          try:
-              with open('probe_report.md') as f:
-                  content = f.read()
-          except FileNotFoundError:
-              print('No probe report found, skipping issue creation')
+          path = Path("probe_report.md")
+          if not path.exists():
+              print("No probe report found, skipping issue creation")
               sys.exit(0)
 
-          # Check if there are any sections needing review
-          has_review = '## Needs Manual Review' in content or '## Default Context Window' in content
-          if not has_review:
-              print('No models need manual review, skipping issue creation')
-              sys.exit(0)
-
-          # Check if there's already an open issue with this label
-          result = subprocess.run(
-              ['gh', 'issue', 'list', '--label', 'registry-needs-review', '--state', 'open', '--json', 'number'],
-              capture_output=True, text=True
+          content = path.read_text()
+          has_review = (
+              "## Needs Manual Review" in content
+              or "## Default Context Window" in content
           )
-          existing = json.loads(result.stdout) if result.stdout.strip() else []
-          if existing:
-              print(f'Issue already exists: #{existing[0][\"number\"]}, skipping')
+          if not has_review:
+              print("No models need manual review, skipping issue creation")
               sys.exit(0)
 
-          # Build issue body — extract all review sections from the report
           sections = []
-          for header in ['## Needs Manual Review (probed providers, no attachment info)',
-                         '## Needs Manual Review (unprobed providers, no attachment info)',
-                         '## Default Context Window (200k — likely unset)']:
+          for header in [
+              "## Needs Manual Review (probed providers, no attachment info)",
+              "## Needs Manual Review (unprobed providers, no attachment info)",
+              "## Default Context Window (200k — likely unset)",
+              "## Removed Models (local only, may need pruning)",
+          ]:
               if header in content:
-                  section = content.split(header)[1].split('##')[0].strip()
-                  sections.append(f'### {header.replace(\"## \", \"\")}\n\n{section}')
+                  section = content.split(header)[1].split("##")[0].strip()
+                  sections.append(f"### {header.replace('## ', '')}\n\n{section}")
 
-          body = '''The daily registry probe detected models that need manual review.
-
-          ''' + '\n\n'.join(sections) + '''
+          body = (
+              "The daily registry probe detected models that need manual review.\n\n"
+              + "\n\n".join(sections)
+              + """
 
           ## What to do
 
           For each model above:
-          1. Check the provider documentation or API for attachment support (images, audio, video, documents)
-          2. Verify and correct the context_window_tokens if it is stuck at 200000 (NAVI default)
-          3. Update the corresponding \`providers/<id>.json\` file with the appropriate fields
-          4. Add a rule to \`scripts/model_rules.json\` so future detections are auto-filled
-          5. Run \`python scripts/validate.py\` to regenerate the manifest
-          5. Close this issue
+          1. Check the provider documentation or API for attachment support (prefer `attachments`)
+          2. Verify and correct `context_window_tokens` if stuck at 200000 — add `sources.context_window_tokens` when verified
+          3. Update `providers/<id>.json` (or `bases/<id>.json` for shared catalogs)
+          4. Add a rule to `scripts/model_rules.json` so future detections are auto-filled
+          5. Run `python scripts/validate.py` to regenerate the manifest
+          6. Close this issue when resolved
 
-          This issue was created automatically by the \`probe.yml\` workflow.
-          '''
+          This issue is created/updated automatically by the `probe.yml` workflow.
+          """
+          )
 
-          subprocess.run([
-              'gh', 'issue', 'create',
-              '--title', 'Registry models need attachment review',
-              '--label', 'registry-needs-review',
-              '--body', body
-          ])
-          print('Issue created')
-          "
+          result = subprocess.run(
+              [
+                  "gh",
+                  "issue",
+                  "list",
+                  "--label",
+                  "registry-needs-review",
+                  "--state",
+                  "open",
+                  "--json",
+                  "number",
+              ],
+              capture_output=True,
+              text=True,
+          )
+          existing = json.loads(result.stdout) if result.stdout.strip() else []
+          if existing:
+              number = existing[0]["number"]
+              subprocess.run(
+                  ["gh", "issue", "edit", str(number), "--body", body],
+                  check=True,
+              )
+              print(f"Updated issue #{number}")
+          else:
+              subprocess.run(
+                  [
+                      "gh",
+                      "issue",
+                      "create",
+                      "--title",
+                      "Registry models need manual review",
+                      "--label",
+                      "registry-needs-review",
+                      "--body",
+                      body,
+                  ],
+                  check=True,
+              )
+              print("Issue created")
+          PY
 
       - name: Upload probe report
         if: always()
