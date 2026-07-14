@@ -4,17 +4,27 @@ Guide for agents working in the NAVI Registry repository.
 
 ## What this repo is
 
-A **data registry**, not a software project. It holds JSON definitions of LLM inference providers/models consumed by [NAVI](https://github.com/navi-ai-org/navi). NAVI embeds a snapshot at build time and pulls this repo at runtime for updates. There is no application code, no build step, and no test suite — only data files, a JSON Schema, and a Python validator.
+A **data registry**, not a software project. It holds JSON definitions of LLM inference providers/models consumed by [NAVI](https://github.com/navi-ai-org/navi). NAVI embeds a snapshot at build time and pulls this repo at runtime for updates. There is no application runtime code — only data files, JSON Schemas, pure-Python tooling, and CI workflows.
 
 ## Repository layout
 
 ```
-providers/*.json                              LLM provider definitions
+models/*.json                                 Canonical model catalog (capabilities once)
+providers/*.json                              Thin providers: ref + pricing/overrides
+bases/*.json                                  Shared base catalogs for extends
 transcription-providers/*.json                Remote STT / dictation providers
-schemas/provider.schema.json                  JSON Schema for LLM providers
+schemas/model.schema.json                     JSON Schema for canonical models
+schemas/provider.schema.json                  JSON Schema for LLM providers (ref or legacy)
 schemas/transcription-provider.schema.json    JSON Schema for STT providers
-scripts/validate.py                           Validator + manifest generator (pure Python, no deps)
+scripts/validate.py                           Validator + ref flatten + manifest generator
+scripts/probe.py                              API probe + metadata auto-fill (ref-aware)
+scripts/build_model_catalog.py                Build/rebuild models/ and rewrite providers to refs
+scripts/model_rules.json                      Attachment/metadata rules for probe
+scripts/migrate_attachments.py                One-shot legacy → modern attachments migrator
 manifest.json                                 AUTO-GENERATED index — never hand-edit
+probe_report.md                               Last probe report (also uploaded as CI artifact)
+.github/workflows/validate.yml                PR/push validation
+.github/workflows/probe.yml                   Daily probe → PR + review issue
 README.md                                     User-facing docs
 ```
 
@@ -24,23 +34,48 @@ README.md                                     User-facing docs
 python scripts/validate.py
 ```
 
-This single script does **two things**: validates every `providers/*.json` against its rules AND regenerates `manifest.json`. Run it after any provider change and commit the regenerated `manifest.json` together with the provider edits.
+This script validates every provider (after resolving `extends`), prints coverage stats, and regenerates `manifest.json`. Run it after any provider change and commit the regenerated `manifest.json` together with the provider edits.
 
-The README mentions `pip install jsonschema`, but `validate.py` is **pure Python** and does not import `jsonschema`. No dependency installation is needed. (The README line is stale.)
+No dependency installation is needed (`validate.py` is pure Python and loads field sets from the schema files).
+
+## Canonical models (`models/`) + provider `ref`
+
+**This is the primary data model.** Intrinsic model metadata lives under `models/<id>.json`. Providers list:
+
+```json
+{ "ref": "gpt-5.4", "pricing": { "input_per_1m": 2.5, "output_per_1m": 15.0, "currency": "USD" } }
+```
+
+Optional provider fields: `api_name` (if API id ≠ ref), plus overrides for context/max_output/status when the *endpoint* differs from the canonical model.
+
+`validate.py` merges `models/<ref>.json` + overrides into a resolved entry with `name` for NAVI compatibility.
+
+Rules:
+- **Never invent** `context_window_tokens` on the canonical model.
+- **Pricing is provider-level** (gateways differ).
+- Prefer official vendor values when building the catalog (`scripts/build_model_catalog.py`).
+- Aggregators (opencode, openrouter, commandcode, …) should almost always only set `ref` + `pricing` (+ `api_name`).
+- Legacy inline `{ "name": ... }` still validates but new work must use `ref`.
+
 
 ## Critical gotchas
 
-### 1. Schema file and validator can drift — keep them in sync
+### 1. Schema is the structural source of truth
 
-`schemas/provider.schema.json` and `scripts/validate.py` are **independently maintained**. The validator does not load the schema file; it hardcodes its own `known_keys`, `known_model_keys`, enum sets, and type checks. When adding a new field you must update **both** files or validation will reject entries that the schema permits (or vice versa). The validator's key sets are the actual source of truth for what passes CI.
+`scripts/validate.py` **loads** `schemas/*.schema.json` for known keys, required fields, and enums. Domain rules (200k suspicion, inheritance flattening, coverage) live only in the validator. When adding a new field:
+
+1. Update the schema first.
+2. Re-run `python scripts/validate.py` — key sets are derived automatically.
+3. Add any extra type/domain checks in the validator if needed.
 
 ### 2. `manifest.json` is auto-generated
 
 Never edit `manifest.json` by hand. `validate.py` rewrites it with:
 - SHA-256 of each provider file's raw bytes
-- Per-provider `model_count`
+- Per-provider `model_count` and optional `extends`
+- A top-level `coverage` health summary
 - A `version` integer that **auto-bumps** when provider entries change and is **preserved** when they don't
-- An `updated_at` timestamp that is similarly preserved on no-op runs (so re-running the validator doesn't drift the timestamp)
+- An `updated_at` timestamp that is similarly preserved on no-op runs
 
 Providers are sorted alphabetically by `id` in the output.
 
@@ -48,15 +83,23 @@ Providers are sorted alphabetically by `id` in the output.
 
 The validator fails on duplicate `id` values across files. The filename does not have to equal the `id`, but the manifest references `providers/<filename>`, so in practice every file is named `<id>.json`.
 
+### 4. Prefer modern `attachments`
+
+Use `defaults.attachments` / model `attachments`. Legacy `supports_images` etc. still parse for compatibility but emit warnings when used without a modern `attachments` object. Probe writes modern attachments only.
+
 ## Provider file conventions
 
 ### Required fields
 
-`id`, `label`, `kind`, `api_key_env`, `models` are required. Everything else is optional.
+`id`, `label`, `kind`, `api_key_env` are required. `models` is required on the **flattened** document (after `extends` resolution). Each models[] item should be `{ "ref": "..." }` (preferred) or a legacy inline model. Raw files that set `extends` may omit `models` if the base supplies them.
 
 ### `id`
 
 Must match `^[a-z0-9][a-z0-9-]*$` — lowercase, hyphen-separated, alphanumeric. Filename should match the id.
+
+### `extends`
+
+Optional string pointing at a base id under `bases/` (or another provider id). Deep-merged with the child overlay; lists are replaced, not concatenated. Example: `mimo-anthropic-{ams,cn,sgp}` extend `bases/mimo-anthropic.json`.
 
 ### `kind` (protocol)
 
@@ -74,7 +117,7 @@ One of exactly four values for **LLM** providers:
 | `openai-audio-transcriptions` | OpenAI-compatible `POST /audio/transcriptions` (OpenAI Whisper, Groq Whisper) |
 | `wispr-flow` | Wispr Flow `POST /api` (base64 WAV) |
 
-Required STT fields: `id`, `label`, `kind`, `api_key_env`, `base_url`, `models`. Optional: `transcription_path`, `default_model`, `supports_streaming`, model `pricing.per_minute`.
+Required STT fields: `id`, `label`, `kind`, `api_key_env`, `base_url`, and `models` after flatten. Optional: `transcription_path`, `default_model`, `supports_streaming`, model `pricing.per_minute`.
 
 ### `api_key_env`
 
@@ -98,21 +141,29 @@ Keys: `images`, `audio`, `video`, `documents` (all booleans). Prefer this over t
 
 `documents: true` means the provider accepts documents as native attachments — it does **not** mean NAVI can extract local document text into the prompt.
 
+### `sources` (provenance)
+
+Optional map on each model: field name → `{ "url", "verified_at"?, "note"? }`. Prefer recording sources for `context_window_tokens`, `pricing`, and `attachments`. When `context_window_tokens` is exactly `200000` and a source is present, the suspicion warning is suppressed.
+
+### `status` (lifecycle)
+
+Optional model field: `active` (default if omitted), `deprecated`, `removed`, `preview`. Probe `--apply` may set `status: removed` for models that disappeared from a provider `/models` API.
+
 ### `request_options`
 
 Free-form object for provider-specific request tweaks (e.g. Anthropic's `anthropic_cache_control`, OpenAI's `prompt_cache_key`/`prompt_cache_retention`). Several providers set it to `{}` explicitly.
 
 ### `pricing` (model-level)
 
-Object with `input_per_1m`, `output_per_1m`, `cached_input_per_1m`, `cached_output_per_1m` (numbers, per 1M tokens) and `currency` (string, default `USD`). Currently **no provider populates `pricing`** — the field exists in the schema/validator but is unused. Same for `reasoning_levels`, `default_reasoning_effort`, `capabilities`, `default_large_model`, and `default_small_model`: defined and validated, but not yet used by any provider file. Don't assume these are populated when reading data.
+Object with `input_per_1m`, `output_per_1m`, `cached_input_per_1m`, `cached_output_per_1m` (numbers, per 1M tokens) and `currency` (string, default `USD`). Many models already include pricing; coverage is tracked in `manifest.json` → `coverage.models_with_pricing`. Optional fields like `reasoning_levels`, `default_reasoning_effort`, `capabilities`, `default_large_model`, and `default_small_model` are validated when present but still sparsely used.
 
 ## Formatting styles
 
 Two coexisting styles in `providers/`:
-- **Compact single-line models** — `{ "name": ..., "context_window_tokens": ... }` (used by `ollama`, `llamacpp`, `commandcode`)
-- **Expanded multi-line models** — one field per line (used by most others: `anthropic`, `openai`, `openrouter`, `google-gemini`, `mistral`, etc.)
+- **Compact single-line models** — `{ "name": ..., "context_window_tokens": ... }` (used by some local providers)
+- **Expanded multi-line models** — one field per line (used by most others)
 
-Match the style of nearby entries within the same file. There is no enforced formatter.
+Match the style of nearby entries within the same file. There is no enforced formatter. Note: `migrate_attachments.py` and `probe.py --apply` rewrite files with `json.dump(indent=2)`.
 
 ## Adding a new provider
 
@@ -120,10 +171,15 @@ Match the style of nearby entries within the same file. There is no enforced for
 2. Run `python scripts/validate.py`. It must exit 0 and print `OK` for your file.
 3. Commit the new provider file **and** the regenerated `manifest.json`.
 
+## CI
+
+- `validate.yml` — runs on every PR/push; fails if validation fails or `manifest.json` is stale.
+- `probe.yml` — daily schedule; runs probe `--apply`, opens/updates a PR on `chore/probe-auto-update`, and creates/updates a `registry-needs-review` issue (body refreshed each run). Probe report is also uploaded as an artifact.
+
 ## What not to expect
 
-- No test suite, no CI workflows, no linter, no Makefile.
-- No `jsonschema` dependency despite the README — the validator is self-contained.
+- No application test suite / linter / Makefile.
+- No `jsonschema` pip dependency — the validator is self-contained and schema-driven.
 - No code that imports or executes the provider JSON; NAVI (a separate repo/binary) is the consumer.
 
 ## Model Data Integrity Rules
@@ -144,12 +200,12 @@ For each model field that should have a value (`context_window_tokens`, `max_out
 
 1. **Search the web** for the official provider documentation, model card, or API docs.
 2. Find the exact value from a **primary source** (the provider's own website, HuggingFace model card, or official API docs).
-3. Record the source URL and the exact value found.
+3. Record the source URL and the exact value found — prefer writing it into `sources.<field>`.
 4. If no primary source exists, search for the model name on the provider's `/models` API endpoint or community-verified sources (e.g. OpenRouter model pages).
 5. If no source can be found after diligent search, proceed to State 2.
 
 **Sources that are NOT acceptable:**
-- Other registry repos (e.g. LiteLLM, OpenRouter's internal JSON) unless they cite a primary source
+- Other registry repos (e.g. LiteLLM) unless they cite a primary source
 - AI-generated guesses or "common knowledge"
 - Defaulting to a round number like 200000 because "it's probably fine"
 
@@ -178,7 +234,8 @@ Only fill in a field if you found a verified value from a primary source in Stat
 - `recommended_temperature`: from the provider's recommended value, not a guess.
 - `supports_thinking`: `true` only if the provider explicitly documents reasoning/thinking support.
 - `pricing`: from the provider's pricing page. Use `input_per_1m` and `output_per_1m` as exact numbers.
-- `attachments`: `true` only if the provider's docs explicitly mention image/audio/video/document support.
+- `attachments`: set modality booleans only if the provider's docs explicitly mention image/audio/video/document support.
+- `sources`: record the URL (and ideally `verified_at`) for critical fields.
 
 #### State 4: `verify`
 
@@ -188,9 +245,9 @@ Before committing, run the validator:
 python scripts/validate.py
 ```
 
-The validator will **warn** (not error) if `context_window_tokens` is exactly `200000`. This is a flag for human review — it's not always wrong (some Claude models genuinely have 200k), but it's the most commonly invented value, so it gets extra scrutiny.
+The validator will **warn** (not error) if `context_window_tokens` is exactly `200000` and there is no `sources.context_window_tokens` (and the model is not on the known-good allowlist). This is a flag for human review — it's not always wrong (some Claude models genuinely have 200k), but it's the most commonly invented value, so it gets extra scrutiny.
 
-Review every warning. If the value is correct, the warning can be ignored. If the value was invented, fix it or remove it.
+Review every warning. If the value is correct, add a source entry. If the value was invented, fix it or remove it.
 
 ### Forbidden Practices
 
@@ -206,13 +263,13 @@ Review every warning. If the value is correct, the warning can be ignored. If th
 
 Before committing a model entry, verify each item:
 
-- [ ] `name` — exact model name as returned by the provider's `/models` API
-- [ ] `context_window_tokens` — verified from provider docs, or omitted if unknown
-- [ ] `max_output_tokens` — verified from provider docs, or omitted if unknown
-- [ ] `recommended_temperature` — verified from provider docs, or omitted if unknown
-- [ ] `supports_thinking` — `true` only if provider docs mention reasoning/thinking
-- [ ] `pricing` — verified from provider's pricing page, or omitted if unknown
-- [ ] `attachments` — `true` only if provider docs mention the modality
+- [ ] Canonical entry in `models/<id>.json` (or reuse existing)
+- [ ] Provider row uses `{ "ref": "<id>" }` (+ `api_name` if needed)
+- [ ] `context_window_tokens` on canonical — verified, or omitted if unknown
+- [ ] `sources.context_window_tokens` — present when context is set (recommended)
+- [ ] `max_output_tokens` / `supports_thinking` / `attachments` on canonical when verified
+- [ ] `pricing` on the **provider** row, not the canonical model
+- [ ] `status` — set if not active (deprecated/removed/preview)
 - [ ] Validator passes with no unexpected warnings
 - [ ] `manifest.json` regenerated via `python scripts/validate.py`
 
