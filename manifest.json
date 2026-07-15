@@ -1,20 +1,20 @@
 {
-  "version": 33,
-  "updated_at": "2026-07-14T23:20:54Z",
+  "version": 34,
+  "updated_at": "2026-07-15T04:44:38Z",
   "coverage": {
-    "models_total": 404,
+    "models_total": 392,
     "models_with_pricing": 198,
-    "models_with_attachments": 404,
-    "models_with_modern_attachments": 404,
+    "models_with_attachments": 392,
+    "models_with_modern_attachments": 392,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 394,
-    "models_with_thinking": 236,
-    "models_with_ref": 404,
+    "models_with_sources": 382,
+    "models_with_thinking": 224,
+    "models_with_ref": 392,
     "canonical_models": 264,
     "models_by_status": {
-      "active": 363,
+      "active": 351,
       "deprecated": 0,
       "removed": 41,
       "preview": 0
@@ -1117,11 +1117,6 @@
     "groq": {
       "file": "providers/groq.json",
       "sha256": "2294954880a0320f91eadf68dbd3aea2bd059f42c655e84d44c48111daff6ccf",
-      "model_count": 12
-    },
-    "hcnsec": {
-      "file": "providers/hcnsec.json",
-      "sha256": "d28b8ac36d5b783b4ac5a049ec53527c7ca1b3be2f4c6cbef9c574b57dd7d255",
       "model_count": 12
     },
     "llamacpp": {
