@@ -1,21 +1,21 @@
 {
-  "version": 34,
-  "updated_at": "2026-07-15T04:44:38Z",
+  "version": 35,
+  "updated_at": "2026-07-23T02:28:17Z",
   "coverage": {
-    "models_total": 392,
-    "models_with_pricing": 198,
-    "models_with_attachments": 392,
-    "models_with_modern_attachments": 392,
+    "models_total": 398,
+    "models_with_pricing": 204,
+    "models_with_attachments": 398,
+    "models_with_modern_attachments": 398,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 382,
-    "models_with_thinking": 224,
-    "models_with_ref": 392,
-    "canonical_models": 264,
+    "models_with_sources": 388,
+    "models_with_thinking": 235,
+    "models_with_ref": 398,
+    "canonical_models": 271,
     "models_by_status": {
-      "active": 351,
-      "deprecated": 0,
+      "active": 347,
+      "deprecated": 10,
       "removed": 41,
       "preview": 0
     }
@@ -337,6 +337,14 @@
       "file": "models/gemini-3.5-flash.json",
       "sha256": "0466123d25cbd990cd4fdfb4b8599d8e9e53b04c03295fe1ccb32889f92d79ad"
     },
+    "gemini-3.5-flash-lite": {
+      "file": "models/gemini-3.5-flash-lite.json",
+      "sha256": "c1cb1fb006d811628f3d4e91a7d75ee94209af43d3d8ad545fbb735c0032024c"
+    },
+    "gemini-3.6-flash": {
+      "file": "models/gemini-3.6-flash.json",
+      "sha256": "5ff7eb4f49a9f3e6da0d7d7911f8c65311bbba631a7905bfff950a183a88ce4b"
+    },
     "gemma-3-27b-it": {
       "file": "models/gemma-3-27b-it.json",
       "sha256": "1fb92f762f75b07bb1a94da76d041a79ae91a2f31461b8655135912f0f96d114"
@@ -525,6 +533,18 @@
       "file": "models/gpt-5.5-pro.json",
       "sha256": "9932a62d8bb3ae003fc6aae6e9e015aae4c155e485137d45fd293a344393ea21"
     },
+    "gpt-5.6-luna": {
+      "file": "models/gpt-5.6-luna.json",
+      "sha256": "a10fefc0cc9e10b6913746057ed5d37ca2f5792242cb3c53b3df0193aebaa91e"
+    },
+    "gpt-5.6-sol": {
+      "file": "models/gpt-5.6-sol.json",
+      "sha256": "d7605470bda1f24bb0d6b99036514f45ed84681f1116366de520e911b1614383"
+    },
+    "gpt-5.6-terra": {
+      "file": "models/gpt-5.6-terra.json",
+      "sha256": "5327441dc1e85599d5118ea944068989a7882dc1a3d964dfe7bf7a940bd90d61"
+    },
     "gpt-oss-120b": {
       "file": "models/gpt-oss-120b.json",
       "sha256": "a74fd876d698d1804844f7f7f515b61a90360cabb04dddbbec417a235df8d51b"
@@ -629,6 +649,10 @@
       "file": "models/kimi-k2.7-code.json",
       "sha256": "beaea18e2bb67be29fe2c534fa5665cb727bd83bfc1fb68896ff415f1efed0e0"
     },
+    "kimi-k3": {
+      "file": "models/kimi-k3.json",
+      "sha256": "b3c9b4c0eebe7a9466098afc8af50139ddb3007f30dd90f16f424eedf0eecdcd"
+    },
     "kimi-latest": {
       "file": "models/kimi-latest.json",
       "sha256": "ad62c810541b448b444762a81e49a6024d3970be2523e5dcc4f0f36a9ad4ebbf"
@@ -636,6 +660,10 @@
     "kimi-thinking-preview": {
       "file": "models/kimi-thinking-preview.json",
       "sha256": "4ac2cf6c297265c1e35c80548ddba0207c8bccdf5107aa91bd15eb99f6f124fd"
+    },
+    "laguna-s-2.1-free": {
+      "file": "models/laguna-s-2.1-free.json",
+      "sha256": "c8d99a391fc2f6f7d5bdc79654b97fabd121834fc63caed32ce4b465c5439f73"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
@@ -1179,13 +1207,13 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "54d59e8af1689a2c033e30ca0898982c67b9a7cc4653300a872fd38c434acd6b",
-      "model_count": 61
+      "sha256": "5cc4dbddb6dd1d628d2995011fb5f5040a6e30d21cb8f1e1af5b883636ec6711",
+      "model_count": 57
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "bab88812b1a660478311604259ba9df64f7e90445fc964bf38f912a926e361c7",
-      "model_count": 6
+      "sha256": "c97820c71f59eb5d5f84fa75e0d7b72e6f99a48bb4aad5f30a8c81053332dd77",
+      "model_count": 16
     },
     "openrouter": {
       "file": "providers/openrouter.json",
