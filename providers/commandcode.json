@@ -114,33 +114,75 @@
     },
     {
       "ref": "kimi-k2.7-code",
-      "api_name": "moonshotai/Kimi-K2.7-Code"
+      "api_name": "moonshotai/Kimi-K2.7-Code",
+      "pricing": {
+        "input_per_1m": 0.71,
+        "output_per_1m": 3.49,
+        "currency": "USD",
+        "cached_input_per_1m": 0.15
+      }
     },
     {
       "ref": "kimi-k2.6",
-      "api_name": "moonshotai/Kimi-K2.6"
+      "api_name": "moonshotai/Kimi-K2.6",
+      "pricing": {
+        "input_per_1m": 0.684,
+        "output_per_1m": 3.42,
+        "currency": "USD",
+        "cached_input_per_1m": 0.144
+      }
     },
     {
       "ref": "kimi-k2.5",
-      "api_name": "moonshotai/Kimi-K2.5"
+      "api_name": "moonshotai/Kimi-K2.5",
+      "pricing": {
+        "input_per_1m": 0.57,
+        "output_per_1m": 2.85,
+        "currency": "USD",
+        "cached_input_per_1m": 0.095
+      }
     },
     {
       "ref": "glm-5.1",
-      "api_name": "zai-org/GLM-5.1"
+      "api_name": "zai-org/GLM-5.1",
+      "pricing": {
+        "input_per_1m": 0.966,
+        "output_per_1m": 3.036,
+        "currency": "USD",
+        "cached_input_per_1m": 0.1794
+      }
     },
     {
       "ref": "glm-5",
-      "api_name": "zai-org/GLM-5"
+      "api_name": "zai-org/GLM-5",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 2.55,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      }
     },
     {
       "ref": "minimax-m2.7",
       "api_name": "MiniMaxAI/MiniMax-M2.7",
-      "context_window_tokens": 200000
+      "context_window_tokens": 200000,
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
     },
     {
       "ref": "minimax-m2.5",
       "api_name": "MiniMaxAI/MiniMax-M2.5",
-      "context_window_tokens": 200000
+      "context_window_tokens": 200000,
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.9,
+        "currency": "USD",
+        "cached_input_per_1m": 0.05
+      }
     },
     {
       "ref": "mimo-v2.5-pro",
@@ -164,27 +206,60 @@
     },
     {
       "ref": "qwen3.6-max-preview",
-      "api_name": "Qwen/Qwen3.6-Max-Preview"
+      "api_name": "Qwen/Qwen3.6-Max-Preview",
+      "pricing": {
+        "input_per_1m": 1.04,
+        "output_per_1m": 6.24,
+        "currency": "USD"
+      }
     },
     {
       "ref": "qwen3.6-plus",
-      "api_name": "Qwen/Qwen3.6-Plus"
+      "api_name": "Qwen/Qwen3.6-Plus",
+      "pricing": {
+        "input_per_1m": 0.325,
+        "output_per_1m": 1.95,
+        "currency": "USD"
+      }
     },
     {
       "ref": "qwen3.7-max",
-      "api_name": "Qwen/Qwen3.7-Max"
+      "api_name": "Qwen/Qwen3.7-Max",
+      "pricing": {
+        "input_per_1m": 1.475,
+        "output_per_1m": 4.425,
+        "currency": "USD",
+        "cached_input_per_1m": 0.295
+      }
     },
     {
       "ref": "qwen3.7-plus",
-      "api_name": "Qwen/Qwen3.7-Plus"
+      "api_name": "Qwen/Qwen3.7-Plus",
+      "pricing": {
+        "input_per_1m": 0.32,
+        "output_per_1m": 1.28,
+        "currency": "USD",
+        "cached_input_per_1m": 0.064
+      }
     },
     {
       "ref": "step-3.7-flash",
-      "api_name": "stepfun/Step-3.7-Flash"
+      "api_name": "stepfun/Step-3.7-Flash",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.15,
+        "currency": "USD",
+        "cached_input_per_1m": 0.04
+      }
     },
     {
       "ref": "step-3.5-flash",
-      "api_name": "stepfun/Step-3.5-Flash"
+      "api_name": "stepfun/Step-3.5-Flash",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.3,
+        "currency": "USD"
+      }
     },
     {
       "ref": "gemini-3.5-flash",

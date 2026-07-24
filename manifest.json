@@ -1,9 +1,9 @@
 {
-  "version": 37,
-  "updated_at": "2026-07-23T23:13:06Z",
+  "version": 38,
+  "updated_at": "2026-07-24T10:07:34Z",
   "coverage": {
     "models_total": 398,
-    "models_with_pricing": 204,
+    "models_with_pricing": 225,
     "models_with_attachments": 398,
     "models_with_modern_attachments": 398,
     "models_legacy_attachments_only": 0,
@@ -1119,7 +1119,7 @@
     },
     "commandcode": {
       "file": "providers/commandcode.json",
-      "sha256": "3c1bfbc4481be3cfd5281d5857b7535b4e497a208582575ad394b272f1aa3c18",
+      "sha256": "e2f346fbd5bac4577768011837c9a7af9b09185a511f61d722b67926a5d49597",
       "model_count": 30
     },
     "deepseek": {
@@ -1177,7 +1177,7 @@
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "29917d8b72d1faf689979fed3df1548476adbe66b3a372e3f91c8859ba765609",
+      "sha256": "d24788748c6e493154fe48691853fe23082354cd60a10a305f74012938b15532",
       "model_count": 14
     },
     "mistral": {
@@ -1192,7 +1192,7 @@
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "bc4cc377be888c2543ee3876f5e2c297c87ad5904f7b89b638b259c9f4118583",
+      "sha256": "c5262f90c1794dd047abb5bfa8f3b25a6d75039ecf26697b6d1b7f114a466d07",
       "model_count": 10
     },
     "ollama": {
@@ -1217,7 +1217,7 @@
     },
     "openrouter": {
       "file": "providers/openrouter.json",
-      "sha256": "8026cea785a78065da23d1ffc8424ccdbdbfd905af70463a411554f41de351dc",
+      "sha256": "89b8f1993a9ca6f01223e8737d3a4fece92acda9e31866a5c47c94a774feaa95",
       "model_count": 21
     },
     "stepfun": {

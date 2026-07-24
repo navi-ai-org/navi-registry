@@ -15,28 +15,57 @@
   },
   "models": [
     {
-      "ref": "minimax-m3"
+      "ref": "minimax-m3",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
     },
     {
-      "ref": "minimax-m2.7"
+      "ref": "minimax-m2.7",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
     },
     {
       "ref": "minimax-m2.7-highspeed"
     },
     {
-      "ref": "minimax-m2.5"
+      "ref": "minimax-m2.5",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.9,
+        "currency": "USD",
+        "cached_input_per_1m": 0.05
+      }
     },
     {
       "ref": "minimax-m2.5-highspeed"
     },
     {
-      "ref": "minimax-m2.1"
+      "ref": "minimax-m2.1",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      }
     },
     {
       "ref": "minimax-m2.1-highspeed"
     },
     {
-      "ref": "minimax-m2"
+      "ref": "minimax-m2",
+      "pricing": {
+        "input_per_1m": 0.255,
+        "output_per_1m": 1.02,
+        "currency": "USD"
+      }
     },
     {
       "ref": "minimax-text-01"

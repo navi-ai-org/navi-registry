@@ -133,7 +133,8 @@
     },
     {
       "ref": "llama-3.3-70b",
-      "api_name": "meta-llama/llama-3.3-70b"
+      "api_name": "meta-llama/llama-3.3-70b",
+      "status": "removed"
     },
     {
       "ref": "llama-4-maverick",
@@ -167,7 +168,8 @@
     },
     {
       "ref": "codestral",
-      "api_name": "mistralai/codestral"
+      "api_name": "mistralai/codestral",
+      "status": "removed"
     },
     {
       "ref": "qwen3-coder",

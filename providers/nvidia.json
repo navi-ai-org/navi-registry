@@ -8,11 +8,22 @@
   "models": [
     {
       "ref": "llama-3.3-70b-instruct",
-      "api_name": "meta/llama-3.3-70b-instruct"
+      "api_name": "meta/llama-3.3-70b-instruct",
+      "pricing": {
+        "input_per_1m": 0.13,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      }
     },
     {
       "ref": "llama-3.1-8b-instruct",
-      "api_name": "meta/llama-3.1-8b-instruct"
+      "api_name": "meta/llama-3.1-8b-instruct",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.08,
+        "currency": "USD",
+        "cached_input_per_1m": 0.025
+      }
     },
     {
       "ref": "mistral-7b-instruct",
@@ -43,7 +54,12 @@
     {
       "ref": "deepseek-r1",
       "api_name": "deepseek-ai/deepseek-r1",
-      "max_output_tokens": 8192
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input_per_1m": 0.7,
+        "output_per_1m": 2.5,
+        "currency": "USD"
+      }
     },
     {
       "ref": "phi-4",
