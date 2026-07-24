@@ -1,6 +1,6 @@
 {
-  "version": 37,
-  "updated_at": "2026-07-23T23:13:06Z",
+  "version": 39,
+  "updated_at": "2026-07-24T21:56:03Z",
   "coverage": {
     "models_total": 398,
     "models_with_pricing": 204,
@@ -123,7 +123,7 @@
     },
     "claude-opus-4-5": {
       "file": "models/claude-opus-4-5.json",
-      "sha256": "2602edf20cfcdf9b69bfaeab44a6b39e1d237e90cf0a71d7483591e878d753f1"
+      "sha256": "f7172d24cf4ed1f06866d69e055dcf4a178d50b6c9f81c6b3b68c6589ec075be"
     },
     "claude-opus-4-6": {
       "file": "models/claude-opus-4-6.json",
@@ -663,7 +663,7 @@
     },
     "laguna-s-2.1-free": {
       "file": "models/laguna-s-2.1-free.json",
-      "sha256": "d7997125da7de20f6d5edcb0d72f5cc30407867abd6a5b1300f7ed68f2e4fb6c"
+      "sha256": "ea01714df3e820558e83df8211834f7c36d85d37bcc7f6582521c5a4cb9cbded"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
@@ -759,7 +759,7 @@
     },
     "mimo-v2.5": {
       "file": "models/mimo-v2.5.json",
-      "sha256": "0db9ae7140fecc44fd86507e27d4fb262c21a2b23bd32b13e4200ef1b39c070e"
+      "sha256": "7c886ff70c0a5576a0414d7b8acfb87cb13d1d8b398e5fe0df8ee64ca3ff78a5"
     },
     "mimo-v2.5-free": {
       "file": "models/mimo-v2.5-free.json",
@@ -767,15 +767,15 @@
     },
     "mimo-v2.5-pro": {
       "file": "models/mimo-v2.5-pro.json",
-      "sha256": "9d33fb970fa0314f497c54e69e40e8b05b9d977a4e18eb349605dc151887ea21"
+      "sha256": "b044549b184587340551ab4f77a627d60f34a8139204ee0e6d5e9266db6c89dd"
     },
     "minimax-m2": {
       "file": "models/minimax-m2.json",
-      "sha256": "af33c1576deb62a6bc4847787fabf406665427d088aeafc8c317de066d87bd92"
+      "sha256": "2cdc50d5e73d7cdd0c1485d0d1ccea4a42e94a6eac9801b000e34920316f10e8"
     },
     "minimax-m2.1": {
       "file": "models/minimax-m2.1.json",
-      "sha256": "11b21a0cae22edf514f18aaf000f7e08fffebdfa2325e06f01716a3339615e69"
+      "sha256": "7e6fa59f7348fb4830f72b07b355f94c1f6e7b98472db5eaa7ad75f06f59fa91"
     },
     "minimax-m2.1-highspeed": {
       "file": "models/minimax-m2.1-highspeed.json",
@@ -783,7 +783,7 @@
     },
     "minimax-m2.5": {
       "file": "models/minimax-m2.5.json",
-      "sha256": "9d0b4d79fb3169a2e438a4b53bec2588ae53e882c7b9ebf2286ccf0fdf6ffa7c"
+      "sha256": "d4d676988ff59bd5a8d4936469cf7dd62df476ac04d3ae4b9375049b6fb62466"
     },
     "minimax-m2.5-highspeed": {
       "file": "models/minimax-m2.5-highspeed.json",
@@ -791,7 +791,7 @@
     },
     "minimax-m2.7": {
       "file": "models/minimax-m2.7.json",
-      "sha256": "f7fa0428a0e2eb227d4b73aed4cf75fb144d1fe138a7560066acfb48ecb7b901"
+      "sha256": "5eb5eed365ebbf3e49d72f3a5f5f411cafc97c2a08a54b2d63d28f88c0e3b442"
     },
     "minimax-m2.7-highspeed": {
       "file": "models/minimax-m2.7-highspeed.json",
@@ -799,7 +799,7 @@
     },
     "minimax-m3": {
       "file": "models/minimax-m3.json",
-      "sha256": "5baba1cb844b3e9edeb06b280f7aed30c765f4dcff3c9b9952f0926baaa5bd54"
+      "sha256": "96aba7a0ee83dfdb23b730c227bee412bfc33f6fa64668d4728abb211e1363e0"
     },
     "minimax-text-01": {
       "file": "models/minimax-text-01.json",
@@ -907,7 +907,7 @@
     },
     "o1": {
       "file": "models/o1.json",
-      "sha256": "2334a8e25fef9f54baaefc495cb33968521e453ed6f9a17d56247ae6244078be"
+      "sha256": "9b14c540cd4661d21d4179fe0e7f8c7e296af47de0607872d5f4c911f50c55e0"
     },
     "o1-mini": {
       "file": "models/o1-mini.json",
@@ -915,23 +915,23 @@
     },
     "o1-pro": {
       "file": "models/o1-pro.json",
-      "sha256": "6c4b5ae883b2031f32a421266b698cde985614aae89efb732c7c1154d218976f"
+      "sha256": "b29d53149586c5b4c43985cf163427367376b53f063082438db2dd679ac432d3"
     },
     "o3": {
       "file": "models/o3.json",
-      "sha256": "293cd4f7ab20b7282eb404c72a3e25b59a8fb191b61f2af18b4ad35c92e10d32"
+      "sha256": "6ae8d31de492006b1b5c65b09d494b25534eea4b0c0f73c7def173c5164958e8"
     },
     "o3-mini": {
       "file": "models/o3-mini.json",
-      "sha256": "06f4a0131d8ceb42265d4ad048f9d8ccf3f52d5dc184462b8055f4ed2cd49079"
+      "sha256": "c8bfa8a649c1979e18a9c0408a9f84b15f9c69559a1e7afe3df6f20dc28ee8bd"
     },
     "o3-pro": {
       "file": "models/o3-pro.json",
-      "sha256": "7d7c0735bc9b380893ffb9e3ca5b85d07bb752a496b6b865ae4adac4907819c4"
+      "sha256": "e5487638d609669fc60c2c7c3f754d0982eb51d3b605134c7421c53f99f9728d"
     },
     "o4-mini": {
       "file": "models/o4-mini.json",
-      "sha256": "774684cf1c020ad08754634c3c97eca6d4e87cf815e752259f1aeb85271e19f9"
+      "sha256": "db51d43d372fd74b3b35654f11ed64396ced9544f3da16a26fbc2871fce7a28e"
     },
     "open-mistral-7b": {
       "file": "models/open-mistral-7b.json",
@@ -1095,7 +1095,7 @@
     },
     "step-3.5-flash": {
       "file": "models/step-3.5-flash.json",
-      "sha256": "80ff1da4c38e232d96202328eec30a7055f9fb6f63ad5c440a249cdd12c2ed4a"
+      "sha256": "543f7f53b8d5e6ad63c20de3574fa5849e090269adf01653f192675b69c91e27"
     },
     "step-3.7-flash": {
       "file": "models/step-3.7-flash.json",
