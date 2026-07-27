@@ -9,7 +9,7 @@
   "models": [
     {
       "ref": "kimi-k3",
-      "context_window_tokens": 262000,
+      "context_window_tokens": 1048576,
       "max_output_tokens": 262000,
       "pricing": {
         "input_per_1m": 3.0,

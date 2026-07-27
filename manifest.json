@@ -1,6 +1,6 @@
 {
-  "version": 40,
-  "updated_at": "2026-07-27T23:24:01Z",
+  "version": 41,
+  "updated_at": "2026-07-27T23:36:27Z",
   "coverage": {
     "models_total": 433,
     "models_with_pricing": 238,
@@ -1214,7 +1214,7 @@
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
-      "sha256": "3b11c5fdd9a1be62dc538bfea75cfcdb5e23c41a383ac03bc0d57d82e9e13fb0",
+      "sha256": "453af9c922d94c3b70ff21ab854f51d6b1f9fe24d73ce36c669792d00132a994",
       "model_count": 21
     },
     "commandcode": {
