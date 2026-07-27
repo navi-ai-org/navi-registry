@@ -7,6 +7,14 @@
   "base_url": "https://api.mistral.ai/v1",
   "models": [
     {
+      "ref": "mistral-large-2512",
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "mistral-large-latest"
     },
     {
@@ -22,10 +30,42 @@
       }
     },
     {
+      "ref": "mistral-medium-3-5",
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "mistral-medium-3.1",
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "mistral-medium-3",
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "mistral-medium-latest"
     },
     {
       "ref": "mistral-medium-2508"
+    },
+    {
+      "ref": "mistral-small-2603",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "currency": "USD"
+      }
     },
     {
       "ref": "mistral-small-latest"
@@ -55,6 +95,14 @@
       "ref": "codestral-2405"
     },
     {
+      "ref": "devstral-2512",
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "devstral-medium-latest"
     },
     {
@@ -68,6 +116,14 @@
     },
     {
       "ref": "devstral-small-2505"
+    },
+    {
+      "ref": "ministral-14b-2512",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 0.2,
+        "currency": "USD"
+      }
     },
     {
       "ref": "magistral-medium-latest"

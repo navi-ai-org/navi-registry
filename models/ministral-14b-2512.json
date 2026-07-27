@@ -1,0 +1,24 @@
+{
+  "id": "ministral-14b-2512",
+  "vendor": "mistral",
+  "family": "ministral",
+  "context_window_tokens": 262144,
+  "recommended_temperature": 1.0,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/mistralai/ministral-14b-2512",
+      "verified_at": "2026-07-24",
+      "note": "from OpenRouter /api/v1/models"
+    }
+  },
+  "aliases": [
+    "mistralai/ministral-14b-2512"
+  ]
+}

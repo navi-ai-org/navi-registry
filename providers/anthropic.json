@@ -12,6 +12,22 @@
   },
   "models": [
     {
+      "ref": "claude-opus-5",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-5-fast",
+      "pricing": {
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "claude-opus-4",
       "pricing": {
         "input_per_1m": 15.0,
@@ -24,6 +40,17 @@
     },
     {
       "ref": "claude-opus-4-20250514"
+    },
+    {
+      "ref": "claude-sonnet-5"
+    },
+    {
+      "ref": "claude-sonnet-4.6",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
     },
     {
       "ref": "claude-sonnet-4",

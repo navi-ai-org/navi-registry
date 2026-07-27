@@ -1,20 +1,20 @@
 {
   "version": 39,
-  "updated_at": "2026-07-24T21:56:03Z",
+  "updated_at": "2026-07-27T23:18:56Z",
   "coverage": {
-    "models_total": 398,
-    "models_with_pricing": 204,
-    "models_with_attachments": 398,
-    "models_with_modern_attachments": 398,
+    "models_total": 432,
+    "models_with_pricing": 237,
+    "models_with_attachments": 432,
+    "models_with_modern_attachments": 432,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 388,
-    "models_with_thinking": 246,
-    "models_with_ref": 398,
-    "canonical_models": 271,
+    "models_with_sources": 422,
+    "models_with_thinking": 278,
+    "models_with_ref": 432,
+    "canonical_models": 296,
     "models_by_status": {
-      "active": 347,
+      "active": 381,
       "deprecated": 10,
       "removed": 41,
       "preview": 0
@@ -137,6 +137,14 @@
       "file": "models/claude-opus-4-8.json",
       "sha256": "57b8d47566a8909f41a66044745366219e12749a15a53c2939f168a6ad7e60cf"
     },
+    "claude-opus-5": {
+      "file": "models/claude-opus-5.json",
+      "sha256": "e476fda3c5bcf6dedce8cb39a3d7a24bd760c4182046e07275195dbcf858cb30"
+    },
+    "claude-opus-5-fast": {
+      "file": "models/claude-opus-5-fast.json",
+      "sha256": "161ad1250c9b58d9a42da7de75e1052aefb6e20cdc28edce97d0c52c97857b47"
+    },
     "claude-sonnet-4": {
       "file": "models/claude-sonnet-4.json",
       "sha256": "770810973d94bbec01dc955a56ef7784448fad44f35c1ae061508ecb799cdd94"
@@ -156,6 +164,10 @@
     "claude-sonnet-4.5": {
       "file": "models/claude-sonnet-4.5.json",
       "sha256": "79c84ad12c8ea73a47db702d90e54c1676467a49adf0b41cea11d9473bd360d4"
+    },
+    "claude-sonnet-4.6": {
+      "file": "models/claude-sonnet-4.6.json",
+      "sha256": "60c64d16535f3bb34f6deeec60005e91e6e5be5380c4e3ca315a66fdbb83bb1c"
     },
     "claude-sonnet-5": {
       "file": "models/claude-sonnet-5.json",
@@ -205,6 +217,10 @@
       "file": "models/deepseek-r1.json",
       "sha256": "343b921b96759bbcbdf9260684472f51a381bc01132b569bee1212a65b6d9a25"
     },
+    "deepseek-r1-0528": {
+      "file": "models/deepseek-r1-0528.json",
+      "sha256": "44c2fe5220295ee4adbf31dcd7ddcbe80f7b2b20d1a370f034f26ced66b77c26"
+    },
     "deepseek-r1-distill-llama-70b": {
       "file": "models/deepseek-r1-distill-llama-70b.json",
       "sha256": "1c2392fc68e66f6b5ab920938d6329dda4f87459f17fa551bbd5c4af387f0b83"
@@ -229,6 +245,10 @@
       "file": "models/deepseek-v3.1.json",
       "sha256": "eb2dedf3aa64dd6d337ba2eb8b840bc0ed64d472d86d26772c30048ca2e8225d"
     },
+    "deepseek-v3.1-terminus": {
+      "file": "models/deepseek-v3.1-terminus.json",
+      "sha256": "6a7b456618c90825d4a4fda1c0938801a4a802ed0e448ae5a41bd345a64a9616"
+    },
     "deepseek-v3.2": {
       "file": "models/deepseek-v3.2.json",
       "sha256": "950900b60e7effa2a3dbf26384aa35269837c475121f1278412ba34dd57ab97c"
@@ -248,6 +268,10 @@
     "devstral": {
       "file": "models/devstral.json",
       "sha256": "4371ee2eb96740db7e4524a686dc09b1c45d514dbaf5417a8296b4f206a1bbd2"
+    },
+    "devstral-2512": {
+      "file": "models/devstral-2512.json",
+      "sha256": "9de7188975e7c3975bdfc669627c06dc4e43ba0747a12a6f558c62c131fae6c6"
     },
     "devstral-medium-2507": {
       "file": "models/devstral-medium-2507.json",
@@ -325,6 +349,10 @@
       "file": "models/gemini-3-flash.json",
       "sha256": "e23aa554b1c5f107c77dc9aaac53faf4711aa836ca231a8a363674f8d729dcf9"
     },
+    "gemini-3-flash-preview": {
+      "file": "models/gemini-3-flash-preview.json",
+      "sha256": "0d678daa51f271ad7cb170bc3b14095bef7b82705d68e5290734e9e3b440c6d4"
+    },
     "gemini-3.1-flash-lite": {
       "file": "models/gemini-3.1-flash-lite.json",
       "sha256": "bdf3fa36ac8fab47ba509d4c97011496ac72a7094a728551cd8d62da48f79a2c"
@@ -332,6 +360,10 @@
     "gemini-3.1-pro": {
       "file": "models/gemini-3.1-pro.json",
       "sha256": "bf2d93ea4dd248e1c55734f1dac4865240452930732618bfcbb72da51fbf93c7"
+    },
+    "gemini-3.1-pro-preview": {
+      "file": "models/gemini-3.1-pro-preview.json",
+      "sha256": "1286856dacf6fda3efbf3e17ae3fe2c9225cac9710bc9bf133ffb4ba5de556ff"
     },
     "gemini-3.5-flash": {
       "file": "models/gemini-3.5-flash.json",
@@ -467,7 +499,7 @@
     },
     "gpt-5-codex": {
       "file": "models/gpt-5-codex.json",
-      "sha256": "0599537ec3e3c16c46932ba435a88bd54e04053a37e42e5bb5a600a83b5c5129"
+      "sha256": "11d3aa780cefd2916dd48926d7cd6baafb7426a86ebb0846b693969f13822e99"
     },
     "gpt-5-mini": {
       "file": "models/gpt-5-mini.json",
@@ -476,6 +508,10 @@
     "gpt-5-nano": {
       "file": "models/gpt-5-nano.json",
       "sha256": "e6d10d0db3b7b497803be9c5d4d59a382357dee26385491cccd8a21e521ae1e6"
+    },
+    "gpt-5-pro": {
+      "file": "models/gpt-5-pro.json",
+      "sha256": "249d38d5de3a469c6fed353ae84b8b22d52614557027b46c5cca6adb169143f2"
     },
     "gpt-5.1": {
       "file": "models/gpt-5.1.json",
@@ -499,7 +535,11 @@
     },
     "gpt-5.2-codex": {
       "file": "models/gpt-5.2-codex.json",
-      "sha256": "f57d6d7e7f6e5332120e7989029aa2a3c0fd18f1f70def39f45e2528feaf3009"
+      "sha256": "6ad27840ad2f688ab07fde53bd636173dfecbc53b7a3bee5a27aff36819de10f"
+    },
+    "gpt-5.2-pro": {
+      "file": "models/gpt-5.2-pro.json",
+      "sha256": "eea4e6dfbc1ce306fef6437c9f81d826d6aef1e5a18d795fb1a0dbf8a2380d91"
     },
     "gpt-5.3-codex": {
       "file": "models/gpt-5.3-codex.json",
@@ -523,7 +563,7 @@
     },
     "gpt-5.4-pro": {
       "file": "models/gpt-5.4-pro.json",
-      "sha256": "0a2da4188fb5fd0b224d08bdc5e775741cc9798442ef2e41db10ffcb724382b9"
+      "sha256": "a4f145c0a23f7dafb8087c22eabf2f88ca94bf22ef560d67003049bac724a9bf"
     },
     "gpt-5.5": {
       "file": "models/gpt-5.5.json",
@@ -531,19 +571,31 @@
     },
     "gpt-5.5-pro": {
       "file": "models/gpt-5.5-pro.json",
-      "sha256": "8dca918d74a4fcbcfbe38b674275774e381c7a96f7dd86947b5387944ce26521"
+      "sha256": "fdfd9d0a1fe754a41a5511cadb380ebaeac1c3a72d572f87c3d2c67b7515fcf9"
     },
     "gpt-5.6-luna": {
       "file": "models/gpt-5.6-luna.json",
-      "sha256": "31ec0781dfa8bc8120c9e8de96b1ae31976e062d065e13406c51896d1df86698"
+      "sha256": "f0f648d49efdeb2cb4cdf0557c73558dd4ae9be7bd8a4471773fa869ba94ede6"
+    },
+    "gpt-5.6-luna-pro": {
+      "file": "models/gpt-5.6-luna-pro.json",
+      "sha256": "7d900f4cd82daf83d6efeb35db4d6efb202125fa056141eb17a76c263fa7bf01"
     },
     "gpt-5.6-sol": {
       "file": "models/gpt-5.6-sol.json",
-      "sha256": "11578def169d229f542338c888c1c539df7a147f5b7a3cb1f0b820133643ec66"
+      "sha256": "3a42d70364e50c9fd03a53e454488a274c16bbb00cfbc403464921766265e107"
+    },
+    "gpt-5.6-sol-pro": {
+      "file": "models/gpt-5.6-sol-pro.json",
+      "sha256": "417698f9977760aba63972d3133463b3014a0abd9c43e23c0e1b564dab918e59"
     },
     "gpt-5.6-terra": {
       "file": "models/gpt-5.6-terra.json",
-      "sha256": "c9987893a0d6cd425814b6bd5296b72acbda3ec054716d2087ca1e446e185d36"
+      "sha256": "f209a9b34839bee9a2eb660a4deefaab6aa78a3ef6fe8ffe8ef4dd333061805b"
+    },
+    "gpt-5.6-terra-pro": {
+      "file": "models/gpt-5.6-terra-pro.json",
+      "sha256": "94463478d63dd870a11023079e473f25530bc2babf50cb612711983d9db462ff"
     },
     "gpt-oss-120b": {
       "file": "models/gpt-oss-120b.json",
@@ -629,6 +681,10 @@
       "file": "models/kimi-k2-0711-preview.json",
       "sha256": "52268954f1fa608920da1fcd2f4b28906131b71e5587bb59d91e9715bebe4854"
     },
+    "kimi-k2-0905": {
+      "file": "models/kimi-k2-0905.json",
+      "sha256": "cf4313d7fa2aa81e634d723ff799a3b1e2eb84db78f9601125abe71fc66e2645"
+    },
     "kimi-k2-instruct": {
       "file": "models/kimi-k2-instruct.json",
       "sha256": "ef890d3022e627d7de02245b5da83922694e32fbe26283552414baa209708329"
@@ -651,7 +707,7 @@
     },
     "kimi-k3": {
       "file": "models/kimi-k3.json",
-      "sha256": "d6ad8cec30509c5fec7def8c9c5b0abcd3d66a5b4ab6d3ab646308ed97d0c3e3"
+      "sha256": "5126eae7a49ceffd76dba4ac893ce3205484396359e2647b334380d68de6e7d0"
     },
     "kimi-latest": {
       "file": "models/kimi-latest.json",
@@ -769,6 +825,10 @@
       "file": "models/mimo-v2.5-pro.json",
       "sha256": "b044549b184587340551ab4f77a627d60f34a8139204ee0e6d5e9266db6c89dd"
     },
+    "minimax-m1": {
+      "file": "models/minimax-m1.json",
+      "sha256": "05b1d44576294d6545aa9c492e4f4b106aa758ef86c60259e06278baebf8bdf4"
+    },
     "minimax-m2": {
       "file": "models/minimax-m2.json",
       "sha256": "2cdc50d5e73d7cdd0c1485d0d1ccea4a42e94a6eac9801b000e34920316f10e8"
@@ -809,6 +869,10 @@
       "file": "models/minimax-text-01-456b.json",
       "sha256": "4bfa7f7564f01060050efbee2fe6ae6c3b9698b04f2e55ac849cbd76bf06b502"
     },
+    "ministral-14b-2512": {
+      "file": "models/ministral-14b-2512.json",
+      "sha256": "fee39d1ba5d6a45adb33012a52d227b68124faa0bf9e11400ea4130dc937c9e9"
+    },
     "ministral-3b-latest": {
       "file": "models/ministral-3b-latest.json",
       "sha256": "8a6c6e6c0fb0045a1d42f52745d1e9fda958535cfa3a795cb19d5981b90d20b6"
@@ -837,6 +901,10 @@
       "file": "models/mistral-large-2411.json",
       "sha256": "c3002567cd83d6e0b89fce53e8c6d8f50c1529a1c5b017c7ec3f821e60480241"
     },
+    "mistral-large-2512": {
+      "file": "models/mistral-large-2512.json",
+      "sha256": "9dd6acb6b513be2551d32bb670870205f46be45a89743621d11959ac10265db7"
+    },
     "mistral-large-latest": {
       "file": "models/mistral-large-latest.json",
       "sha256": "62fd2489fa8689e5c627065cc34961c7676b6e50a58f731c85ae86df0803b1d2"
@@ -844,6 +912,18 @@
     "mistral-medium-2508": {
       "file": "models/mistral-medium-2508.json",
       "sha256": "779615401f45bc78cb303366dc47ff26d6ce1fd68e32b190adddd7e946b798ad"
+    },
+    "mistral-medium-3": {
+      "file": "models/mistral-medium-3.json",
+      "sha256": "b6ea3ff932800d81023ba7c6f0dfc1086e5609acde003269ff4584f6c7bc7e57"
+    },
+    "mistral-medium-3-5": {
+      "file": "models/mistral-medium-3-5.json",
+      "sha256": "df5fc0255b6283cf370ebc14fc67c965259406de6250eb60917e145531221b6f"
+    },
+    "mistral-medium-3.1": {
+      "file": "models/mistral-medium-3.1.json",
+      "sha256": "36ecde459742a4823726f1854c11b356a96ddc87755b37369e7b5ba34810ea69"
     },
     "mistral-medium-latest": {
       "file": "models/mistral-medium-latest.json",
@@ -860,6 +940,10 @@
     "mistral-small-2506": {
       "file": "models/mistral-small-2506.json",
       "sha256": "c98eb046d738dde4abaa291ca88d9cc2a0519f8517729f79c55b4d41ae49fd39"
+    },
+    "mistral-small-2603": {
+      "file": "models/mistral-small-2603.json",
+      "sha256": "1aa53502ff63aaaa75a2a05f69d6624c1ec21dbe2a3e2aa8f0317ec2cd7f11f7"
     },
     "mistral-small-instruct": {
       "file": "models/mistral-small-instruct.json",
@@ -888,6 +972,14 @@
     "moonshot-v1-auto": {
       "file": "models/moonshot-v1-auto.json",
       "sha256": "50ce06c63990e9e2aec20df931c46f3bc3287a68d3fc7a2e129e52272f92778b"
+    },
+    "nemotron-3-nano-30b-a3b": {
+      "file": "models/nemotron-3-nano-30b-a3b.json",
+      "sha256": "6f531e1fbfbf3506a0b42614fa5159b82f6146e663eb848ab227d1a198659124"
+    },
+    "nemotron-3-super-120b-a12b": {
+      "file": "models/nemotron-3-super-120b-a12b.json",
+      "sha256": "e69c6870575c2f2174b0de5d2df64d22f25e6e8ad8e88bafc59e31192c3a7079"
     },
     "nemotron-3-ultra-550b-a55b": {
       "file": "models/nemotron-3-ultra-550b-a55b.json",
@@ -925,6 +1017,10 @@
       "file": "models/o3-mini.json",
       "sha256": "c8bfa8a649c1979e18a9c0408a9f84b15f9c69559a1e7afe3df6f20dc28ee8bd"
     },
+    "o3-mini-high": {
+      "file": "models/o3-mini-high.json",
+      "sha256": "9513491c8604a2eb9ab993a657667fccc585c4d9653a82ac1ddfa0338daab082"
+    },
     "o3-pro": {
       "file": "models/o3-pro.json",
       "sha256": "e5487638d609669fc60c2c7c3f754d0982eb51d3b605134c7421c53f99f9728d"
@@ -932,6 +1028,10 @@
     "o4-mini": {
       "file": "models/o4-mini.json",
       "sha256": "db51d43d372fd74b3b35654f11ed64396ced9544f3da16a26fbc2871fce7a28e"
+    },
+    "o4-mini-high": {
+      "file": "models/o4-mini-high.json",
+      "sha256": "9277e3d7da70f65be3a0032e946dac7bb2429df5ae4fefd80173c6035823d50d"
     },
     "open-mistral-7b": {
       "file": "models/open-mistral-7b.json",
@@ -1109,8 +1209,8 @@
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
-      "sha256": "6b96e5aa3181496ba4b1863759f9c42768dc50a2c0a5876f9c4b920b02a0e934",
-      "model_count": 16
+      "sha256": "410fec72edb5235c0a35efbf4e547789db8b4ac3eab5289ae27b4b341f1df72c",
+      "model_count": 20
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
@@ -1124,8 +1224,8 @@
     },
     "deepseek": {
       "file": "providers/deepseek.json",
-      "sha256": "2a41b4156deb5e513f4f1a52850ad7a5452acabe467c095f4b174e640bfd84a2",
-      "model_count": 11
+      "sha256": "6e50e95f916496061ebaf8af9a0b1e6ea40da7f3ef325f901d69028ebfae9349",
+      "model_count": 13
     },
     "github-copilot": {
       "file": "providers/github-copilot.json",
@@ -1139,8 +1239,8 @@
     },
     "google-gemini": {
       "file": "providers/google-gemini.json",
-      "sha256": "5a82bd3241d5a46f023bc8f4d4268c87bf39cbdc1751545780a493c0401056a8",
-      "model_count": 13
+      "sha256": "f1b61780a9e5b71dc6bf7c6094dad9c78e8ae84a08172d62a08405838349f133",
+      "model_count": 15
     },
     "groq": {
       "file": "providers/groq.json",
@@ -1177,23 +1277,23 @@
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "29917d8b72d1faf689979fed3df1548476adbe66b3a372e3f91c8859ba765609",
-      "model_count": 14
+      "sha256": "1ec8ec502e806b43f880e269be17f4d207a9c550c400f0a8152dd6c87785b732",
+      "model_count": 15
     },
     "mistral": {
       "file": "providers/mistral.json",
-      "sha256": "887d85bffdaa07b66df32d2850b0891e9983baa108b4a74eb94eb85688324d8b",
-      "model_count": 27
+      "sha256": "b801ad7757b420d95f9b81fea0ce4002a13fa508207cc068316dd3fad4b656bb",
+      "model_count": 34
     },
     "moonshot": {
       "file": "providers/moonshot.json",
-      "sha256": "d27c73ec08da19be404c94894118697193358a4da80b44e4378a5b2cf7d394bb",
-      "model_count": 11
+      "sha256": "aa3f22e3399c0084a0c1d0517f4ea837b298e097044992fec5fa77998a5213f4",
+      "model_count": 13
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "bc4cc377be888c2543ee3876f5e2c297c87ad5904f7b89b638b259c9f4118583",
-      "model_count": 10
+      "sha256": "f5c87a9eee303af3794a04696fbe56a467d6f4ef2aa423ccd570e6d1184b7222",
+      "model_count": 12
     },
     "ollama": {
       "file": "providers/ollama.json",
@@ -1202,8 +1302,8 @@
     },
     "openai": {
       "file": "providers/openai.json",
-      "sha256": "e5822cdd1ee207b2063775361bd890b42bb85080de022100be202c43cc3e6afa",
-      "model_count": 28
+      "sha256": "93aca14e7c240ea705615736c2f518a3cb7d95dc265c1f2478fb7a886a951dc9",
+      "model_count": 42
     },
     "opencode": {
       "file": "providers/opencode.json",

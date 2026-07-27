@@ -1,11 +1,19 @@
 {
   "id": "moonshot",
   "label": "Moonshot AI",
-  "description": "Kimi models via Moonshot AI \u2014 multimodal, long-context, and reasoning models",
+  "description": "Kimi models via Moonshot AI — multimodal, long-context, and reasoning models",
   "kind": "openai-chat-completions",
   "api_key_env": "MOONSHOT_API_KEY",
   "base_url": "https://api.moonshot.cn/v1",
   "models": [
+    {
+      "ref": "kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
+    },
     {
       "ref": "kimi-k2.6",
       "pricing": {
@@ -31,6 +39,14 @@
         "output_per_1m": 2.5,
         "currency": "USD",
         "cached_input_per_1m": 0.15
+      }
+    },
+    {
+      "ref": "kimi-k2-0905",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.5,
+        "currency": "USD"
       }
     },
     {

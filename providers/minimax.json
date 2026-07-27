@@ -15,6 +15,14 @@
   },
   "models": [
     {
+      "ref": "minimax-m1",
+      "pricing": {
+        "input_per_1m": 0.55,
+        "output_per_1m": 2.2,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "minimax-m3"
     },
     {

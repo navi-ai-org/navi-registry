@@ -7,6 +7,24 @@
   "base_url": "https://integrate.api.nvidia.com/v1",
   "models": [
     {
+      "ref": "nemotron-3-super-120b-a12b",
+      "api_name": "nvidia/nemotron-3-super-120b-a12b",
+      "pricing": {
+        "input_per_1m": 0.085,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "nemotron-3-nano-30b-a3b",
+      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.2,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "llama-3.3-70b-instruct",
       "api_name": "meta/llama-3.3-70b-instruct"
     },

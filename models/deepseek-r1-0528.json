@@ -1,0 +1,30 @@
+{
+  "id": "deepseek-r1-0528",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 163840,
+  "max_output_tokens": 32768,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-r1-0528",
+      "verified_at": "2026-07-24",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-r1-0528",
+      "verified_at": "2026-07-24",
+      "note": "from OpenRouter /api/v1/models"
+    }
+  },
+  "aliases": [
+    "deepseek/deepseek-r1-0528"
+  ]
+}
