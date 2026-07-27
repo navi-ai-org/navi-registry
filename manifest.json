@@ -1,20 +1,20 @@
 {
-  "version": 39,
-  "updated_at": "2026-07-27T23:18:56Z",
+  "version": 40,
+  "updated_at": "2026-07-27T23:24:01Z",
   "coverage": {
-    "models_total": 432,
-    "models_with_pricing": 237,
-    "models_with_attachments": 432,
-    "models_with_modern_attachments": 432,
+    "models_total": 433,
+    "models_with_pricing": 238,
+    "models_with_attachments": 433,
+    "models_with_modern_attachments": 433,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 422,
-    "models_with_thinking": 278,
-    "models_with_ref": 432,
+    "models_with_sources": 423,
+    "models_with_thinking": 279,
+    "models_with_ref": 433,
     "canonical_models": 296,
     "models_by_status": {
-      "active": 381,
+      "active": 382,
       "deprecated": 10,
       "removed": 41,
       "preview": 0
@@ -1214,8 +1214,8 @@
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
-      "sha256": "b49de1c5efccdb5c6eda8c833c6cfd4a0f49f9e784ff8ed6e7fdcd271c9f503b",
-      "model_count": 20
+      "sha256": "3b11c5fdd9a1be62dc538bfea75cfcdb5e23c41a383ac03bc0d57d82e9e13fb0",
+      "model_count": 21
     },
     "commandcode": {
       "file": "providers/commandcode.json",

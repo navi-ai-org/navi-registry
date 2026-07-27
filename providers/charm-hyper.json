@@ -8,6 +8,16 @@
   "aggregator": true,
   "models": [
     {
+      "ref": "kimi-k3",
+      "context_window_tokens": 262000,
+      "max_output_tokens": 262000,
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "kimi-k2.6",
       "context_window_tokens": 262000,
       "max_output_tokens": 262000,
