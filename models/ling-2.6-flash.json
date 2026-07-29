@@ -4,9 +4,6 @@
   "family": "ling",
   "context_window_tokens": 262144,
   "max_output_tokens": 32768,
-  "supports_thinking": true,
-  "default_reasoning_effort": "none",
-  "reasoning_levels": ["none", "low", "medium", "high"],
   "capabilities": ["tool_calling"],
   "attachments": {
     "images": false,
@@ -19,11 +16,6 @@
       "url": "https://novita.ai/docs/guides/llm-recommended",
       "verified_at": "2026-07-08",
       "note": "Novita recommended models page — MoE, 104B total / 7.4B active"
-    },
-    "supports_thinking": {
-      "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
-      "verified_at": "2026-07-29",
-      "note": "Chat template has thinking_option field (off by default), benchmarks evaluated in Reasoning Mode"
     },
     "capabilities": {
       "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",

@@ -1,6 +1,6 @@
 {
-  "version": 44,
-  "updated_at": "2026-07-29T23:14:00Z",
+  "version": 45,
+  "updated_at": "2026-07-29T23:16:05Z",
   "coverage": {
     "models_total": 453,
     "models_with_pricing": 258,
@@ -10,7 +10,7 @@
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
     "models_with_sources": 443,
-    "models_with_thinking": 297,
+    "models_with_thinking": 296,
     "models_with_ref": 453,
     "canonical_models": 300,
     "models_by_status": {
@@ -727,7 +727,7 @@
     },
     "ling-2.6-flash": {
       "file": "models/ling-2.6-flash.json",
-      "sha256": "e1f811d632c2c91c16590a5055ef4ebb4aa945cf710b784a2f56bb05ea42e9c6"
+      "sha256": "de8c000fbb4009c6d02fcb0cb62959819b2c3cfe10614932b29c02d2bb610f3d"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
