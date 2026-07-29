@@ -3,7 +3,11 @@
   "vendor": "inclusion-ai",
   "family": "ling",
   "context_window_tokens": 262144,
-  "supports_thinking": false,
+  "max_output_tokens": 32768,
+  "supports_thinking": true,
+  "default_reasoning_effort": "none",
+  "reasoning_levels": ["none", "low", "medium", "high"],
+  "capabilities": ["tool_calling"],
   "attachments": {
     "images": false,
     "audio": false,
@@ -14,7 +18,17 @@
     "context_window_tokens": {
       "url": "https://novita.ai/docs/guides/llm-recommended",
       "verified_at": "2026-07-08",
-      "note": "Novita recommended models page — MoE, small activation"
+      "note": "Novita recommended models page — MoE, 104B total / 7.4B active"
+    },
+    "supports_thinking": {
+      "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+      "verified_at": "2026-07-29",
+      "note": "Chat template has thinking_option field (off by default), benchmarks evaluated in Reasoning Mode"
+    },
+    "capabilities": {
+      "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+      "verified_at": "2026-07-29",
+      "note": "SOTA on BFCL-V4 tool calling benchmark, vLLM config uses --tool-call-parser qwen25"
     }
   }
 }
