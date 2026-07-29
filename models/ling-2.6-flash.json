@@ -4,6 +4,7 @@
   "family": "ling",
   "context_window_tokens": 262144,
   "max_output_tokens": 32768,
+  "recommended_temperature": 0.7,
   "capabilities": ["tool_calling"],
   "attachments": {
     "images": false,
@@ -21,6 +22,11 @@
       "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
       "verified_at": "2026-07-29",
       "note": "SOTA on BFCL-V4 tool calling benchmark, vLLM config uses --tool-call-parser qwen25"
+    },
+    "recommended_temperature": {
+      "url": "https://huggingface.co/inclusionAI/Ling-2.6-flash",
+      "verified_at": "2026-07-29",
+      "note": "Thinking is toggled via system message: 'detailed thinking on/off'. Default is off (no API parameter)."
     }
   }
 }

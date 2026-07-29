@@ -1,6 +1,6 @@
 {
-  "version": 45,
-  "updated_at": "2026-07-29T23:16:05Z",
+  "version": 46,
+  "updated_at": "2026-07-29T23:17:30Z",
   "coverage": {
     "models_total": 453,
     "models_with_pricing": 258,
@@ -727,7 +727,7 @@
     },
     "ling-2.6-flash": {
       "file": "models/ling-2.6-flash.json",
-      "sha256": "de8c000fbb4009c6d02fcb0cb62959819b2c3cfe10614932b29c02d2bb610f3d"
+      "sha256": "7c5ceb470725b0f1fc0a76898ba1fff18e9cda6828e4429c15f4151e1ddc9128"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
