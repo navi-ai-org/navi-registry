@@ -1,6 +1,6 @@
 {
-  "version": 42,
-  "updated_at": "2026-07-29T22:37:43Z",
+  "version": 43,
+  "updated_at": "2026-07-29T22:42:45Z",
   "coverage": {
     "models_total": 453,
     "models_with_pricing": 258,
@@ -1308,7 +1308,7 @@
     },
     "novita": {
       "file": "providers/novita.json",
-      "sha256": "288bb447ba0b1016cd817d217b9a22290278017207dd256a992ea31e7d28d07c",
+      "sha256": "a2f2b8a374dfd98fd36e71ba7281382f8644abe6e382bae0e7896142f590ff66",
       "model_count": 20
     },
     "nvidia": {

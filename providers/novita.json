@@ -50,8 +50,8 @@
       "ref": "deepseek-r1-0528",
       "api_name": "deepseek/deepseek-r1-0528",
       "pricing": {
-        "input_per_1m": 0.55,
-        "output_per_1m": 2.19,
+        "input_per_1m": 0.7,
+        "output_per_1m": 2.5,
         "cached_input_per_1m": 0.14,
         "currency": "USD"
       }
@@ -69,6 +69,7 @@
     {
       "ref": "kimi-k2.5",
       "api_name": "moonshotai/kimi-k2.5",
+      "context_window_tokens": 262144,
       "attachments": {
         "images": true,
         "documents": true
@@ -92,13 +93,13 @@
     {
       "ref": "qwen3.5-397b-a17b",
       "api_name": "qwen/qwen3.5-397b-a17b",
+      "context_window_tokens": 262144,
       "attachments": {
         "images": true
       },
       "pricing": {
-        "input_per_1m": 0.28,
-        "output_per_1m": 1.13,
-        "cached_input_per_1m": 0.07,
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.6,
         "currency": "USD"
       }
     },
@@ -115,56 +116,60 @@
     {
       "ref": "gemma-4-31b-it",
       "api_name": "google/gemma-4-31b-it",
+      "context_window_tokens": 262144,
       "attachments": {
         "images": true
       },
       "pricing": {
-        "input_per_1m": 0.28,
-        "output_per_1m": 1.13,
-        "cached_input_per_1m": 0.07,
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.4,
         "currency": "USD"
       }
     },
     {
       "ref": "gemma-4-26b-a4b-it",
       "api_name": "google/gemma-4-26b-a4b-it",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.2,
+        "input_per_1m": 0.13,
+        "output_per_1m": 0.4,
         "currency": "USD"
       }
     },
     {
       "ref": "llama-3.1-8b-instruct",
       "api_name": "meta-llama/llama-3.1-8b-instruct",
+      "context_window_tokens": 16384,
       "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.2,
+        "input_per_1m": 0.02,
+        "output_per_1m": 0.05,
         "currency": "USD"
       }
     },
     {
       "ref": "llama-3.3-70b-instruct",
       "api_name": "meta-llama/llama-3.3-70b-instruct",
+      "context_window_tokens": 6000,
       "pricing": {
-        "input_per_1m": 0.39,
-        "output_per_1m": 0.39,
+        "input_per_1m": 0.135,
+        "output_per_1m": 0.4,
         "currency": "USD"
       }
     },
     {
       "ref": "qwen3-coder",
       "api_name": "qwen/qwen3-coder-480b-a35b-instruct",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.522,
-        "output_per_1m": 1.044,
-        "cached_input_per_1m": 0.0043,
+        "input_per_1m": 0.38,
+        "output_per_1m": 1.55,
         "currency": "USD"
       }
     },
     {
       "ref": "step-3.7-flash",
       "api_name": "stepfun/step-3.7-flash",
+      "context_window_tokens": 262144,
       "pricing": {
         "input_per_1m": 0.2,
         "output_per_1m": 1.15,
@@ -185,24 +190,26 @@
     {
       "ref": "nemotron-3-nano-30b-a3b",
       "api_name": "nvidia/nemotron-3-nano-30b-a3b",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.1,
-        "output_per_1m": 0.4,
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.2,
         "currency": "USD"
       }
     },
     {
       "ref": "ling-2.6-flash",
       "api_name": "inclusionai/ling-2.6-flash",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.3,
         "currency": "USD"
       }
     },
     {
       "ref": "macaron-v1-venti",
-      "api_name": "mind-lab/macaron-v1-venti",
+      "api_name": "mindai/macaron-v1-venti",
       "pricing": {
         "input_per_1m": 0.0,
         "output_per_1m": 0.0,
@@ -211,6 +218,8 @@
     },
     {
       "ref": "hy3",
+      "api_name": "tencent/hy3",
+      "context_window_tokens": 262144,
       "pricing": {
         "input_per_1m": 0.14,
         "output_per_1m": 0.58,
