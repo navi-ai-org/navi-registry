@@ -1,0 +1,20 @@
+{
+  "id": "gemma-4-31b-it",
+  "vendor": "google",
+  "family": "gemma-4",
+  "context_window_tokens": 262144,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://novita.ai/docs/guides/llm-recommended",
+      "verified_at": "2026-07-08",
+      "note": "Novita recommended models page"
+    }
+  }
+}

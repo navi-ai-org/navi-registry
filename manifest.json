@@ -1,20 +1,20 @@
 {
-  "version": 41,
-  "updated_at": "2026-07-27T23:36:27Z",
+  "version": 42,
+  "updated_at": "2026-07-29T22:37:43Z",
   "coverage": {
-    "models_total": 433,
-    "models_with_pricing": 238,
-    "models_with_attachments": 433,
-    "models_with_modern_attachments": 433,
+    "models_total": 453,
+    "models_with_pricing": 258,
+    "models_with_attachments": 453,
+    "models_with_modern_attachments": 453,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 423,
-    "models_with_thinking": 279,
-    "models_with_ref": 433,
-    "canonical_models": 296,
+    "models_with_sources": 443,
+    "models_with_thinking": 296,
+    "models_with_ref": 453,
+    "canonical_models": 300,
     "models_by_status": {
-      "active": 382,
+      "active": 402,
       "deprecated": 10,
       "removed": 41,
       "preview": 0
@@ -389,6 +389,10 @@
       "file": "models/gemma-4-26b-a4b-it.json",
       "sha256": "4d5ab52b87e73f538a19d6c9c469ec6d5cd23e8f6d39de1320e37c2f2d10ed80"
     },
+    "gemma-4-31b-it": {
+      "file": "models/gemma-4-31b-it.json",
+      "sha256": "3776172051109617c190b3ed27348dae57f8abad52550bdeb684fb5f8c67f31c"
+    },
     "gemma2-9b-it": {
       "file": "models/gemma2-9b-it.json",
       "sha256": "441169c0828ba0f1e86bc3ea11c5cb13774be1cfd525d5ea356cef8daf4019c9"
@@ -721,6 +725,10 @@
       "file": "models/laguna-s-2.1-free.json",
       "sha256": "ea01714df3e820558e83df8211834f7c36d85d37bcc7f6582521c5a4cb9cbded"
     },
+    "ling-2.6-flash": {
+      "file": "models/ling-2.6-flash.json",
+      "sha256": "cda674049af16006f36abe20150075ace48495fe227b484f66c666162158256d"
+    },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
       "sha256": "4aab49adfe2bad68fe8876cfb88c6ebc7aa0389c6aa06dcdd1d9d18bc3af34a7"
@@ -792,6 +800,10 @@
     "local-model": {
       "file": "models/local-model.json",
       "sha256": "84b82934fc5f8b86448c971fe212727d0090caa4813f3e433a01a5513a559d68"
+    },
+    "macaron-v1-venti": {
+      "file": "models/macaron-v1-venti.json",
+      "sha256": "ec8cc73c264aeb4b6f7995588d756dcb1662d7c89c943152d002a99e1b893426"
     },
     "magistral-medium-latest": {
       "file": "models/magistral-medium-latest.json",
@@ -1125,6 +1137,10 @@
       "file": "models/qwen3-next-80b-a3b-instruct.json",
       "sha256": "1c310c20ef0d3cf7d9b250eb8e3162c086eeea9c708af0c6b71339534a08f780"
     },
+    "qwen3.5-397b-a17b": {
+      "file": "models/qwen3.5-397b-a17b.json",
+      "sha256": "3fccd457453e2a286e2dec3c2b12c109df30573fbf1a778ae27893f02a30a966"
+    },
     "qwen3.5-plus": {
       "file": "models/qwen3.5-plus.json",
       "sha256": "04ce2a79627c444e6f4614ffb95e4e880eeeaf4a808f78389f7b4008e75234b4"
@@ -1289,6 +1305,11 @@
       "file": "providers/moonshot.json",
       "sha256": "aa3f22e3399c0084a0c1d0517f4ea837b298e097044992fec5fa77998a5213f4",
       "model_count": 13
+    },
+    "novita": {
+      "file": "providers/novita.json",
+      "sha256": "288bb447ba0b1016cd817d217b9a22290278017207dd256a992ea31e7d28d07c",
+      "model_count": 20
     },
     "nvidia": {
       "file": "providers/nvidia.json",

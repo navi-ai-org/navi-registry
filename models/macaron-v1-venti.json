@@ -1,0 +1,21 @@
+{
+  "id": "macaron-v1-venti",
+  "vendor": "mind-lab",
+  "family": "macaron",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://novita.ai/models/llm",
+      "verified_at": "2026-07-08",
+      "note": "Novita models page"
+    }
+  }
+}
