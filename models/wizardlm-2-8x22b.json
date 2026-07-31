@@ -1,0 +1,29 @@
+{
+  "id": "wizardlm-2-8x22b",
+  "vendor": "microsoft",
+  "family": "wizardlm",
+  "context_window_tokens": 65535,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "microsoft/wizardlm-2-8x22b"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for microsoft/wizardlm-2-8x22b"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for microsoft/wizardlm-2-8x22b"
+    }
+  },
+  "max_output_tokens": 8000
+}

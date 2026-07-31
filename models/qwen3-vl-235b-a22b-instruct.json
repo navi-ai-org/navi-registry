@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-vl-235b-a22b-instruct",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 131072,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3-vl-235b-a22b-instruct"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen3-vl-235b-a22b-instruct"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen3-vl-235b-a22b-instruct"
+    }
+  },
+  "max_output_tokens": 32768
+}

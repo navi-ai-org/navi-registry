@@ -15,12 +15,160 @@
   },
   "models": [
     {
-      "ref": "deepseek-v4-pro",
-      "api_name": "deepseek/deepseek-v4-pro",
+      "ref": "autoglm-phone-9b-multilingual",
+      "api_name": "zai-org/autoglm-phone-9b-multilingual",
       "pricing": {
-        "input_per_1m": 1.6,
-        "output_per_1m": 3.2,
-        "cached_input_per_1m": 0.135,
+        "input_per_1m": 0.035,
+        "output_per_1m": 0.138,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "baichuan-m2-32b",
+      "api_name": "baichuan/baichuan-m2-32b",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "output_per_1m": 0.07,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "cobuddy",
+      "api_name": "baidu/cobuddy",
+      "pricing": {
+        "input_per_1m": 0.28,
+        "output_per_1m": 1.13,
+        "currency": "USD",
+        "cached_input_per_1m": 0.07
+      }
+    },
+    {
+      "ref": "deepseek-ocr",
+      "api_name": "deepseek/deepseek-ocr",
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.03,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-ocr-2",
+      "api_name": "deepseek/deepseek-ocr-2",
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.03,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-r1",
+      "api_name": "deepseek/deepseek-r1",
+      "pricing": {
+        "input_per_1m": 4.0,
+        "output_per_1m": 4.0,
+        "currency": "USD"
+      },
+      "context_window_tokens": 64000,
+      "max_output_tokens": 16000
+    },
+    {
+      "ref": "deepseek-r1-0528",
+      "api_name": "deepseek/deepseek-r1-0528",
+      "pricing": {
+        "input_per_1m": 0.7,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.35
+      }
+    },
+    {
+      "ref": "deepseek-r1-0528-qwen3-8b",
+      "api_name": "deepseek/deepseek-r1-0528-qwen3-8b",
+      "pricing": {
+        "input_per_1m": 0.06,
+        "output_per_1m": 0.09,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-r1-distill-llama-70b",
+      "api_name": "deepseek/deepseek-r1-distill-llama-70b",
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 0.8,
+        "currency": "USD"
+      },
+      "context_window_tokens": 8192,
+      "max_output_tokens": 8192,
+      "status": "active"
+    },
+    {
+      "ref": "deepseek-r1-turbo",
+      "api_name": "deepseek/deepseek-r1-turbo",
+      "pricing": {
+        "input_per_1m": 0.7,
+        "output_per_1m": 2.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-v3-0324",
+      "api_name": "deepseek/deepseek-v3-0324",
+      "pricing": {
+        "input_per_1m": 0.27,
+        "output_per_1m": 1.12,
+        "currency": "USD",
+        "cached_input_per_1m": 0.135
+      }
+    },
+    {
+      "ref": "deepseek-v3-turbo",
+      "api_name": "deepseek/deepseek-v3-turbo",
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 1.3,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-v3.1",
+      "api_name": "deepseek/deepseek-v3.1",
+      "pricing": {
+        "input_per_1m": 0.27,
+        "output_per_1m": 1.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.135
+      },
+      "max_output_tokens": 32768
+    },
+    {
+      "ref": "deepseek-v3.1-terminus",
+      "api_name": "deepseek/deepseek-v3.1-terminus",
+      "pricing": {
+        "input_per_1m": 0.27,
+        "output_per_1m": 1.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.135
+      },
+      "context_window_tokens": 131072
+    },
+    {
+      "ref": "deepseek-v3.2",
+      "api_name": "deepseek/deepseek-v3.2",
+      "pricing": {
+        "input_per_1m": 0.269,
+        "output_per_1m": 0.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.1345
+      },
+      "context_window_tokens": 163840
+    },
+    {
+      "ref": "deepseek-v3.2-exp",
+      "api_name": "deepseek/deepseek-v3.2-exp",
+      "pricing": {
+        "input_per_1m": 0.27,
+        "output_per_1m": 0.41,
         "currency": "USD"
       }
     },
@@ -30,54 +178,226 @@
       "pricing": {
         "input_per_1m": 0.14,
         "output_per_1m": 0.28,
-        "cached_input_per_1m": 0.028,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "deepseek-v3.2",
-      "api_name": "deepseek/deepseek-v3.2",
-      "context_window_tokens": 163840,
-      "max_output_tokens": 65536,
-      "pricing": {
-        "input_per_1m": 0.269,
-        "output_per_1m": 0.4,
-        "cached_input_per_1m": 0.1345,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "deepseek-r1-0528",
-      "api_name": "deepseek/deepseek-r1-0528",
-      "pricing": {
-        "input_per_1m": 0.7,
-        "output_per_1m": 2.5,
-        "cached_input_per_1m": 0.14,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "kimi-k2.7-code",
-      "api_name": "moonshotai/kimi-k2.7-code",
-      "pricing": {
-        "input_per_1m": 0.95,
-        "output_per_1m": 4.0,
-        "cached_input_per_1m": 0.19,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "kimi-k2.5",
-      "api_name": "moonshotai/kimi-k2.5",
-      "context_window_tokens": 262144,
-      "attachments": {
-        "images": true,
-        "documents": true
+        "currency": "USD",
+        "cached_input_per_1m": 0.028
       },
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 393216
+    },
+    {
+      "ref": "deepseek-v4-pro",
+      "api_name": "deepseek/deepseek-v4-pro",
+      "pricing": {
+        "input_per_1m": 1.6,
+        "output_per_1m": 3.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.135
+      },
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 393216
+    },
+    {
+      "ref": "deepseek_v3",
+      "api_name": "deepseek/deepseek_v3",
+      "pricing": {
+        "input_per_1m": 0.89,
+        "output_per_1m": 0.89,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ernie-4.5-21b-a3b",
+      "api_name": "baidu/ernie-4.5-21B-a3b",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "output_per_1m": 0.28,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ernie-4.5-vl-424b-a47b",
+      "api_name": "baidu/ernie-4.5-vl-424b-a47b",
+      "pricing": {
+        "input_per_1m": 0.42,
+        "output_per_1m": 1.25,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemma-3-12b-it",
+      "api_name": "google/gemma-3-12b-it",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.1,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemma-3-27b-it",
+      "api_name": "google/gemma-3-27b-it",
+      "pricing": {
+        "input_per_1m": 0.119,
+        "output_per_1m": 0.2,
+        "currency": "USD"
+      },
+      "context_window_tokens": 98304,
+      "max_output_tokens": 16384
+    },
+    {
+      "ref": "gemma-4-26b-a4b-it",
+      "api_name": "google/gemma-4-26b-a4b-it",
+      "pricing": {
+        "input_per_1m": 0.13,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      },
+      "context_window_tokens": 262144,
+      "max_output_tokens": 131072,
+      "attachments": {
+        "video": false
+      }
+    },
+    {
+      "ref": "gemma-4-31b-it",
+      "api_name": "google/gemma-4-31b-it",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "glm-4-32b-0414",
+      "api_name": "thudm/glm-4-32b-0414",
+      "pricing": {
+        "input_per_1m": 0.55,
+        "output_per_1m": 1.66,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-4.5-air",
+      "api_name": "zai-org/glm-4.5-air",
+      "pricing": {
+        "input_per_1m": 0.13,
+        "output_per_1m": 0.85,
+        "currency": "USD",
+        "cached_input_per_1m": 0.025
+      },
+      "context_window_tokens": 131072,
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-4.5v",
+      "api_name": "zai-org/glm-4.5v",
       "pricing": {
         "input_per_1m": 0.6,
-        "output_per_1m": 3.0,
-        "currency": "USD"
+        "output_per_1m": 1.8,
+        "currency": "USD",
+        "cached_input_per_1m": 0.11
+      }
+    },
+    {
+      "ref": "glm-4.6",
+      "api_name": "zai-org/glm-4.6",
+      "pricing": {
+        "input_per_1m": 0.55,
+        "output_per_1m": 2.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.11
+      },
+      "context_window_tokens": 204800,
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-4.6v",
+      "api_name": "zai-org/glm-4.6v",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 0.9,
+        "currency": "USD",
+        "cached_input_per_1m": 0.055
+      }
+    },
+    {
+      "ref": "glm-4.7",
+      "api_name": "zai-org/glm-4.7",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.11
+      },
+      "context_window_tokens": 204800,
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-4.7-flash",
+      "api_name": "zai-org/glm-4.7-flash",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "output_per_1m": 0.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.01
+      }
+    },
+    {
+      "ref": "glm-4.7-h",
+      "api_name": "zai-org/glm-4.7-h",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.11
+      }
+    },
+    {
+      "ref": "glm-5",
+      "api_name": "zai-org/glm-5",
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      },
+      "context_window_tokens": 202800,
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-5-turbo",
+      "api_name": "zai-org/glm-5-turbo",
+      "pricing": {
+        "input_per_1m": 1.2,
+        "output_per_1m": 4.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.24
+      },
+      "context_window_tokens": 202800,
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-5.1",
+      "api_name": "zai-org/glm-5.1",
+      "pricing": {
+        "input_per_1m": 1.38,
+        "output_per_1m": 4.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.26
+      },
+      "context_window_tokens": 204800,
+      "attachments": {
+        "images": false
       }
     },
     {
@@ -86,124 +406,326 @@
       "pricing": {
         "input_per_1m": 1.4,
         "output_per_1m": 4.4,
-        "cached_input_per_1m": 0.26,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "qwen3.5-397b-a17b",
-      "api_name": "qwen/qwen3.5-397b-a17b",
-      "context_window_tokens": 262144,
-      "attachments": {
-        "images": true
+        "currency": "USD",
+        "cached_input_per_1m": 0.26
       },
+      "attachments": {
+        "images": false
+      }
+    },
+    {
+      "ref": "glm-5v-turbo",
+      "api_name": "zai-org/glm-5v-turbo",
       "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 3.6,
+        "input_per_1m": 1.2,
+        "output_per_1m": 4.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.24
+      }
+    },
+    {
+      "ref": "gpt-oss-120b",
+      "api_name": "openai/gpt-oss-120b",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.25,
+        "currency": "USD"
+      },
+      "max_output_tokens": 32768
+    },
+    {
+      "ref": "gpt-oss-20b",
+      "api_name": "openai/gpt-oss-20b",
+      "pricing": {
+        "input_per_1m": 0.04,
+        "output_per_1m": 0.15,
+        "currency": "USD"
+      },
+      "max_output_tokens": 32768
+    },
+    {
+      "ref": "hermes-2-pro-llama-3-8b",
+      "api_name": "nousresearch/hermes-2-pro-llama-3-8b",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.14,
         "currency": "USD"
       }
     },
     {
-      "ref": "minimax-m3",
-      "api_name": "minimax/minimax-m3",
+      "ref": "hy3",
+      "api_name": "tencent/hy3",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.58,
+        "currency": "USD",
+        "cached_input_per_1m": 0.035
+      },
+      "max_output_tokens": 262144,
+      "attachments": {
+        "images": false,
+        "audio": false,
+        "video": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kat-coder-pro",
+      "api_name": "kwaipilot/kat-coder-pro",
       "pricing": {
         "input_per_1m": 0.3,
         "output_per_1m": 1.2,
-        "cached_input_per_1m": 0.06,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
       }
     },
     {
-      "ref": "gemma-4-31b-it",
-      "api_name": "google/gemma-4-31b-it",
-      "context_window_tokens": 262144,
-      "attachments": {
-        "images": true
+      "ref": "kimi-k2-0905",
+      "api_name": "moonshotai/kimi-k2-0905",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.5,
+        "currency": "USD"
       },
+      "attachments": {
+        "images": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k2-instruct",
+      "api_name": "moonshotai/kimi-k2-instruct",
       "pricing": {
-        "input_per_1m": 0.14,
-        "output_per_1m": 0.4,
+        "input_per_1m": 0.57,
+        "output_per_1m": 2.3,
+        "currency": "USD"
+      },
+      "max_output_tokens": 100352,
+      "status": "active",
+      "attachments": {
+        "images": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k2-thinking",
+      "api_name": "moonshotai/kimi-k2-thinking",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.15
+      },
+      "max_output_tokens": 100352,
+      "attachments": {
+        "images": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k2.5",
+      "api_name": "moonshotai/kimi-k2.5",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.1
+      },
+      "max_output_tokens": 262144,
+      "attachments": {
+        "video": true,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k2.6",
+      "api_name": "moonshotai/kimi-k2.6",
+      "pricing": {
+        "input_per_1m": 0.8,
+        "output_per_1m": 3.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.16
+      },
+      "max_output_tokens": 262144,
+      "attachments": {
+        "video": true,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k2.7-code",
+      "api_name": "moonshotai/kimi-k2.7-code",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.19
+      },
+      "max_output_tokens": 262144,
+      "attachments": {
+        "video": true,
+        "documents": false
+      }
+    },
+    {
+      "ref": "kimi-k3",
+      "api_name": "moonshotai/kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.3
+      },
+      "attachments": {
+        "video": true,
+        "documents": false
+      },
+      "max_output_tokens": 1048576
+    },
+    {
+      "ref": "l3-70b-euryale-v2.1",
+      "api_name": "sao10k/l3-70b-euryale-v2.1",
+      "pricing": {
+        "input_per_1m": 1.48,
+        "output_per_1m": 1.48,
         "currency": "USD"
       }
     },
     {
-      "ref": "gemma-4-26b-a4b-it",
-      "api_name": "google/gemma-4-26b-a4b-it",
-      "context_window_tokens": 262144,
+      "ref": "l3-8b-lunaris",
+      "api_name": "sao10k/l3-8b-lunaris",
       "pricing": {
-        "input_per_1m": 0.13,
-        "output_per_1m": 0.4,
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.05,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "l3-8b-stheno-v3.2",
+      "api_name": "Sao10K/L3-8B-Stheno-v3.2",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.05,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "l31-70b-euryale-v2.2",
+      "api_name": "sao10k/l31-70b-euryale-v2.2",
+      "pricing": {
+        "input_per_1m": 1.48,
+        "output_per_1m": 1.48,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ling-2.6-1t",
+      "api_name": "inclusionai/ling-2.6-1t",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
+    },
+    {
+      "ref": "ling-2.6-flash",
+      "api_name": "inclusionai/ling-2.6-flash",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.3,
+        "currency": "USD",
+        "cached_input_per_1m": 0.02
+      }
+    },
+    {
+      "ref": "ling-3.0-flash",
+      "api_name": "inclusionai/ling-3.0-flash",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
         "currency": "USD"
       }
     },
     {
       "ref": "llama-3.1-8b-instruct",
       "api_name": "meta-llama/llama-3.1-8b-instruct",
-      "context_window_tokens": 16384,
       "pricing": {
         "input_per_1m": 0.02,
         "output_per_1m": 0.05,
         "currency": "USD"
+      },
+      "context_window_tokens": 16384,
+      "max_output_tokens": 16384
+    },
+    {
+      "ref": "llama-3.2-1b-instruct",
+      "api_name": "meta-llama/llama-3.2-1b-instruct",
+      "pricing": {
+        "input_per_1m": 0.02,
+        "output_per_1m": 0.02,
+        "currency": "USD"
       }
+    },
+    {
+      "ref": "llama-3.2-3b-instruct",
+      "api_name": "meta-llama/llama-3.2-3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.05,
+        "currency": "USD"
+      },
+      "context_window_tokens": 32768,
+      "max_output_tokens": 32000
     },
     {
       "ref": "llama-3.3-70b-instruct",
       "api_name": "meta-llama/llama-3.3-70b-instruct",
-      "context_window_tokens": 6000,
       "pricing": {
         "input_per_1m": 0.135,
         "output_per_1m": 0.4,
         "currency": "USD"
-      }
+      },
+      "context_window_tokens": 6000,
+      "max_output_tokens": 120000
     },
     {
-      "ref": "qwen3-coder",
-      "api_name": "qwen/qwen3-coder-480b-a35b-instruct",
-      "context_window_tokens": 262144,
+      "ref": "llama-4-maverick-17b-128e-instruct-fp8",
+      "api_name": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
       "pricing": {
-        "input_per_1m": 0.38,
-        "output_per_1m": 1.55,
+        "input_per_1m": 0.27,
+        "output_per_1m": 0.85,
+        "currency": "USD"
+      },
+      "context_window_tokens": 1048576,
+      "max_output_tokens": 8192
+    },
+    {
+      "ref": "llama-4-scout-17b-16e-instruct",
+      "api_name": "meta-llama/llama-4-scout-17b-16e-instruct",
+      "pricing": {
+        "input_per_1m": 0.18,
+        "output_per_1m": 0.59,
+        "currency": "USD"
+      },
+      "max_output_tokens": 131072,
+      "status": "active"
+    },
+    {
+      "ref": "m2-her",
+      "api_name": "minimax/m2-her",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
         "currency": "USD"
       }
     },
     {
-      "ref": "step-3.7-flash",
-      "api_name": "stepfun/step-3.7-flash",
-      "context_window_tokens": 262144,
+      "ref": "macaron-v1-tall",
+      "api_name": "mindai/macaron-v1-tall",
       "pricing": {
-        "input_per_1m": 0.2,
-        "output_per_1m": 1.15,
-        "cached_input_per_1m": 0.04,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "mimo-v2.5",
-      "api_name": "xiaomimimo/mimo-v2.5",
-      "pricing": {
-        "input_per_1m": 0.168,
-        "output_per_1m": 0.336,
-        "cached_input_per_1m": 0.0034,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "nemotron-3-nano-30b-a3b",
-      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
-      "context_window_tokens": 262144,
-      "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.2,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "ling-2.6-flash",
-      "api_name": "inclusionai/ling-2.6-flash",
-      "context_window_tokens": 262144,
-      "pricing": {
-        "input_per_1m": 0.1,
-        "output_per_1m": 0.3,
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
         "currency": "USD"
       }
     },
@@ -217,13 +739,415 @@
       }
     },
     {
-      "ref": "hy3",
-      "api_name": "tencent/hy3",
-      "context_window_tokens": 262144,
+      "ref": "mimo-v2.5",
+      "api_name": "xiaomimimo/mimo-v2.5",
       "pricing": {
-        "input_per_1m": 0.14,
+        "input_per_1m": 0.168,
+        "output_per_1m": 0.336,
+        "currency": "USD",
+        "cached_input_per_1m": 0.0034
+      },
+      "attachments": {
+        "audio": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "mimo-v2.5-pro",
+      "api_name": "xiaomimimo/mimo-v2.5-pro",
+      "pricing": {
+        "input_per_1m": 0.522,
+        "output_per_1m": 1.044,
+        "currency": "USD",
+        "cached_input_per_1m": 0.0043
+      },
+      "attachments": {
+        "images": false,
+        "documents": false
+      }
+    },
+    {
+      "ref": "minimax-m1-80k",
+      "api_name": "minimaxai/minimax-m1-80k",
+      "pricing": {
+        "input_per_1m": 0.55,
+        "output_per_1m": 2.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "minimax-m2",
+      "api_name": "minimax/minimax-m2",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "minimax-m2.1",
+      "api_name": "minimax/minimax-m2.1",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "minimax-m2.5",
+      "api_name": "minimax/minimax-m2.5",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      },
+      "max_output_tokens": 131100
+    },
+    {
+      "ref": "minimax-m2.5-highspeed",
+      "api_name": "minimax/minimax-m2.5-highspeed",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      },
+      "max_output_tokens": 131100
+    },
+    {
+      "ref": "minimax-m2.7",
+      "api_name": "minimax/minimax-m2.7",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "minimax-m2.7-highspeed",
+      "api_name": "minimax/minimax-m2.7-highspeed",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "minimax-m3",
+      "api_name": "minimax/minimax-m3",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      },
+      "max_output_tokens": 131072
+    },
+    {
+      "ref": "mistral-nemo",
+      "api_name": "mistralai/mistral-nemo",
+      "pricing": {
+        "input_per_1m": 0.04,
+        "output_per_1m": 0.17,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "mythomax-l2-13b",
+      "api_name": "gryphe/mythomax-l2-13b",
+      "pricing": {
+        "input_per_1m": 0.09,
+        "output_per_1m": 0.09,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "nemotron-3-nano-30b-a3b",
+      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.2,
+        "currency": "USD"
+      },
+      "max_output_tokens": 32768
+    },
+    {
+      "ref": "paddleocr-vl",
+      "api_name": "paddlepaddle/paddleocr-vl",
+      "pricing": {
+        "input_per_1m": 0.02,
+        "output_per_1m": 0.02,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen-2.5-72b-instruct",
+      "api_name": "qwen/qwen-2.5-72b-instruct",
+      "pricing": {
+        "input_per_1m": 0.38,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen-mt-plus",
+      "api_name": "qwen/qwen-mt-plus",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 0.75,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-235b-a22b-fp8",
+      "api_name": "qwen/qwen3-235b-a22b-fp8",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 0.8,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-235b-a22b-instruct-2507",
+      "api_name": "qwen/qwen3-235b-a22b-instruct-2507",
+      "pricing": {
+        "input_per_1m": 0.09,
         "output_per_1m": 0.58,
-        "cached_input_per_1m": 0.035,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-235b-a22b-thinking-2507",
+      "api_name": "qwen/qwen3-235b-a22b-thinking-2507",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 3.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-coder-30b-a3b-instruct",
+      "api_name": "qwen/qwen3-coder-30b-a3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "output_per_1m": 0.27,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-coder-480b-a35b-instruct",
+      "api_name": "qwen/qwen3-coder-480b-a35b-instruct",
+      "pricing": {
+        "input_per_1m": 0.38,
+        "output_per_1m": 1.55,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-coder-next",
+      "api_name": "qwen/qwen3-coder-next",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-max",
+      "api_name": "qwen/qwen3-max",
+      "pricing": {
+        "input_per_1m": 2.11,
+        "output_per_1m": 8.45,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-next-80b-a3b-instruct",
+      "api_name": "qwen/qwen3-next-80b-a3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      },
+      "context_window_tokens": 131072,
+      "max_output_tokens": 32768
+    },
+    {
+      "ref": "qwen3-omni-30b-a3b-instruct",
+      "api_name": "qwen/qwen3-omni-30b-a3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 0.97,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-omni-30b-a3b-thinking",
+      "api_name": "qwen/qwen3-omni-30b-a3b-thinking",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 0.97,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-vl-235b-a22b-instruct",
+      "api_name": "qwen/qwen3-vl-235b-a22b-instruct",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-vl-235b-a22b-thinking",
+      "api_name": "qwen/qwen3-vl-235b-a22b-thinking",
+      "pricing": {
+        "input_per_1m": 0.98,
+        "output_per_1m": 3.95,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3-vl-30b-a3b-instruct",
+      "api_name": "qwen/qwen3-vl-30b-a3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 0.7,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.5-122b-a10b",
+      "api_name": "qwen/qwen3.5-122b-a10b",
+      "pricing": {
+        "input_per_1m": 0.4,
+        "output_per_1m": 3.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.5-27b",
+      "api_name": "qwen/qwen3.5-27b",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.5-35b-a3b",
+      "api_name": "qwen/qwen3.5-35b-a3b",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 2.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.5-397b-a17b",
+      "api_name": "qwen/qwen3.5-397b-a17b",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.6,
+        "currency": "USD"
+      },
+      "attachments": {
+        "images": true,
+        "video": true
+      },
+      "max_output_tokens": 65536
+    },
+    {
+      "ref": "qwen3.5-plus",
+      "api_name": "qwen/qwen3.5-plus",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      },
+      "max_output_tokens": 65536,
+      "attachments": {
+        "images": true,
+        "video": true
+      }
+    },
+    {
+      "ref": "qwen3.6-27b",
+      "api_name": "qwen/qwen3.6-27b",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.6,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.6-35b-a3b",
+      "api_name": "qwen/qwen3.6-35b-a3b",
+      "pricing": {
+        "input_per_1m": 0.248,
+        "output_per_1m": 1.485,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.6-plus",
+      "api_name": "qwen/qwen3.6-plus",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      },
+      "max_output_tokens": 65536
+    },
+    {
+      "ref": "qwen3.7-max",
+      "api_name": "qwen/qwen3.7-max",
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 3.75,
+        "currency": "USD",
+        "cached_input_per_1m": 0.25
+      },
+      "max_output_tokens": 65536
+    },
+    {
+      "ref": "ring-2.6-1t",
+      "api_name": "inclusionai/ring-2.6-1t",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
+    },
+    {
+      "ref": "step-3.7-flash",
+      "api_name": "stepfun/step-3.7-flash",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.15,
+        "currency": "USD",
+        "cached_input_per_1m": 0.04
+      },
+      "context_window_tokens": 262144,
+      "max_output_tokens": 256000
+    },
+    {
+      "ref": "wizardlm-2-8x22b",
+      "api_name": "microsoft/wizardlm-2-8x22b",
+      "pricing": {
+        "input_per_1m": 0.62,
+        "output_per_1m": 0.62,
         "currency": "USD"
       }
     }

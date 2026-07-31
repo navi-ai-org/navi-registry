@@ -1,0 +1,29 @@
+{
+  "id": "qwen-2.5-72b-instruct",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 32000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen-2.5-72b-instruct"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen-2.5-72b-instruct"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen-2.5-72b-instruct"
+    }
+  },
+  "max_output_tokens": 8192
+}

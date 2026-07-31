@@ -1,0 +1,29 @@
+{
+  "id": "glm-4-32b-0414",
+  "vendor": "thudm",
+  "family": "glm",
+  "context_window_tokens": 32000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "thudm/glm-4-32b-0414"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for thudm/glm-4-32b-0414"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for thudm/glm-4-32b-0414"
+    }
+  },
+  "max_output_tokens": 32000
+}

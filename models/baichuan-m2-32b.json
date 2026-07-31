@@ -1,0 +1,29 @@
+{
+  "id": "baichuan-m2-32b",
+  "vendor": "baichuan",
+  "family": "baichuan",
+  "context_window_tokens": 131072,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "baichuan/baichuan-m2-32b"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for baichuan/baichuan-m2-32b"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for baichuan/baichuan-m2-32b"
+    }
+  },
+  "max_output_tokens": 131072
+}

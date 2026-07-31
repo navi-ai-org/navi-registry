@@ -1,0 +1,29 @@
+{
+  "id": "mythomax-l2-13b",
+  "vendor": "gryphe",
+  "family": "mythomax",
+  "context_window_tokens": 4096,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "gryphe/mythomax-l2-13b"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for gryphe/mythomax-l2-13b"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for gryphe/mythomax-l2-13b"
+    }
+  },
+  "max_output_tokens": 3200
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gemma-3-12b-it",
+  "vendor": "google",
+  "family": "gemma",
+  "context_window_tokens": 131072,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "google/gemma-3-12b-it"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for google/gemma-3-12b-it"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for google/gemma-3-12b-it"
+    }
+  },
+  "max_output_tokens": 8192
+}

@@ -1,0 +1,29 @@
+{
+  "id": "qwen-mt-plus",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 16384,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen-mt-plus"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen-mt-plus"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen-mt-plus"
+    }
+  },
+  "max_output_tokens": 8192
+}

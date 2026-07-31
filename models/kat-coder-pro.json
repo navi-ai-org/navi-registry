@@ -1,0 +1,24 @@
+{
+  "id": "kat-coder-pro",
+  "vendor": "kwaipilot",
+  "family": "kat-coder",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 128000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "kwaipilot/kat-coder-pro"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-25",
+      "note": "from Novita AI /models API — non-reasoning model optimized for agentic coding"
+    }
+  }
+}

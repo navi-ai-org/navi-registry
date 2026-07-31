@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-v3-turbo",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 64000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "deepseek/deepseek-v3-turbo"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-v3-turbo"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-v3-turbo"
+    }
+  },
+  "max_output_tokens": 16000
+}

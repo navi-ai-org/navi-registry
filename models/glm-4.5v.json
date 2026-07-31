@@ -1,0 +1,29 @@
+{
+  "id": "glm-4.5v",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 65536,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "aliases": [
+    "zai-org/glm-4.5v"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-4.5v"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-4.5v"
+    }
+  },
+  "max_output_tokens": 16384
+}

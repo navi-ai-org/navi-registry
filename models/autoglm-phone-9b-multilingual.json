@@ -1,0 +1,29 @@
+{
+  "id": "autoglm-phone-9b-multilingual",
+  "vendor": "zhipu",
+  "family": "autoglm",
+  "context_window_tokens": 65536,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "zai-org/autoglm-phone-9b-multilingual"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/autoglm-phone-9b-multilingual"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/autoglm-phone-9b-multilingual"
+    }
+  },
+  "max_output_tokens": 65536
+}

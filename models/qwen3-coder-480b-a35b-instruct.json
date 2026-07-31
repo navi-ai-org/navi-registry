@@ -1,0 +1,29 @@
+{
+  "id": "qwen3-coder-480b-a35b-instruct",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 262144,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3-coder-480b-a35b-instruct"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen3-coder-480b-a35b-instruct"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for qwen/qwen3-coder-480b-a35b-instruct"
+    }
+  },
+  "max_output_tokens": 65536
+}

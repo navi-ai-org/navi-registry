@@ -1,0 +1,29 @@
+{
+  "id": "minimax-m1-80k",
+  "vendor": "minimax",
+  "family": "minimax",
+  "context_window_tokens": 1000000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "minimaxai/minimax-m1-80k"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for minimaxai/minimax-m1-80k"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for minimaxai/minimax-m1-80k"
+    }
+  },
+  "max_output_tokens": 40000
+}

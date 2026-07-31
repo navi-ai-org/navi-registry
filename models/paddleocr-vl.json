@@ -1,0 +1,29 @@
+{
+  "id": "paddleocr-vl",
+  "vendor": "paddlepaddle",
+  "family": "paddleocr",
+  "context_window_tokens": 16384,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "paddlepaddle/paddleocr-vl"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for paddlepaddle/paddleocr-vl"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for paddlepaddle/paddleocr-vl"
+    }
+  },
+  "max_output_tokens": 16384
+}

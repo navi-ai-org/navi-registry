@@ -1,0 +1,29 @@
+{
+  "id": "ernie-4.5-21b-a3b",
+  "vendor": "baidu",
+  "family": "ernie",
+  "context_window_tokens": 120000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "baidu/ernie-4.5-21B-a3b"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for baidu/ernie-4.5-21B-a3b"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for baidu/ernie-4.5-21B-a3b"
+    }
+  },
+  "max_output_tokens": 8000
+}

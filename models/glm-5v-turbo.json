@@ -1,0 +1,29 @@
+{
+  "id": "glm-5v-turbo",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 204800,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "aliases": [
+    "zai-org/glm-5v-turbo"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-5v-turbo"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-5v-turbo"
+    }
+  },
+  "max_output_tokens": 131072
+}

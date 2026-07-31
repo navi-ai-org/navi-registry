@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-ocr-2",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 8192,
+  "supports_thinking": false,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "deepseek/deepseek-ocr-2"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-ocr-2"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-ocr-2"
+    }
+  },
+  "max_output_tokens": 8192
+}

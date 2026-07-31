@@ -1,0 +1,29 @@
+{
+  "id": "deepseek-r1-0528-qwen3-8b",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 128000,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "deepseek/deepseek-r1-0528-qwen3-8b"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-r1-0528-qwen3-8b"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for deepseek/deepseek-r1-0528-qwen3-8b"
+    }
+  },
+  "max_output_tokens": 32000
+}

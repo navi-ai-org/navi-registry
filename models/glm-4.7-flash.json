@@ -1,0 +1,29 @@
+{
+  "id": "glm-4.7-flash",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 200000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "zai-org/glm-4.7-flash"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-4.7-flash"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for zai-org/glm-4.7-flash"
+    }
+  },
+  "max_output_tokens": 128000
+}

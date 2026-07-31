@@ -1,0 +1,24 @@
+{
+  "id": "qwen3-max",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 65536,
+  "supports_thinking": false,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3-max"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-25",
+      "note": "from Novita AI /models API — enhanced agent programming and tool calling"
+    }
+  }
+}

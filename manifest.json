@@ -1,20 +1,20 @@
 {
-  "version": 46,
-  "updated_at": "2026-07-29T23:17:30Z",
+  "version": 49,
+  "updated_at": "2026-07-31T09:06:53Z",
   "coverage": {
-    "models_total": 453,
-    "models_with_pricing": 258,
-    "models_with_attachments": 453,
-    "models_with_modern_attachments": 453,
+    "models_total": 540,
+    "models_with_pricing": 345,
+    "models_with_attachments": 540,
+    "models_with_modern_attachments": 540,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 443,
-    "models_with_thinking": 296,
-    "models_with_ref": 453,
-    "canonical_models": 300,
+    "models_with_sources": 530,
+    "models_with_thinking": 344,
+    "models_with_ref": 540,
+    "canonical_models": 356,
     "models_by_status": {
-      "active": 402,
+      "active": 489,
       "deprecated": 10,
       "removed": 41,
       "preview": 0
@@ -36,6 +36,14 @@
     "abab6.5t-chat": {
       "file": "models/abab6.5t-chat.json",
       "sha256": "781d6551d9303786672d2862698d29f44b329fb6d85b1f6419963351a92f1961"
+    },
+    "autoglm-phone-9b-multilingual": {
+      "file": "models/autoglm-phone-9b-multilingual.json",
+      "sha256": "cb51c3f5f85a74b2ccadf77b40aeac842e696b80a19787115643242f2e9a0308"
+    },
+    "baichuan-m2-32b": {
+      "file": "models/baichuan-m2-32b.json",
+      "sha256": "32a505a84c497a411a411efecbaa1222084fb925164a151994a01ddd1d97067e"
     },
     "big-pickle": {
       "file": "models/big-pickle.json",
@@ -173,6 +181,10 @@
       "file": "models/claude-sonnet-5.json",
       "sha256": "4c20d506cfb08d01fb67855627a859e22e7094a8209fbcba2c684ab869cd0e8a"
     },
+    "cobuddy": {
+      "file": "models/cobuddy.json",
+      "sha256": "5956a51b97a4dd5d17614104c291be9de71c702301b818a753745c2fa18ebd5d"
+    },
     "codellama": {
       "file": "models/codellama.json",
       "sha256": "08dd0313d50a76960db6fd869965f5529fe63a1460275e7ac8f077b36779e711"
@@ -213,6 +225,14 @@
       "file": "models/deepseek-coder-v2-lite.json",
       "sha256": "2352daf00592576b64085f10aa68d9265e336072fb4c8dab262e2ddefd8b664a"
     },
+    "deepseek-ocr": {
+      "file": "models/deepseek-ocr.json",
+      "sha256": "a28c73d9c96022bcf788996a4e5e9f9c0e3f708850224c1b0958bdd438ce5f52"
+    },
+    "deepseek-ocr-2": {
+      "file": "models/deepseek-ocr-2.json",
+      "sha256": "c0bfaeca8b3dd029f303b98c6398b063ee5dffa818eb49f6a102710acaa511d4"
+    },
     "deepseek-r1": {
       "file": "models/deepseek-r1.json",
       "sha256": "343b921b96759bbcbdf9260684472f51a381bc01132b569bee1212a65b6d9a25"
@@ -220,6 +240,10 @@
     "deepseek-r1-0528": {
       "file": "models/deepseek-r1-0528.json",
       "sha256": "44c2fe5220295ee4adbf31dcd7ddcbe80f7b2b20d1a370f034f26ced66b77c26"
+    },
+    "deepseek-r1-0528-qwen3-8b": {
+      "file": "models/deepseek-r1-0528-qwen3-8b.json",
+      "sha256": "e70a48858282275bb0b456751ef3eb73cc50c5924b58b84a0207f4c41ba847cd"
     },
     "deepseek-r1-distill-llama-70b": {
       "file": "models/deepseek-r1-distill-llama-70b.json",
@@ -233,6 +257,10 @@
       "file": "models/deepseek-r1-distill-qwen-32b.json",
       "sha256": "7f392eea1ca2aabb0aff1cd64bc00580f6a7058dceaa4d269180cfe82b41a88f"
     },
+    "deepseek-r1-turbo": {
+      "file": "models/deepseek-r1-turbo.json",
+      "sha256": "b3479822b0be844770f7a998aa39566bc5f8ac7b9cb44243415e49ecbc1b49e9"
+    },
     "deepseek-reasoner": {
       "file": "models/deepseek-reasoner.json",
       "sha256": "f7028e70330a7a0b4cdf15e440f0b969f3eb1435322974ed8f3239e651492347"
@@ -240,6 +268,14 @@
     "deepseek-v3": {
       "file": "models/deepseek-v3.json",
       "sha256": "2560c5d36e034f0556972ba7564179719c677c2cc72f2463caae404ea5971035"
+    },
+    "deepseek-v3-0324": {
+      "file": "models/deepseek-v3-0324.json",
+      "sha256": "648acbf47a04d9dcfc088713c7e1e45a9c9c86da93ecd00b9c08017ea8426248"
+    },
+    "deepseek-v3-turbo": {
+      "file": "models/deepseek-v3-turbo.json",
+      "sha256": "89a80462c797837f3a7a00aa1ae544711e9bbf06c2dd991381f4c434d5281d38"
     },
     "deepseek-v3.1": {
       "file": "models/deepseek-v3.1.json",
@@ -253,6 +289,10 @@
       "file": "models/deepseek-v3.2.json",
       "sha256": "950900b60e7effa2a3dbf26384aa35269837c475121f1278412ba34dd57ab97c"
     },
+    "deepseek-v3.2-exp": {
+      "file": "models/deepseek-v3.2-exp.json",
+      "sha256": "7e14067226fb76a200194eaa246f54c2253b1197f1dc83674863088bb162c1f6"
+    },
     "deepseek-v4-flash": {
       "file": "models/deepseek-v4-flash.json",
       "sha256": "60a95e3e5f7d194b5c55a7982972b808f77b2805ce0db900d382ba1edc07f032"
@@ -264,6 +304,10 @@
     "deepseek-v4-pro": {
       "file": "models/deepseek-v4-pro.json",
       "sha256": "f5a3aa42f0da525a2092edbe236951c170211c762ee759ffe124d48253ba3edd"
+    },
+    "deepseek_v3": {
+      "file": "models/deepseek_v3.json",
+      "sha256": "6ae3327a3ee2696b4f7c1316981e813fe86663f0cf9d17a46a03f9fecf2c6851"
     },
     "devstral": {
       "file": "models/devstral.json",
@@ -292,6 +336,14 @@
     "devstral-small-latest": {
       "file": "models/devstral-small-latest.json",
       "sha256": "57c91c48ab60c97b5fe7603396580454c35654c36b675937f4c04ed2ca88be1e"
+    },
+    "ernie-4.5-21b-a3b": {
+      "file": "models/ernie-4.5-21b-a3b.json",
+      "sha256": "68bf8c02e432eb5926ed0785b882ee19ea8e656c6c7b26181fb58b0e261c7c54"
+    },
+    "ernie-4.5-vl-424b-a47b": {
+      "file": "models/ernie-4.5-vl-424b-a47b.json",
+      "sha256": "cdf9115a041d2ce3ab6393bd152bab10c3a058d2993530c0dd06d1f922ee2c9d"
     },
     "gemini-1.5-flash": {
       "file": "models/gemini-1.5-flash.json",
@@ -377,6 +429,10 @@
       "file": "models/gemini-3.6-flash.json",
       "sha256": "5ff7eb4f49a9f3e6da0d7d7911f8c65311bbba631a7905bfff950a183a88ce4b"
     },
+    "gemma-3-12b-it": {
+      "file": "models/gemma-3-12b-it.json",
+      "sha256": "4b0e7cf3e44824e9e318fd1ad96ae1eeeb5cab6da38be4f40a5a82f80cc2b811"
+    },
     "gemma-3-27b-it": {
       "file": "models/gemma-3-27b-it.json",
       "sha256": "1fb92f762f75b07bb1a94da76d041a79ae91a2f31461b8655135912f0f96d114"
@@ -412,6 +468,10 @@
     "glm-4-0520": {
       "file": "models/glm-4-0520.json",
       "sha256": "f407a6420d736165a829eee59bf3571c6bf8c2fcf4f8c2c4a3542ab523e4967c"
+    },
+    "glm-4-32b-0414": {
+      "file": "models/glm-4-32b-0414.json",
+      "sha256": "ebf1a58746333391ce625e6c99f589648b7ca4a2df4f6be251357d02e6e7b4e2"
     },
     "glm-4-air": {
       "file": "models/glm-4-air.json",
@@ -449,13 +509,29 @@
       "file": "models/glm-4.5-x.json",
       "sha256": "06e77bde3714e92fce057bf79eccf212ed408c61e2558ee47e3f8d9e5637c3ff"
     },
+    "glm-4.5v": {
+      "file": "models/glm-4.5v.json",
+      "sha256": "aa277c7cd2f9696c9aa9065e751aa7678b5aa7ca7aeca97d8f380d097590fa12"
+    },
     "glm-4.6": {
       "file": "models/glm-4.6.json",
       "sha256": "cad8bba8a279fd5d9e45b67679111f6f43aa7ec578157aa43943613b4c4811ec"
     },
+    "glm-4.6v": {
+      "file": "models/glm-4.6v.json",
+      "sha256": "2151361ace21eb2b3b29c69ef2b166181c3420fb51085665c400b6ac8cda5e8e"
+    },
     "glm-4.7": {
       "file": "models/glm-4.7.json",
       "sha256": "7c1a14a29e1415af6d6261da9185af30920d6889fd6b50537fbe1669cba6bc2d"
+    },
+    "glm-4.7-flash": {
+      "file": "models/glm-4.7-flash.json",
+      "sha256": "919a2d4e71fe21b701f1fbcc06cf2d31c44f2c8305bfefce8f20d9313e56b8a8"
+    },
+    "glm-4.7-h": {
+      "file": "models/glm-4.7-h.json",
+      "sha256": "4293ab051aa1e3a130524ed1962640ff7f8dca900a9614dbbcbd6cb5890fa723"
     },
     "glm-5": {
       "file": "models/glm-5.json",
@@ -472,6 +548,10 @@
     "glm-5.2": {
       "file": "models/glm-5.2.json",
       "sha256": "5d71200edfb78fa8ae3b17bac5723a71e653c38d19b0c19fd60ac81900222d00"
+    },
+    "glm-5v-turbo": {
+      "file": "models/glm-5v-turbo.json",
+      "sha256": "7b3d2f3558fbf77a5c3e01763889b5041e7497d051f870fdbe0fe6439044399b"
     },
     "gpt-4.1": {
       "file": "models/gpt-4.1.json",
@@ -669,6 +749,10 @@
       "file": "models/grok-build-0.1.json",
       "sha256": "a79842c688dc25f0cd81b29aa384ed6788d311bddfd45210e1a1369df839dc4c"
     },
+    "hermes-2-pro-llama-3-8b": {
+      "file": "models/hermes-2-pro-llama-3-8b.json",
+      "sha256": "a7021e6fb3ff9cba30b6a2d8c7c38415ba35536f35404dee2e1b5516e04a6ce7"
+    },
     "hy3": {
       "file": "models/hy3.json",
       "sha256": "e913ab3ffbdce067e8d10afac8d8522ad235a9a6a620ca26eea5ea55ca727414"
@@ -676,6 +760,10 @@
     "hy3-free": {
       "file": "models/hy3-free.json",
       "sha256": "23330aff818f30961ce94b2d17bfd3c0f3b56435d6f7f2f9db7f7b076a1307c5"
+    },
+    "kat-coder-pro": {
+      "file": "models/kat-coder-pro.json",
+      "sha256": "4bf8ca36aa1353a40358822467e599727b81aac28858ec41c6a6d3f273971ab4"
     },
     "kimi-k2": {
       "file": "models/kimi-k2.json",
@@ -721,13 +809,37 @@
       "file": "models/kimi-thinking-preview.json",
       "sha256": "4ac2cf6c297265c1e35c80548ddba0207c8bccdf5107aa91bd15eb99f6f124fd"
     },
+    "l3-70b-euryale-v2.1": {
+      "file": "models/l3-70b-euryale-v2.1.json",
+      "sha256": "650d03b763dc7022e5e12fabf8379c583946126d7a76151b792ecb7a5d31cfd2"
+    },
+    "l3-8b-lunaris": {
+      "file": "models/l3-8b-lunaris.json",
+      "sha256": "782716f64ea05f14c20e2044879ef1d0cd2cada83a7028b82afb0af38c71747b"
+    },
+    "l3-8b-stheno-v3.2": {
+      "file": "models/l3-8b-stheno-v3.2.json",
+      "sha256": "13794e4b66bb90c3b8e115cb2e7c06c265d1581e56d0262a9ea13ac7a9e2c543"
+    },
+    "l31-70b-euryale-v2.2": {
+      "file": "models/l31-70b-euryale-v2.2.json",
+      "sha256": "b0f77c1df87f5990061bd0432c0c51d4a79f5896e9acced7fd36b4f25179dd3f"
+    },
     "laguna-s-2.1-free": {
       "file": "models/laguna-s-2.1-free.json",
       "sha256": "ea01714df3e820558e83df8211834f7c36d85d37bcc7f6582521c5a4cb9cbded"
     },
+    "ling-2.6-1t": {
+      "file": "models/ling-2.6-1t.json",
+      "sha256": "3f9cc7df0586656049cd5fc2096ea5b2c530c01d219fb3cc550a3d89d518dd51"
+    },
     "ling-2.6-flash": {
       "file": "models/ling-2.6-flash.json",
       "sha256": "7c5ceb470725b0f1fc0a76898ba1fff18e9cda6828e4429c15f4151e1ddc9128"
+    },
+    "ling-3.0-flash": {
+      "file": "models/ling-3.0-flash.json",
+      "sha256": "0a0a538e2e0dfb0978eebdea922d3d7be24bcace0a4da3f3117def64e83d4b5e"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
@@ -740,6 +852,10 @@
     "llama-3.1-nemotron-70b-instruct": {
       "file": "models/llama-3.1-nemotron-70b-instruct.json",
       "sha256": "7c29ee77b199ff021cb02aa8c634510c88160e8e7a6027a5cb00091f7133f69e"
+    },
+    "llama-3.2-1b-instruct": {
+      "file": "models/llama-3.2-1b-instruct.json",
+      "sha256": "749344a4092ebde90f0a06dcc9d3afcddeb91293e4b4ca4a0c05f22e5fa513d7"
     },
     "llama-3.2-3b-instruct": {
       "file": "models/llama-3.2-3b-instruct.json",
@@ -801,6 +917,14 @@
       "file": "models/local-model.json",
       "sha256": "84b82934fc5f8b86448c971fe212727d0090caa4813f3e433a01a5513a559d68"
     },
+    "m2-her": {
+      "file": "models/m2-her.json",
+      "sha256": "164826dc5c9fe9397b9ee11a2dc00b4b4e80a6d998f41b65392a41117bb4596b"
+    },
+    "macaron-v1-tall": {
+      "file": "models/macaron-v1-tall.json",
+      "sha256": "98c81d5b1223cb6c56a6e580f8078972ca0b24d43cb71cbe5941cf17c557c394"
+    },
     "macaron-v1-venti": {
       "file": "models/macaron-v1-venti.json",
       "sha256": "ec8cc73c264aeb4b6f7995588d756dcb1662d7c89c943152d002a99e1b893426"
@@ -840,6 +964,10 @@
     "minimax-m1": {
       "file": "models/minimax-m1.json",
       "sha256": "05b1d44576294d6545aa9c492e4f4b106aa758ef86c60259e06278baebf8bdf4"
+    },
+    "minimax-m1-80k": {
+      "file": "models/minimax-m1-80k.json",
+      "sha256": "31669b07abef760b23b5c8f7f6a33d2d16133f6045188e9e9ecd3129a8eb2a8a"
     },
     "minimax-m2": {
       "file": "models/minimax-m2.json",
@@ -941,6 +1069,10 @@
       "file": "models/mistral-medium-latest.json",
       "sha256": "c3bb16d77fec5997c04bf0ff0e075c8cdc9e31aedee49efce6bda44ffc64f3a2"
     },
+    "mistral-nemo": {
+      "file": "models/mistral-nemo.json",
+      "sha256": "002e18556a9dc7659d97aae6a945bc97c946e3dc3bc30d54887f84ddaafbd0db"
+    },
     "mistral-saba-24b": {
       "file": "models/mistral-saba-24b.json",
       "sha256": "357b891928dee06d641523ffbb679415158ce40f686e65bd6d59621e8d4292a5"
@@ -984,6 +1116,10 @@
     "moonshot-v1-auto": {
       "file": "models/moonshot-v1-auto.json",
       "sha256": "50ce06c63990e9e2aec20df931c46f3bc3287a68d3fc7a2e129e52272f92778b"
+    },
+    "mythomax-l2-13b": {
+      "file": "models/mythomax-l2-13b.json",
+      "sha256": "f038996d310a559c4dec0645bc5943269417141c51b8a39dea6f2fa0ec4faf8a"
     },
     "nemotron-3-nano-30b-a3b": {
       "file": "models/nemotron-3-nano-30b-a3b.json",
@@ -1061,6 +1197,10 @@
       "file": "models/open-mixtral-8x7b.json",
       "sha256": "45266f0f00d28c56b77dc12e8b6074a0a6000bdff3bee8fb1b74bd64611c2cbf"
     },
+    "paddleocr-vl": {
+      "file": "models/paddleocr-vl.json",
+      "sha256": "f7f49d45a008ccc85f4ff3a199cee9c01ff32de26b36af50f61d4061d824b916"
+    },
     "phi-4": {
       "file": "models/phi-4.json",
       "sha256": "5d93d1ea3b8833bde7a742072785fa3b61f853c52808b3f564b5a557427e6e59"
@@ -1080,6 +1220,14 @@
     "pixtral-large-latest": {
       "file": "models/pixtral-large-latest.json",
       "sha256": "d3cbdd3057ffe0f444f6ecad15e84b73b4aebf680d8f42a673bbbd84a4839338"
+    },
+    "qwen-2.5-72b-instruct": {
+      "file": "models/qwen-2.5-72b-instruct.json",
+      "sha256": "942a41cd0346b211f39d7fc34c7487bf8d553bb29731948352c75c2b7e1125e6"
+    },
+    "qwen-mt-plus": {
+      "file": "models/qwen-mt-plus.json",
+      "sha256": "9dd173ee6c360f3fec75d4f2ebd8894aa6f86168d612360cfb226f23c6afaebc"
     },
     "qwen2.5-coder": {
       "file": "models/qwen2.5-coder.json",
@@ -1121,6 +1269,18 @@
       "file": "models/qwen3-235b-a22b.json",
       "sha256": "b1119d63470735554de49e5cbdaaca15e58fba52f5d987b139523d8408c50981"
     },
+    "qwen3-235b-a22b-fp8": {
+      "file": "models/qwen3-235b-a22b-fp8.json",
+      "sha256": "f5ccaccbe214cae68918fa46199b82bb855de5a09b0a48354a5a02b9e18441aa"
+    },
+    "qwen3-235b-a22b-instruct-2507": {
+      "file": "models/qwen3-235b-a22b-instruct-2507.json",
+      "sha256": "53d43a9f3eff807a2841cd69f46b257919090e16e25cc1db7e2b1b44403f5cc0"
+    },
+    "qwen3-235b-a22b-thinking-2507": {
+      "file": "models/qwen3-235b-a22b-thinking-2507.json",
+      "sha256": "e06e2fc0b2b6245de0a33a9cfc5aa31548d634e04f32517e11138f6cde5ce067"
+    },
     "qwen3-32b": {
       "file": "models/qwen3-32b.json",
       "sha256": "c04e6db061b22874dbfb88bb3e298641684b259bfc8a2b46172c92b258c3b28b"
@@ -1129,13 +1289,61 @@
       "file": "models/qwen3-coder.json",
       "sha256": "3d07d57f5e08eef1b316f3abd535fe821813a101d5801401b88fd0a2c4550324"
     },
+    "qwen3-coder-30b-a3b-instruct": {
+      "file": "models/qwen3-coder-30b-a3b-instruct.json",
+      "sha256": "0eb9635af4cccb6761c11a64d6a106e4ed572915a17575d0d4349716dac3259d"
+    },
+    "qwen3-coder-480b-a35b-instruct": {
+      "file": "models/qwen3-coder-480b-a35b-instruct.json",
+      "sha256": "c3f648b6711559f29cbf23a5500e300484ccd80210522cdb32790aa443bd1fd1"
+    },
     "qwen3-coder-480b-a35b-instruct-int4-mixed-ar": {
       "file": "models/qwen3-coder-480b-a35b-instruct-int4-mixed-ar.json",
       "sha256": "fbcd7bd45ebb89f865d26f399a97ca47afadd97253fff27e23abd01c93b15c77"
     },
+    "qwen3-coder-next": {
+      "file": "models/qwen3-coder-next.json",
+      "sha256": "bfa241728148bb3b6541eaadaf000cfd5e1cbcbdc807f211332fc65bd6bdbd10"
+    },
+    "qwen3-max": {
+      "file": "models/qwen3-max.json",
+      "sha256": "d18f79ef0baee00c58ded80ecc8e23ce743c0b052b036fec133957dfa6bc7e7d"
+    },
     "qwen3-next-80b-a3b-instruct": {
       "file": "models/qwen3-next-80b-a3b-instruct.json",
       "sha256": "1c310c20ef0d3cf7d9b250eb8e3162c086eeea9c708af0c6b71339534a08f780"
+    },
+    "qwen3-omni-30b-a3b-instruct": {
+      "file": "models/qwen3-omni-30b-a3b-instruct.json",
+      "sha256": "aaaadbf4ca18599ba44c4647ccbe93b165f0b8dc13f80e6b3e26b64aaa3c5526"
+    },
+    "qwen3-omni-30b-a3b-thinking": {
+      "file": "models/qwen3-omni-30b-a3b-thinking.json",
+      "sha256": "c8b964bff88841a68b8f41114c3af48571cb65f8239e5de107ad487b238655de"
+    },
+    "qwen3-vl-235b-a22b-instruct": {
+      "file": "models/qwen3-vl-235b-a22b-instruct.json",
+      "sha256": "8b124ceccd52a5bc433af90dc2d7d2d3b5b853aacd72c20d0fa24375ba814428"
+    },
+    "qwen3-vl-235b-a22b-thinking": {
+      "file": "models/qwen3-vl-235b-a22b-thinking.json",
+      "sha256": "07268f7a52d4fca23010aa99dbdfa7f57b25efbe0e47d130b7d77a613070c07c"
+    },
+    "qwen3-vl-30b-a3b-instruct": {
+      "file": "models/qwen3-vl-30b-a3b-instruct.json",
+      "sha256": "5ffa253cbf5ffbd6a83ddbab63978dcdf554b8028be117c323e0bd8d8d698db4"
+    },
+    "qwen3.5-122b-a10b": {
+      "file": "models/qwen3.5-122b-a10b.json",
+      "sha256": "ac9dc06f1a1173de4164783549822f775e87f95f4ff944e08b983ad6411962b7"
+    },
+    "qwen3.5-27b": {
+      "file": "models/qwen3.5-27b.json",
+      "sha256": "9d2f2e1dea12dffd8fe494cb21f3e06ab972e01acf728eefdb4cb724e51fe914"
+    },
+    "qwen3.5-35b-a3b": {
+      "file": "models/qwen3.5-35b-a3b.json",
+      "sha256": "7321e4eebcaf9d559f62871c4c7e7102db29d686d60f27241c3a6086979f1694"
     },
     "qwen3.5-397b-a17b": {
       "file": "models/qwen3.5-397b-a17b.json",
@@ -1144,6 +1352,14 @@
     "qwen3.5-plus": {
       "file": "models/qwen3.5-plus.json",
       "sha256": "04ce2a79627c444e6f4614ffb95e4e880eeeaf4a808f78389f7b4008e75234b4"
+    },
+    "qwen3.6-27b": {
+      "file": "models/qwen3.6-27b.json",
+      "sha256": "45f3bb182416a0a6babbec4af0be5dd42d9e4ef2f00d1897e0b095e9cd134640"
+    },
+    "qwen3.6-35b-a3b": {
+      "file": "models/qwen3.6-35b-a3b.json",
+      "sha256": "9a9e45540a27218dbb4ab8f13ddb3e642ca4d213d20a9be0cbba28a4c90d087e"
     },
     "qwen3.6-flash": {
       "file": "models/qwen3.6-flash.json",
@@ -1168,6 +1384,10 @@
     "qwen3.7-plus": {
       "file": "models/qwen3.7-plus.json",
       "sha256": "5a3b3e3990c7e6e6547052a018dc8c135ceda4ee6feebb2d585191301665bed9"
+    },
+    "ring-2.6-1t": {
+      "file": "models/ring-2.6-1t.json",
+      "sha256": "b488ab85ca77dfcdd91876695772d2626eeab4e15ef0ba568af9ba79472eb58e"
     },
     "starcoder2": {
       "file": "models/starcoder2.json",
@@ -1220,6 +1440,10 @@
     "tinyllama": {
       "file": "models/tinyllama.json",
       "sha256": "ecd3f71df904a252d7b6db0cf8fe8c41734c1ca17c0c33a05e99d4afe86352e2"
+    },
+    "wizardlm-2-8x22b": {
+      "file": "models/wizardlm-2-8x22b.json",
+      "sha256": "c824dfb740a65528454a0456fa8b0fe7c9b35cce7cc38a66cb2031b2f3fe374f"
     }
   },
   "providers": {
@@ -1308,8 +1532,8 @@
     },
     "novita": {
       "file": "providers/novita.json",
-      "sha256": "a2f2b8a374dfd98fd36e71ba7281382f8644abe6e382bae0e7896142f590ff66",
-      "model_count": 20
+      "sha256": "87df901eef911432e3d5615a841ff96993aa6cfa0a94a0a54bc3f5075e623464",
+      "model_count": 107
     },
     "nvidia": {
       "file": "providers/nvidia.json",

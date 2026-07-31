@@ -1,0 +1,29 @@
+{
+  "id": "l31-70b-euryale-v2.2",
+  "vendor": "sao10k",
+  "family": "l3",
+  "context_window_tokens": 8192,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "sao10k/l31-70b-euryale-v2.2"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for sao10k/l31-70b-euryale-v2.2"
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-07-31",
+      "note": "Novita AI /models API for sao10k/l31-70b-euryale-v2.2"
+    }
+  },
+  "max_output_tokens": 8192
+}
