@@ -1,135 +1,46 @@
 # Registry Probe Report
 
 ## Summary
-- Auto-filled fields: **82**
+- Auto-filled fields: **22**
 - Context windows filled: **0**
-- Max output filled: **12**
-- New models (not in registry): **355**
-- Removed models (local only): **33**
-- Needs manual review (probed): **52**
-- Needs manual review (unprobed): **12**
-- Default context window (200k, likely unset): **63**
-- Needs pricing: **171**
-- Errors: **7**
+- Max output filled: **0**
+- New models (not in registry): **383**
+- Removed models (local only): **4**
+- Needs manual review (probed): **0**
+- Needs manual review (unprobed): **0**
+- Default context window (200k, likely unset): **0**
+- Needs pricing: **132**
+- Errors: **9**
 
 ## Auto-filled Fields
 
 | Provider | Model | Fields |
 |---|---|---|
-| charm-hyper | gemma-4-26b-a4b-it | images, video |
-| charm-hyper | kimi-k2.5 | images |
-| charm-hyper | kimi-k2.7-code | pricing |
-| charm-hyper | llama-3.3-70b-instruct | pricing |
-| charm-hyper | llama-4-maverick-17b-128e-instruct-fp8 | images |
-| charm-hyper | minimax-m2.7 | pricing |
-| charm-hyper | qwen3-next-80b-a3b-instruct | pricing |
-| charm-hyper | qwen3.6-flash | images, video, pricing |
-| charm-hyper | qwen3.6-plus | images, video, pricing |
-| charm-hyper | qwen3.7-max | pricing |
-| charm-hyper | qwen3.7-plus | pricing |
-| commandcode | claude-fable-5 | max_output |
-| commandcode | deepseek/deepseek-v4-flash | max_output |
-| commandcode | deepseek/deepseek-v4-pro | max_output |
-| commandcode | google/gemini-3.1-flash-lite | max_output |
-| commandcode | google/gemini-3.5-flash | max_output |
-| commandcode | gpt-5.3-codex | max_output |
-| commandcode | gpt-5.4 | max_output |
-| commandcode | gpt-5.4-mini | max_output |
-| commandcode | gpt-5.5 | max_output |
-| commandcode | nvidia/nemotron-3-ultra-550b-a55b | max_output |
-| commandcode | xiaomi/mimo-v2.5-pro | max_output |
-| deepseek | deepseek-chat | pricing |
-| deepseek | deepseek-r1 | pricing |
-| deepseek | deepseek-v3.2 | pricing |
-| deepseek | deepseek-v4-flash | pricing |
-| deepseek | deepseek-v4-pro | pricing |
-| gitlawb | minimax/minimax-m3 | images, video, pricing |
-| gitlawb | qwen/qwen3.7-max | pricing |
-| gitlawb | z-ai/glm-5.2 | pricing |
-| mistral | codestral-2508 | documents, pricing |
-| mistral | mistral-large-2407 | documents, pricing |
-| moonshot | kimi-k2 | pricing |
-| moonshot | kimi-k2-thinking | pricing |
-| moonshot | kimi-k2.5 | images, pricing |
-| moonshot | kimi-k2.6 | images, pricing |
-| moonshot | kimi-latest | images, pricing |
-| nvidia | microsoft/phi-4 | pricing |
-| nvidia | mistralai/mistral-large | documents, pricing |
-| ollama | deepseek-r1 | max_output |
-| openai | gpt-4.1 | images, documents, pricing |
-| openai | gpt-4.1-mini | images, documents, pricing |
-| openai | gpt-4.1-nano | images, documents, pricing |
-| openai | gpt-4.5-preview | images |
-| openai | gpt-4o | images, documents, pricing |
-| openai | gpt-4o-mini | images, documents, pricing |
-| openai | gpt-5 | images, documents, pricing |
-| openai | gpt-5-mini | images, documents, pricing |
-| openai | gpt-5-nano | images, documents, pricing |
-| openai | gpt-5.1 | images, documents, pricing |
-| openai | gpt-5.1-codex | images, pricing |
-| openai | gpt-5.1-codex-mini | images, pricing |
-| openai | gpt-5.2 | images, documents, pricing |
-| openai | gpt-5.3-codex | images, documents, pricing |
-| openai | gpt-5.4 | images, documents, pricing |
-| openai | gpt-5.4-mini | images, documents, pricing |
-| openai | gpt-5.4-nano | images, documents, pricing |
-| openai | gpt-5.5 | images, documents, pricing |
-| openai | gpt-oss-120b | pricing |
-| openai | gpt-oss-20b | pricing |
-| openai | o1 | documents, pricing |
-| openai | o1-pro | documents, pricing |
-| openai | o3 | images, documents, pricing |
-| openai | o3-mini | documents, pricing |
-| openai | o3-pro | images, documents, pricing |
-| openai | o4-mini | images, documents, pricing |
-| opencode | gemma-4-26b-a4b | images |
-| opencode | gpt-5 | images, documents |
-| opencode | gpt-5-codex | images |
-| opencode | gpt-5-nano | images, documents |
-| opencode | gpt-5.1 | images, documents |
-| opencode | gpt-5.1-codex-max | images |
-| opencode | gpt-5.1-codex-mini | images |
-| opencode | gpt-5.2-codex | images |
-| opencode | gpt-5.3-codex | images, documents |
-| opencode | gpt-5.3-codex-spark | images, audio, documents |
-| opencode | grok-build-0.1 | images, documents |
-| opencode | llama-4-maverick-17b-128e-instruct-fp8 | images |
-| opencode | minimax-m3 | images, video |
-| opencode | qwen3.6-flash | images, documents, video |
-| xai | grok-4.20 | pricing |
-| xai | grok-build-0.1 | images, documents |
+| anthropic | claude-sonnet-5 | pricing |
+| commandcode | MiniMaxAI/MiniMax-M2.5 | pricing |
+| commandcode | MiniMaxAI/MiniMax-M2.7 | pricing |
+| commandcode | Qwen/Qwen3.6-Max-Preview | pricing |
+| commandcode | Qwen/Qwen3.6-Plus | pricing |
+| commandcode | Qwen/Qwen3.7-Max | pricing |
+| commandcode | Qwen/Qwen3.7-Plus | pricing |
+| commandcode | moonshotai/Kimi-K2.5 | pricing |
+| commandcode | moonshotai/Kimi-K2.6 | pricing |
+| commandcode | moonshotai/Kimi-K2.7-Code | pricing |
+| commandcode | stepfun/Step-3.5-Flash | pricing |
+| commandcode | stepfun/Step-3.7-Flash | pricing |
+| commandcode | zai-org/GLM-5 | pricing |
+| commandcode | zai-org/GLM-5.1 | pricing |
+| minimax | minimax-m2 | pricing |
+| minimax | minimax-m2.1 | pricing |
+| minimax | minimax-m2.5 | pricing |
+| minimax | minimax-m2.7 | pricing |
+| minimax | minimax-m3 | pricing |
+| nvidia | deepseek-ai/deepseek-r1 | pricing |
+| nvidia | meta/llama-3.1-8b-instruct | pricing |
+| nvidia | meta/llama-3.3-70b-instruct | pricing |
 
 ## New Models (not in local registry)
 
-- `groq/allam-2-7b`
-- `groq/compound`
-- `groq/compound-mini`
-- `groq/gpt-oss-120b`
-- `groq/gpt-oss-20b`
-- `groq/gpt-oss-safeguard-20b`
-- `groq/llama-4-scout-17b-16e-instruct`
-- `groq/llama-prompt-guard-2-22m`
-- `groq/llama-prompt-guard-2-86m`
-- `groq/orpheus-arabic-saudi`
-- `groq/orpheus-v1-english`
-- `groq/qwen3-32b`
-- `groq/qwen3.6-27b`
-- `groq/whisper-large-v3`
-- `groq/whisper-large-v3-turbo`
-- `ollama/deepseek-v4-flash:cloud`
-- `ollama/deepseek-v4-pro:cloud`
-- `ollama/gemma4:31b-cloud`
-- `ollama/glm-5.1:cloud`
-- `ollama/glm-5.2:cloud`
-- `ollama/glm-5:cloud`
-- `ollama/gpt-oss:20b-cloud`
-- `ollama/kimi-k2.5:cloud`
-- `ollama/kimi-k2.7-code:cloud`
-- `ollama/minimax-m2.7:cloud`
-- `ollama/minimax-m3:cloud`
-- `ollama/nemotron-3-super:cloud`
-- `ollama/qwen3.5:397b-cloud`
-- `ollama/rnj-1:8b-cloud`
 - `openrouter/ai21/jamba-large-1.7`
 - `openrouter/aion-labs/aion-2.0`
 - `openrouter/aion-labs/aion-3.0`
@@ -144,18 +55,30 @@
 - `openrouter/anthracite-org/magnum-v4-72b`
 - `openrouter/anthropic/claude-3-haiku`
 - `openrouter/anthropic/claude-fable-5`
+- `openrouter/anthropic/claude-fable-5:batch`
 - `openrouter/anthropic/claude-haiku-4.5`
+- `openrouter/anthropic/claude-haiku-4.5:batch`
 - `openrouter/anthropic/claude-opus-4.1`
+- `openrouter/anthropic/claude-opus-4.1:batch`
 - `openrouter/anthropic/claude-opus-4.5`
+- `openrouter/anthropic/claude-opus-4.5:batch`
 - `openrouter/anthropic/claude-opus-4.6`
+- `openrouter/anthropic/claude-opus-4.6:batch`
 - `openrouter/anthropic/claude-opus-4.7`
 - `openrouter/anthropic/claude-opus-4.7-fast`
+- `openrouter/anthropic/claude-opus-4.7:batch`
 - `openrouter/anthropic/claude-opus-4.8`
 - `openrouter/anthropic/claude-opus-4.8-fast`
+- `openrouter/anthropic/claude-opus-4.8:batch`
+- `openrouter/anthropic/claude-opus-5`
+- `openrouter/anthropic/claude-opus-5-fast`
+- `openrouter/anthropic/claude-opus-5:batch`
 - `openrouter/anthropic/claude-sonnet-4.5`
+- `openrouter/anthropic/claude-sonnet-4.5:batch`
 - `openrouter/anthropic/claude-sonnet-4.6`
+- `openrouter/anthropic/claude-sonnet-4.6:batch`
 - `openrouter/anthropic/claude-sonnet-5`
-- `openrouter/arcee-ai/coder-large`
+- `openrouter/anthropic/claude-sonnet-5:batch`
 - `openrouter/arcee-ai/trinity-large-thinking`
 - `openrouter/arcee-ai/virtuoso-large`
 - `openrouter/baidu/ernie-4.5-vl-424b-a47b`
@@ -165,7 +88,6 @@
 - `openrouter/bytedance-seed/seed-2.0-mini`
 - `openrouter/bytedance/ui-tars-1.5-7b`
 - `openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition`
-- `openrouter/cognitivecomputations/dolphin-mistral-24b-venice-edition:free`
 - `openrouter/cohere/command-a`
 - `openrouter/cohere/command-r-08-2024`
 - `openrouter/cohere/command-r-plus-08-2024`
@@ -181,11 +103,16 @@
 - `openrouter/deepseek/deepseek-v3.2`
 - `openrouter/deepseek/deepseek-v3.2-exp`
 - `openrouter/deepseek/deepseek-v4-flash`
+- `openrouter/deepseek/deepseek-v4-flash-0731`
 - `openrouter/google/gemini-2.5-flash-image`
 - `openrouter/google/gemini-2.5-flash-lite`
+- `openrouter/google/gemini-2.5-flash-lite:batch`
+- `openrouter/google/gemini-2.5-flash:batch`
 - `openrouter/google/gemini-2.5-pro-preview`
 - `openrouter/google/gemini-2.5-pro-preview-05-06`
+- `openrouter/google/gemini-2.5-pro:batch`
 - `openrouter/google/gemini-3-flash-preview`
+- `openrouter/google/gemini-3-flash-preview:batch`
 - `openrouter/google/gemini-3-pro-image`
 - `openrouter/google/gemini-3-pro-image-preview`
 - `openrouter/google/gemini-3.1-flash-image`
@@ -193,9 +120,16 @@
 - `openrouter/google/gemini-3.1-flash-lite`
 - `openrouter/google/gemini-3.1-flash-lite-image`
 - `openrouter/google/gemini-3.1-flash-lite-preview`
+- `openrouter/google/gemini-3.1-flash-lite:batch`
 - `openrouter/google/gemini-3.1-pro-preview`
 - `openrouter/google/gemini-3.1-pro-preview-customtools`
+- `openrouter/google/gemini-3.1-pro-preview:batch`
 - `openrouter/google/gemini-3.5-flash`
+- `openrouter/google/gemini-3.5-flash-lite`
+- `openrouter/google/gemini-3.5-flash-lite:batch`
+- `openrouter/google/gemini-3.5-flash:batch`
+- `openrouter/google/gemini-3.6-flash`
+- `openrouter/google/gemini-3.6-flash:batch`
 - `openrouter/google/gemma-2-27b-it`
 - `openrouter/google/gemma-3-12b-it`
 - `openrouter/google/gemma-3-27b-it`
@@ -213,22 +147,22 @@
 - `openrouter/inception/mercury-2`
 - `openrouter/inclusionai/ling-2.6-1t`
 - `openrouter/inclusionai/ling-2.6-flash`
+- `openrouter/inclusionai/ling-3.0-flash`
+- `openrouter/inclusionai/ling-3.0-tiny:free`
 - `openrouter/inclusionai/ring-2.6-1t`
-- `openrouter/inflection/inflection-3-pi`
-- `openrouter/inflection/inflection-3-productivity`
 - `openrouter/kwaipilot/kat-coder-air-v2.5`
 - `openrouter/kwaipilot/kat-coder-pro-v2`
 - `openrouter/kwaipilot/kat-coder-pro-v2.5`
 - `openrouter/mancer/weaver`
+- `openrouter/meituan/longcat-2.0`
 - `openrouter/meta-llama/llama-3.1-70b-instruct`
 - `openrouter/meta-llama/llama-3.1-8b-instruct`
-- `openrouter/meta-llama/llama-3.2-11b-vision-instruct`
 - `openrouter/meta-llama/llama-3.2-1b-instruct`
 - `openrouter/meta-llama/llama-3.2-3b-instruct`
-- `openrouter/meta-llama/llama-3.2-3b-instruct:free`
 - `openrouter/meta-llama/llama-3.3-70b-instruct`
-- `openrouter/meta-llama/llama-3.3-70b-instruct:free`
 - `openrouter/meta-llama/llama-guard-4-12b`
+- `openrouter/meta/muse-spark-1.1`
+- `openrouter/meta/muse-spark-1.2`
 - `openrouter/microsoft/phi-4`
 - `openrouter/microsoft/wizardlm-2-8x22b`
 - `openrouter/minimax/minimax-01`
@@ -239,8 +173,8 @@
 - `openrouter/minimax/minimax-m2.5`
 - `openrouter/minimax/minimax-m2.7`
 - `openrouter/minimax/minimax-m3`
+- `openrouter/minimax/minimax-m3:batch`
 - `openrouter/mistralai/codestral-2508`
-- `openrouter/mistralai/devstral-2512`
 - `openrouter/mistralai/ministral-14b-2512`
 - `openrouter/mistralai/ministral-3b-2512`
 - `openrouter/mistralai/ministral-8b-2512`
@@ -262,22 +196,23 @@
 - `openrouter/moonshotai/kimi-k2.5`
 - `openrouter/moonshotai/kimi-k2.6`
 - `openrouter/moonshotai/kimi-k2.7-code`
+- `openrouter/moonshotai/kimi-k2.7-code:batch`
+- `openrouter/moonshotai/kimi-k3`
 - `openrouter/morph/morph-v3-fast`
 - `openrouter/morph/morph-v3-large`
 - `openrouter/nex-agi/nex-n2-mini`
 - `openrouter/nex-agi/nex-n2-pro`
 - `openrouter/nousresearch/hermes-3-llama-3.1-405b`
-- `openrouter/nousresearch/hermes-3-llama-3.1-405b:free`
 - `openrouter/nousresearch/hermes-3-llama-3.1-70b`
 - `openrouter/nousresearch/hermes-4-405b`
 - `openrouter/nousresearch/hermes-4-70b`
-- `openrouter/nvidia/llama-3.3-nemotron-super-49b-v1.5`
 - `openrouter/nvidia/nemotron-3-nano-30b-a3b`
 - `openrouter/nvidia/nemotron-3-nano-30b-a3b:free`
 - `openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free`
 - `openrouter/nvidia/nemotron-3-super-120b-a12b`
 - `openrouter/nvidia/nemotron-3-super-120b-a12b:free`
 - `openrouter/nvidia/nemotron-3-ultra-550b-a55b`
+- `openrouter/nvidia/nemotron-3-ultra-550b-a55b:batch`
 - `openrouter/nvidia/nemotron-3-ultra-550b-a55b:free`
 - `openrouter/nvidia/nemotron-3.5-content-safety:free`
 - `openrouter/nvidia/nemotron-nano-12b-v2-vl:free`
@@ -286,49 +221,71 @@
 - `openrouter/openai/gpt-3.5-turbo-0613`
 - `openrouter/openai/gpt-3.5-turbo-16k`
 - `openrouter/openai/gpt-3.5-turbo-instruct`
+- `openrouter/openai/gpt-3.5-turbo:batch`
 - `openrouter/openai/gpt-4`
 - `openrouter/openai/gpt-4-turbo`
 - `openrouter/openai/gpt-4-turbo-preview`
+- `openrouter/openai/gpt-4-turbo:batch`
 - `openrouter/openai/gpt-4.1-mini`
+- `openrouter/openai/gpt-4.1-mini:batch`
 - `openrouter/openai/gpt-4.1-nano`
+- `openrouter/openai/gpt-4.1-nano:batch`
+- `openrouter/openai/gpt-4.1:batch`
 - `openrouter/openai/gpt-4o`
 - `openrouter/openai/gpt-4o-2024-05-13`
 - `openrouter/openai/gpt-4o-2024-08-06`
 - `openrouter/openai/gpt-4o-2024-11-20`
 - `openrouter/openai/gpt-4o-mini`
 - `openrouter/openai/gpt-4o-mini-2024-07-18`
-- `openrouter/openai/gpt-4o-mini-search-preview`
-- `openrouter/openai/gpt-4o-search-preview`
+- `openrouter/openai/gpt-4o-mini:batch`
+- `openrouter/openai/gpt-4o:batch`
 - `openrouter/openai/gpt-5`
-- `openrouter/openai/gpt-5-chat`
-- `openrouter/openai/gpt-5-codex`
+- `openrouter/openai/gpt-5-codex:batch`
 - `openrouter/openai/gpt-5-image`
 - `openrouter/openai/gpt-5-image-mini`
 - `openrouter/openai/gpt-5-mini`
+- `openrouter/openai/gpt-5-mini:batch`
 - `openrouter/openai/gpt-5-nano`
+- `openrouter/openai/gpt-5-nano:batch`
 - `openrouter/openai/gpt-5-pro`
+- `openrouter/openai/gpt-5-pro:batch`
 - `openrouter/openai/gpt-5.1`
-- `openrouter/openai/gpt-5.1-chat`
 - `openrouter/openai/gpt-5.1-codex`
 - `openrouter/openai/gpt-5.1-codex-max`
 - `openrouter/openai/gpt-5.1-codex-mini`
+- `openrouter/openai/gpt-5.1:batch`
 - `openrouter/openai/gpt-5.2`
 - `openrouter/openai/gpt-5.2-chat`
 - `openrouter/openai/gpt-5.2-codex`
 - `openrouter/openai/gpt-5.2-pro`
+- `openrouter/openai/gpt-5.2-pro:batch`
+- `openrouter/openai/gpt-5.2:batch`
 - `openrouter/openai/gpt-5.3-chat`
 - `openrouter/openai/gpt-5.3-codex`
 - `openrouter/openai/gpt-5.4-image-2`
 - `openrouter/openai/gpt-5.4-mini`
+- `openrouter/openai/gpt-5.4-mini:batch`
 - `openrouter/openai/gpt-5.4-nano`
+- `openrouter/openai/gpt-5.4-nano:batch`
 - `openrouter/openai/gpt-5.4-pro`
+- `openrouter/openai/gpt-5.4-pro:batch`
+- `openrouter/openai/gpt-5.4:batch`
 - `openrouter/openai/gpt-5.5-pro`
+- `openrouter/openai/gpt-5.5-pro:batch`
+- `openrouter/openai/gpt-5.5:batch`
 - `openrouter/openai/gpt-5.6-luna`
 - `openrouter/openai/gpt-5.6-luna-pro`
+- `openrouter/openai/gpt-5.6-luna-pro:batch`
+- `openrouter/openai/gpt-5.6-luna:batch`
 - `openrouter/openai/gpt-5.6-sol`
 - `openrouter/openai/gpt-5.6-sol-pro`
+- `openrouter/openai/gpt-5.6-sol-pro:batch`
+- `openrouter/openai/gpt-5.6-sol:batch`
 - `openrouter/openai/gpt-5.6-terra`
 - `openrouter/openai/gpt-5.6-terra-pro`
+- `openrouter/openai/gpt-5.6-terra-pro:batch`
+- `openrouter/openai/gpt-5.6-terra:batch`
+- `openrouter/openai/gpt-5:batch`
 - `openrouter/openai/gpt-audio`
 - `openrouter/openai/gpt-audio-mini`
 - `openrouter/openai/gpt-chat-latest`
@@ -338,15 +295,22 @@
 - `openrouter/openai/gpt-oss-safeguard-20b`
 - `openrouter/openai/o1`
 - `openrouter/openai/o1-pro`
+- `openrouter/openai/o1-pro:batch`
+- `openrouter/openai/o1:batch`
 - `openrouter/openai/o3`
-- `openrouter/openai/o3-deep-research`
 - `openrouter/openai/o3-mini`
 - `openrouter/openai/o3-mini-high`
+- `openrouter/openai/o3-mini-high:batch`
+- `openrouter/openai/o3-mini:batch`
 - `openrouter/openai/o3-pro`
+- `openrouter/openai/o3-pro:batch`
+- `openrouter/openai/o3:batch`
 - `openrouter/openai/o4-mini`
-- `openrouter/openai/o4-mini-deep-research`
 - `openrouter/openai/o4-mini-high`
+- `openrouter/openai/o4-mini-high:batch`
+- `openrouter/openai/o4-mini:batch`
 - `openrouter/openrouter/auto`
+- `openrouter/openrouter/auto-beta`
 - `openrouter/openrouter/bodybuilder`
 - `openrouter/openrouter/free`
 - `openrouter/openrouter/fusion`
@@ -357,8 +321,8 @@
 - `openrouter/perplexity/sonar-pro`
 - `openrouter/perplexity/sonar-pro-search`
 - `openrouter/perplexity/sonar-reasoning-pro`
-- `openrouter/poolside/laguna-m.1`
-- `openrouter/poolside/laguna-m.1:free`
+- `openrouter/poolside/laguna-s-2.1`
+- `openrouter/poolside/laguna-s-2.1:free`
 - `openrouter/poolside/laguna-xs-2.1`
 - `openrouter/poolside/laguna-xs-2.1:free`
 - `openrouter/qwen/qwen-2.5-72b-instruct`
@@ -379,11 +343,9 @@
 - `openrouter/qwen/qwen3-coder-flash`
 - `openrouter/qwen/qwen3-coder-next`
 - `openrouter/qwen/qwen3-coder-plus`
-- `openrouter/qwen/qwen3-coder:free`
 - `openrouter/qwen/qwen3-max`
 - `openrouter/qwen/qwen3-max-thinking`
 - `openrouter/qwen/qwen3-next-80b-a3b-instruct`
-- `openrouter/qwen/qwen3-next-80b-a3b-instruct:free`
 - `openrouter/qwen/qwen3-next-80b-a3b-thinking`
 - `openrouter/qwen/qwen3-vl-235b-a22b-instruct`
 - `openrouter/qwen/qwen3-vl-235b-a22b-thinking`
@@ -405,8 +367,10 @@
 - `openrouter/qwen/qwen3.6-flash`
 - `openrouter/qwen/qwen3.6-max-preview`
 - `openrouter/qwen/qwen3.6-plus`
+- `openrouter/qwen/qwen3.7-flash`
 - `openrouter/qwen/qwen3.7-max`
 - `openrouter/qwen/qwen3.7-plus`
+- `openrouter/qwen/qwen3.8-max`
 - `openrouter/rekaai/reka-edge`
 - `openrouter/rekaai/reka-flash-3`
 - `openrouter/relace/relace-apply-3`
@@ -420,11 +384,13 @@
 - `openrouter/tencent/hunyuan-a13b-instruct`
 - `openrouter/tencent/hy3`
 - `openrouter/tencent/hy3-preview`
-- `openrouter/tencent/hy3:free`
 - `openrouter/thedrummer/cydonia-24b-v4.1`
 - `openrouter/thedrummer/rocinante-12b`
 - `openrouter/thedrummer/skyfall-36b-v2`
 - `openrouter/thedrummer/unslopnemo-12b`
+- `openrouter/thinkingmachines/inkling`
+- `openrouter/thinkingmachines/inkling-small`
+- `openrouter/thinkingmachines/inkling:batch`
 - `openrouter/undi95/remm-slerp-l2-13b`
 - `openrouter/upstage/solar-pro-3`
 - `openrouter/writer/palmyra-x5`
@@ -445,11 +411,13 @@
 - `openrouter/z-ai/glm-5-turbo`
 - `openrouter/z-ai/glm-5.1`
 - `openrouter/z-ai/glm-5.2`
+- `openrouter/z-ai/glm-5.2:batch`
 - `openrouter/z-ai/glm-5v-turbo`
 - `openrouter/~anthropic/claude-fable-latest`
 - `openrouter/~anthropic/claude-haiku-latest`
 - `openrouter/~anthropic/claude-opus-latest`
 - `openrouter/~anthropic/claude-sonnet-latest`
+- `openrouter/~deepseek/deepseek-v4-flash-latest`
 - `openrouter/~google/gemini-flash-latest`
 - `openrouter/~google/gemini-pro-latest`
 - `openrouter/~moonshotai/kimi-latest`
@@ -461,175 +429,10 @@
 
 When `--apply` is used, these models are tagged `status: removed`.
 
-- `groq/deepseek-r1-distill-llama-70b`
-- `groq/gemma2-9b-it`
-- `groq/meta-llama/llama-4-maverick-17b-128e-instruct`
-- `groq/meta-llama/llama-4-scout-17b-16e-instruct`
-- `groq/meta-llama/llama-guard-4-12b`
-- `groq/mistral-saba-24b`
-- `groq/moonshotai/kimi-k2-instruct`
-- `groq/openai/gpt-oss-120b`
-- `groq/openai/gpt-oss-20b`
-- `groq/qwen/qwen3-32b`
-- `ollama/codellama`
-- `ollama/deepseek-r1`
-- `ollama/devstral`
-- `ollama/gemma3`
-- `ollama/gemma3:12b`
-- `ollama/gemma3:27b`
-- `ollama/granite-code`
-- `ollama/llama3.1`
-- `ollama/llama3.2`
-- `ollama/llama3.3`
-- `ollama/mistral`
-- `ollama/phi4`
-- `ollama/phi4-mini`
-- `ollama/qwen2.5-coder`
-- `ollama/qwen2.5-coder:14b`
-- `ollama/qwen2.5-coder:32b`
-- `ollama/qwen2.5-coder:7b`
-- `ollama/qwen3`
-- `ollama/starcoder2`
 - `openrouter/meta-llama/llama-3.3-70b`
 - `openrouter/mistralai/codestral`
 - `openrouter/x-ai/grok-3`
 - `openrouter/x-ai/grok-4`
-
-## Needs Manual Review (probed providers, no attachment info)
-
-- `deepseek/deepseek-chat` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-coder` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-coder-v2` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-coder-v2-lite` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-r1` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-reasoner` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-v3` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-v3.1` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-v3.2` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-v4-flash` — no attachment rule or OpenRouter data
-- `deepseek/deepseek-v4-pro` — no attachment rule or OpenRouter data
-- `mistral/codestral-2405` — no attachment rule or OpenRouter data
-- `mistral/codestral-2501` — no attachment rule or OpenRouter data
-- `mistral/codestral-latest` — no attachment rule or OpenRouter data
-- `mistral/devstral-medium-2507` — no attachment rule or OpenRouter data
-- `mistral/devstral-medium-latest` — no attachment rule or OpenRouter data
-- `mistral/devstral-small-2505` — no attachment rule or OpenRouter data
-- `mistral/devstral-small-2507` — no attachment rule or OpenRouter data
-- `mistral/devstral-small-latest` — no attachment rule or OpenRouter data
-- `mistral/magistral-medium-latest` — no attachment rule or OpenRouter data
-- `mistral/magistral-small-latest` — no attachment rule or OpenRouter data
-- `mistral/ministral-3b-latest` — no attachment rule or OpenRouter data
-- `mistral/ministral-8b-latest` — no attachment rule or OpenRouter data
-- `mistral/mistral-large-2411` — no attachment rule or OpenRouter data
-- `mistral/mistral-large-latest` — no attachment rule or OpenRouter data
-- `mistral/mistral-medium-2508` — no attachment rule or OpenRouter data
-- `mistral/mistral-medium-latest` — no attachment rule or OpenRouter data
-- `mistral/mistral-small-2503` — no attachment rule or OpenRouter data
-- `mistral/mistral-small-2506` — no attachment rule or OpenRouter data
-- `mistral/mistral-small-latest` — no attachment rule or OpenRouter data
-- `mistral/open-mistral-7b` — no attachment rule or OpenRouter data
-- `mistral/open-mistral-nemo` — no attachment rule or OpenRouter data
-- `mistral/open-mixtral-8x22b` — no attachment rule or OpenRouter data
-- `mistral/open-mixtral-8x7b` — no attachment rule or OpenRouter data
-- `mistral/pixtral-12b-2409` — no attachment rule or OpenRouter data
-- `mistral/pixtral-large-latest` — no attachment rule or OpenRouter data
-- `moonshot/kimi-k2` — no attachment rule or OpenRouter data
-- `moonshot/kimi-k2-0711-preview` — no attachment rule or OpenRouter data
-- `moonshot/kimi-k2-thinking` — no attachment rule or OpenRouter data
-- `moonshot/kimi-thinking-preview` — no attachment rule or OpenRouter data
-- `moonshot/moonshot-v1-128k` — no attachment rule or OpenRouter data
-- `moonshot/moonshot-v1-32k` — no attachment rule or OpenRouter data
-- `moonshot/moonshot-v1-8k` — no attachment rule or OpenRouter data
-- `moonshot/moonshot-v1-auto` — no attachment rule or OpenRouter data
-- `nvidia/deepseek-ai/deepseek-r1` — no attachment rule or OpenRouter data
-- `nvidia/meta/llama-3.1-8b-instruct` — no attachment rule or OpenRouter data
-- `nvidia/meta/llama-3.3-70b-instruct` — no attachment rule or OpenRouter data
-- `nvidia/microsoft/phi-4` — no attachment rule or OpenRouter data
-- `nvidia/mistralai/mistral-7b-instruct` — no attachment rule or OpenRouter data
-- `nvidia/mistralai/mixtral-8x7b-instruct` — no attachment rule or OpenRouter data
-- `nvidia/nvidia/llama-3.1-nemotron-70b-instruct` — no attachment rule or OpenRouter data
-- `nvidia/qwen/qwen2.5-coder-32b-instruct` — no attachment rule or OpenRouter data
-
-## Needs Manual Review (unprobed providers, no attachment info)
-
-- `charm-hyper/deepseek-v4-flash` — no attachment rule or OpenRouter data
-- `charm-hyper/deepseek-v4-pro` — no attachment rule or OpenRouter data
-- `charm-hyper/glm-5` — no attachment rule or OpenRouter data
-- `charm-hyper/glm-5.1` — no attachment rule or OpenRouter data
-- `charm-hyper/glm-5.2` — no attachment rule or OpenRouter data
-- `charm-hyper/gpt-oss-120b` — no attachment rule or OpenRouter data
-- `charm-hyper/llama-3.3-70b-instruct` — no attachment rule or OpenRouter data
-- `charm-hyper/minimax-m2.7` — no attachment rule or OpenRouter data
-- `charm-hyper/qwen3-coder-480b-a35b-instruct-int4-mixed-ar` — no attachment rule or OpenRouter data
-- `charm-hyper/qwen3-next-80b-a3b-instruct` — no attachment rule or OpenRouter data
-- `charm-hyper/qwen3.6-max` — no attachment rule or OpenRouter data
-- `charm-hyper/qwen3.7-max` — no attachment rule or OpenRouter data
-
-## Default Context Window (200k — likely unset)
-
-- `anthropic/claude-3-5-haiku-20241022` — context_window_tokens=200000
-- `anthropic/claude-3-5-sonnet-20240620` — context_window_tokens=200000
-- `anthropic/claude-3-5-sonnet-20241022` — context_window_tokens=200000
-- `anthropic/claude-3-7-sonnet-20250219` — context_window_tokens=200000
-- `anthropic/claude-3-haiku-20240307` — context_window_tokens=200000
-- `anthropic/claude-3-opus-20240229` — context_window_tokens=200000
-- `anthropic/claude-3-sonnet-20240229` — context_window_tokens=200000
-- `anthropic/claude-3.5-haiku` — context_window_tokens=200000
-- `anthropic/claude-3.5-sonnet` — context_window_tokens=200000
-- `anthropic/claude-3.7-sonnet` — context_window_tokens=200000
-- `anthropic/claude-haiku-4` — context_window_tokens=200000
-- `anthropic/claude-opus-4` — context_window_tokens=200000
-- `anthropic/claude-opus-4-1-20250805` — context_window_tokens=200000
-- `anthropic/claude-opus-4-20250514` — context_window_tokens=200000
-- `anthropic/claude-sonnet-4` — context_window_tokens=200000
-- `anthropic/claude-sonnet-4-20250514` — context_window_tokens=200000
-- `commandcode/MiniMaxAI/MiniMax-M2.5` — context_window_tokens=200000
-- `commandcode/MiniMaxAI/MiniMax-M2.7` — context_window_tokens=200000
-- `commandcode/Qwen/Qwen3.6-Max-Preview` — context_window_tokens=200000
-- `commandcode/Qwen/Qwen3.6-Plus` — context_window_tokens=200000
-- `commandcode/claude-haiku-4-5-20251001` — context_window_tokens=200000
-- `commandcode/gpt-5.5` — context_window_tokens=200000
-- `commandcode/zai-org/GLM-5` — context_window_tokens=200000
-- `commandcode/zai-org/GLM-5.1` — context_window_tokens=200000
-- `github-copilot/claude-haiku-4.5` — context_window_tokens=200000
-- `github-copilot/claude-sonnet-4.5` — context_window_tokens=200000
-- `github-copilot/gpt-5-mini` — context_window_tokens=200000
-- `github-copilot/gpt-5.1` — context_window_tokens=200000
-- `github-copilot/gpt-5.1-codex` — context_window_tokens=200000
-- `minimax/abab6.5-chat` — context_window_tokens=200000
-- `minimax/abab6.5g-chat` — context_window_tokens=200000
-- `minimax/abab6.5s-chat` — context_window_tokens=200000
-- `minimax/abab6.5t-chat` — context_window_tokens=200000
-- `openai/o1` — context_window_tokens=200000
-- `openai/o1-mini` — context_window_tokens=200000
-- `openai/o1-pro` — context_window_tokens=200000
-- `openai/o3` — context_window_tokens=200000
-- `openai/o3-mini` — context_window_tokens=200000
-- `openai/o3-pro` — context_window_tokens=200000
-- `openai/o4-mini` — context_window_tokens=200000
-- `opencode/big-pickle` — context_window_tokens=200000
-- `opencode/claude-fable-5` — context_window_tokens=200000
-- `opencode/claude-haiku-4-5` — context_window_tokens=200000
-- `opencode/claude-opus-4-1` — context_window_tokens=200000
-- `opencode/claude-opus-4-5` — context_window_tokens=200000
-- `opencode/claude-opus-4-6` — context_window_tokens=200000
-- `opencode/claude-opus-4-7` — context_window_tokens=200000
-- `opencode/claude-opus-4-8` — context_window_tokens=200000
-- `opencode/claude-sonnet-4` — context_window_tokens=200000
-- `opencode/claude-sonnet-4-6` — context_window_tokens=200000
-- `opencode/claude-sonnet-5` — context_window_tokens=200000
-- `opencode/hy3-free` — context_window_tokens=200000
-- `opencode/mimo-v2.5-free` — context_window_tokens=200000
-- `opencode/north-mini-code-free` — context_window_tokens=200000
-- `openrouter/anthropic/claude-opus-4` — context_window_tokens=200000
-- `zai/glm-4.6` — context_window_tokens=200000
-- `zai/glm-4.7` — context_window_tokens=200000
-- `zai/glm-5` — context_window_tokens=200000
-- `zai/glm-5-turbo` — context_window_tokens=200000
-- `zai/glm-5.1` — context_window_tokens=200000
-- `zai-coding/glm-5` — context_window_tokens=200000
-- `zai-coding/glm-5-turbo` — context_window_tokens=200000
-- `zai-coding/glm-5.1` — context_window_tokens=200000
 
 ## Needs Pricing (no pricing data available)
 
@@ -650,24 +453,11 @@ When `--apply` is used, these models are tagged `status: removed`.
 - `charm-hyper/llama-4-maverick-17b-128e-instruct-fp8` — no pricing data from OpenRouter or rules
 - `charm-hyper/qwen3-coder-480b-a35b-instruct-int4-mixed-ar` — no pricing data from OpenRouter or rules
 - `charm-hyper/qwen3.6-max` — no pricing data from OpenRouter or rules
-- `commandcode/MiniMaxAI/MiniMax-M2.5` — no pricing data from OpenRouter or rules
-- `commandcode/MiniMaxAI/MiniMax-M2.7` — no pricing data from OpenRouter or rules
 - `commandcode/MiniMaxAI/MiniMax-M3` — no pricing data from OpenRouter or rules
-- `commandcode/Qwen/Qwen3.6-Max-Preview` — no pricing data from OpenRouter or rules
-- `commandcode/Qwen/Qwen3.6-Plus` — no pricing data from OpenRouter or rules
-- `commandcode/Qwen/Qwen3.7-Max` — no pricing data from OpenRouter or rules
-- `commandcode/Qwen/Qwen3.7-Plus` — no pricing data from OpenRouter or rules
 - `commandcode/claude-haiku-4-5-20251001` — no pricing data from OpenRouter or rules
 - `commandcode/claude-opus-4-7` — no pricing data from OpenRouter or rules
 - `commandcode/claude-opus-4-8` — no pricing data from OpenRouter or rules
 - `commandcode/claude-sonnet-4-6` — no pricing data from OpenRouter or rules
-- `commandcode/moonshotai/Kimi-K2.5` — no pricing data from OpenRouter or rules
-- `commandcode/moonshotai/Kimi-K2.6` — no pricing data from OpenRouter or rules
-- `commandcode/moonshotai/Kimi-K2.7-Code` — no pricing data from OpenRouter or rules
-- `commandcode/stepfun/Step-3.5-Flash` — no pricing data from OpenRouter or rules
-- `commandcode/stepfun/Step-3.7-Flash` — no pricing data from OpenRouter or rules
-- `commandcode/zai-org/GLM-5` — no pricing data from OpenRouter or rules
-- `commandcode/zai-org/GLM-5.1` — no pricing data from OpenRouter or rules
 - `deepseek/deepseek-coder` — no pricing data from OpenRouter or rules
 - `deepseek/deepseek-coder-v2` — no pricing data from OpenRouter or rules
 - `deepseek/deepseek-coder-v2-lite` — no pricing data from OpenRouter or rules
@@ -696,20 +486,15 @@ When `--apply` is used, these models are tagged `status: removed`.
 - `mimo-anthropic/mimo-v2-flash` — no pricing data from OpenRouter or rules
 - `mimo-anthropic/mimo-v2-omni` — no pricing data from OpenRouter or rules
 - `mimo-anthropic/mimo-v2-pro` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.1` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.1-highspeed` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.5` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.5-highspeed` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.7` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M2.7-highspeed` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-M3` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-Text-01` — no pricing data from OpenRouter or rules
-- `minimax/MiniMax-Text-01-456B` — no pricing data from OpenRouter or rules
 - `minimax/abab6.5-chat` — no pricing data from OpenRouter or rules
 - `minimax/abab6.5g-chat` — no pricing data from OpenRouter or rules
 - `minimax/abab6.5s-chat` — no pricing data from OpenRouter or rules
 - `minimax/abab6.5t-chat` — no pricing data from OpenRouter or rules
+- `minimax/minimax-m2.1-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/minimax-m2.5-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/minimax-m2.7-highspeed` — no pricing data from OpenRouter or rules
+- `minimax/minimax-text-01` — no pricing data from OpenRouter or rules
+- `minimax/minimax-text-01-456b` — no pricing data from OpenRouter or rules
 - `mistral/codestral-2405` — no pricing data from OpenRouter or rules
 - `mistral/codestral-2501` — no pricing data from OpenRouter or rules
 - `mistral/codestral-latest` — no pricing data from OpenRouter or rules
@@ -741,32 +526,11 @@ When `--apply` is used, these models are tagged `status: removed`.
 - `moonshot/moonshot-v1-32k` — no pricing data from OpenRouter or rules
 - `moonshot/moonshot-v1-8k` — no pricing data from OpenRouter or rules
 - `moonshot/moonshot-v1-auto` — no pricing data from OpenRouter or rules
-- `nvidia/deepseek-ai/deepseek-r1` — no pricing data from OpenRouter or rules
-- `nvidia/meta/llama-3.1-8b-instruct` — no pricing data from OpenRouter or rules
-- `nvidia/meta/llama-3.3-70b-instruct` — no pricing data from OpenRouter or rules
 - `nvidia/minimaxai/minimax-m3` — no pricing data from OpenRouter or rules
 - `nvidia/mistralai/mistral-7b-instruct` — no pricing data from OpenRouter or rules
 - `nvidia/mistralai/mixtral-8x7b-instruct` — no pricing data from OpenRouter or rules
 - `nvidia/nvidia/llama-3.1-nemotron-70b-instruct` — no pricing data from OpenRouter or rules
 - `nvidia/qwen/qwen2.5-coder-32b-instruct` — no pricing data from OpenRouter or rules
-- `ollama/codellama` — no pricing data from OpenRouter or rules
-- `ollama/devstral` — no pricing data from OpenRouter or rules
-- `ollama/gemma3` — no pricing data from OpenRouter or rules
-- `ollama/gemma3:12b` — no pricing data from OpenRouter or rules
-- `ollama/gemma3:27b` — no pricing data from OpenRouter or rules
-- `ollama/granite-code` — no pricing data from OpenRouter or rules
-- `ollama/llama3.1` — no pricing data from OpenRouter or rules
-- `ollama/llama3.2` — no pricing data from OpenRouter or rules
-- `ollama/llama3.3` — no pricing data from OpenRouter or rules
-- `ollama/mistral` — no pricing data from OpenRouter or rules
-- `ollama/phi4` — no pricing data from OpenRouter or rules
-- `ollama/phi4-mini` — no pricing data from OpenRouter or rules
-- `ollama/qwen2.5-coder` — no pricing data from OpenRouter or rules
-- `ollama/qwen2.5-coder:14b` — no pricing data from OpenRouter or rules
-- `ollama/qwen2.5-coder:32b` — no pricing data from OpenRouter or rules
-- `ollama/qwen2.5-coder:7b` — no pricing data from OpenRouter or rules
-- `ollama/qwen3` — no pricing data from OpenRouter or rules
-- `ollama/starcoder2` — no pricing data from OpenRouter or rules
 - `openai/chatgpt-4o-latest` — no pricing data from OpenRouter or rules
 - `openai/gpt-4.5-preview` — no pricing data from OpenRouter or rules
 - `openai/o1-mini` — no pricing data from OpenRouter or rules
@@ -808,9 +572,11 @@ When `--apply` is used, these models are tagged `status: removed`.
 ## Errors
 
 - `deepseek`: no API key in env $DEEPSEEK_API_KEY, skipping remote probe
+- `groq`: no API key in env $GROQ_API_KEY, skipping remote probe
 - `llamacpp`: local server not running, skipping
 - `lmstudio`: local server not running, skipping
 - `mistral`: no API key in env $MISTRAL_API_KEY, skipping remote probe
 - `moonshot`: no API key in env $MOONSHOT_API_KEY, skipping remote probe
 - `nvidia`: no API key in env $NVIDIA_API_KEY, skipping remote probe
+- `ollama`: local server not running, skipping
 - `openai`: no API key in env $OPENAI_API_KEY, skipping remote probe
