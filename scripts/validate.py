@@ -1000,7 +1000,7 @@ def main() -> int:
         "transcription_providers": new_transcription,
     }
 
-    with open(MANIFEST_PATH, "w") as f:
+    with open(MANIFEST_PATH, "w", newline="") as f:
         json.dump(manifest, f, indent=2)
         f.write("\n")
 
