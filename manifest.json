@@ -1,20 +1,20 @@
 {
-  "version": 50,
-  "updated_at": "2026-08-19T00:32:29Z",
+  "version": 52,
+  "updated_at": "2026-08-19T16:11:43Z",
   "coverage": {
-    "models_total": 603,
-    "models_with_pricing": 345,
-    "models_with_attachments": 603,
-    "models_with_modern_attachments": 603,
+    "models_total": 608,
+    "models_with_pricing": 350,
+    "models_with_attachments": 608,
+    "models_with_modern_attachments": 608,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 593,
-    "models_with_thinking": 365,
-    "models_with_ref": 603,
-    "canonical_models": 408,
+    "models_with_sources": 598,
+    "models_with_thinking": 370,
+    "models_with_ref": 608,
+    "canonical_models": 411,
     "models_by_status": {
-      "active": 552,
+      "active": 557,
       "deprecated": 10,
       "removed": 41,
       "preview": 0
@@ -494,12 +494,12 @@
       "sha256": "62bbd629bb03a4e0cf74f15fd6eae5180432c3e49631381bbad6ca9a68debad7"
     },
     "gemma3:12b": {
-      "file": "models/gemma3:12b.json",
-      "sha256": null
+      "file": "models/gemma3_12b.json",
+      "sha256": "86202f82fafd5309494f0f1ae1ee1b5262de93ea93b7ef188a6dc17b071a95e4"
     },
     "gemma3:27b": {
-      "file": "models/gemma3:27b.json",
-      "sha256": null
+      "file": "models/gemma3_27b.json",
+      "sha256": "08170db1a52e8be3a495ee94008bc918c295f0edf48e8f033b0fdc4bbc442287"
     },
     "glm-4-0520": {
       "file": "models/glm-4-0520.json",
@@ -584,6 +584,10 @@
     "glm-5.2": {
       "file": "models/glm-5.2.json",
       "sha256": "5d71200edfb78fa8ae3b17bac5723a71e653c38d19b0c19fd60ac81900222d00"
+    },
+    "glm-5.3": {
+      "file": "models/glm-5.3.json",
+      "sha256": "66bb1cee4461b05a22d5633192afc5d90b0c694d8e91654a3e3b9b85fb579274"
     },
     "glm-5v-turbo": {
       "file": "models/glm-5v-turbo.json",
@@ -1253,6 +1257,10 @@
       "file": "models/muse-glimmer-30b.json",
       "sha256": "9c0fedefb799cc3882447994f3659b7b95010ae97fea8aa045167f56bfb969ff"
     },
+    "muse-spark-1.2-contributor": {
+      "file": "models/muse-spark-1.2-contributor.json",
+      "sha256": "5a499bf456d060e459d2de1691da4ec47feb7a40ce46ab25a7d7d98480f15445"
+    },
     "mythomax-l2-13b": {
       "file": "models/mythomax-l2-13b.json",
       "sha256": "f038996d310a559c4dec0645bc5943269417141c51b8a39dea6f2fa0ec4faf8a"
@@ -1274,8 +1282,8 @@
       "sha256": "d60966647ca2d3812912b4b3e419c978d785ed34d0cfc88359ade14eda2fdfc7"
     },
     "nemotron-3-ultra-550b-a55b:free": {
-      "file": "models/nemotron-3-ultra-550b-a55b:free.json",
-      "sha256": null
+      "file": "models/nemotron-3-ultra-550b-a55b_free.json",
+      "sha256": "82ed14b4d1e4017dc0ec298601828274fb0a4d20ca0d1534b0a3decdcae1d420"
     },
     "nemotron-3-ultra-free": {
       "file": "models/nemotron-3-ultra-free.json",
@@ -1438,16 +1446,16 @@
       "sha256": "17449fc8020cb9e9129564e2b373c3ceaa9b8b980670f92dc5c1e6e227d3b314"
     },
     "qwen2.5-coder:14b": {
-      "file": "models/qwen2.5-coder:14b.json",
-      "sha256": null
+      "file": "models/qwen2.5-coder_14b.json",
+      "sha256": "d8140ab8d6c99149b08f3e9252fb846eae6c59c41d8ef6dc7a2c6e32122d7be7"
     },
     "qwen2.5-coder:32b": {
-      "file": "models/qwen2.5-coder:32b.json",
-      "sha256": null
+      "file": "models/qwen2.5-coder_32b.json",
+      "sha256": "c2439adee47e7ac1572e5e4ccf878dbcc893a19e631f6fb7f0ac5c31d6176629"
     },
     "qwen2.5-coder:7b": {
-      "file": "models/qwen2.5-coder:7b.json",
-      "sha256": null
+      "file": "models/qwen2.5-coder_7b.json",
+      "sha256": "86522f7324e5901285fd70f3ee3fa9607c0754e3b542103818c0aebea5468cd5"
     },
     "qwen3": {
       "file": "models/qwen3.json",
@@ -1572,6 +1580,10 @@
     "qwen3.7-plus": {
       "file": "models/qwen3.7-plus.json",
       "sha256": "5a3b3e3990c7e6e6547052a018dc8c135ceda4ee6feebb2d585191301665bed9"
+    },
+    "qwen3.8-max": {
+      "file": "models/qwen3.8-max.json",
+      "sha256": "75855ae56e3f7c181701f0ccdac705ffc18aabf1f4043b87fc9cd79220d7f5c3"
     },
     "recurrentgemma-2b": {
       "file": "models/recurrentgemma-2b.json",
@@ -1765,8 +1777,8 @@
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "c97820c71f59eb5d5f84fa75e0d7b72e6f99a48bb4aad5f30a8c81053332dd77",
-      "model_count": 16
+      "sha256": "c1016f552f644762ebce9b5236741c68480052eb98943038fe496db8cc79ce61",
+      "model_count": 21
     },
     "openrouter": {
       "file": "providers/openrouter.json",

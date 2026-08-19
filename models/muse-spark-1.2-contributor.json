@@ -1,0 +1,34 @@
+{
+  "id": "muse-spark-1.2-contributor",
+  "vendor": "meta",
+  "family": "muse",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": true
+  },
+  "aliases": [
+    "meta/muse-spark-1.2-contributor"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "verified_at": "2026-08-19",
+      "note": "1M context (1,048,576), same checkpoint as muse-spark-1.2 per official Meta docs."
+    },
+    "max_output_tokens": {
+      "url": "https://models.dev/models/meta/muse-spark-1.2/",
+      "verified_at": "2026-08-19",
+      "note": "131072 max output, community-verified against Meta API."
+    },
+    "attachments": {
+      "url": "https://developer.meta.com/ai/models/muse-spark/",
+      "verified_at": "2026-08-19",
+      "note": "Image, video, and PDF input per official Meta docs."
+    }
+  }
+}

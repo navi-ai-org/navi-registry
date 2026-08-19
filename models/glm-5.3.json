@@ -1,0 +1,40 @@
+{
+  "id": "glm-5.3",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "reasoning_levels": [
+    "low",
+    "high",
+    "max"
+  ],
+  "default_reasoning_effort": "max",
+  "aliases": [
+    "z-ai/glm-5.3"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://z.ai/blog/glm-5.3",
+      "verified_at": "2026-08-19",
+      "note": "1M-token context window (1,048,576) per official Z.ai release."
+    },
+    "max_output_tokens": {
+      "url": "https://z.ai/blog/glm-5.3",
+      "verified_at": "2026-08-19",
+      "note": "128K (131,072) max output tokens per official Z.ai release."
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3",
+      "verified_at": "2026-08-19",
+      "note": "reasoning_effort low/high/max; thinking always on, default max."
+    }
+  }
+}

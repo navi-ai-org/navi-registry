@@ -1,0 +1,41 @@
+{
+  "id": "qwen3.8-max",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "xhigh"
+  ],
+  "default_reasoning_effort": "xhigh",
+  "aliases": [
+    "qwen/qwen3.8-max",
+    "Qwen/Qwen3.8-Max"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max",
+      "verified_at": "2026-08-19",
+      "note": "Context window 1000000, max input 991808 per Alibaba Cloud Model Studio."
+    },
+    "max_output_tokens": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max",
+      "verified_at": "2026-08-19",
+      "note": "Max output length 131072 per Alibaba Cloud Model Studio."
+    },
+    "attachments": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-max",
+      "verified_at": "2026-08-19",
+      "note": "Accepts text, image, and video input; text output."
+    }
+  }
+}

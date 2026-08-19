@@ -258,8 +258,15 @@ def resolve_extends(data: dict) -> dict:
 
 
 def model_filename_for_id(model_id: str) -> str:
-    """Map model id to a safe filename (no path separators)."""
+    r"""Map model id to a safe filename valid on all platforms.
+
+    `/` maps to `__` (path separator) and other Windows-invalid characters
+    (`:`, `<`, `>`, `"`, `\`, `|`, `?`, `*`) map to `_`. The result must
+    match the on-disk file so the manifest sha256 is never null.
+    """
     safe = model_id.replace("/", "__")
+    for ch in ':<>"\\|?*':
+        safe = safe.replace(ch, "_")
     return f"{safe}.json"
 
 
