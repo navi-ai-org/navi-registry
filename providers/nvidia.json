@@ -7,61 +7,134 @@
   "base_url": "https://integrate.api.nvidia.com/v1",
   "models": [
     {
-      "ref": "nemotron-3-super-120b-a12b",
-      "api_name": "nvidia/nemotron-3-super-120b-a12b",
-      "pricing": {
-        "input_per_1m": 0.085,
-        "output_per_1m": 0.4,
-        "currency": "USD"
-      }
+      "ref": "yi-large",
+      "api_name": "01-ai/yi-large"
     },
     {
-      "ref": "nemotron-3-nano-30b-a3b",
-      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
-      "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.2,
-        "currency": "USD"
-      }
+      "ref": "jamba-1.5-large-instruct",
+      "api_name": "ai21labs/jamba-1.5-large-instruct"
     },
     {
-      "ref": "llama-3.3-70b-instruct",
-      "api_name": "meta/llama-3.3-70b-instruct"
+      "ref": "sea-lion-7b-instruct",
+      "api_name": "aisingapore/sea-lion-7b-instruct"
+    },
+    {
+      "ref": "starcoder2-15b",
+      "api_name": "bigcode/starcoder2-15b"
+    },
+    {
+      "ref": "dbrx-instruct",
+      "api_name": "databricks/dbrx-instruct"
+    },
+    {
+      "ref": "deepseek-coder-6.7b-instruct",
+      "api_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
+    },
+    {
+      "ref": "deepseek-r1",
+      "api_name": "deepseek-ai/deepseek-r1",
+      "max_output_tokens": 8192
+    },
+    {
+      "ref": "deepseek-v4-flash",
+      "api_name": "deepseek-ai/deepseek-v4-flash-0731",
+      "max_output_tokens": 16384
+    },
+    {
+      "ref": "codegemma-1.1-7b",
+      "api_name": "google/codegemma-1.1-7b"
+    },
+    {
+      "ref": "codegemma-7b",
+      "api_name": "google/codegemma-7b"
+    },
+    {
+      "ref": "diffusiongemma-26b-a4b-it",
+      "api_name": "google/diffusiongemma-26b-a4b-it"
+    },
+    {
+      "ref": "gemma-2b",
+      "api_name": "google/gemma-2b"
+    },
+    {
+      "ref": "gemma-3-12b-it",
+      "api_name": "google/gemma-3-12b-it"
+    },
+    {
+      "ref": "gemma-3-4b-it",
+      "api_name": "google/gemma-3-4b-it"
+    },
+    {
+      "ref": "gemma-4-31b-it",
+      "api_name": "google/gemma-4-31b-it"
+    },
+    {
+      "ref": "recurrentgemma-2b",
+      "api_name": "google/recurrentgemma-2b"
+    },
+    {
+      "ref": "granite-3.0-3b-a800m-instruct",
+      "api_name": "ibm/granite-3.0-3b-a800m-instruct"
+    },
+    {
+      "ref": "granite-3.0-8b-instruct",
+      "api_name": "ibm/granite-3.0-8b-instruct"
+    },
+    {
+      "ref": "granite-34b-code-instruct",
+      "api_name": "ibm/granite-34b-code-instruct"
+    },
+    {
+      "ref": "granite-8b-code-instruct",
+      "api_name": "ibm/granite-8b-code-instruct"
+    },
+    {
+      "ref": "codellama-70b",
+      "api_name": "meta/codellama-70b"
+    },
+    {
+      "ref": "llama-3.1-70b-instruct",
+      "api_name": "meta/llama-3.1-70b-instruct"
     },
     {
       "ref": "llama-3.1-8b-instruct",
       "api_name": "meta/llama-3.1-8b-instruct"
     },
     {
-      "ref": "mistral-7b-instruct",
-      "api_name": "mistralai/mistral-7b-instruct"
+      "ref": "llama-3.2-11b-vision-instruct",
+      "api_name": "meta/llama-3.2-11b-vision-instruct"
     },
     {
-      "ref": "llama-3.1-nemotron-70b-instruct",
-      "api_name": "nvidia/llama-3.1-nemotron-70b-instruct"
+      "ref": "llama-3.2-1b-instruct",
+      "api_name": "meta/llama-3.2-1b-instruct"
     },
     {
-      "ref": "qwen2.5-coder-32b-instruct",
-      "api_name": "qwen/qwen2.5-coder-32b-instruct"
+      "ref": "llama-3.2-3b-instruct",
+      "api_name": "meta/llama-3.2-3b-instruct"
     },
     {
-      "ref": "mixtral-8x7b-instruct",
-      "api_name": "mistralai/mixtral-8x7b-instruct"
+      "ref": "llama-3.2-90b-vision-instruct",
+      "api_name": "meta/llama-3.2-90b-vision-instruct"
     },
     {
-      "ref": "mistral-large",
-      "api_name": "mistralai/mistral-large",
-      "pricing": {
-        "input_per_1m": 2.0,
-        "output_per_1m": 6.0,
-        "currency": "USD",
-        "cached_input_per_1m": 0.2
-      }
+      "ref": "llama-3.3-70b-instruct",
+      "api_name": "meta/llama-3.3-70b-instruct"
     },
     {
-      "ref": "deepseek-r1",
-      "api_name": "deepseek-ai/deepseek-r1",
-      "max_output_tokens": 8192
+      "ref": "llama2-70b",
+      "api_name": "meta/llama2-70b"
+    },
+    {
+      "ref": "muse-glimmer-30b",
+      "api_name": "meta/muse-glimmer-30b"
+    },
+    {
+      "ref": "phi-3-vision-128k-instruct",
+      "api_name": "microsoft/phi-3-vision-128k-instruct"
+    },
+    {
+      "ref": "phi-3.5-moe-instruct",
+      "api_name": "microsoft/phi-3.5-moe-instruct"
     },
     {
       "ref": "phi-4",
@@ -75,6 +148,186 @@
     {
       "ref": "minimax-m3",
       "api_name": "minimaxai/minimax-m3"
+    },
+    {
+      "ref": "codestral-22b-instruct-v0.1",
+      "api_name": "mistralai/codestral-22b-instruct-v0.1"
+    },
+    {
+      "ref": "mistral-7b-instruct",
+      "api_name": "mistralai/mistral-7b-instruct"
+    },
+    {
+      "ref": "mistral-7b-instruct-v0.3",
+      "api_name": "mistralai/mistral-7b-instruct-v0.3"
+    },
+    {
+      "ref": "mistral-large",
+      "api_name": "mistralai/mistral-large",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      }
+    },
+    {
+      "ref": "mistral-large-2-instruct",
+      "api_name": "mistralai/mistral-large-2-instruct"
+    },
+    {
+      "ref": "mistral-nemotron",
+      "api_name": "mistralai/mistral-nemotron"
+    },
+    {
+      "ref": "mixtral-8x22b-v0.1",
+      "api_name": "mistralai/mixtral-8x22b-v0.1"
+    },
+    {
+      "ref": "mixtral-8x7b-instruct",
+      "api_name": "mistralai/mixtral-8x7b-instruct"
+    },
+    {
+      "ref": "kimi-k2.6",
+      "api_name": "moonshotai/kimi-k2.6"
+    },
+    {
+      "ref": "mistral-nemo-12b-instruct",
+      "api_name": "nv-mistralai/mistral-nemo-12b-instruct"
+    },
+    {
+      "ref": "llama-3.1-nemotron-51b-instruct",
+      "api_name": "nvidia/llama-3.1-nemotron-51b-instruct"
+    },
+    {
+      "ref": "llama-3.1-nemotron-70b-instruct",
+      "api_name": "nvidia/llama-3.1-nemotron-70b-instruct"
+    },
+    {
+      "ref": "llama-3.1-nemotron-nano-8b-v1",
+      "api_name": "nvidia/llama-3.1-nemotron-nano-8b-v1"
+    },
+    {
+      "ref": "llama-3.1-nemotron-nano-vl-8b-v1",
+      "api_name": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1"
+    },
+    {
+      "ref": "llama-3.1-nemotron-ultra-253b-v1",
+      "api_name": "nvidia/llama-3.1-nemotron-ultra-253b-v1"
+    },
+    {
+      "ref": "llama-3.3-nemotron-super-49b-v1",
+      "api_name": "nvidia/llama-3.3-nemotron-super-49b-v1"
+    },
+    {
+      "ref": "llama-3.3-nemotron-super-49b-v1.5",
+      "api_name": "nvidia/llama-3.3-nemotron-super-49b-v1.5"
+    },
+    {
+      "ref": "llama3-chatqa-1.5-70b",
+      "api_name": "nvidia/llama3-chatqa-1.5-70b"
+    },
+    {
+      "ref": "mistral-nemo-minitron-8b-8k-instruct",
+      "api_name": "nvidia/mistral-nemo-minitron-8b-8k-instruct"
+    },
+    {
+      "ref": "nemotron-3-nano-30b-a3b",
+      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "nemotron-3-nano-omni-30b-a3b-reasoning",
+      "api_name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning"
+    },
+    {
+      "ref": "nemotron-3-super-120b-a12b",
+      "api_name": "nvidia/nemotron-3-super-120b-a12b",
+      "pricing": {
+        "input_per_1m": 0.085,
+        "output_per_1m": 0.4,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "nemotron-3-ultra-550b-a55b",
+      "api_name": "nvidia/nemotron-3-ultra-550b-a55b"
+    },
+    {
+      "ref": "nemotron-3.5-lightning-30b-a3b",
+      "api_name": "nvidia/nemotron-3.5-lightning-30b-a3b"
+    },
+    {
+      "ref": "nemotron-4-340b-instruct",
+      "api_name": "nvidia/nemotron-4-340b-instruct"
+    },
+    {
+      "ref": "nemotron-mini-4b-instruct",
+      "api_name": "nvidia/nemotron-mini-4b-instruct"
+    },
+    {
+      "ref": "nemotron-nano-12b-v2-vl",
+      "api_name": "nvidia/nemotron-nano-12b-v2-vl"
+    },
+    {
+      "ref": "nemotron-nano-3-30b-a3b",
+      "api_name": "nvidia/nemotron-nano-3-30b-a3b"
+    },
+    {
+      "ref": "nvidia-nemotron-nano-9b-v2",
+      "api_name": "nvidia/nvidia-nemotron-nano-9b-v2"
+    },
+    {
+      "ref": "gpt-oss-120b",
+      "api_name": "openai/gpt-oss-120b"
+    },
+    {
+      "ref": "gpt-oss-20b",
+      "api_name": "openai/gpt-oss-20b"
+    },
+    {
+      "ref": "laguna-xs-2.1",
+      "api_name": "poolside/laguna-xs-2.1"
+    },
+    {
+      "ref": "qwen2.5-coder-32b-instruct",
+      "api_name": "qwen/qwen2.5-coder-32b-instruct"
+    },
+    {
+      "ref": "step-3.7-flash",
+      "api_name": "stepfun-ai/step-3.7-flash"
+    },
+    {
+      "ref": "inkling",
+      "api_name": "thinkingmachines/inkling"
+    },
+    {
+      "ref": "palmyra-creative-122b",
+      "api_name": "writer/palmyra-creative-122b"
+    },
+    {
+      "ref": "palmyra-fin-70b-32k",
+      "api_name": "writer/palmyra-fin-70b-32k"
+    },
+    {
+      "ref": "palmyra-med-70b",
+      "api_name": "writer/palmyra-med-70b"
+    },
+    {
+      "ref": "palmyra-med-70b-32k",
+      "api_name": "writer/palmyra-med-70b-32k"
+    },
+    {
+      "ref": "glm-5.2",
+      "api_name": "z-ai/glm-5.2"
+    },
+    {
+      "ref": "zamba2-7b-instruct",
+      "api_name": "zyphra/zamba2-7b-instruct"
     }
   ]
 }

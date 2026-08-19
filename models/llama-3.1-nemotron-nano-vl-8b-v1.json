@@ -1,0 +1,25 @@
+{
+  "id": "llama-3.1-nemotron-nano-vl-8b-v1",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 16384,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/Llama-3.1-Nemotron-Nano-VL-8B-V1/resolve/main/config.json",
+      "note": "max_sequence_length: 16384"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-nano-vl-8b-v1",
+      "note": "supports single image and video inference"
+    }
+  },
+  "aliases": [
+    "nvidia/llama-3.1-nemotron-nano-vl-8b-v1"
+  ]
+}

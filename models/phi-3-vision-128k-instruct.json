@@ -1,0 +1,25 @@
+{
+  "id": "phi-3-vision-128k-instruct",
+  "vendor": "microsoft",
+  "family": "phi",
+  "context_window_tokens": 131072,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct",
+      "note": "128K context"
+    },
+    "attachments": {
+      "url": "https://huggingface.co/microsoft/Phi-3-vision-128k-instruct",
+      "note": "image input"
+    }
+  },
+  "aliases": [
+    "microsoft/phi-3-vision-128k-instruct"
+  ]
+}

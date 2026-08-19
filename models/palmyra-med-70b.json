@@ -1,0 +1,21 @@
+{
+  "id": "palmyra-med-70b",
+  "vendor": "writer",
+  "family": "palmyra",
+  "context_window_tokens": 8192,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/Writer/Palmyra-Med-70B",
+      "note": "Context window: 8192"
+    }
+  },
+  "aliases": [
+    "writer/palmyra-med-70b"
+  ]
+}

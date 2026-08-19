@@ -1,0 +1,26 @@
+{
+  "id": "laguna-xs-2.1",
+  "vendor": "poolside",
+  "family": "laguna",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 16384,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/poolside-laguna-xs-2-1-infer",
+      "note": "NIM max_tokens cap 16384"
+    }
+  },
+  "aliases": [
+    "poolside/laguna-xs-2.1"
+  ]
+}

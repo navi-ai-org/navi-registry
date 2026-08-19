@@ -1,0 +1,26 @@
+{
+  "id": "jamba-1.5-large-instruct",
+  "vendor": "ai21",
+  "family": "jamba",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 256000,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://build.nvidia.com/ai21labs/jamba-1_5-large-instruct",
+      "note": "Max Input Tokens: 256,000"
+    },
+    "max_output_tokens": {
+      "url": "https://build.nvidia.com/ai21labs/jamba-1_5-large-instruct",
+      "note": "Max Output Tokens: 256,000"
+    }
+  },
+  "aliases": [
+    "ai21labs/jamba-1.5-large-instruct"
+  ]
+}

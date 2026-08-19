@@ -1,0 +1,21 @@
+{
+  "id": "recurrentgemma-2b",
+  "vendor": "google",
+  "family": "recurrentgemma",
+  "context_window_tokens": 8192,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://arxiv.org/html/2404.07839",
+      "note": "RecurrentGemma paper: sequences of 8192 tokens"
+    }
+  },
+  "aliases": [
+    "google/recurrentgemma-2b"
+  ]
+}

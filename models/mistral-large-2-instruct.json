@@ -1,0 +1,21 @@
+{
+  "id": "mistral-large-2-instruct",
+  "vendor": "mistralai",
+  "family": "mistral-large-2",
+  "context_window_tokens": 128000,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mistral-large-2-instruct",
+      "note": "128K context"
+    }
+  },
+  "aliases": [
+    "mistralai/mistral-large-2-instruct"
+  ]
+}

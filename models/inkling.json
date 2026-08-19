@@ -1,0 +1,30 @@
+{
+  "id": "inkling",
+  "vendor": "thinkingmachines",
+  "family": "inkling",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 16384,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://thinkingmachines.ai/inkling/"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/thinkingmachines-inkling-infer",
+      "note": "NIM max_tokens cap 16384"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/thinkingmachines-inkling",
+      "note": "image and audio input"
+    }
+  },
+  "aliases": [
+    "thinkingmachines/inkling"
+  ]
+}

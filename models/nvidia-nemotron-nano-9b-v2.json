@@ -1,0 +1,36 @@
+{
+  "id": "nvidia-nemotron-nano-9b-v2",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 0.6,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "note": "Context length up to 128K"
+    },
+    "max_output_tokens": {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "note": "Output: sequences up to 128K"
+    },
+    "supports_thinking": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nvidia-nemotron-nano-9b-v2",
+      "note": "reasoning model"
+    },
+    "attachments": {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-9B-v2",
+      "note": "Text only"
+    }
+  },
+  "aliases": [
+    "nvidia/nvidia-nemotron-nano-9b-v2"
+  ]
+}

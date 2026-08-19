@@ -1,0 +1,30 @@
+{
+  "id": "llama-3.2-90b-vision-instruct",
+  "vendor": "meta",
+  "family": "llama",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 8192,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-90b-vision-instruct",
+      "note": "128K context"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-90b-vision-instruct-infer",
+      "note": "NIM max_tokens cap 8192"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-llama-3_2-90b-vision-instruct",
+      "note": "image input"
+    }
+  },
+  "aliases": [
+    "meta/llama-3.2-90b-vision-instruct"
+  ]
+}

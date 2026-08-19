@@ -1,0 +1,21 @@
+{
+  "id": "llama2-70b",
+  "vendor": "meta",
+  "family": "llama",
+  "context_window_tokens": 4096,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://github.com/facebookresearch/llama/blob/main/MODEL_CARD.md",
+      "note": "4K context"
+    }
+  },
+  "aliases": [
+    "meta/llama2-70b"
+  ]
+}

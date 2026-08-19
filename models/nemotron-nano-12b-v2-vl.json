@@ -1,0 +1,30 @@
+{
+  "id": "nemotron-nano-12b-v2-vl",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-Nano-12B-v2-VL-BF16/raw/main/config.json",
+      "note": "max_sequence_length: 131072"
+    },
+    "supports_thinking": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-nano-12b-v2-vl",
+      "note": "supports reasoning for text/image inputs, opt-in via /think"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-nano-12b-v2-vl",
+      "note": "image and video input"
+    }
+  },
+  "aliases": [
+    "nvidia/nemotron-nano-12b-v2-vl"
+  ]
+}

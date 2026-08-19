@@ -1,0 +1,21 @@
+{
+  "id": "llama-3.1-nemotron-51b-instruct",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 131072,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/Llama-3_1-Nemotron-51B-Instruct/resolve/main/config.json",
+      "note": "max_position_embeddings: 131072"
+    }
+  },
+  "aliases": [
+    "nvidia/llama-3.1-nemotron-51b-instruct"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": "phi-3.5-moe-instruct",
+  "vendor": "microsoft",
+  "family": "phi",
+  "context_window_tokens": 131072,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/microsoft/Phi-3.5-MoE-instruct",
+      "note": "128K context"
+    }
+  },
+  "aliases": [
+    "microsoft/phi-3.5-moe-instruct"
+  ]
+}

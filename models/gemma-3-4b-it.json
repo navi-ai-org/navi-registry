@@ -1,0 +1,30 @@
+{
+  "id": "gemma-3-4b-it",
+  "vendor": "google",
+  "family": "gemma",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 8192,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "note": "Total input context of 128K tokens for the 4B size"
+    },
+    "max_output_tokens": {
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "note": "Total output context of 8192 tokens"
+    },
+    "attachments": {
+      "url": "https://huggingface.co/google/gemma-3-4b-it",
+      "note": "multimodal: handling text and image input"
+    }
+  },
+  "aliases": [
+    "google/gemma-3-4b-it"
+  ]
+}

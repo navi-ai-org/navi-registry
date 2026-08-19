@@ -1,0 +1,38 @@
+{
+  "id": "muse-glimmer-30b",
+  "vendor": "meta",
+  "family": "muse",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 0.95,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b-infer",
+      "note": "NIM max_tokens cap 131072"
+    },
+    "recommended_temperature": {
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b-infer",
+      "note": "NIM recommends temperature 0.95"
+    },
+    "supports_thinking": {
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b"
+    },
+    "attachments": {
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b",
+      "note": "image input"
+    }
+  },
+  "aliases": [
+    "meta/muse-glimmer-30b"
+  ]
+}

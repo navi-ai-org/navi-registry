@@ -1,0 +1,21 @@
+{
+  "id": "mixtral-8x22b-v0.1",
+  "vendor": "mistralai",
+  "family": "mixtral",
+  "context_window_tokens": 65536,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mixtral-8x22b-instruct",
+      "note": "64K context"
+    }
+  },
+  "aliases": [
+    "mistralai/mixtral-8x22b-v0.1"
+  ]
+}

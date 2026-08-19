@@ -1,0 +1,21 @@
+{
+  "id": "palmyra-fin-70b-32k",
+  "vendor": "writer",
+  "family": "palmyra",
+  "context_window_tokens": 131072,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/Writer/Palmyra-Fin-70B-32K",
+      "note": "Context window: 131,072 tokens"
+    }
+  },
+  "aliases": [
+    "writer/palmyra-fin-70b-32k"
+  ]
+}

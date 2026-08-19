@@ -1,0 +1,21 @@
+{
+  "id": "granite-8b-code-instruct",
+  "vendor": "ibm",
+  "family": "granite",
+  "context_window_tokens": 4096,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://arxiv.org/html/2405.04324v1",
+      "note": "Granite code models 8k context"
+    }
+  },
+  "aliases": [
+    "ibm/granite-8b-code-instruct"
+  ]
+}

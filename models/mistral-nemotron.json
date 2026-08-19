@@ -1,0 +1,26 @@
+{
+  "id": "mistral-nemotron",
+  "vendor": "mistralai",
+  "family": "mistral-nemotron",
+  "context_window_tokens": 128000,
+  "max_output_tokens": 4096,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mistral-nemotron",
+      "note": "128K context"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mistral-nemotron-infer",
+      "note": "NIM max_tokens cap 4096"
+    }
+  },
+  "aliases": [
+    "mistralai/mistral-nemotron"
+  ]
+}

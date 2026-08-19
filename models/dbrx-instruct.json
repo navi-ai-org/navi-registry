@@ -1,0 +1,21 @@
+{
+  "id": "dbrx-instruct",
+  "vendor": "databricks",
+  "family": "dbrx",
+  "context_window_tokens": 32768,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm",
+      "note": "maximum context length of 32k tokens"
+    }
+  },
+  "aliases": [
+    "databricks/dbrx-instruct"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "mistral-7b-instruct-v0.3",
+  "vendor": "mistralai",
+  "family": "mistral",
+  "context_window_tokens": 32768,
+  "max_output_tokens": 4096,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3/raw/main/config.json",
+      "note": "max_position_embeddings: 32768"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/mistralai-mistral-7b-instruct-v03-infer",
+      "note": "NIM max_tokens cap 4096"
+    }
+  },
+  "aliases": [
+    "mistralai/mistral-7b-instruct-v0.3"
+  ]
+}

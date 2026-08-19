@@ -1,0 +1,21 @@
+{
+  "id": "yi-large",
+  "vendor": "01-ai",
+  "family": "yi",
+  "context_window_tokens": 32768,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://build.nvidia.com/01-ai/yi-large",
+      "note": "Context length: 32k"
+    }
+  },
+  "aliases": [
+    "01-ai/yi-large"
+  ]
+}

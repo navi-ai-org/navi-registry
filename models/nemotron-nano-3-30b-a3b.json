@@ -1,0 +1,36 @@
+{
+  "id": "nemotron-nano-3-30b-a3b",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-30b-a3b",
+      "note": "Maximum input size: 128K tokens"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-30b-a3b",
+      "note": "Maximum output size: 128K tokens"
+    },
+    "supports_thinking": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-30b-a3b",
+      "note": "reasoning model"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-nemotron-3-nano-30b-a3b",
+      "note": "Text only"
+    }
+  },
+  "aliases": [
+    "nvidia/nemotron-nano-3-30b-a3b"
+  ]
+}

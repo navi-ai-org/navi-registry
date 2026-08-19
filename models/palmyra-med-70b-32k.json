@@ -1,0 +1,21 @@
+{
+  "id": "palmyra-med-70b-32k",
+  "vendor": "writer",
+  "family": "palmyra",
+  "context_window_tokens": 32768,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/Writer/Palmyra-Med-70B-32K/raw/main/config.json",
+      "note": "max_position_embeddings: 32768"
+    }
+  },
+  "aliases": [
+    "writer/palmyra-med-70b-32k"
+  ]
+}

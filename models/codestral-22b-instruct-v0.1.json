@@ -1,0 +1,21 @@
+{
+  "id": "codestral-22b-instruct-v0.1",
+  "vendor": "mistralai",
+  "family": "codestral",
+  "context_window_tokens": 32768,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/mistralai/Codestral-22B-v0.1/raw/main/config.json",
+      "note": "max_position_embeddings: 32768"
+    }
+  },
+  "aliases": [
+    "mistralai/codestral-22b-instruct-v0.1"
+  ]
+}

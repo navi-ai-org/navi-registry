@@ -1,0 +1,21 @@
+{
+  "id": "deepseek-coder-6.7b-instruct",
+  "vendor": "deepseek",
+  "family": "deepseek-coder",
+  "context_window_tokens": 16384,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/deepseek-ai/deepseek-coder-6.7b-instruct/raw/main/config.json",
+      "note": "max_position_embeddings: 16384"
+    }
+  },
+  "aliases": [
+    "deepseek-ai/deepseek-coder-6.7b-instruct"
+  ]
+}

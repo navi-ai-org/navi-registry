@@ -1,0 +1,36 @@
+{
+  "id": "llama-3.1-nemotron-ultra-253b-v1",
+  "vendor": "nvidia",
+  "family": "nemotron",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 0.6,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1",
+      "note": "Input: context up to 131,072 tokens"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1",
+      "note": "Output: context up to 131,072 tokens"
+    },
+    "supports_thinking": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1",
+      "note": "reasoning model"
+    },
+    "attachments": {
+      "url": "https://docs.api.nvidia.com/nim/reference/nvidia-llama-3_1-nemotron-ultra-253b-v1",
+      "note": "Text only"
+    }
+  },
+  "aliases": [
+    "nvidia/llama-3.1-nemotron-ultra-253b-v1"
+  ]
+}

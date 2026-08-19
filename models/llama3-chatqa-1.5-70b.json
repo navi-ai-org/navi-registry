@@ -1,0 +1,21 @@
+{
+  "id": "llama3-chatqa-1.5-70b",
+  "vendor": "nvidia",
+  "family": "chatqa",
+  "context_window_tokens": 8192,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/Llama3-ChatQA-1.5-70B/raw/main/config.json",
+      "note": "8k context"
+    }
+  },
+  "aliases": [
+    "nvidia/llama3-chatqa-1.5-70b"
+  ]
+}

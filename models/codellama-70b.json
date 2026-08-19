@@ -1,0 +1,21 @@
+{
+  "id": "codellama-70b",
+  "vendor": "meta",
+  "family": "codellama",
+  "context_window_tokens": 100000,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://github.com/facebookresearch/codellama/blob/main/MODEL_CARD.md",
+      "note": "100k context"
+    }
+  },
+  "aliases": [
+    "meta/codellama-70b"
+  ]
+}

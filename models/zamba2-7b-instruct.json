@@ -1,0 +1,21 @@
+{
+  "id": "zamba2-7b-instruct",
+  "vendor": "zyphra",
+  "family": "zamba2",
+  "context_window_tokens": 16384,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/Zyphra/Zamba2-7B-Instruct",
+      "note": "context extended to 16k"
+    }
+  },
+  "aliases": [
+    "zyphra/zamba2-7b-instruct"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "diffusiongemma-26b-a4b-it",
+  "vendor": "google",
+  "family": "diffusiongemma",
+  "context_window_tokens": 262144,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it/raw/main/config.json",
+      "note": "max_position_embeddings: 262144"
+    },
+    "supports_thinking": {
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "note": "Thinking Mode (Reasoning) with configurable thinking modes"
+    },
+    "attachments": {
+      "url": "https://huggingface.co/google/diffusiongemma-26B-A4B-it",
+      "note": "text, image, video inputs; video understanding"
+    }
+  },
+  "aliases": [
+    "google/diffusiongemma-26b-a4b-it"
+  ]
+}

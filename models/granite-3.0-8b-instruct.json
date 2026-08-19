@@ -1,0 +1,20 @@
+{
+  "id": "granite-3.0-8b-instruct",
+  "vendor": "ibm",
+  "family": "granite",
+  "context_window_tokens": 4096,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/ibm-granite/granite-3.0-8b-instruct"
+    }
+  },
+  "aliases": [
+    "ibm/granite-3.0-8b-instruct"
+  ]
+}

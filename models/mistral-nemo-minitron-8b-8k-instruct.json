@@ -1,0 +1,21 @@
+{
+  "id": "mistral-nemo-minitron-8b-8k-instruct",
+  "vendor": "nvidia",
+  "family": "mistral-nemo-minitron",
+  "context_window_tokens": 8192,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/nvidia/Mistral-NeMo-Minitron-8B-Instruct/raw/main/config.json",
+      "note": "8k context"
+    }
+  },
+  "aliases": [
+    "nvidia/mistral-nemo-minitron-8b-8k-instruct"
+  ]
+}

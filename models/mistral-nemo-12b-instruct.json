@@ -1,0 +1,21 @@
+{
+  "id": "mistral-nemo-12b-instruct",
+  "vendor": "nv-mistralai",
+  "family": "mistral-nemo",
+  "context_window_tokens": 131072,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407/raw/main/config.json",
+      "note": "max_position_embeddings: 131072"
+    }
+  },
+  "aliases": [
+    "nv-mistralai/mistral-nemo-12b-instruct"
+  ]
+}
