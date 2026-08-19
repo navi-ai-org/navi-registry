@@ -1,0 +1,4 @@
+# Normalize all text files to LF on checkout and in the repository so that
+# scripts/validate.py SHA-256 hashes match the bytes GitHub serves over
+# raw.githubusercontent.com (which uses the stored LF content).
+* text=auto eol=lf

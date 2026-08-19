@@ -1,6 +1,6 @@
 {
-  "version": 52,
-  "updated_at": "2026-08-19T16:11:43Z",
+  "version": 53,
+  "updated_at": "2026-08-19T17:01:56Z",
   "coverage": {
     "models_total": 608,
     "models_with_pricing": 350,
@@ -187,11 +187,11 @@
     },
     "codegemma-1.1-7b": {
       "file": "models/codegemma-1.1-7b.json",
-      "sha256": "c09f43e59a026c8590dd3e0679548b522d6e5c99ad76c7e6cf038b24898fc4ee"
+      "sha256": "eec7785780d5ce1adc0275e0b12ec73c90a3d714c02e42541f2d1a4c97621214"
     },
     "codegemma-7b": {
       "file": "models/codegemma-7b.json",
-      "sha256": "065defe30e5505f77041839a5856b9ddd709b2ea4ef4f3fb11ce3523fdef8f05"
+      "sha256": "905e934095e66208f931efd8b931821eda011bcd0cc67096919e7b78604d7751"
     },
     "codellama": {
       "file": "models/codellama.json",
@@ -199,7 +199,7 @@
     },
     "codellama-70b": {
       "file": "models/codellama-70b.json",
-      "sha256": "85d674d53601e712a05aa5407bb9031f02c4acf8ab1f126f2e40bf28757ea7c3"
+      "sha256": "5966c7a21c62ead619974b5e4f3393f9905cc9235076fc4dc0d17dbb4b7ca5fb"
     },
     "codestral": {
       "file": "models/codestral.json",
@@ -207,7 +207,7 @@
     },
     "codestral-22b-instruct-v0.1": {
       "file": "models/codestral-22b-instruct-v0.1.json",
-      "sha256": "8a0ea1a63c29dfde05d30e567ee6bf2ab2a53359c290e69783f8ab092501677c"
+      "sha256": "9de07376585777a475a20b702e9c0df16ec94e86ecea2aaa21748ae883a8350c"
     },
     "codestral-2405": {
       "file": "models/codestral-2405.json",
@@ -227,7 +227,7 @@
     },
     "dbrx-instruct": {
       "file": "models/dbrx-instruct.json",
-      "sha256": "b8325ac73543d6318a1d7025899ed935609a73d5465fee8adaf3f6b919dafa23"
+      "sha256": "2929f5451bf837e47ec9b56b9018697b8ec3137388705d3bc64da3985673a3e9"
     },
     "deepseek-chat": {
       "file": "models/deepseek-chat.json",
@@ -239,7 +239,7 @@
     },
     "deepseek-coder-6.7b-instruct": {
       "file": "models/deepseek-coder-6.7b-instruct.json",
-      "sha256": "0f4772578afb66aaffc3763b94f276a6bab531318c745c41d01ed8bdb6026615"
+      "sha256": "0accdf91b59d61cd541131d236d75b8a28cbc454a0ae9ea61958b6d1a653fff7"
     },
     "deepseek-coder-v2": {
       "file": "models/deepseek-coder-v2.json",
@@ -363,7 +363,7 @@
     },
     "diffusiongemma-26b-a4b-it": {
       "file": "models/diffusiongemma-26b-a4b-it.json",
-      "sha256": "fafe94d0ccc3d91ca844c74f60833b4e8800323ca7187780637b8a7834282ab0"
+      "sha256": "6098957f8fa1dd76ef02c4c946c4645fa09984e45783157489094fa2662338e2"
     },
     "ernie-4.5-21b-a3b": {
       "file": "models/ernie-4.5-21b-a3b.json",
@@ -459,7 +459,7 @@
     },
     "gemma-2b": {
       "file": "models/gemma-2b.json",
-      "sha256": "683b750c8017151be8045a6f7880976cd2092434b7eed1a7dbef986109b50cfd"
+      "sha256": "45d7cdc5c797c3af6596100c4078c8f8e75b92eb76e58788c068cbb17564039a"
     },
     "gemma-3-12b-it": {
       "file": "models/gemma-3-12b-it.json",
@@ -471,7 +471,7 @@
     },
     "gemma-3-4b-it": {
       "file": "models/gemma-3-4b-it.json",
-      "sha256": "627a9a15af9a30bbee515dfc6cc538c42e9890e8018c075e001630fb32cd9c01"
+      "sha256": "5b07715fe1458c50cb97e921d0110666fd90dee0fd44f7f49f61ec3ce3e555ff"
     },
     "gemma-4-26b-a4b": {
       "file": "models/gemma-4-26b-a4b.json",
@@ -731,19 +731,19 @@
     },
     "granite-3.0-3b-a800m-instruct": {
       "file": "models/granite-3.0-3b-a800m-instruct.json",
-      "sha256": "95cb316f6ce4ee4a7605ac8f9c8a60a1756aab8c6587ec180eaed6391c521197"
+      "sha256": "9094b2fc25e47dfabc17ffee9f714ffefc65b911753e0f4439f34620f2e58c7b"
     },
     "granite-3.0-8b-instruct": {
       "file": "models/granite-3.0-8b-instruct.json",
-      "sha256": "c43ce737e558499ed23f9e7829be3316e774db9f2cb30480776e9b1577d5ff83"
+      "sha256": "8fc0687822ec57a9d96b228121dee3fa1dfcedc85409d74403dff25801cd91cb"
     },
     "granite-34b-code-instruct": {
       "file": "models/granite-34b-code-instruct.json",
-      "sha256": "de78a1ed15e3424ba3f28960bf29b510a6ea7d20ec83c9c5efa9155df3cf1219"
+      "sha256": "b646b89a081296b98d69c0b149c70ef5a240933f44a01925bac4ea00b6966ee4"
     },
     "granite-8b-code-instruct": {
       "file": "models/granite-8b-code-instruct.json",
-      "sha256": "5c2def776174b44bace0206caa3f32d7c65e8da060f291cb71ed47afd55ad6ba"
+      "sha256": "3543ea552e99da7677ad352d73f91b5f0de024c16aca52c8cca5865b2094d870"
     },
     "granite-code": {
       "file": "models/granite-code.json",
@@ -819,11 +819,11 @@
     },
     "inkling": {
       "file": "models/inkling.json",
-      "sha256": "da537881f164991a6ea34519289fbf0407c0be91883ea9c7fdfbb4d9ac6767bc"
+      "sha256": "80a44fc667b351692d3fed2711c6c4d1648d6d6bf3fae9059384c121fafe8181"
     },
     "jamba-1.5-large-instruct": {
       "file": "models/jamba-1.5-large-instruct.json",
-      "sha256": "bc538ae310fb405a108bef2c9fa44fb50ed5789a16024e3bab5db9cbd5f6f016"
+      "sha256": "312e163f8672f536ee209057d5ca3237823fe8dd60d25b22f364f15f1f79ee6d"
     },
     "kat-coder-pro": {
       "file": "models/kat-coder-pro.json",
@@ -895,7 +895,7 @@
     },
     "laguna-xs-2.1": {
       "file": "models/laguna-xs-2.1.json",
-      "sha256": "8e3657e0a46d28f225df2df30dafa55b61bfb2d5614baf6c5154a6e8d0409a81"
+      "sha256": "278506cd3d423066272807241a55e79aa1d4ad993bcb1d9a7eb99b80c3b21f6d"
     },
     "ling-2.6-1t": {
       "file": "models/ling-2.6-1t.json",
@@ -911,7 +911,7 @@
     },
     "llama-3.1-70b-instruct": {
       "file": "models/llama-3.1-70b-instruct.json",
-      "sha256": "2224c4a3985cc8b48885ab6e7cc4091201f1511d2abf5d82120f690185cd6754"
+      "sha256": "71f032957c7e15e642069834b562479ac483b9b2179273fd45263fd55721f96c"
     },
     "llama-3.1-8b-instant": {
       "file": "models/llama-3.1-8b-instant.json",
@@ -923,7 +923,7 @@
     },
     "llama-3.1-nemotron-51b-instruct": {
       "file": "models/llama-3.1-nemotron-51b-instruct.json",
-      "sha256": "5da7524f9f55d51e11ffba7a42c6e42f09df9d67d4ee744ff0c5a0e702f36974"
+      "sha256": "49ab5daa129d545c76d6108b8d7b7494f4c61774afbef79df279b78228d4a0a2"
     },
     "llama-3.1-nemotron-70b-instruct": {
       "file": "models/llama-3.1-nemotron-70b-instruct.json",
@@ -931,19 +931,19 @@
     },
     "llama-3.1-nemotron-nano-8b-v1": {
       "file": "models/llama-3.1-nemotron-nano-8b-v1.json",
-      "sha256": "d40fa21a5bb472b102b6dbb96c92aab16b6d466bbad070d29c9201e212708604"
+      "sha256": "911d717cffbe79728dfa895462b091e362bf9ad3bef2cc01eb9d74243202c880"
     },
     "llama-3.1-nemotron-nano-vl-8b-v1": {
       "file": "models/llama-3.1-nemotron-nano-vl-8b-v1.json",
-      "sha256": "7ba1d664642ed23955618963d37436e59707952472dbdf1e9235fb38e7fc9d93"
+      "sha256": "18ace1cfc7b724af3569e223ba16799768d93aa78f8f4a751f88552e057bacdc"
     },
     "llama-3.1-nemotron-ultra-253b-v1": {
       "file": "models/llama-3.1-nemotron-ultra-253b-v1.json",
-      "sha256": "1da598c2535fa6cc29e925e166c2208bf307575ca6f09d4a76ef1154d37e99e4"
+      "sha256": "f834650fe6b48e7c2de248ac12c6cf790a9a1f4d889da621435affbe34c0793b"
     },
     "llama-3.2-11b-vision-instruct": {
       "file": "models/llama-3.2-11b-vision-instruct.json",
-      "sha256": "9c65379d64d3ae9a0251f1717bf4bb96a8e086a271139282f5dcdeca2276a7c5"
+      "sha256": "5191f9dfc095b30e379125a539af7227e606ef80ebe5342be879587f700fa9a0"
     },
     "llama-3.2-1b-instruct": {
       "file": "models/llama-3.2-1b-instruct.json",
@@ -955,7 +955,7 @@
     },
     "llama-3.2-90b-vision-instruct": {
       "file": "models/llama-3.2-90b-vision-instruct.json",
-      "sha256": "955f77110a96498ab6f22553d1651b2f814317e2ae61af5631b2a4ff7fda00be"
+      "sha256": "5e72c31c28c6a97a1f3f99227e9ecc663fa667e87e5f21a43ad2d950dc675e33"
     },
     "llama-3.3-70b": {
       "file": "models/llama-3.3-70b.json",
@@ -971,11 +971,11 @@
     },
     "llama-3.3-nemotron-super-49b-v1": {
       "file": "models/llama-3.3-nemotron-super-49b-v1.json",
-      "sha256": "48f8da383129531b53ed972f00e5bad440a3ee33613bf3208f248045075c8927"
+      "sha256": "142c7aaeae9a79c9d5ebc7d21388ada04881644fa62a0bda252a790aae9bac2f"
     },
     "llama-3.3-nemotron-super-49b-v1.5": {
       "file": "models/llama-3.3-nemotron-super-49b-v1.5.json",
-      "sha256": "b2302788382c131eae7ee2e903f37639bfc9fe8a01cd9aae3b03642d839fbd00"
+      "sha256": "0f56acbc6abc65f3aea9b4888e791951eb0cf5c5361b04cdfbd7aa7e2f689f41"
     },
     "llama-4-maverick": {
       "file": "models/llama-4-maverick.json",
@@ -1003,7 +1003,7 @@
     },
     "llama2-70b": {
       "file": "models/llama2-70b.json",
-      "sha256": "1cbdd52460c047cdfb8d172a2abc9bb0fd53dd33f7b8db7d8615112794294653"
+      "sha256": "6e9ff20e2ab4c93d2e89f38c7cf27923a92a43d1a906b87eaf3ded7db2fdeb88"
     },
     "llama3": {
       "file": "models/llama3.json",
@@ -1011,7 +1011,7 @@
     },
     "llama3-chatqa-1.5-70b": {
       "file": "models/llama3-chatqa-1.5-70b.json",
-      "sha256": "768cea45347f88826bec946a13920867002009b3709f258b16644491a4930bbc"
+      "sha256": "9fa11063e42fa816746137751ec310713f82ef411834897ffac13f51d849ec25"
     },
     "llama3.1": {
       "file": "models/llama3.1.json",
@@ -1143,7 +1143,7 @@
     },
     "mistral-7b-instruct-v0.3": {
       "file": "models/mistral-7b-instruct-v0.3.json",
-      "sha256": "7d6d04bc786d76f765a6471c48abcec55554e3719edf75b62147fbf527fd5f66"
+      "sha256": "544f3ac81309a3e9b3e1f2882aa562ce86a8097853dd404c9ba0bd28c71e21ca"
     },
     "mistral-large": {
       "file": "models/mistral-large.json",
@@ -1151,7 +1151,7 @@
     },
     "mistral-large-2-instruct": {
       "file": "models/mistral-large-2-instruct.json",
-      "sha256": "f54f6fc54b9a97c555d21804e0ffa56e14c7f88000826cf0ee9862dbe85ebfac"
+      "sha256": "4af47911ba15d063280fd5190fc4f5545ed6900d0d58f73554ed8f1d22748896"
     },
     "mistral-large-2407": {
       "file": "models/mistral-large-2407.json",
@@ -1195,15 +1195,15 @@
     },
     "mistral-nemo-12b-instruct": {
       "file": "models/mistral-nemo-12b-instruct.json",
-      "sha256": "f7251ffcfd91b0863cdd22e5cd570fe800dd6a1684c2e955cbcd1e5403bfc72d"
+      "sha256": "bc58b354ea9fe3505ee713644b70d64df70fd2e7fb933be6c383934c1c2909b1"
     },
     "mistral-nemo-minitron-8b-8k-instruct": {
       "file": "models/mistral-nemo-minitron-8b-8k-instruct.json",
-      "sha256": "2ea8e76a41793c52b683078f3b76979b1199be108077dd36066a9e8b35d7423d"
+      "sha256": "f215c59a2eee7ceff777b10e8bf471a2e999b714a2553058f5855229f03e7bef"
     },
     "mistral-nemotron": {
       "file": "models/mistral-nemotron.json",
-      "sha256": "d57b80713910483a641f99cd174f11a82c8274e69fe53fef007ba4f85ec0337b"
+      "sha256": "4d2709cc4d4ed6bedb5b185efa838d1b6f4075808174aa7074c846a5d2c5341f"
     },
     "mistral-saba-24b": {
       "file": "models/mistral-saba-24b.json",
@@ -1231,7 +1231,7 @@
     },
     "mixtral-8x22b-v0.1": {
       "file": "models/mixtral-8x22b-v0.1.json",
-      "sha256": "8cc385d75419083e294a02e18259af6704e1d0e50d5685ebec9e6147650ea922"
+      "sha256": "18d53f8aaaa1f4ec0be48ec2606aae55d82d1a497dafbc9c182e84924d7180f4"
     },
     "mixtral-8x7b-instruct": {
       "file": "models/mixtral-8x7b-instruct.json",
@@ -1255,7 +1255,7 @@
     },
     "muse-glimmer-30b": {
       "file": "models/muse-glimmer-30b.json",
-      "sha256": "9c0fedefb799cc3882447994f3659b7b95010ae97fea8aa045167f56bfb969ff"
+      "sha256": "c1fabccdab898f59ec33dd74b82879c8ce6a7d98471bd745736cbbfcec53c660"
     },
     "muse-spark-1.2-contributor": {
       "file": "models/muse-spark-1.2-contributor.json",
@@ -1271,7 +1271,7 @@
     },
     "nemotron-3-nano-omni-30b-a3b-reasoning": {
       "file": "models/nemotron-3-nano-omni-30b-a3b-reasoning.json",
-      "sha256": "cfc3c28f557c53dc9ecb80db20592f3272017478d37f529615a563456b1414d9"
+      "sha256": "eaa02e9fa9496759b1f2b91e92d1a32dfcc9fcfd84524a97fb21e7346460ab59"
     },
     "nemotron-3-super-120b-a12b": {
       "file": "models/nemotron-3-super-120b-a12b.json",
@@ -1291,23 +1291,23 @@
     },
     "nemotron-3.5-lightning-30b-a3b": {
       "file": "models/nemotron-3.5-lightning-30b-a3b.json",
-      "sha256": "c292a85fa7de8786ca164c9eb7243cdfd989b18932c6a289f1ca9349fa445716"
+      "sha256": "bd5224a32bc58fa515770ff037e1e2e76487037bda91a1e10932ff4b9a68d9c0"
     },
     "nemotron-4-340b-instruct": {
       "file": "models/nemotron-4-340b-instruct.json",
-      "sha256": "410f7c49a14dcf50fa7738564de12842feeba583bc54b240e245665d02a1f213"
+      "sha256": "93e2550c06e076191ee4658fdfaf5a1e905fd7629f417f7e42396eb6a75dd7d6"
     },
     "nemotron-mini-4b-instruct": {
       "file": "models/nemotron-mini-4b-instruct.json",
-      "sha256": "c6c81fce1ad9cf430857e00336c45e95fa8f97c700f7d2a06d6e70dc00730a9f"
+      "sha256": "2314ca239322616e8f34d863cdd1e438213963a1d94f299d4ba1f3076fdd26e6"
     },
     "nemotron-nano-12b-v2-vl": {
       "file": "models/nemotron-nano-12b-v2-vl.json",
-      "sha256": "212a2ff1aa09f5399058514705187de1db8d5b65fc46f7200bcd75acebcbd375"
+      "sha256": "3a049ae73ad68f2773c83e431ee4ce27f59580ddb773417cd967a45f5bfc3ca3"
     },
     "nemotron-nano-3-30b-a3b": {
       "file": "models/nemotron-nano-3-30b-a3b.json",
-      "sha256": "137ef7905129f6686293d654baa119f629f6d10dbfa062fe214ea63825a77122"
+      "sha256": "56968632436ebee0da99398fa6bd3a239e0e8e56d63947b07bafd35af2a27804"
     },
     "north-mini-code-free": {
       "file": "models/north-mini-code-free.json",
@@ -1315,7 +1315,7 @@
     },
     "nvidia-nemotron-nano-9b-v2": {
       "file": "models/nvidia-nemotron-nano-9b-v2.json",
-      "sha256": "861d9024ca47643ad1b9e5bfa1711bc1e4c038bad4f0b83f2a84550f9f30bd11"
+      "sha256": "7cac240441ad7f12f28814031a3929bc226943d64866dd2f2fb7b1ada54e2b27"
     },
     "o1": {
       "file": "models/o1.json",
@@ -1375,27 +1375,27 @@
     },
     "palmyra-creative-122b": {
       "file": "models/palmyra-creative-122b.json",
-      "sha256": "cc79f9da350f407fff9f6c52f6114e16ea5916b9614943954846268d6ed41bd7"
+      "sha256": "4bdd1db7b98ddb90252c3bf816496ec75cdaa029beee85bb7e453ac0980fc14c"
     },
     "palmyra-fin-70b-32k": {
       "file": "models/palmyra-fin-70b-32k.json",
-      "sha256": "2c8208fb5dd610e6a8f6bc25aa9e1c3fab25e8080c17cc80bb8a37183bfe76cc"
+      "sha256": "02648d259fac5da3ea3332b5297c7836815a5dabb1d02544171a3ebf2ef14809"
     },
     "palmyra-med-70b": {
       "file": "models/palmyra-med-70b.json",
-      "sha256": "42c388e7a99ac44d87cfac317bc9d5322b82a71d9d38b3677651932fab9aa528"
+      "sha256": "e7606018c61c57d8dd4c701ee05be3d535f6a50b06ca98efb72280fc7ee2af49"
     },
     "palmyra-med-70b-32k": {
       "file": "models/palmyra-med-70b-32k.json",
-      "sha256": "54c31fede8fb61b86177075f67d3bf0f8e68dfbbad8796ddb3e92cc645a514ab"
+      "sha256": "5dd108373cbea47e154281fcf85a8dd285035fbcd8f8b9c2e45892395382219a"
     },
     "phi-3-vision-128k-instruct": {
       "file": "models/phi-3-vision-128k-instruct.json",
-      "sha256": "bf64369566f491b04122b0bae81c60afb4616894bf198016a1881463cacbc362"
+      "sha256": "12d6d561364991a244a19e3038487a4528b0607ec354e8813f04d776a1d97072"
     },
     "phi-3.5-moe-instruct": {
       "file": "models/phi-3.5-moe-instruct.json",
-      "sha256": "b915e1c5130452a715716168eba317cbaec8760f12fd15a088ba4d3e02034ca6"
+      "sha256": "191de7fe33a85c39cd3cfbdab861d55ab052d5406c0feba3bc75cdc8e160c51b"
     },
     "phi-4": {
       "file": "models/phi-4.json",
@@ -1587,7 +1587,7 @@
     },
     "recurrentgemma-2b": {
       "file": "models/recurrentgemma-2b.json",
-      "sha256": "cad54141981ea6501e9d2bed27d2ec4c62631392d343d2f939bcd58ee38da837"
+      "sha256": "a5006bef983400edb01cc600c632aa4ff08ee455dd3000e58cfe547ac5f0468b"
     },
     "ring-2.6-1t": {
       "file": "models/ring-2.6-1t.json",
@@ -1595,7 +1595,7 @@
     },
     "sea-lion-7b-instruct": {
       "file": "models/sea-lion-7b-instruct.json",
-      "sha256": "be15dbf170c25f1b508000a1a2638c62fa53e02e89ac1d337ef085dfbe42e5bb"
+      "sha256": "5135a23586aceb532d83af6b5b056c8fccc522ecece806c3e0d0f28c9a4a149d"
     },
     "starcoder2": {
       "file": "models/starcoder2.json",
@@ -1603,7 +1603,7 @@
     },
     "starcoder2-15b": {
       "file": "models/starcoder2-15b.json",
-      "sha256": "b5740e36f07ef90a7cb3f1cf01edac13b6a82bcadedf53e4e5ec048858572c2a"
+      "sha256": "bfaf093443151276205ebea03f7b518559535f774a2f6241179ef23d6561df1e"
     },
     "step-1": {
       "file": "models/step-1.json",
@@ -1659,11 +1659,11 @@
     },
     "yi-large": {
       "file": "models/yi-large.json",
-      "sha256": "b6be4d70bce6336433b9af78cd8d477fc8f5c00be426ca1bbba6805cdda6e293"
+      "sha256": "28b96a66a26c5f67775bfd7c2e17efab25cde85b99fe6596fbafa64786317ba8"
     },
     "zamba2-7b-instruct": {
       "file": "models/zamba2-7b-instruct.json",
-      "sha256": "27890379e01f82d9048193440d59a01cc04595b6f77303855630d81d733f74a6"
+      "sha256": "a28dc237856620ad83ab85d2611cea456bede2955cfaccdf0af518048ed3adef"
     }
   },
   "providers": {
@@ -1757,7 +1757,7 @@
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "919ecb16cf3d721d2e1b88a1029b2108b97339bbce39000b329ecb24118874c7",
+      "sha256": "24596214907f75eac05410173fe26db0ce6c6692dd3efd126d904839eb440777",
       "model_count": 75
     },
     "ollama": {
@@ -1772,7 +1772,7 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "aeff8a96382cb4d5c785d54001e60e7e26edc060f153b78d329074304f268675",
+      "sha256": "74beaf5320bf55f8b54e9d5fd350a043a2cb4e9a101284ac2352ef1dd2f6ff04",
       "model_count": 57
     },
     "opencode-go": {
