@@ -1,22 +1,22 @@
 {
-  "version": 53,
-  "updated_at": "2026-08-19T17:01:56Z",
+  "version": 54,
+  "updated_at": "2026-08-21T17:28:47Z",
   "coverage": {
-    "models_total": 608,
-    "models_with_pricing": 350,
-    "models_with_attachments": 608,
-    "models_with_modern_attachments": 608,
+    "models_total": 625,
+    "models_with_pricing": 361,
+    "models_with_attachments": 625,
+    "models_with_modern_attachments": 625,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 0,
     "models_unverified_200k": 0,
-    "models_with_sources": 598,
-    "models_with_thinking": 370,
-    "models_with_ref": 608,
-    "canonical_models": 411,
+    "models_with_sources": 615,
+    "models_with_thinking": 384,
+    "models_with_ref": 625,
+    "canonical_models": 418,
     "models_by_status": {
-      "active": 557,
-      "deprecated": 10,
-      "removed": 41,
+      "active": 571,
+      "deprecated": 11,
+      "removed": 43,
       "preview": 0
     }
   },
@@ -325,6 +325,10 @@
       "file": "models/deepseek-v4-flash-free.json",
       "sha256": "c55acb4c8b6090e0865b2d23b8191c82451321008450f4809ec9cda3380a3d04"
     },
+    "deepseek-v4-flash-vision-exp": {
+      "file": "models/deepseek-v4-flash-vision-exp.json",
+      "sha256": "ce06b3688a52af8134b95f71f210d6ce2a432b86b297bdfff04078609c420a76"
+    },
     "deepseek-v4-pro": {
       "file": "models/deepseek-v4-pro.json",
       "sha256": "f5a3aa42f0da525a2092edbe236951c170211c762ee759ffe124d48253ba3edd"
@@ -456,6 +460,10 @@
     "gemini-3.6-flash": {
       "file": "models/gemini-3.6-flash.json",
       "sha256": "5ff7eb4f49a9f3e6da0d7d7911f8c65311bbba631a7905bfff950a183a88ce4b"
+    },
+    "gemini-3.7-flash": {
+      "file": "models/gemini-3.7-flash.json",
+      "sha256": "b4e7ed8b207c6dcadc19f2dc300925d0aa1458cbebac162506c57737aa32cfe2"
     },
     "gemma-2b": {
       "file": "models/gemma-2b.json",
@@ -801,6 +809,10 @@
       "file": "models/grok-4.5.json",
       "sha256": "260e27c122d66798678370cd0f7596cdaa7195010577b815e57b3007b9cfcb4b"
     },
+    "grok-4.6": {
+      "file": "models/grok-4.6.json",
+      "sha256": "c15d9ac206d393c13fa66b19867107ce0eeb5279e907503879dc9a9fe8c30a8b"
+    },
     "grok-build-0.1": {
       "file": "models/grok-build-0.1.json",
       "sha256": "a79842c688dc25f0cd81b29aa384ed6788d311bddfd45210e1a1369df839dc4c"
@@ -816,6 +828,10 @@
     "hy3-free": {
       "file": "models/hy3-free.json",
       "sha256": "23330aff818f30961ce94b2d17bfd3c0f3b56435d6f7f2f9db7f7b076a1307c5"
+    },
+    "hy3-preview": {
+      "file": "models/hy3-preview.json",
+      "sha256": "d8671e9d6061ec8219390c9ae2698946cdfe260dc2e78cdb142a748a33201a86"
     },
     "inkling": {
       "file": "models/inkling.json",
@@ -1257,6 +1273,10 @@
       "file": "models/muse-glimmer-30b.json",
       "sha256": "c1fabccdab898f59ec33dd74b82879c8ce6a7d98471bd745736cbbfcec53c660"
     },
+    "muse-spark-1.2": {
+      "file": "models/muse-spark-1.2.json",
+      "sha256": "4c946aa19afd6d337a4611c776802228d5786b155ceef1860fe73b0aab76b338"
+    },
     "muse-spark-1.2-contributor": {
       "file": "models/muse-spark-1.2-contributor.json",
       "sha256": "5a499bf456d060e459d2de1691da4ec47feb7a40ce46ab25a7d7d98480f15445"
@@ -1292,6 +1312,10 @@
     "nemotron-3.5-lightning-30b-a3b": {
       "file": "models/nemotron-3.5-lightning-30b-a3b.json",
       "sha256": "bd5224a32bc58fa515770ff037e1e2e76487037bda91a1e10932ff4b9a68d9c0"
+    },
+    "nemotron-3.5-lightning-free": {
+      "file": "models/nemotron-3.5-lightning-free.json",
+      "sha256": "214280a1c040c3247dfca5347257cc56b38863ebe25cb679121b9ed7802b19d1"
     },
     "nemotron-4-340b-instruct": {
       "file": "models/nemotron-4-340b-instruct.json",
@@ -1368,6 +1392,10 @@
     "open-mixtral-8x7b": {
       "file": "models/open-mixtral-8x7b.json",
       "sha256": "45266f0f00d28c56b77dc12e8b6074a0a6000bdff3bee8fb1b74bd64611c2cbf"
+    },
+    "ox-alpha-free": {
+      "file": "models/ox-alpha-free.json",
+      "sha256": "4ea4657ca77c6bb2e7749fa464579ad8105629c5cd2549fd8d6602c5a9f761db"
     },
     "paddleocr-vl": {
       "file": "models/paddleocr-vl.json",
@@ -1772,13 +1800,13 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "74beaf5320bf55f8b54e9d5fd350a043a2cb4e9a101284ac2352ef1dd2f6ff04",
-      "model_count": 57
+      "sha256": "db4c745b755659d0d0b722ca28015f6ca69fc1682ce0864dafac198c9b9e8c6f",
+      "model_count": 66
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "c1016f552f644762ebce9b5236741c68480052eb98943038fe496db8cc79ce61",
-      "model_count": 21
+      "sha256": "e8223cdc7ee3f40c302fcedf46a14027e30d1c69008bbe166eb5e0aed4d72c54",
+      "model_count": 29
     },
     "openrouter": {
       "file": "providers/openrouter.json",

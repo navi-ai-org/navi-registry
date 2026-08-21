@@ -1,0 +1,38 @@
+{
+  "id": "grok-4.6",
+  "vendor": "xai",
+  "family": "grok",
+  "context_window_tokens": 500000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true,
+    "audio": false,
+    "video": false
+  },
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high",
+    "xhigh"
+  ],
+  "default_reasoning_effort": "high",
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/x-ai/grok-4.6",
+      "verified_at": "2026-08-21",
+      "note": "500k context from OpenRouter /api/v1/models; max completion tokens not published there, so omitted."
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/x-ai/grok-4.6",
+      "verified_at": "2026-08-21",
+      "note": "text+image+file input modalities from OpenRouter /api/v1/models"
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/x-ai/grok-4.6",
+      "verified_at": "2026-08-21",
+      "note": "supported efforts xhigh/high/medium/low (default high) from OpenRouter /api/v1/models"
+    }
+  }
+}

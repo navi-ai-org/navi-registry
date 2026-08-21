@@ -27,6 +27,18 @@
       }
     },
     {
+      "ref": "claude-opus-5",
+      "context_window_tokens": 200000,
+      "max_output_tokens": 16384,
+      "recommended_temperature": 1,
+      "pricing": {
+        "input_per_1m": 5,
+        "output_per_1m": 25,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "claude-opus-4-8",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
@@ -70,7 +82,7 @@
     },
     {
       "ref": "claude-opus-4-1",
-      "status": "deprecated",
+      "status": "removed",
       "pricing": {
         "input_per_1m": 5,
         "output_per_1m": 25,
@@ -144,9 +156,9 @@
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 2.5,
-        "output_per_1m": 15,
-        "cached_input_per_1m": 0.25,
+        "input_per_1m": 2,
+        "output_per_1m": 12,
+        "cached_input_per_1m": 0.2,
         "currency": "USD"
       }
     },
@@ -155,9 +167,9 @@
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 1,
-        "output_per_1m": 6,
-        "cached_input_per_1m": 0.1,
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.02,
         "currency": "USD"
       }
     },
@@ -341,8 +353,17 @@
       }
     },
     {
-      "ref": "gemini-3.6-flash",
+      "ref": "gemini-3.7-flash",
       "recommended_temperature": 1,
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5,
+        "cached_input_per_1m": 0.15,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.6-flash",
       "pricing": {
         "input_per_1m": 1.5,
         "output_per_1m": 7.5,
@@ -389,6 +410,15 @@
       }
     },
     {
+      "ref": "grok-4.6",
+      "pricing": {
+        "input_per_1m": 2,
+        "output_per_1m": 6,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "grok-4.5",
       "pricing": {
         "input_per_1m": 2,
@@ -404,6 +434,20 @@
         "input_per_1m": 1,
         "output_per_1m": 2,
         "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "muse-spark-1.2",
+      "attachments": {
+        "images": true,
+        "video": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 4.25,
+        "cached_input_per_1m": 0.15,
         "currency": "USD"
       }
     },
@@ -435,19 +479,46 @@
       "ref": "deepseek-v4-pro",
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 1.74,
-        "output_per_1m": 3.48,
-        "cached_input_per_1m": 0.145,
+        "input_per_1m": 0.66,
+        "output_per_1m": 1.98,
+        "cached_input_per_1m": 0.022,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-08-21",
+          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $1.32/$3.96/$0.044."
+        }
       }
     },
     {
       "ref": "deepseek-v4-flash",
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 0.14,
-        "output_per_1m": 0.28,
-        "cached_input_per_1m": 0.028,
+        "input_per_1m": 0.22,
+        "output_per_1m": 0.66,
+        "cached_input_per_1m": 0.007,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-08-21",
+          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $0.44/$1.32/$0.014."
+        }
+      }
+    },
+    {
+      "ref": "kimi-k3",
+      "attachments": {
+        "images": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 3,
+        "output_per_1m": 15,
+        "cached_input_per_1m": 0.3,
         "currency": "USD"
       }
     },
@@ -586,7 +657,38 @@
       }
     },
     {
+      "ref": "ox-alpha-free",
+      "api_name": "x-preview-f-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "muse-spark-1.2-contributor",
+      "api_name": "muse-spark-1.2-contributor-free",
+      "attachments": {
+        "images": true,
+        "video": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "mimo-v2.5-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "hy3-free",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,
@@ -603,6 +705,7 @@
     },
     {
       "ref": "north-mini-code-free",
+      "status": "removed",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,
@@ -611,6 +714,14 @@
     },
     {
       "ref": "nemotron-3-ultra-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "nemotron-3.5-lightning-free",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,

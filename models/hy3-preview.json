@@ -1,0 +1,33 @@
+{
+  "id": "hy3-preview",
+  "vendor": "tencent",
+  "context_window_tokens": 262144,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "tencent/hy3-preview"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/tencent/hy3-preview",
+      "verified_at": "2026-08-21",
+      "note": "256k context from OpenRouter /api/v1/models; max completion tokens not published there, so omitted."
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/tencent/hy3-preview",
+      "verified_at": "2026-08-21",
+      "note": "configurable reasoning across disabled/low/high (default high) from OpenRouter /api/v1/models"
+    }
+  },
+  "reasoning_levels": [
+    "off",
+    "low",
+    "high"
+  ],
+  "default_reasoning_effort": "high"
+}
