@@ -1,9 +1,9 @@
 {
-  "version": 54,
-  "updated_at": "2026-08-21T17:28:47Z",
+  "version": 55,
+  "updated_at": "2026-09-12T11:47:37Z",
   "coverage": {
     "models_total": 625,
-    "models_with_pricing": 361,
+    "models_with_pricing": 402,
     "models_with_attachments": 625,
     "models_with_modern_attachments": 625,
     "models_legacy_attachments_only": 0,
@@ -1697,7 +1697,7 @@
   "providers": {
     "anthropic": {
       "file": "providers/anthropic.json",
-      "sha256": "410fec72edb5235c0a35efbf4e547789db8b4ac3eab5289ae27b4b341f1df72c",
+      "sha256": "bf8efdcaf95811801f85ddf2d733c947578025996cedf0e1d357780ca5c24107",
       "model_count": 20
     },
     "charm-hyper": {
@@ -1707,7 +1707,7 @@
     },
     "commandcode": {
       "file": "providers/commandcode.json",
-      "sha256": "3c1bfbc4481be3cfd5281d5857b7535b4e497a208582575ad394b272f1aa3c18",
+      "sha256": "ec2b71ae3eb192b3dc2e48e88bf54040e2cbbd66b726aa5aa97bfc2382f5dedc",
       "model_count": 30
     },
     "deepseek": {
@@ -1765,7 +1765,7 @@
     },
     "minimax": {
       "file": "providers/minimax.json",
-      "sha256": "1ec8ec502e806b43f880e269be17f4d207a9c550c400f0a8152dd6c87785b732",
+      "sha256": "becc30214c8434da50b58a25ad8c441aef75c1547729175bf615045dcd993c86",
       "model_count": 15
     },
     "mistral": {
@@ -1785,7 +1785,7 @@
     },
     "nvidia": {
       "file": "providers/nvidia.json",
-      "sha256": "24596214907f75eac05410173fe26db0ce6c6692dd3efd126d904839eb440777",
+      "sha256": "efff71f31d529dd3520aa1025ef00327437b71b55ecaf86e022f5b7d745c9d28",
       "model_count": 75
     },
     "ollama": {
@@ -1805,12 +1805,12 @@
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "e8223cdc7ee3f40c302fcedf46a14027e30d1c69008bbe166eb5e0aed4d72c54",
+      "sha256": "491537e628898760e45cd3d7e68f746ed1f5dddda1095727c491994873307778",
       "model_count": 29
     },
     "openrouter": {
       "file": "providers/openrouter.json",
-      "sha256": "8026cea785a78065da23d1ffc8424ccdbdbfd905af70463a411554f41de351dc",
+      "sha256": "89b8f1993a9ca6f01223e8737d3a4fece92acda9e31866a5c47c94a774feaa95",
       "model_count": 21
     },
     "stepfun": {

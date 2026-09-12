@@ -33,12 +33,23 @@
     {
       "ref": "deepseek-r1",
       "api_name": "deepseek-ai/deepseek-r1",
-      "max_output_tokens": 8192
+      "max_output_tokens": 8192,
+      "pricing": {
+        "input_per_1m": 0.7,
+        "output_per_1m": 2.5,
+        "currency": "USD"
+      }
     },
     {
       "ref": "deepseek-v4-flash",
       "api_name": "deepseek-ai/deepseek-v4-flash-0731",
-      "max_output_tokens": 16384
+      "max_output_tokens": 16384,
+      "pricing": {
+        "input_per_1m": 0.06678,
+        "output_per_1m": 0.13356,
+        "currency": "USD",
+        "cached_input_per_1m": 0.013356
+      }
     },
     {
       "ref": "codegemma-1.1-7b",
@@ -58,15 +69,31 @@
     },
     {
       "ref": "gemma-3-12b-it",
-      "api_name": "google/gemma-3-12b-it"
+      "api_name": "google/gemma-3-12b-it",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.15,
+        "currency": "USD"
+      }
     },
     {
       "ref": "gemma-3-4b-it",
-      "api_name": "google/gemma-3-4b-it"
+      "api_name": "google/gemma-3-4b-it",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.1,
+        "currency": "USD"
+      }
     },
     {
       "ref": "gemma-4-31b-it",
-      "api_name": "google/gemma-4-31b-it"
+      "api_name": "google/gemma-4-31b-it",
+      "pricing": {
+        "input_per_1m": 0.09,
+        "output_per_1m": 0.34,
+        "currency": "USD",
+        "cached_input_per_1m": 0.05
+      }
     },
     {
       "ref": "recurrentgemma-2b",
@@ -94,11 +121,22 @@
     },
     {
       "ref": "llama-3.1-70b-instruct",
-      "api_name": "meta/llama-3.1-70b-instruct"
+      "api_name": "meta/llama-3.1-70b-instruct",
+      "pricing": {
+        "input_per_1m": 0.72,
+        "output_per_1m": 0.72,
+        "currency": "USD"
+      }
     },
     {
       "ref": "llama-3.1-8b-instruct",
-      "api_name": "meta/llama-3.1-8b-instruct"
+      "api_name": "meta/llama-3.1-8b-instruct",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.08,
+        "currency": "USD",
+        "cached_input_per_1m": 0.025
+      }
     },
     {
       "ref": "llama-3.2-11b-vision-instruct",
@@ -106,11 +144,21 @@
     },
     {
       "ref": "llama-3.2-1b-instruct",
-      "api_name": "meta/llama-3.2-1b-instruct"
+      "api_name": "meta/llama-3.2-1b-instruct",
+      "pricing": {
+        "input_per_1m": 0.027,
+        "output_per_1m": 0.201,
+        "currency": "USD"
+      }
     },
     {
       "ref": "llama-3.2-3b-instruct",
-      "api_name": "meta/llama-3.2-3b-instruct"
+      "api_name": "meta/llama-3.2-3b-instruct",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.33,
+        "currency": "USD"
+      }
     },
     {
       "ref": "llama-3.2-90b-vision-instruct",
@@ -118,7 +166,12 @@
     },
     {
       "ref": "llama-3.3-70b-instruct",
-      "api_name": "meta/llama-3.3-70b-instruct"
+      "api_name": "meta/llama-3.3-70b-instruct",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.32,
+        "currency": "USD"
+      }
     },
     {
       "ref": "llama2-70b",
@@ -126,7 +179,13 @@
     },
     {
       "ref": "muse-glimmer-30b",
-      "api_name": "meta/muse-glimmer-30b"
+      "api_name": "meta/muse-glimmer-30b",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.1,
+        "currency": "USD",
+        "cached_input_per_1m": 0.04
+      }
     },
     {
       "ref": "phi-3-vision-128k-instruct",
@@ -189,7 +248,13 @@
     },
     {
       "ref": "kimi-k2.6",
-      "api_name": "moonshotai/kimi-k2.6"
+      "api_name": "moonshotai/kimi-k2.6",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.16
+      }
     },
     {
       "ref": "mistral-nemo-12b-instruct",
@@ -255,7 +320,13 @@
     },
     {
       "ref": "nemotron-3-ultra-550b-a55b",
-      "api_name": "nvidia/nemotron-3-ultra-550b-a55b"
+      "api_name": "nvidia/nemotron-3-ultra-550b-a55b",
+      "pricing": {
+        "input_per_1m": 0.625,
+        "output_per_1m": 3.125,
+        "currency": "USD",
+        "cached_input_per_1m": 0.1875
+      }
     },
     {
       "ref": "nemotron-3.5-lightning-30b-a3b",
@@ -283,15 +354,32 @@
     },
     {
       "ref": "gpt-oss-120b",
-      "api_name": "openai/gpt-oss-120b"
+      "api_name": "openai/gpt-oss-120b",
+      "pricing": {
+        "input_per_1m": 0.037,
+        "output_per_1m": 0.17,
+        "currency": "USD"
+      }
     },
     {
       "ref": "gpt-oss-20b",
-      "api_name": "openai/gpt-oss-20b"
+      "api_name": "openai/gpt-oss-20b",
+      "pricing": {
+        "input_per_1m": 0.03,
+        "output_per_1m": 0.13,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      }
     },
     {
       "ref": "laguna-xs-2.1",
-      "api_name": "poolside/laguna-xs-2.1"
+      "api_name": "poolside/laguna-xs-2.1",
+      "pricing": {
+        "input_per_1m": 0.06,
+        "output_per_1m": 0.12,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      }
     },
     {
       "ref": "qwen2.5-coder-32b-instruct",
@@ -299,11 +387,23 @@
     },
     {
       "ref": "step-3.7-flash",
-      "api_name": "stepfun-ai/step-3.7-flash"
+      "api_name": "stepfun-ai/step-3.7-flash",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.15,
+        "currency": "USD",
+        "cached_input_per_1m": 0.04
+      }
     },
     {
       "ref": "inkling",
-      "api_name": "thinkingmachines/inkling"
+      "api_name": "thinkingmachines/inkling",
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 4.05,
+        "currency": "USD",
+        "cached_input_per_1m": 0.17
+      }
     },
     {
       "ref": "palmyra-creative-122b",
@@ -323,7 +423,13 @@
     },
     {
       "ref": "glm-5.2",
-      "api_name": "z-ai/glm-5.2"
+      "api_name": "z-ai/glm-5.2",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.15
+      }
     },
     {
       "ref": "zamba2-7b-instruct",
