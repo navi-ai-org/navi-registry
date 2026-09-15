@@ -61,7 +61,13 @@
     },
     {
       "ref": "glm-5",
-      "status": "deprecated"
+      "status": "deprecated",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 1.92,
+        "currency": "USD",
+        "cached_input_per_1m": 0.12
+      }
     },
     {
       "ref": "kimi-k3",
@@ -108,6 +114,12 @@
       "attachments": {
         "images": true,
         "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 0.45,
+        "output_per_1m": 2.25,
+        "currency": "USD",
+        "cached_input_per_1m": 0.07
       }
     },
     {
@@ -296,7 +308,13 @@
       }
     },
     {
-      "ref": "hy3-preview"
+      "ref": "hy3-preview",
+      "pricing": {
+        "input_per_1m": 0.18,
+        "output_per_1m": 0.6,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
+      }
     },
     {
       "ref": "ox-alpha-free",
