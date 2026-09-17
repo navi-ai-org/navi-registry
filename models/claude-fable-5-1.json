@@ -1,0 +1,46 @@
+{
+  "id": "claude-fable-5-1",
+  "vendor": "anthropic",
+  "family": "claude",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 128000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+  ],
+  "default_reasoning_effort": "high",
+  "aliases": [
+    "anthropic/claude-fable-5.1"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5.1",
+      "verified_at": "2026-09-17",
+      "note": "1M context (1,048,576), 128k max output from OpenRouter /api/v1/models"
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5.1",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5.1",
+      "verified_at": "2026-09-17",
+      "note": "text+image+file input modalities from OpenRouter /api/v1/models"
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/anthropic/claude-fable-5.1",
+      "verified_at": "2026-09-17",
+      "note": "supported efforts max/xhigh/high/medium/low (default high) from OpenRouter /api/v1/models"
+    }
+  }
+}

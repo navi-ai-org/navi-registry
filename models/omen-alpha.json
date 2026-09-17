@@ -1,0 +1,10 @@
+{
+  "id": "omen-alpha",
+  "sources": {
+    "metadata": {
+      "url": "https://opencode.ai/zen/go/v1/models",
+      "verified_at": "2026-09-17",
+      "note": "Listed on the live OpenCode Go /v1/models API; metadata pending verification (not present on OpenRouter)."
+    }
+  }
+}

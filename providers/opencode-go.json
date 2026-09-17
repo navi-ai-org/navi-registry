@@ -15,6 +15,15 @@
   },
   "models": [
     {
+      "ref": "grok-4.6",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "grok-4.5",
       "pricing": {
         "input_per_1m": 2.0,
@@ -29,6 +38,15 @@
         "input_per_1m": 0.2,
         "output_per_1m": 1.2,
         "cached_input_per_1m": 0.02,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.03,
         "currency": "USD"
       }
     },
@@ -109,6 +127,15 @@
       }
     },
     {
+      "ref": "longcat-2.0",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.006,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "kimi-k2.5",
       "status": "deprecated",
       "attachments": {
@@ -178,6 +205,20 @@
       }
     },
     {
+      "ref": "muse-spark-1.3-contributor",
+      "attachments": {
+        "images": true,
+        "video": true,
+        "documents": true
+      },
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.2,
+        "cached_input_per_1m": 0.002,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "muse-spark-1.2-contributor",
       "attachments": {
         "images": true,
@@ -201,6 +242,15 @@
         "input_per_1m": 2.0,
         "output_per_1m": 6.0,
         "cached_input_per_1m": 0.25,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.47,
+        "cached_input_per_1m": 0.016,
         "currency": "USD"
       }
     },
@@ -258,7 +308,7 @@
       "sources": {
         "pricing": {
           "url": "https://opencode.ai/docs/go/",
-          "verified_at": "2026-08-21",
+          "verified_at": "2026-09-17",
           "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $1.32/$3.96/$0.044."
         }
       }
@@ -266,16 +316,49 @@
     {
       "ref": "deepseek-v4-flash",
       "pricing": {
-        "input_per_1m": 0.22,
-        "output_per_1m": 0.66,
-        "cached_input_per_1m": 0.007,
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.003,
         "currency": "USD"
       },
       "sources": {
         "pricing": {
           "url": "https://opencode.ai/docs/go/",
-          "verified_at": "2026-08-21",
-          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $0.44/$1.32/$0.014."
+          "verified_at": "2026-09-17",
+          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC, Mon-Fri) are $0.30/$1.20/$0.006."
+        }
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.003,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/go/",
+          "verified_at": "2026-09-17",
+          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC, Mon-Fri) are $0.30/$1.20/$0.006."
+        }
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash",
+      "api_name": "deepseek-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.003,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/go/",
+          "verified_at": "2026-09-17",
+          "note": "Go lists deepseek-flash as DeepSeek V4.1 Flash with a 4x request multiplier (through Sep 20, 2026) at the same off-peak token rate."
         }
       }
     },
@@ -285,16 +368,16 @@
         "images": true
       },
       "pricing": {
-        "input_per_1m": 0.22,
-        "output_per_1m": 0.66,
-        "cached_input_per_1m": 0.007,
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.003,
         "currency": "USD"
       },
       "sources": {
         "pricing": {
           "url": "https://opencode.ai/docs/go/",
-          "verified_at": "2026-08-21",
-          "note": "Off-Peak rate; Peak hours are $0.44/$1.32/$0.014."
+          "verified_at": "2026-09-17",
+          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC, Mon-Fri) are $0.30/$1.20/$0.006."
         }
       }
     },
@@ -308,6 +391,15 @@
       }
     },
     {
+      "ref": "hy4-preview",
+      "pricing": {
+        "input_per_1m": 0.834,
+        "output_per_1m": 2.501,
+        "cached_input_per_1m": 0.042,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "hy3-preview",
       "pricing": {
         "input_per_1m": 0.18,
@@ -315,6 +407,17 @@
         "currency": "USD",
         "cached_input_per_1m": 0.06
       }
+    },
+    {
+      "ref": "union-alpha",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "omen-alpha"
     },
     {
       "ref": "ox-alpha-free",

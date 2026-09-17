@@ -27,6 +27,15 @@
       }
     },
     {
+      "ref": "claude-fable-5-1",
+      "pricing": {
+        "input_per_1m": 10,
+        "output_per_1m": 50,
+        "cached_input_per_1m": 0.25,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "claude-opus-5",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
@@ -137,6 +146,15 @@
         "input_per_1m": 1,
         "output_per_1m": 5,
         "cached_input_per_1m": 0.1,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-6-astra",
+      "pricing": {
+        "input_per_1m": 10,
+        "output_per_1m": 50,
+        "cached_input_per_1m": 1,
         "currency": "USD"
       }
     },
@@ -353,6 +371,15 @@
       }
     },
     {
+      "ref": "gemini-3.8-flash",
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5,
+        "cached_input_per_1m": 0.15,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "gemini-3.7-flash",
       "recommended_temperature": 1,
       "pricing": {
@@ -452,6 +479,15 @@
       }
     },
     {
+      "ref": "muse-spark-1.3",
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 4.25,
+        "cached_input_per_1m": 0.15,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "qwen3.6-plus",
       "max_output_tokens": 16384,
       "attachments": {
@@ -479,16 +515,16 @@
       "ref": "deepseek-v4-pro",
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 0.66,
-        "output_per_1m": 1.98,
-        "cached_input_per_1m": 0.022,
+        "input_per_1m": 1.74,
+        "output_per_1m": 3.48,
+        "cached_input_per_1m": 0.145,
         "currency": "USD"
       },
       "sources": {
         "pricing": {
           "url": "https://opencode.ai/docs/zen/",
-          "verified_at": "2026-08-21",
-          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $1.32/$3.96/$0.044."
+          "verified_at": "2026-09-17",
+          "note": "Flat Zen pay-as-you-go rate; unlike OpenCode Go, the Zen pricing table documents no peak/off-peak split."
         }
       }
     },
@@ -496,16 +532,32 @@
       "ref": "deepseek-v4-flash",
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 0.22,
-        "output_per_1m": 0.66,
-        "cached_input_per_1m": 0.007,
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.028,
         "currency": "USD"
       },
       "sources": {
         "pricing": {
           "url": "https://opencode.ai/docs/zen/",
-          "verified_at": "2026-08-21",
-          "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC) are $0.44/$1.32/$0.014."
+          "verified_at": "2026-09-17",
+          "note": "Flat Zen pay-as-you-go rate; unlike OpenCode Go, the Zen pricing table documents no peak/off-peak split."
+        }
+      }
+    },
+    {
+      "ref": "deepseek-v4-flash-vision-exp",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.028,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-17",
+          "note": "Flat Zen pay-as-you-go rate; unlike OpenCode Go, the Zen pricing table documents no peak/off-peak split."
         }
       }
     },
@@ -563,6 +615,24 @@
         "input_per_1m": 0.6,
         "output_per_1m": 3,
         "cached_input_per_1m": 0.1,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.03,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.3",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
         "currency": "USD"
       }
     },
@@ -649,6 +719,14 @@
       }
     },
     {
+      "ref": "union-alpha",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "deepseek-v4-flash-free",
       "pricing": {
         "input_per_1m": 0,
@@ -680,7 +758,24 @@
       }
     },
     {
+      "ref": "muse-spark-1.3-contributor",
+      "api_name": "muse-spark-1.3-contributor-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "mimo-v2.5-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ling-3.0-flash-fin-free",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,

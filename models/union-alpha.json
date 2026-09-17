@@ -1,0 +1,32 @@
+{
+  "id": "union-alpha",
+  "vendor": "aggregator",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 131072,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "stealth/union-alpha"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/stealth/union-alpha",
+      "verified_at": "2026-09-17",
+      "note": "256k context, 131k max output from OpenRouter /api/v1/models. Free on OpenCode Zen and Go for a limited time."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/stealth/union-alpha",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/stealth/union-alpha",
+      "verified_at": "2026-09-17",
+      "note": "text+image input modalities from OpenRouter /api/v1/models"
+    }
+  }
+}
