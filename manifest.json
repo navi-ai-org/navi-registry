@@ -1,6 +1,6 @@
 {
-  "version": 57,
-  "updated_at": "2026-09-17T12:15:02Z",
+  "version": 58,
+  "updated_at": "2026-09-17T12:33:18Z",
   "coverage": {
     "models_total": 692,
     "models_with_pricing": 468,
@@ -1762,7 +1762,7 @@
     },
     "b-ai": {
       "file": "providers/b-ai.json",
-      "sha256": "87d7ee12b9431a7528cd611fc9aa34f61b5280acf70fcda250faa9bc19ab681c",
+      "sha256": "f9d44c1ead9eae9bf3dcc29194ff3664ce76bef1d9ded4c24910f0ee9850e127",
       "model_count": 47
     },
     "charm-hyper": {

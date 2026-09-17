@@ -263,7 +263,6 @@
     },
     {
       "ref": "gpt-5.4",
-      "context_window_tokens": 272000,
       "pricing": {
         "input_per_1m": 2.5,
         "output_per_1m": 15.0,
@@ -274,7 +273,7 @@
         "context_window_tokens": {
           "url": "https://docs.b.ai/llmservice/models/gpt-5-4/",
           "verified_at": "2026-09-17",
-          "note": "B.AI model page: standard context is 272K tokens; 1,050,000 requires explicit configuration, so the canonical 1.05M is capped here."
+          "note": "B.AI model page: up to 1,050,000 tokens (922K input + 128K output). 272K is only the standard default tier and 1.05M needs explicit configuration; the canonical 1.05M is kept so long-context use is not truncated, and input beyond 272K is billed at higher long-context rates."
         }
       }
     },
@@ -417,6 +416,13 @@
         "output_per_1m": 2.501,
         "cached_input_per_1m": 0.042,
         "currency": "USD"
+      },
+      "sources": {
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/hy4-preview/",
+          "verified_at": "2026-09-17",
+          "note": "B.AI model page: 1M-token context window, up to 960,000 input tokens and up to 64,000 output tokens."
+        }
       }
     },
     {
@@ -489,6 +495,13 @@
         "output_per_1m": 0.47,
         "cached_input_per_1m": 0.016,
         "currency": "USD"
+      },
+      "sources": {
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/qwen3-8-flash/",
+          "verified_at": "2026-09-17",
+          "note": "B.AI model page: 1M-token context window; up to 991K input in non-thinking mode and 983K input in thinking mode, 131K output in either mode."
+        }
       }
     },
     {
@@ -498,6 +511,13 @@
         "output_per_1m": 6.0,
         "cached_input_per_1m": 0.25,
         "currency": "USD"
+      },
+      "sources": {
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/qwen3.8-max/",
+          "verified_at": "2026-09-17",
+          "note": "B.AI model page: 1M-token context window; up to 991.80K input in non-thinking mode and 983.61K input in thinking mode, 131.07K output in both modes."
+        }
       }
     }
   ]
