@@ -1,0 +1,33 @@
+{
+  "id": "qwen3.8-27b",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "video": true
+  },
+  "aliases": [
+    "qwen/qwen3.8-27b",
+    "Qwen/Qwen3.8-27B"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.b.ai/llmservice/models/qwen3.8-27b/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: context window 262,144 tokens."
+    },
+    "max_output_tokens": {
+      "url": "https://docs.b.ai/llmservice/models/qwen3.8-27b/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: max output 131,072 tokens."
+    },
+    "attachments": {
+      "url": "https://docs.b.ai/llmservice/models/qwen3.8-27b/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: accepts text, image, and video input and produces text output."
+    }
+  }
+}

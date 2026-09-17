@@ -1,0 +1,33 @@
+{
+  "id": "gpt-5.5-instant",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 1050000,
+  "max_output_tokens": 128000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": true
+  },
+  "aliases": [
+    "openai/gpt-5.5-instant"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.b.ai/llmservice/models/gpt-5-5-instant/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: 1M tokens (922K input + 128K output) = 1,050,000 total; long-context surcharge above 272K input tokens."
+    },
+    "max_output_tokens": {
+      "url": "https://docs.b.ai/llmservice/models/gpt-5-5-instant/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: max output 128K tokens."
+    },
+    "attachments": {
+      "url": "https://docs.b.ai/llmservice/models/gpt-5-5-instant/",
+      "verified_at": "2026-09-17",
+      "note": "B.AI model page: text, image, audio, and video input in a natively omnimodal architecture."
+    }
+  }
+}

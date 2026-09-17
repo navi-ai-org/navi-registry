@@ -1,0 +1,504 @@
+{
+  "id": "b-ai",
+  "label": "B.AI",
+  "description": "B.AI unified multi-model gateway — OpenAI Chat Completions compatible endpoint (also serves /responses and /messages)",
+  "kind": "openai-chat-completions",
+  "api_key_env": "BAI_API_KEY",
+  "base_url": "https://api.b.ai/v1",
+  "aggregator": true,
+  "tool_calling_mode": "native",
+  "models": [
+    {
+      "ref": "claude-fable-5",
+      "pricing": {
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
+        "cached_input_per_1m": 1.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-fable-5-1",
+      "api_name": "claude-fable-5.1",
+      "pricing": {
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
+        "cached_input_per_1m": 0.25,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-haiku-4.5",
+      "pricing": {
+        "input_per_1m": 1.0,
+        "output_per_1m": 5.0,
+        "cached_input_per_1m": 0.1,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-4-5",
+      "api_name": "claude-opus-4.5",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-4-6",
+      "api_name": "claude-opus-4.6",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-4-7",
+      "api_name": "claude-opus-4.7",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-4-8",
+      "api_name": "claude-opus-4.8",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-opus-5",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-sonnet-4.5",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cached_input_per_1m": 0.3,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-sonnet-4.6",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cached_input_per_1m": 0.3,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "claude-sonnet-5",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 10.0,
+        "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-v4-pro",
+      "pricing": {
+        "input_per_1m": 0.66,
+        "output_per_1m": 1.98,
+        "cached_input_per_1m": 0.022,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/deepseek-v4-pro/",
+          "verified_at": "2026-09-17",
+          "note": "Idle rate; Busy hours (09:00-12:00 and 14:00-18:00 Beijing time, Mon-Fri) are $1.32 input / $3.96 output / $0.044 cache read."
+        }
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.003,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/deepseek-v4-1-flash/",
+          "verified_at": "2026-09-17",
+          "note": "Idle rate; Busy hours (09:00-12:00 and 14:00-18:00 Beijing time, Mon-Fri) are $0.30 input / $1.20 output / $0.006 cache read."
+        }
+      }
+    },
+    {
+      "ref": "gemini-3-flash",
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 3.0,
+        "cached_input_per_1m": 0.05,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.1-pro",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.5-flash",
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 9.0,
+        "cached_input_per_1m": 0.15,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.5-flash-lite",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "cached_input_per_1m": 0.03,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.6-flash",
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 7.5,
+        "cached_input_per_1m": 0.15,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 3.75,
+        "cached_input_per_1m": 0.075,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.1",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.28,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.2",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.28,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.3",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.28,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.03,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5-mini",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 2.0,
+        "cached_input_per_1m": 0.025,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5-nano",
+      "pricing": {
+        "input_per_1m": 0.05,
+        "output_per_1m": 0.4,
+        "cached_input_per_1m": 0.005,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.2",
+      "pricing": {
+        "input_per_1m": 1.75,
+        "output_per_1m": 14.0,
+        "cached_input_per_1m": 0.175,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.4",
+      "context_window_tokens": 272000,
+      "pricing": {
+        "input_per_1m": 2.5,
+        "output_per_1m": 15.0,
+        "cached_input_per_1m": 0.25,
+        "currency": "USD"
+      },
+      "sources": {
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-4/",
+          "verified_at": "2026-09-17",
+          "note": "B.AI model page: standard context is 272K tokens; 1,050,000 requires explicit configuration, so the canonical 1.05M is capped here."
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.4-mini",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 4.5,
+        "cached_input_per_1m": 0.075,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.4-nano",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.25,
+        "cached_input_per_1m": 0.02,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.4-pro",
+      "pricing": {
+        "input_per_1m": 30.0,
+        "output_per_1m": 180.0,
+        "cached_input_per_1m": 3.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.5",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 30.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-5/",
+          "verified_at": "2026-09-17",
+          "note": "Rate for up to 272K input tokens; requests above 272K are billed at 2x input and 1.5x output."
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.5-instant",
+      "pricing": {
+        "input_per_1m": 5.0,
+        "output_per_1m": 30.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-5-instant/",
+          "verified_at": "2026-09-17",
+          "note": "Rate for up to 272K input tokens; above 272K input, input is billed at 2x and output at 1.5x."
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.6-luna",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.02,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-6-luna/",
+          "verified_at": "2026-09-17",
+          "note": "Short-context tier; the docs do not publish the long-context tier for GPT-5.6 models."
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.6-sol",
+      "pricing": {
+        "input_per_1m": 4.0,
+        "output_per_1m": 20.0,
+        "cached_input_per_1m": 0.4,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-6-sol/",
+          "verified_at": "2026-09-17",
+          "note": "Short-context tier; the docs do not publish the long-context tier for GPT-5.6 models."
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.6-terra",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-5-6-terra/",
+          "verified_at": "2026-09-17",
+          "note": "Short-context tier; the docs do not publish the long-context tier for GPT-5.6 models."
+        }
+      }
+    },
+    {
+      "ref": "gpt-6-astra",
+      "pricing": {
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
+        "cached_input_per_1m": 1.0,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/gpt-6-astra/",
+          "verified_at": "2026-09-17",
+          "note": "Rate for up to 272K input tokens; above 272K the full request is billed at $20 input / $75 output / $2 cache read."
+        }
+      }
+    },
+    {
+      "ref": "hy3",
+      "pricing": {
+        "input_per_1m": 0.132,
+        "output_per_1m": 0.528,
+        "cached_input_per_1m": 0.033,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "hy4-preview",
+      "pricing": {
+        "input_per_1m": 0.834,
+        "output_per_1m": 2.501,
+        "cached_input_per_1m": 0.042,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "kimi-k2.6",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
+        "cached_input_per_1m": 0.1615,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "cached_input_per_1m": 0.3,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "mimo-v2.5",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "mimo-v2.5-pro",
+      "pricing": {
+        "input_per_1m": 0.435,
+        "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.0036,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "minimax-m2.7",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.06,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "minimax-m3",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.06,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.8-27b",
+      "pricing": {
+        "input_per_1m": 0.22,
+        "output_per_1m": 1.6,
+        "cached_input_per_1m": 0.022,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.16,
+        "output_per_1m": 0.47,
+        "cached_input_per_1m": 0.016,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "qwen3.8-max",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "cached_input_per_1m": 0.25,
+        "currency": "USD"
+      }
+    }
+  ]
+}

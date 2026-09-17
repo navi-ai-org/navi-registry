@@ -1,20 +1,20 @@
 {
-  "version": 56,
-  "updated_at": "2026-09-17T10:49:50Z",
+  "version": 57,
+  "updated_at": "2026-09-17T12:15:02Z",
   "coverage": {
-    "models_total": 645,
-    "models_with_pricing": 421,
-    "models_with_attachments": 645,
-    "models_with_modern_attachments": 645,
+    "models_total": 692,
+    "models_with_pricing": 468,
+    "models_with_attachments": 692,
+    "models_with_modern_attachments": 692,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 1,
     "models_unverified_200k": 0,
-    "models_with_sources": 635,
-    "models_with_thinking": 401,
-    "models_with_ref": 645,
-    "canonical_models": 431,
+    "models_with_sources": 682,
+    "models_with_thinking": 448,
+    "models_with_ref": 692,
+    "canonical_models": 433,
     "models_by_status": {
-      "active": 591,
+      "active": 638,
       "deprecated": 11,
       "removed": 43,
       "preview": 0
@@ -716,6 +716,10 @@
     "gpt-5.5": {
       "file": "models/gpt-5.5.json",
       "sha256": "6023c1516940ac65e3063651dffe40e7863f3463f811c572bed35fc0c6fdf690"
+    },
+    "gpt-5.5-instant": {
+      "file": "models/gpt-5.5-instant.json",
+      "sha256": "76f46299ca0ea72e2e7f85e0ffc3ba5a2dc28b458592512e75095e38855cfef0"
     },
     "gpt-5.5-pro": {
       "file": "models/gpt-5.5-pro.json",
@@ -1653,6 +1657,10 @@
       "file": "models/qwen3.7-plus.json",
       "sha256": "5a3b3e3990c7e6e6547052a018dc8c135ceda4ee6feebb2d585191301665bed9"
     },
+    "qwen3.8-27b": {
+      "file": "models/qwen3.8-27b.json",
+      "sha256": "a4fe979c5b969295f99e72ecfb04eeecfb75e745e05e4b8d1a45cc81e129fae1"
+    },
     "qwen3.8-flash": {
       "file": "models/qwen3.8-flash.json",
       "sha256": "c06712f40ceaa9348aaca95c6ad0d3884f2bc79993bef03450439979e8bc2cda"
@@ -1751,6 +1759,11 @@
       "file": "providers/anthropic.json",
       "sha256": "bf8efdcaf95811801f85ddf2d733c947578025996cedf0e1d357780ca5c24107",
       "model_count": 20
+    },
+    "b-ai": {
+      "file": "providers/b-ai.json",
+      "sha256": "87d7ee12b9431a7528cd611fc9aa34f61b5280acf70fcda250faa9bc19ab681c",
+      "model_count": 47
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",
