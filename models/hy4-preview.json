@@ -1,0 +1,39 @@
+{
+  "id": "hy4-preview",
+  "vendor": "tencent",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 64000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "reasoning_levels": [
+    "off",
+    "low",
+    "high"
+  ],
+  "default_reasoning_effort": "high",
+  "aliases": [
+    "tencent/hy4-preview"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/tencent/hy4-preview",
+      "verified_at": "2026-09-17",
+      "note": "1M context, 64k max output from OpenRouter /api/v1/models."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/tencent/hy4-preview",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/tencent/hy4-preview",
+      "verified_at": "2026-09-17",
+      "note": "supported efforts high/low/none (default high; 'none' represented as off) from OpenRouter /api/v1/models."
+    }
+  }
+}

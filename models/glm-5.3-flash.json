@@ -1,0 +1,45 @@
+{
+  "id": "glm-5.3-flash",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": true
+  },
+  "reasoning_levels": [
+    "low",
+    "high",
+    "max"
+  ],
+  "default_reasoning_effort": "max",
+  "aliases": [
+    "z-ai/glm-5.3-flash"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "verified_at": "2026-09-17",
+      "note": "1M-token context window (1,048,576) per official Z.AI docs, consistent with GLM-5.3."
+    },
+    "max_output_tokens": {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "verified_at": "2026-09-17",
+      "note": "128K (131,072) max output tokens per official Z.AI docs."
+    },
+    "attachments": {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "verified_at": "2026-09-17",
+      "note": "Native multimodal input supporting images, videos, and files per official Z.AI docs."
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/z-ai/glm-5.3-flash",
+      "verified_at": "2026-09-17",
+      "note": "reasoning_effort low/high/max; thinking always on, default max."
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "qwen3.8-flash",
+  "vendor": "aggregator",
+  "family": "qwen",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3.8-flash"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-flash",
+      "verified_at": "2026-09-17",
+      "note": "1M context, 128k max output from OpenRouter /api/v1/models."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-flash",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-flash",
+      "verified_at": "2026-09-17",
+      "note": "text+image+video input modalities from OpenRouter /api/v1/models."
+    },
+    "supports_thinking": {
+      "url": "https://openrouter.ai/api/v1/models/qwen/qwen3.8-flash",
+      "verified_at": "2026-09-17",
+      "note": "reasoning enabled by default; no effort selection published in OpenRouter /api/v1/models."
+    }
+  }
+}

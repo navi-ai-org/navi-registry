@@ -1,0 +1,34 @@
+{
+  "id": "muse-spark-1.3",
+  "vendor": "meta",
+  "family": "muse",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": true,
+    "video": true,
+    "documents": true
+  },
+  "aliases": [
+    "meta/muse-spark-1.3"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/meta/muse-spark-1.3",
+      "verified_at": "2026-09-17",
+      "note": "1M context (1,048,576) from OpenRouter /api/v1/models."
+    },
+    "max_output_tokens": {
+      "url": "https://models.dev/models/meta/muse-spark-1.3/",
+      "verified_at": "2026-09-17",
+      "note": "131072 max output per models.dev (meta/muse-spark-1.3); same checkpoint family as muse-spark-1.2."
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/meta/muse-spark-1.3",
+      "verified_at": "2026-09-17",
+      "note": "text+image+video+file+audio input modalities from OpenRouter /api/v1/models"
+    }
+  }
+}

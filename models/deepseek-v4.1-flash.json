@@ -1,0 +1,47 @@
+{
+  "id": "deepseek-v4.1-flash",
+  "vendor": "deepseek",
+  "family": "deepseek",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 384000,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "reasoning_levels": [
+    "low",
+    "high",
+    "max"
+  ],
+  "default_reasoning_effort": "high",
+  "aliases": [
+    "deepseek/deepseek-v4.1-flash",
+    "deepseek-flash"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash",
+      "verified_at": "2026-09-17",
+      "note": "1M context, 384k max output from OpenRouter /api/v1/models."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash",
+      "verified_at": "2026-09-17",
+      "note": "text+image input modalities from OpenRouter /api/v1/models."
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/deepseek/deepseek-v4.1-flash",
+      "verified_at": "2026-09-17",
+      "note": "supported efforts max/high/low (default high) from OpenRouter /api/v1/models."
+    }
+  }
+}

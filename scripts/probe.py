@@ -51,6 +51,9 @@ PROVIDER_ENDPOINTS = {
     "mistral": "https://api.mistral.ai/v1/models",
     "moonshot": "https://api.moonshot.cn/v1/models",
     "nvidia": "https://integrate.api.nvidia.com/v1/models",
+    # OpenCode Zen / Go expose public model lists (no API key required).
+    "opencode": "https://opencode.ai/zen/v1/models",
+    "opencode-go": "https://opencode.ai/zen/go/v1/models",
     "openrouter": "https://openrouter.ai/api/v1/models",
     "ollama": "http://localhost:11434/v1/models",
     "lmstudio": "http://localhost:1234/v1/models",

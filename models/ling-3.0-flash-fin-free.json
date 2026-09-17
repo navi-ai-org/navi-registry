@@ -1,0 +1,29 @@
+{
+  "id": "ling-3.0-flash-fin-free",
+  "vendor": "inclusion-ai",
+  "family": "ling",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 32768,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "inclusionai/ling-3.0-flash-fin:free"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/inclusionai/ling-3.0-flash-fin:free",
+      "verified_at": "2026-09-17",
+      "note": "256k context, 32k max output from OpenRouter /api/v1/models (free tier endpoint)."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/inclusionai/ling-3.0-flash-fin:free",
+      "verified_at": "2026-09-17",
+      "note": "from OpenRouter /api/v1/models"
+    }
+  }
+}
