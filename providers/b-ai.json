@@ -1,7 +1,7 @@
 {
   "id": "b-ai",
   "label": "B.AI",
-  "description": "B.AI unified multi-model gateway — OpenAI Chat Completions endpoint (also serves /responses and /messages). Prompt caching is automatic on /v1/chat/completions; Claude models only honour the system prompt on /v1/messages, and only when it is a plain string.",
+  "description": "B.AI unified multi-model gateway — OpenAI Chat Completions endpoint (also serves /responses and /messages). Prompt caching is automatic on /v1/chat/completions and content-prefix based: it is shared across sessions and API keys, and prompt_cache_key is ignored. Claude models only honour the system prompt on /v1/messages, and only when it is a plain string.",
   "kind": "openai-chat-completions",
   "api_key_env": "BAI_API_KEY",
   "base_url": "https://api.b.ai/v1",
