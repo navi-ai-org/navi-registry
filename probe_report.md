@@ -1,65 +1,23 @@
 # Registry Probe Report
 
 ## Summary
-- Auto-filled fields: **41**
+- Auto-filled fields: **0**
 - Context windows filled: **0**
 - Max output filled: **0**
-- New models (not in registry): **427**
-- Removed models (local only): **4**
+- New models (not in registry): **434**
+- Removed models (local only): **12**
 - Needs manual review (probed): **0**
 - Needs manual review (unprobed): **0**
 - Default context window (200k, likely unset): **0**
-- Needs pricing: **182**
+- Needs pricing: **183**
 - Errors: **9**
-
-## Auto-filled Fields
-
-| Provider | Model | Fields |
-|---|---|---|
-| anthropic | claude-sonnet-5 | pricing |
-| commandcode | MiniMaxAI/MiniMax-M2.5 | pricing |
-| commandcode | MiniMaxAI/MiniMax-M2.7 | pricing |
-| commandcode | Qwen/Qwen3.6-Max-Preview | pricing |
-| commandcode | Qwen/Qwen3.6-Plus | pricing |
-| commandcode | Qwen/Qwen3.7-Max | pricing |
-| commandcode | Qwen/Qwen3.7-Plus | pricing |
-| commandcode | moonshotai/Kimi-K2.5 | pricing |
-| commandcode | moonshotai/Kimi-K2.6 | pricing |
-| commandcode | moonshotai/Kimi-K2.7-Code | pricing |
-| commandcode | stepfun/Step-3.5-Flash | pricing |
-| commandcode | stepfun/Step-3.7-Flash | pricing |
-| commandcode | zai-org/GLM-5 | pricing |
-| commandcode | zai-org/GLM-5.1 | pricing |
-| minimax | minimax-m2 | pricing |
-| minimax | minimax-m2.1 | pricing |
-| minimax | minimax-m2.5 | pricing |
-| minimax | minimax-m2.7 | pricing |
-| minimax | minimax-m3 | pricing |
-| nvidia | deepseek-ai/deepseek-r1 | pricing |
-| nvidia | deepseek-ai/deepseek-v4-flash-0731 | pricing |
-| nvidia | google/gemma-3-12b-it | pricing |
-| nvidia | google/gemma-3-4b-it | pricing |
-| nvidia | google/gemma-4-31b-it | pricing |
-| nvidia | meta/llama-3.1-70b-instruct | pricing |
-| nvidia | meta/llama-3.1-8b-instruct | pricing |
-| nvidia | meta/llama-3.2-1b-instruct | pricing |
-| nvidia | meta/llama-3.2-3b-instruct | pricing |
-| nvidia | meta/llama-3.3-70b-instruct | pricing |
-| nvidia | meta/muse-glimmer-30b | pricing |
-| nvidia | moonshotai/kimi-k2.6 | pricing |
-| nvidia | nvidia/nemotron-3-ultra-550b-a55b | pricing |
-| nvidia | openai/gpt-oss-120b | pricing |
-| nvidia | openai/gpt-oss-20b | pricing |
-| nvidia | poolside/laguna-xs-2.1 | pricing |
-| nvidia | stepfun-ai/step-3.7-flash | pricing |
-| nvidia | thinkingmachines/inkling | pricing |
-| nvidia | z-ai/glm-5.2 | pricing |
-| opencode-go | glm-5 | pricing |
-| opencode-go | hy3-preview | pricing |
-| opencode-go | kimi-k2.5 | pricing |
 
 ## New Models (not in local registry)
 
+- `opencode/deepseek-v4.1-flash`
+- `opencode/jev-1.13`
+- `opencode/jev-1.13-free`
+- `opencode/qwen3.8-flash`
 - `openrouter/aion-labs/aion-2.0`
 - `openrouter/aion-labs/aion-3.0`
 - `openrouter/aion-labs/aion-3.0-mini`
@@ -121,6 +79,7 @@
 - `openrouter/deepseek/deepseek-v4-flash`
 - `openrouter/deepseek/deepseek-v4-flash-0731`
 - `openrouter/deepseek/deepseek-v4-flash-0731:batch`
+- `openrouter/deepseek/deepseek-v4-flash-0731:free`
 - `openrouter/deepseek/deepseek-v4-flash-vision-exp`
 - `openrouter/deepseek/deepseek-v4-flash-vision-exp:batch`
 - `openrouter/deepseek/deepseek-v4-pro-0813`
@@ -216,7 +175,6 @@
 - `openrouter/mistralai/ministral-8b-2512`
 - `openrouter/mistralai/ministral-8b-2512:batch`
 - `openrouter/mistralai/mistral-large-2407`
-- `openrouter/mistralai/mistral-large-2512`
 - `openrouter/mistralai/mistral-large-2512:batch`
 - `openrouter/mistralai/mistral-medium-3`
 - `openrouter/mistralai/mistral-medium-3-5`
@@ -360,6 +318,7 @@
 - `openrouter/poolside/laguna-s-2.1:free`
 - `openrouter/poolside/laguna-xs-2.1`
 - `openrouter/poolside/laguna-xs-2.1:free`
+- `openrouter/prism-ml/ternary-bonsai-2-27b`
 - `openrouter/qwen/qwen-2.5-72b-instruct`
 - `openrouter/qwen/qwen-2.5-7b-instruct`
 - `openrouter/qwen/qwen-2.5-coder-32b-instruct`
@@ -408,6 +367,7 @@
 - `openrouter/qwen/qwen3.8-2.4t-a95b`
 - `openrouter/qwen/qwen3.8-2.4t-a95b:batch`
 - `openrouter/qwen/qwen3.8-27b`
+- `openrouter/qwen/qwen3.8-27b:free`
 - `openrouter/qwen/qwen3.8-flash`
 - `openrouter/qwen/qwen3.8-max-0902`
 - `openrouter/rekaai/reka-edge`
@@ -421,7 +381,6 @@
 - `openrouter/sao10k/l3-lunaris-8b`
 - `openrouter/sao10k/l3.1-euryale-70b`
 - `openrouter/sao10k/l3.3-euryale-70b`
-- `openrouter/stealth/union-alpha`
 - `openrouter/stepfun/step-3.5-flash`
 - `openrouter/stepfun/step-3.7-flash`
 - `openrouter/tencent/hunyuan-a13b-instruct`
@@ -439,6 +398,7 @@
 - `openrouter/thinkingmachines/inkling-small:free`
 - `openrouter/thinkingmachines/inkling:batch`
 - `openrouter/thinkingmachines/inkling:free`
+- `openrouter/unbiased/pareto`
 - `openrouter/undi95/remm-slerp-l2-13b`
 - `openrouter/upstage/solar-pro-3`
 - `openrouter/upstage/solar-pro4`
@@ -467,6 +427,7 @@
 - `openrouter/z-ai/glm-5.3`
 - `openrouter/z-ai/glm-5.3-flash`
 - `openrouter/z-ai/glm-5.3-flash:batch`
+- `openrouter/z-ai/glm-5.3-flashx`
 - `openrouter/z-ai/glm-5.3:batch`
 - `openrouter/z-ai/glm-5v-turbo`
 - `openrouter/~anthropic/claude-fable-latest`
@@ -492,6 +453,14 @@
 
 When `--apply` is used, these models are tagged `status: removed`.
 
+- `opencode/claude-opus-4-1`
+- `opencode/hy3-free`
+- `opencode/laguna-s-2.1-free`
+- `opencode/north-mini-code-free`
+- `opencode/union-alpha`
+- `opencode/x-preview-f-free`
+- `opencode-go/ox-alpha-free`
+- `opencode-go/union-alpha`
 - `openrouter/meta-llama/llama-3.3-70b`
 - `openrouter/mistralai/codestral`
 - `openrouter/x-ai/grok-3`
@@ -646,6 +615,7 @@ When `--apply` is used, these models are tagged `status: removed`.
 - `openai/o1-mini` — no pricing data from OpenRouter or rules
 - `opencode-go/mimo-v2-omni` — no pricing data from OpenRouter or rules
 - `opencode-go/mimo-v2-pro` — no pricing data from OpenRouter or rules
+- `opencode-go/omen-alpha` — no pricing data from OpenRouter or rules
 - `opencode-go/qwen3.5-plus` — no pricing data from OpenRouter or rules
 - `openrouter/meta-llama/llama-3.3-70b` — no pricing data from OpenRouter or rules
 - `openrouter/mistralai/codestral` — no pricing data from OpenRouter or rules

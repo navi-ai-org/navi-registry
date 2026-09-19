@@ -724,7 +724,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "deepseek-v4-flash-free",
@@ -741,7 +742,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "muse-spark-1.2-contributor",
@@ -788,7 +790,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "laguna-s-2.1-free",
@@ -796,7 +799,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "north-mini-code-free",
