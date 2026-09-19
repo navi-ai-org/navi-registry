@@ -414,7 +414,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "omen-alpha"
@@ -425,7 +426,8 @@
         "input_per_1m": 0,
         "output_per_1m": 0,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     }
   ]
 }
