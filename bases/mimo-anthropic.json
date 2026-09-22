@@ -19,36 +19,36 @@
   },
   "models": [
     {
-      "ref": "mimo-v2.5-pro",
-      "context_window_tokens": 1100000,
+      "ref": "mimo-v2.6-pro",
       "pricing": {
         "input_per_1m": 0.435,
         "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.0036,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas pay-as-you-go (real-time API) USD rates. The Token Plan itself is credit/subscription-based and bills these models on the same price basis."
+        }
       }
     },
     {
-      "ref": "mimo-v2.5",
-      "supports_thinking": true,
+      "ref": "mimo-v2.6-flash",
       "pricing": {
-        "input_per_1m": 0.105,
+        "input_per_1m": 0.14,
         "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas pay-as-you-go (real-time API) USD rates. The Token Plan itself is credit/subscription-based and bills these models on the same price basis."
+        }
       }
-    },
-    {
-      "ref": "mimo-v2-pro",
-      "max_output_tokens": 32768
-    },
-    {
-      "ref": "mimo-v2-omni",
-      "max_output_tokens": 32768
-    },
-    {
-      "ref": "mimo-v2-flash",
-      "max_output_tokens": 8192,
-      "recommended_temperature": 1.0,
-      "supports_thinking": false
     }
   ]
 }

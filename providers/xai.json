@@ -7,11 +7,30 @@
   "base_url": "https://api.x.ai/v1",
   "models": [
     {
+      "ref": "grok-4.7",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.5
+      }
+    },
+    {
+      "ref": "grok-4.6",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.5
+      }
+    },
+    {
       "ref": "grok-4.5",
       "pricing": {
         "input_per_1m": 2.0,
         "output_per_1m": 6.0,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 0.3
       }
     },
     {
@@ -19,7 +38,8 @@
       "pricing": {
         "input_per_1m": 1.25,
         "output_per_1m": 2.5,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
       }
     },
     {
@@ -32,41 +52,30 @@
       }
     },
     {
-      "ref": "grok-4"
+      "ref": "grok-4.20-0309-non-reasoning",
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      }
     },
     {
-      "ref": "grok-4-fast"
-    },
-    {
-      "ref": "grok-4-fast-reasoning"
-    },
-    {
-      "ref": "grok-4-fast-non-reasoning"
-    },
-    {
-      "ref": "grok-3"
-    },
-    {
-      "ref": "grok-3-fast"
-    },
-    {
-      "ref": "grok-3-mini"
-    },
-    {
-      "ref": "grok-3-mini-fast"
-    },
-    {
-      "ref": "grok-2-1212"
-    },
-    {
-      "ref": "grok-2-vision-1212"
+      "ref": "grok-4.20-multi-agent-0309",
+      "pricing": {
+        "input_per_1m": 1.25,
+        "output_per_1m": 2.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      }
     },
     {
       "ref": "grok-build-0.1",
       "pricing": {
         "input_per_1m": 1.0,
         "output_per_1m": 2.0,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
       }
     }
   ],

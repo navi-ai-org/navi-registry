@@ -1,0 +1,31 @@
+{
+  "id": "kimi-k2.7-code-highspeed",
+  "label": "Kimi K2.7 Code High-Speed",
+  "vendor": "moonshot",
+  "family": "kimi",
+  "context_window_tokens": 262144,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.kimi.ai/docs/pricing/chat",
+      "verified_at": "2026-09-22",
+      "note": "Official pricing table: kimi-k2.7-code-highspeed context window 262,144 tokens."
+    },
+    "supports_thinking": {
+      "url": "https://platform.kimi.ai/docs/api/models-overview",
+      "verified_at": "2026-09-22",
+      "note": "Same model as kimi-k2.7-code with identical parameter constraints; thinking is always on and cannot be disabled."
+    },
+    "attachments": {
+      "url": "https://platform.kimi.ai/docs/guide/kimi-k2-7-code-quickstart",
+      "verified_at": "2026-09-22",
+      "note": "Official docs: image and video input supported (video via base64 or ms:// file id); documents via /v1/files extraction."
+    }
+  }
+}

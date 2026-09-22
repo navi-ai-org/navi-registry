@@ -5,23 +5,32 @@
   "kind": "openai-chat-completions",
   "api_key_env": "OPENROUTER_API_KEY",
   "base_url": "https://openrouter.ai/api/v1",
+  "aggregator": true,
   "models": [
     {
-      "ref": "claude-opus-4",
-      "api_name": "anthropic/claude-opus-4",
+      "ref": "claude-opus-4-8",
+      "api_name": "anthropic/claude-opus-4.8",
       "pricing": {
-        "input_per_1m": 15.0,
-        "output_per_1m": 75.0,
+        "input_per_1m": 5.0,
+        "output_per_1m": 25.0,
         "currency": "USD"
       }
     },
     {
       "ref": "claude-sonnet-4",
       "api_name": "anthropic/claude-sonnet-4",
-      "context_window_tokens": 1000000,
       "pricing": {
         "input_per_1m": 3.0,
         "output_per_1m": 15.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gpt-5.6-terra",
+      "api_name": "openai/gpt-5.6-terra",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
         "currency": "USD"
       }
     },
@@ -46,10 +55,18 @@
     {
       "ref": "gpt-4.1",
       "api_name": "openai/gpt-4.1",
-      "supports_thinking": true,
       "pricing": {
         "input_per_1m": 2.0,
         "output_per_1m": 8.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.7-flash",
+      "api_name": "google/gemini-3.7-flash",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 3.75,
         "currency": "USD"
       }
     },
@@ -73,6 +90,15 @@
       }
     },
     {
+      "ref": "grok-4.7",
+      "api_name": "x-ai/grok-4.7",
+      "pricing": {
+        "input_per_1m": 1.6,
+        "output_per_1m": 4.8,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "deepseek-v4-pro",
       "api_name": "deepseek/deepseek-v4-pro",
       "context_window_tokens": 1048576,
@@ -83,16 +109,16 @@
         "documents": false
       },
       "pricing": {
-        "input_per_1m": 0.435,
-        "output_per_1m": 0.87,
+        "input_per_1m": 0.8754,
+        "output_per_1m": 1.7508,
         "currency": "USD"
       }
     },
     {
       "ref": "deepseek-chat",
       "api_name": "deepseek/deepseek-chat",
-      "context_window_tokens": 131072,
-      "max_output_tokens": 16000,
+      "context_window_tokens": 163840,
+      "max_output_tokens": 16384,
       "attachments": {
         "images": false,
         "audio": false,
@@ -100,48 +126,17 @@
         "documents": false
       },
       "pricing": {
-        "input_per_1m": 0.2002,
-        "output_per_1m": 0.8001,
+        "input_per_1m": 0.32,
+        "output_per_1m": 0.89,
         "currency": "USD"
       }
-    },
-    {
-      "ref": "grok-4",
-      "api_name": "x-ai/grok-4",
-      "context_window_tokens": 256000,
-      "max_output_tokens": 32768,
-      "attachments": {
-        "images": true,
-        "audio": false,
-        "video": false,
-        "documents": false
-      },
-      "status": "removed"
-    },
-    {
-      "ref": "grok-3",
-      "api_name": "x-ai/grok-3",
-      "context_window_tokens": 131072,
-      "max_output_tokens": 32768,
-      "attachments": {
-        "images": true,
-        "audio": false,
-        "video": false,
-        "documents": false
-      },
-      "status": "removed"
-    },
-    {
-      "ref": "llama-3.3-70b",
-      "api_name": "meta-llama/llama-3.3-70b",
-      "status": "removed"
     },
     {
       "ref": "llama-4-maverick",
       "api_name": "meta-llama/llama-4-maverick",
       "pricing": {
-        "input_per_1m": 0.15,
-        "output_per_1m": 0.6,
+        "input_per_1m": 0.1875,
+        "output_per_1m": 0.6525,
         "currency": "USD"
       }
     },
@@ -158,7 +153,7 @@
       "ref": "mistral-large",
       "api_name": "mistralai/mistral-large",
       "context_window_tokens": 128000,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 102400,
       "recommended_temperature": 1.0,
       "pricing": {
         "input_per_1m": 2.0,
@@ -167,16 +162,11 @@
       }
     },
     {
-      "ref": "codestral",
-      "api_name": "mistralai/codestral",
-      "status": "removed"
-    },
-    {
       "ref": "qwen3-coder",
       "api_name": "qwen/qwen3-coder",
       "pricing": {
-        "input_per_1m": 0.22,
-        "output_per_1m": 1.8,
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.0,
         "currency": "USD"
       }
     },
@@ -225,12 +215,12 @@
       "ref": "kimi-k2",
       "api_name": "moonshotai/kimi-k2",
       "context_window_tokens": 131072,
-      "max_output_tokens": 32768,
+      "max_output_tokens": 98304,
       "attachments": {
-        "images": true,
+        "images": false,
         "audio": false,
         "video": false,
-        "documents": true
+        "documents": false
       },
       "pricing": {
         "input_per_1m": 0.57,

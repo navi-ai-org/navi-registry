@@ -1,10 +1,11 @@
 {
   "id": "gitlawb",
   "label": "Gitlawb",
-  "description": "Decentralized code collaboration platform gateway with Xiaomi MiMo, Google Gemini, and GMI Cloud partner models.",
+  "description": "gitlawb OpenGateway — OpenAI-compatible inference gateway routing to Xiaomi MiMo, Google Gemini, MiniMax, Qwen, Moonshot, Zhipu, NVIDIA, Tencent, and MindAI models, with smart \"auto\" routing.",
   "kind": "openai-chat-completions",
   "api_key_env": "GITLAWB_API_KEY",
   "base_url": "https://opengateway.gitlawb.com/v1",
+  "aggregator": true,
   "defaults": {
     "attachments": {
       "images": false,
@@ -16,37 +17,67 @@
   "models": [
     {
       "ref": "mimo-v2.5-pro",
+      "api_name": "xiaomi/mimo-v2.5-pro",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.435,
-        "output_per_1m": 0.87,
+        "input_per_1m": 0.522,
+        "output_per_1m": 1.044,
+        "cached_input_per_1m": 0.00432,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "mimo-v2.5",
+      "api_name": "xiaomi/mimo-v2.5",
+      "context_window_tokens": 262144,
       "pricing": {
-        "input_per_1m": 0.105,
-        "output_per_1m": 0.28,
+        "input_per_1m": 0.168,
+        "output_per_1m": 0.336,
+        "cached_input_per_1m": 0.00336,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
       }
-    },
-    {
-      "ref": "mimo-v2-flash",
-      "recommended_temperature": 1.0
     },
     {
       "ref": "gemini-3.1-flash-lite",
       "api_name": "google/gemini-3.1-flash-lite",
       "recommended_temperature": 1.0,
       "pricing": {
-        "input_per_1m": 0.25,
-        "output_per_1m": 1.5,
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.8,
+        "cached_input_per_1m": 0.03,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "minimax-m3",
       "api_name": "minimax/minimax-m3",
+      "context_window_tokens": 204800,
       "max_output_tokens": 131072,
       "supports_thinking": true,
       "attachments": {
@@ -54,45 +85,179 @@
         "video": true
       },
       "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 1.2,
-        "currency": "USD",
-        "cached_input_per_1m": 0.06
+        "input_per_1m": 0.36,
+        "output_per_1m": 1.44,
+        "cached_input_per_1m": 0.072,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "qwen3.7-max",
       "api_name": "qwen/qwen3.7-max",
+      "context_window_tokens": 262144,
       "max_output_tokens": 65536,
       "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 3.75,
-        "currency": "USD",
-        "cached_input_per_1m": 0.25
+        "input_per_1m": 1.5,
+        "output_per_1m": 4.5,
+        "cached_input_per_1m": 0.3,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "glm-5.2",
       "api_name": "z-ai/glm-5.2",
-      "context_window_tokens": 1000000,
       "pricing": {
-        "input_per_1m": 0.91,
-        "output_per_1m": 2.86,
-        "currency": "USD",
-        "cached_input_per_1m": 0.169
+        "input_per_1m": 1.68,
+        "output_per_1m": 5.28,
+        "cached_input_per_1m": 0.312,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "nemotron-3-ultra-550b-a55b:free",
-      "api_name": "nvidia/nemotron-3-ultra-550b-a55b:free"
+      "api_name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "context_window_tokens": 131072,
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
+      }
     },
     {
       "ref": "hy3",
       "api_name": "tencent/hy3",
       "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
+        "input_per_1m": 0.24,
+        "output_per_1m": 0.96,
+        "cached_input_per_1m": 0.06,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "kimi-k3",
+      "api_name": "moonshotai/kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.6,
+        "output_per_1m": 18,
+        "cached_input_per_1m": 0.36,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "nemotron-3-ultra-550b-a55b",
+      "api_name": "nvidia/nemotron-3-ultra-550b-a55b",
+      "context_window_tokens": 512288,
+      "pricing": {
+        "input_per_1m": 0.72,
+        "output_per_1m": 4.32,
+        "cached_input_per_1m": 0.24,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://opengateway.gitlawb.com/v1/models",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "ling-3.0-flash",
+      "api_name": "inclusionai/ling-3.0-flash",
+      "pricing": {
+        "input_per_1m": 0.072,
+        "output_per_1m": 0.216,
+        "cached_input_per_1m": 0.0144,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "macaron-v1-tall",
+      "api_name": "mindai/macaron-v1-tall",
+      "pricing": {
+        "input_per_1m": 0.54,
+        "output_per_1m": 3.12,
+        "cached_input_per_1m": 0.096,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "macaron-v1-venti",
+      "api_name": "mindai/macaron-v1-venti",
+      "pricing": {
+        "input_per_1m": 1.8,
+        "output_per_1m": 5.4,
+        "cached_input_per_1m": 0.36,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://gitlawb.com/opengateway#pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     }
   ]

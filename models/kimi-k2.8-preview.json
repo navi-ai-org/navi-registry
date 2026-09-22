@@ -1,0 +1,37 @@
+{
+  "id": "kimi-k2.8-preview",
+  "label": "Kimi K2.8 Preview",
+  "vendor": "moonshot",
+  "family": "kimi",
+  "status": "preview",
+  "context_window_tokens": 1048576,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true
+  },
+  "reasoning_levels": [
+    "low",
+    "high",
+    "max"
+  ],
+  "default_reasoning_effort": "max",
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.b.ai/llmservice/models/kimi-k2.8-preview/",
+      "verified_at": "2026-09-22",
+      "note": "B.AI: 1,048,576-token context window."
+    },
+    "attachments": {
+      "url": "https://docs.b.ai/llmservice/models/kimi-k2.8-preview/",
+      "verified_at": "2026-09-22",
+      "note": "B.AI: text, image, and video input with text output; documents not documented."
+    },
+    "reasoning_levels": {
+      "url": "https://docs.b.ai/llmservice/models/kimi-k2.8-preview/",
+      "verified_at": "2026-09-22",
+      "note": "low/high/max thinking effort, max default; thinking can also be disabled."
+    }
+  }
+}

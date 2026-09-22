@@ -1,0 +1,21 @@
+{
+  "id": "labs-leanstral-1-5",
+  "label": "Leanstral 1.5",
+  "vendor": "mistral",
+  "family": "leanstral",
+  "status": "preview",
+  "context_window_tokens": 256000,
+  "max_output_tokens": 128000,
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.mistral.ai/models/leanstral-1-5",
+      "verified_at": "2026-09-22",
+      "note": "from official Mistral docs model page (256k)"
+    },
+    "max_output_tokens": {
+      "url": "https://docs.mistral.ai/models/leanstral-1-5",
+      "verified_at": "2026-09-22",
+      "note": "official model page documents 128k max output"
+    }
+  }
+}

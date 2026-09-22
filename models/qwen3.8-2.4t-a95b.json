@@ -1,0 +1,41 @@
+{
+  "id": "qwen3.8-2.4t-a95b",
+  "label": "Qwen3.8 2.4T A95B",
+  "vendor": "qwen",
+  "family": "qwen",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "qwen/qwen3.8-2.4t-a95b",
+    "Qwen/Qwen3.8-2.4T-A95B"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-2-4t-a95b",
+      "verified_at": "2026-09-22",
+      "note": "Context Length 1000000 per Alibaba Cloud Model Studio model page."
+    },
+    "max_output_tokens": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-2-4t-a95b",
+      "verified_at": "2026-09-22",
+      "note": "Max Output Length 131072 per Alibaba Cloud Model Studio."
+    },
+    "supports_thinking": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-2-4t-a95b",
+      "verified_at": "2026-09-22",
+      "note": "Thinking mode documented (Max Input Length (Thinking Mode) 983616, Max Chain-of-Thought Length 131072)."
+    },
+    "attachments": {
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-2-4t-a95b",
+      "verified_at": "2026-09-22",
+      "note": "Input Modality: Text only; Output Modality: Text (no image/audio/video/document input)."
+    }
+  }
+}

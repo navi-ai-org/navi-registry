@@ -11,51 +11,97 @@
   },
   "models": [
     {
-      "ref": "gpt-5.6-terra-pro",
+      "ref": "gpt-6-astra",
       "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 7.5,
-        "currency": "USD"
+        "input_per_1m": 10.0,
+        "output_per_1m": 50.0,
+        "currency": "USD",
+        "cached_input_per_1m": 1.0
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22",
+          "note": "standard short-context (<272K input) pricing; long-context is 2x input / 1.5x output"
+        }
+      }
+    },
+    {
+      "ref": "gpt-6-sol",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 10.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "gpt-6-luna",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.01
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "gpt-5.6-cyber",
+      "pricing": {
+        "input_per_1m": 12.5,
+        "output_per_1m": 75.0,
+        "currency": "USD",
+        "cached_input_per_1m": 1.25
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22",
+          "note": "Daybreak program model; requires separate approval and provisioning"
+        }
       }
     },
     {
       "ref": "gpt-5.6-terra",
       "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 7.5,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5.6-sol-pro",
-      "pricing": {
-        "input_per_1m": 5.0,
-        "output_per_1m": 30.0,
-        "currency": "USD"
+        "input_per_1m": 2.0,
+        "output_per_1m": 12.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.2
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22",
+          "note": "reduced 20% on 2026-07-30 (was $2.50/$15.00)"
+        }
       }
     },
     {
       "ref": "gpt-5.6-sol",
       "pricing": {
-        "input_per_1m": 5.0,
-        "output_per_1m": 30.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5.6-luna-pro",
-      "pricing": {
-        "input_per_1m": 0.5,
-        "output_per_1m": 3.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5.6-luna",
-      "pricing": {
-        "input_per_1m": 0.5,
-        "output_per_1m": 3.0,
-        "currency": "USD"
+        "input_per_1m": 4.0,
+        "output_per_1m": 20.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.4
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22",
+          "note": "reduced on 2026-08-21 (was $5.00/$30.00); promotional pricing through at least 2026-11-21"
+        }
       }
     },
     {
@@ -128,14 +174,6 @@
       }
     },
     {
-      "ref": "gpt-5.2-codex",
-      "pricing": {
-        "input_per_1m": 1.75,
-        "output_per_1m": 14.0,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "gpt-5.2",
       "pricing": {
         "input_per_1m": 1.75,
@@ -154,36 +192,10 @@
       }
     },
     {
-      "ref": "gpt-5.1-codex",
-      "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 10.0,
-        "currency": "USD",
-        "cached_input_per_1m": 0.13
-      }
-    },
-    {
-      "ref": "gpt-5.1-codex-mini",
-      "pricing": {
-        "input_per_1m": 0.25,
-        "output_per_1m": 2.0,
-        "currency": "USD",
-        "cached_input_per_1m": 0.025
-      }
-    },
-    {
       "ref": "gpt-5-pro",
       "pricing": {
         "input_per_1m": 15.0,
         "output_per_1m": 120.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5-codex",
-      "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 10.0,
         "currency": "USD"
       }
     },
@@ -233,20 +245,12 @@
       }
     },
     {
-      "ref": "gpt-4.1-nano",
-      "pricing": {
-        "input_per_1m": 0.1,
-        "output_per_1m": 0.4,
-        "currency": "USD",
-        "cached_input_per_1m": 0.025
-      }
-    },
-    {
       "ref": "gpt-4o",
       "pricing": {
         "input_per_1m": 2.5,
         "output_per_1m": 10.0,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 1.25
       }
     },
     {
@@ -257,83 +261,6 @@
         "currency": "USD",
         "cached_input_per_1m": 0.075
       }
-    },
-    {
-      "ref": "chatgpt-4o-latest"
-    },
-    {
-      "ref": "gpt-4.5-preview"
-    },
-    {
-      "ref": "o3",
-      "pricing": {
-        "input_per_1m": 2.0,
-        "output_per_1m": 8.0,
-        "currency": "USD",
-        "cached_input_per_1m": 0.5
-      }
-    },
-    {
-      "ref": "o3-pro",
-      "pricing": {
-        "input_per_1m": 20.0,
-        "output_per_1m": 80.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "o3-mini",
-      "pricing": {
-        "input_per_1m": 1.1,
-        "output_per_1m": 4.4,
-        "currency": "USD",
-        "cached_input_per_1m": 0.55
-      }
-    },
-    {
-      "ref": "o3-mini-high",
-      "pricing": {
-        "input_per_1m": 1.1,
-        "output_per_1m": 4.4,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "o4-mini",
-      "pricing": {
-        "input_per_1m": 1.1,
-        "output_per_1m": 4.4,
-        "currency": "USD",
-        "cached_input_per_1m": 0.275
-      }
-    },
-    {
-      "ref": "o4-mini-high",
-      "pricing": {
-        "input_per_1m": 1.1,
-        "output_per_1m": 4.4,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "o1",
-      "pricing": {
-        "input_per_1m": 15.0,
-        "output_per_1m": 60.0,
-        "currency": "USD",
-        "cached_input_per_1m": 7.5
-      }
-    },
-    {
-      "ref": "o1-pro",
-      "pricing": {
-        "input_per_1m": 150.0,
-        "output_per_1m": 600.0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "o1-mini"
     },
     {
       "ref": "gpt-oss-120b",

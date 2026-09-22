@@ -1,0 +1,25 @@
+{
+  "id": "ministral-3b-2512",
+  "label": "Ministral 3 3B",
+  "vendor": "mistral",
+  "family": "ministral",
+  "context_window_tokens": 256000,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "verified_at": "2026-09-22",
+      "note": "from official Mistral docs model page (256k)"
+    },
+    "attachments": {
+      "url": "https://docs.mistral.ai/models/ministral-3-3b-25-12",
+      "verified_at": "2026-09-22",
+      "note": "official model page documents vision capabilities"
+    }
+  },
+  "aliases": [
+    "mistralai/ministral-3b-2512"
+  ]
+}

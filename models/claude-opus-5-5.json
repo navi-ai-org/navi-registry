@@ -1,0 +1,44 @@
+{
+  "id": "claude-opus-5-5",
+  "vendor": "anthropic",
+  "family": "claude",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 128000,
+  "supports_thinking": true,
+  "default_reasoning_effort": "medium",
+  "attachments": {
+    "images": true,
+    "documents": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      "verified_at": "2026-09-22",
+      "note": "Capabilities table: context window 1M tokens"
+    },
+    "max_output_tokens": {
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      "verified_at": "2026-09-22",
+      "note": "Max output 128K tokens (synchronous Messages API)"
+    },
+    "supports_thinking": {
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      "verified_at": "2026-09-22",
+      "note": "Adaptive thinking, always on"
+    },
+    "default_reasoning_effort": {
+      "url": "https://platform.claude.com/docs/en/models/opus-5-5/overview",
+      "verified_at": "2026-09-22",
+      "note": "Default effort medium on the Claude API"
+    },
+    "attachments": {
+      "url": "https://platform.claude.com/docs/en/models/overview",
+      "verified_at": "2026-09-22",
+      "note": "All current models support text and image input; PDF input via Messages API document blocks"
+    }
+  },
+  "aliases": [
+    "claude-opus-5.5",
+    "anthropic/claude-opus-5.5"
+  ]
+}

@@ -15,86 +15,140 @@
   },
   "models": [
     {
-      "ref": "llama-3.3-70b-versatile"
-    },
-    {
-      "ref": "llama-3.1-8b-instant"
-    },
-    {
       "ref": "gpt-oss-120b",
       "api_name": "openai/gpt-oss-120b",
-      "max_output_tokens": 32768,
+      "max_output_tokens": 65536,
       "recommended_temperature": 0.7,
       "supports_thinking": true,
       "attachments": {
-        "images": true
+        "images": false
       },
-      "status": "removed",
       "pricing": {
-        "input_per_1m": 0.03,
-        "output_per_1m": 0.15,
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.6,
+        "cached_input_per_1m": 0.075,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+          "verified_at": "2026-09-22"
+        },
+        "max_output_tokens": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+          "verified_at": "2026-09-22",
+          "note": "Groq caps output at 65,536 tokens on a 131,072-token context."
+        },
+        "attachments": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+          "verified_at": "2026-09-22",
+          "note": "Input modality: text only on Groq."
+        }
       }
     },
     {
       "ref": "gpt-oss-20b",
       "api_name": "openai/gpt-oss-20b",
-      "max_output_tokens": 32768,
+      "max_output_tokens": 65536,
       "recommended_temperature": 0.7,
       "supports_thinking": true,
       "attachments": {
-        "images": true
+        "images": false
       },
-      "status": "removed",
       "pricing": {
-        "input_per_1m": 0.029,
-        "output_per_1m": 0.14,
+        "input_per_1m": 0.075,
+        "output_per_1m": 0.3,
+        "cached_input_per_1m": 0.037,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+          "verified_at": "2026-09-22"
+        },
+        "max_output_tokens": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+          "verified_at": "2026-09-22",
+          "note": "Groq caps output at 65,536 tokens on a 131,072-token context."
+        },
+        "attachments": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-20b",
+          "verified_at": "2026-09-22",
+          "note": "Input modality: text only on Groq."
+        }
       }
     },
     {
-      "ref": "qwen3-32b",
-      "api_name": "qwen/qwen3-32b",
+      "ref": "gpt-oss-safeguard-20b",
+      "api_name": "openai/gpt-oss-safeguard-20b",
+      "status": "preview",
       "pricing": {
-        "input_per_1m": 0.08,
-        "output_per_1m": 0.28,
+        "input_per_1m": 0.075,
+        "output_per_1m": 0.3,
+        "cached_input_per_1m": 0.037,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/model/openai/gpt-oss-safeguard-20b",
+          "verified_at": "2026-09-22"
+        },
+        "status": {
+          "url": "https://console.groq.com/docs/models",
+          "verified_at": "2026-09-22",
+          "note": "Listed under Groq's preview models."
+        }
       }
     },
     {
-      "ref": "deepseek-r1-distill-llama-70b",
+      "ref": "qwen3.8-27b",
+      "api_name": "qwen/qwen3.8-27b",
+      "context_window_tokens": 131042,
+      "max_output_tokens": 16384,
+      "attachments": {
+        "images": true,
+        "video": false
+      },
       "pricing": {
         "input_per_1m": 0.8,
-        "output_per_1m": 0.8,
+        "output_per_1m": 4.0,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+          "verified_at": "2026-09-22"
+        },
+        "context_window_tokens": {
+          "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+          "verified_at": "2026-09-22",
+          "note": "Groq endpoint: 131,042-token context / 16,384 max output."
+        },
+        "attachments": {
+          "url": "https://console.groq.com/docs/model/qwen/qwen3.8-27b",
+          "verified_at": "2026-09-22",
+          "note": "Accepts text and images (max 3 images, 20 MB each); no video input."
+        }
       }
     },
     {
-      "ref": "kimi-k2-instruct",
-      "api_name": "moonshotai/kimi-k2-instruct"
-    },
-    {
-      "ref": "llama-4-maverick-17b-128e-instruct",
-      "api_name": "meta-llama/llama-4-maverick-17b-128e-instruct"
-    },
-    {
-      "ref": "llama-4-scout-17b-16e-instruct",
-      "api_name": "meta-llama/llama-4-scout-17b-16e-instruct"
-    },
-    {
-      "ref": "llama-guard-4-12b",
-      "api_name": "meta-llama/llama-guard-4-12b",
-      "pricing": {
-        "input_per_1m": 0.18,
-        "output_per_1m": 0.18,
-        "currency": "USD"
+      "ref": "minimax-m2.7",
+      "api_name": "minimaxai/minimax-m2.7",
+      "status": "preview",
+      "context_window_tokens": 196608,
+      "max_output_tokens": 131072,
+      "sources": {
+        "context_window_tokens": {
+          "url": "https://console.groq.com/docs/model/minimaxai/minimax-m2.7",
+          "verified_at": "2026-09-22",
+          "note": "Groq endpoint: 196,608 context / 131,072 max output. Enterprise-only on Groq (contact sales); no public pricing."
+        },
+        "status": {
+          "url": "https://console.groq.com/docs/models",
+          "verified_at": "2026-09-22",
+          "note": "Listed under Groq's preview models."
+        }
       }
-    },
-    {
-      "ref": "mistral-saba-24b"
-    },
-    {
-      "ref": "gemma2-9b-it"
     }
   ]
 }

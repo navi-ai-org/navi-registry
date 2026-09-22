@@ -1,0 +1,47 @@
+{
+  "id": "gpt-6-luna",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 1050000,
+  "max_output_tokens": 128000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": true
+  },
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high",
+    "xhigh",
+    "max"
+  ],
+  "default_reasoning_effort": "medium",
+  "aliases": [
+    "openai/gpt-6-luna"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna",
+      "verified_at": "2026-09-22",
+      "note": "1.05M context (1050000), 128k max output from OpenRouter /api/v1/models"
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna",
+      "verified_at": "2026-09-22",
+      "note": "from OpenRouter /api/v1/models"
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna",
+      "verified_at": "2026-09-22",
+      "note": "text+image+file input modalities from OpenRouter /api/v1/models"
+    },
+    "reasoning_levels": {
+      "url": "https://openrouter.ai/api/v1/models/openai/gpt-6-luna",
+      "verified_at": "2026-09-22",
+      "note": "supported efforts max/xhigh/high/medium/low/none (default medium) from OpenRouter /api/v1/models"
+    }
+  }
+}

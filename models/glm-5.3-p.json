@@ -1,0 +1,39 @@
+{
+  "id": "glm-5.3-p",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "zai-org/glm-5.3-p"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "Novita AI model list: context_size 1048576."
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "Novita AI model list: max_output_tokens 131072."
+    },
+    "attachments": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "input_modalities: text only."
+    },
+    "supports_thinking": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "features include reasoning."
+    }
+  }
+}

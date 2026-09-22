@@ -1,0 +1,43 @@
+{
+  "id": "mimo-v2.6-pro",
+  "label": "MiMo-V2.6-Pro",
+  "vendor": "xiaomi",
+  "family": "mimo",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "recommended_temperature": 1.0,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "documents": false,
+    "audio": true,
+    "video": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+      "verified_at": "2026-09-22",
+      "note": "Official Models page: context window 1M; MiMo Codex model-catalogs.json (linked from docs) lists context_window/max_context_window 1048576."
+    },
+    "max_output_tokens": {
+      "url": "https://mimo.mi.com/static/docs/api/chat/anthropic-api.md",
+      "verified_at": "2026-09-22",
+      "note": "Anthropic Messages API docs: max_tokens default 131072, range [1, 131072]."
+    },
+    "recommended_temperature": {
+      "url": "https://mimo.mi.com/static/docs/api/chat/anthropic-api.md",
+      "verified_at": "2026-09-22",
+      "note": "Docs: default temperature 1.0 (forced to 1.0 in thinking mode)."
+    },
+    "supports_thinking": {
+      "url": "https://mimo.mi.com/static/docs/quick-start/summary/model.md",
+      "verified_at": "2026-09-22",
+      "note": "Models page lists Deep Thinking; thinking enabled by default."
+    },
+    "attachments": {
+      "url": "https://mimo.mi.com/static/docs/api/chat/anthropic-api.md",
+      "verified_at": "2026-09-22",
+      "note": "Content parts support text/image/audio/video for mimo-v2.6-pro; no document content type documented."
+    }
+  }
+}

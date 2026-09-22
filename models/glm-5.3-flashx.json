@@ -1,0 +1,44 @@
+{
+  "id": "glm-5.3-flashx",
+  "label": "GLM-5.3-FlashX",
+  "vendor": "zhipu",
+  "family": "glm",
+  "status": "active",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": true
+  },
+  "reasoning_levels": [
+    "low",
+    "high",
+    "max"
+  ],
+  "default_reasoning_effort": "max",
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "verified_at": "2026-09-22",
+      "note": "Z.AI documents GLM-5.3-Flash/FlashX with a 1M-token context length (1,048,576, same as the GLM-5.3 family); B.AI's model page states 1,000,000 tokens."
+    },
+    "max_output_tokens": {
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "verified_at": "2026-09-22",
+      "note": "Z.AI documents 128K maximum output tokens (131,072); B.AI's model page states 131,072."
+    },
+    "attachments": {
+      "url": "https://docs.b.ai/llmservice/models/glm-5-3-flashx/",
+      "verified_at": "2026-09-22",
+      "note": "B.AI: accepts images, videos, text, and files as input."
+    },
+    "reasoning_levels": {
+      "url": "https://docs.b.ai/llmservice/models/glm-5-3-flashx/",
+      "verified_at": "2026-09-22",
+      "note": "low/high/max reasoning effort with max as default; thinking remains enabled."
+    }
+  }
+}

@@ -17,8 +17,15 @@
       "sample_rate_hz": 16000,
       "max_file_bytes": 26214400,
       "pricing": {
-        "per_minute": 0.04,
+        "per_minute": 0.000667,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/speech-to-text",
+          "verified_at": "2026-09-22",
+          "note": "Groq lists $0.04 per hour of audio; converted to per minute (0.04 / 60)"
+        }
       }
     },
     {
@@ -29,20 +36,15 @@
       "sample_rate_hz": 16000,
       "max_file_bytes": 26214400,
       "pricing": {
-        "per_minute": 0.111,
+        "per_minute": 0.00185,
         "currency": "USD"
-      }
-    },
-    {
-      "name": "distil-whisper-large-v3-en",
-      "label": "Distil-Whisper Large v3 English",
-      "description": "English-only distilled Whisper large-v3",
-      "languages": ["en"],
-      "sample_rate_hz": 16000,
-      "max_file_bytes": 26214400,
-      "pricing": {
-        "per_minute": 0.02,
-        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://console.groq.com/docs/speech-to-text",
+          "verified_at": "2026-09-22",
+          "note": "Groq lists $0.111 per hour of audio; converted to per minute (0.111 / 60)"
+        }
       }
     }
   ]

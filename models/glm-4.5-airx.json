@@ -1,0 +1,31 @@
+{
+  "id": "glm-4.5-airx",
+  "label": "GLM-4.5-AirX",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 128000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.z.ai/guides/overview/overview",
+      "verified_at": "2026-09-22",
+      "note": "Z.AI model matrix: GLM-4.5-AirX context 128K."
+    },
+    "supports_thinking": {
+      "url": "https://docs.z.ai/guides/llm/glm-4.5",
+      "verified_at": "2026-09-22",
+      "note": "GLM-4.5 series documents deep thinking mode."
+    },
+    "attachments": {
+      "url": "https://docs.z.ai/guides/overview/overview",
+      "verified_at": "2026-09-22",
+      "note": "Listed under Text Models (text input/output only)."
+    }
+  }
+}

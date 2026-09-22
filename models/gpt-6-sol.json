@@ -1,0 +1,28 @@
+{
+  "id": "gpt-6-sol",
+  "label": "GPT-6 Sol",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 1050000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.commandcode.ai/provider/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "context_length 1050000 from Command Code Provider API /models"
+    },
+    "supports_thinking": {
+      "url": "https://commandcode.ai/models/gpt-6-sol",
+      "verified_at": "2026-09-22",
+      "note": "vendor model page lists reasoning ('reasons before answering')"
+    },
+    "attachments": {
+      "url": "https://commandcode.ai/models/gpt-6-sol",
+      "verified_at": "2026-09-22",
+      "note": "text + image input modalities per vendor model page"
+    }
+  }
+}

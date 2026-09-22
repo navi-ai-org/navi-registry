@@ -15,39 +15,49 @@
   },
   "models": [
     {
+      "ref": "step-5-preview",
+      "pricing": {
+        "input_per_1m": 1.0,
+        "cached_input_per_1m": 0.05,
+        "output_per_1m": 2.7,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "step-3.7-flash",
+      "pricing": {
+        "input_per_1m": 0.2,
+        "cached_input_per_1m": 0.04,
+        "output_per_1m": 1.15,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "step-3.5-flash",
       "pricing": {
         "input_per_1m": 0.1,
+        "cached_input_per_1m": 0.02,
         "output_per_1m": 0.3,
         "currency": "USD"
       }
     },
     {
-      "ref": "step-3"
+      "ref": "step-3.5-flash-2603",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "cached_input_per_1m": 0.02,
+        "output_per_1m": 0.3,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "step-2-16k"
-    },
-    {
-      "ref": "step-2"
-    },
-    {
-      "ref": "step-1-256k"
-    },
-    {
-      "ref": "step-1-128k"
-    },
-    {
-      "ref": "step-1-32k"
-    },
-    {
-      "ref": "step-1-8k"
-    },
-    {
-      "ref": "step-1v"
-    },
-    {
-      "ref": "step-1"
+      "ref": "step-1o-turbo-vision",
+      "pricing": {
+        "input_per_1m": 0.36,
+        "cached_input_per_1m": 0.07,
+        "output_per_1m": 1.15,
+        "currency": "USD"
+      }
     }
   ]
 }

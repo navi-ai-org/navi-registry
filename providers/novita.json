@@ -43,15 +43,6 @@
       }
     },
     {
-      "ref": "deepseek-ocr",
-      "api_name": "deepseek/deepseek-ocr",
-      "pricing": {
-        "input_per_1m": 0.03,
-        "output_per_1m": 0.03,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "deepseek-ocr-2",
       "api_name": "deepseek/deepseek-ocr-2",
       "pricing": {
@@ -112,25 +103,6 @@
       }
     },
     {
-      "ref": "deepseek-v3-0324",
-      "api_name": "deepseek/deepseek-v3-0324",
-      "pricing": {
-        "input_per_1m": 0.27,
-        "output_per_1m": 1.12,
-        "currency": "USD",
-        "cached_input_per_1m": 0.135
-      }
-    },
-    {
-      "ref": "deepseek-v3-turbo",
-      "api_name": "deepseek/deepseek-v3-turbo",
-      "pricing": {
-        "input_per_1m": 0.4,
-        "output_per_1m": 1.3,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "deepseek-v3.1",
       "api_name": "deepseek/deepseek-v3.1",
       "pricing": {
@@ -185,6 +157,26 @@
       "max_output_tokens": 393216
     },
     {
+      "ref": "deepseek-v4-flash-0731",
+      "api_name": "deepseek/deepseek-v4-flash-0731",
+      "pricing": {
+        "input_per_1m": 0.44,
+        "output_per_1m": 1.32,
+        "currency": "USD",
+        "cached_input_per_1m": 0.028
+      }
+    },
+    {
+      "ref": "deepseek-v4-flash-vision-exp",
+      "api_name": "deepseek/deepseek-v4-flash-vision-exp",
+      "pricing": {
+        "input_per_1m": 0.44,
+        "output_per_1m": 1.32,
+        "currency": "USD",
+        "cached_input_per_1m": 0.028
+      }
+    },
+    {
       "ref": "deepseek-v4-pro",
       "api_name": "deepseek/deepseek-v4-pro",
       "pricing": {
@@ -195,6 +187,36 @@
       },
       "context_window_tokens": 1048576,
       "max_output_tokens": 393216
+    },
+    {
+      "ref": "deepseek-v4-pro-0813",
+      "api_name": "deepseek/deepseek-v4-pro-0813",
+      "pricing": {
+        "input_per_1m": 1.32,
+        "output_per_1m": 3.96,
+        "currency": "USD",
+        "cached_input_per_1m": 0.044
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash",
+      "api_name": "deepseek/deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.006
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash-z",
+      "api_name": "deepseek/deepseek-v4.1-flash-z",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      }
     },
     {
       "ref": "deepseek_v3",
@@ -414,6 +436,36 @@
       }
     },
     {
+      "ref": "glm-5.3",
+      "api_name": "zai-org/glm-5.3",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.26
+      }
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "api_name": "zai-org/glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.03
+      }
+    },
+    {
+      "ref": "glm-5.3-p",
+      "api_name": "zai-org/glm-5.3-p",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "currency": "USD",
+        "cached_input_per_1m": 0.26
+      }
+    },
+    {
       "ref": "glm-5v-turbo",
       "api_name": "zai-org/glm-5v-turbo",
       "pricing": {
@@ -470,13 +522,13 @@
       }
     },
     {
-      "ref": "kat-coder-pro",
-      "api_name": "kwaipilot/kat-coder-pro",
+      "ref": "hy4-preview",
+      "api_name": "tencent/hy4-preview",
       "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 1.2,
+        "input_per_1m": 0.834,
+        "output_per_1m": 2.501,
         "currency": "USD",
-        "cached_input_per_1m": 0.06
+        "cached_input_per_1m": 0.042
       }
     },
     {
@@ -619,28 +671,36 @@
       }
     },
     {
-      "ref": "ling-2.6-1t",
-      "api_name": "inclusionai/ling-2.6-1t",
-      "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 2.5,
-        "currency": "USD",
-        "cached_input_per_1m": 0.06
-      }
-    },
-    {
-      "ref": "ling-2.6-flash",
-      "api_name": "inclusionai/ling-2.6-flash",
-      "pricing": {
-        "input_per_1m": 0.1,
-        "output_per_1m": 0.3,
-        "currency": "USD",
-        "cached_input_per_1m": 0.02
-      }
-    },
-    {
       "ref": "ling-3.0-flash",
       "api_name": "inclusionai/ling-3.0-flash",
+      "pricing": {
+        "input_per_1m": 0.06,
+        "output_per_1m": 0.18,
+        "currency": "USD",
+        "cached_input_per_1m": 0.012
+      }
+    },
+    {
+      "ref": "ling-3.0-flash-fin",
+      "api_name": "inclusionai/ling-3.0-flash-fin",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ling-3.0-flash-sante",
+      "api_name": "inclusionai/ling-3.0-flash-sante",
+      "pricing": {
+        "input_per_1m": 0.0,
+        "output_per_1m": 0.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "ling-3.0-flash-vl",
+      "api_name": "inclusionai/ling-3.0-flash-vl",
       "pricing": {
         "input_per_1m": 0.0,
         "output_per_1m": 0.0,
@@ -668,17 +728,6 @@
       }
     },
     {
-      "ref": "llama-3.2-3b-instruct",
-      "api_name": "meta-llama/llama-3.2-3b-instruct",
-      "pricing": {
-        "input_per_1m": 0.03,
-        "output_per_1m": 0.05,
-        "currency": "USD"
-      },
-      "context_window_tokens": 32768,
-      "max_output_tokens": 32000
-    },
-    {
       "ref": "llama-3.3-70b-instruct",
       "api_name": "meta-llama/llama-3.3-70b-instruct",
       "pricing": {
@@ -686,8 +735,8 @@
         "output_per_1m": 0.4,
         "currency": "USD"
       },
-      "context_window_tokens": 6000,
-      "max_output_tokens": 120000
+      "context_window_tokens": 12288,
+      "max_output_tokens": 12288
     },
     {
       "ref": "llama-4-maverick-17b-128e-instruct-fp8",
@@ -712,30 +761,23 @@
       "status": "active"
     },
     {
-      "ref": "m2-her",
-      "api_name": "minimax/m2-her",
-      "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "macaron-v1-tall",
       "api_name": "mindai/macaron-v1-tall",
       "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "currency": "USD"
+        "input_per_1m": 0.2475,
+        "output_per_1m": 1.43,
+        "currency": "USD",
+        "cached_input_per_1m": 0.044
       }
     },
     {
       "ref": "macaron-v1-venti",
       "api_name": "mindai/macaron-v1-venti",
       "pricing": {
-        "input_per_1m": 0.0,
-        "output_per_1m": 0.0,
-        "currency": "USD"
+        "input_per_1m": 0.825,
+        "output_per_1m": 2.475,
+        "currency": "USD",
+        "cached_input_per_1m": 0.165
       }
     },
     {
@@ -1121,13 +1163,43 @@
       "max_output_tokens": 65536
     },
     {
-      "ref": "ring-2.6-1t",
-      "api_name": "inclusionai/ring-2.6-1t",
+      "ref": "qwen3.8-2.4t-a95b",
+      "api_name": "qwen/qwen3.8-2.4t-a95b",
       "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 2.5,
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
         "currency": "USD",
-        "cached_input_per_1m": 0.06
+        "cached_input_per_1m": 0.25
+      }
+    },
+    {
+      "ref": "qwen3.8-27b",
+      "api_name": "qwen/qwen3.8-27b",
+      "pricing": {
+        "input_per_1m": 0.42,
+        "output_per_1m": 3.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.085
+      }
+    },
+    {
+      "ref": "qwen3.8-flash",
+      "api_name": "qwen/qwen3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.47,
+        "currency": "USD",
+        "cached_input_per_1m": 0.016
+      }
+    },
+    {
+      "ref": "qwen3.8-max",
+      "api_name": "qwen/qwen3.8-max",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.25
       }
     },
     {

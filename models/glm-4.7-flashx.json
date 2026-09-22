@@ -1,0 +1,37 @@
+{
+  "id": "glm-4.7-flashx",
+  "label": "GLM-4.7-FlashX",
+  "vendor": "zhipu",
+  "family": "glm",
+  "context_window_tokens": 200000,
+  "max_output_tokens": 131072,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "verified_at": "2026-09-22",
+      "note": "GLM-4.7-FlashX model card: context length 200K."
+    },
+    "max_output_tokens": {
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "verified_at": "2026-09-22",
+      "note": "GLM-4.7-FlashX model card: maximum output tokens 128K (131072)."
+    },
+    "supports_thinking": {
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "verified_at": "2026-09-22",
+      "note": "GLM-4.7 series documents thinking mode."
+    },
+    "attachments": {
+      "url": "https://docs.z.ai/guides/llm/glm-4.7",
+      "verified_at": "2026-09-22",
+      "note": "Model card lists input/output modalities as text only."
+    }
+  }
+}

@@ -16,7 +16,29 @@
       "languages": [],
       "sample_rate_hz": 16000,
       "max_duration_seconds": 360,
-      "max_file_bytes": 26214400
+      "max_file_bytes": 26214400,
+      "sources": {
+        "name": {
+          "url": "https://api-docs.wisprflow.ai/request_schema",
+          "verified_at": "2026-09-22",
+          "note": "Official API takes no model parameter; 'flow' is a logical id for the service default (no named models are documented)"
+        },
+        "sample_rate_hz": {
+          "url": "https://api-docs.wisprflow.ai/request_schema",
+          "verified_at": "2026-09-22",
+          "note": "Docs: 'Base64 encoded, 16kHz wav audio'"
+        },
+        "max_duration_seconds": {
+          "url": "https://api-docs.wisprflow.ai/rest_api",
+          "verified_at": "2026-09-22",
+          "note": "Docs: 'under 25MB and under 6 minutes at a time'"
+        },
+        "max_file_bytes": {
+          "url": "https://api-docs.wisprflow.ai/rest_api",
+          "verified_at": "2026-09-22",
+          "note": "25 MB limit"
+        }
+      }
     }
   ]
 }

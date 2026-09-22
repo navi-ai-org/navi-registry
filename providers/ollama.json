@@ -15,69 +15,166 @@
   },
   "models": [
     {
-      "ref": "llama3.1"
+      "ref": "llama-3.3-70b-instruct",
+      "api_name": "llama3.3"
     },
     {
-      "ref": "llama3.2"
+      "ref": "qwen3.8-27b",
+      "api_name": "qwen3.8:27b"
     },
     {
-      "ref": "llama3.3"
+      "ref": "qwen3-coder-next"
     },
     {
-      "ref": "deepseek-r1",
-      "context_window_tokens": 1000000,
-      "max_output_tokens": 16000,
-      "status": "removed",
+      "ref": "gemma-4-31b-it",
+      "api_name": "gemma4:31b",
       "pricing": {
-        "input_per_1m": 0.7,
-        "output_per_1m": 2.5,
+        "input_per_1m": 0.14,
+        "cached_input_per_1m": 0.05,
+        "output_per_1m": 0.4,
         "currency": "USD"
       }
     },
     {
-      "ref": "qwen3"
+      "ref": "qwen3.5-397b-a17b",
+      "api_name": "qwen3.5:397b",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "output_per_1m": 3.6,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "qwen2.5-coder"
+      "ref": "gpt-oss-120b",
+      "api_name": "gpt-oss:120b",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "cached_input_per_1m": 0.014,
+        "output_per_1m": 0.6,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "qwen2.5-coder:32b"
+      "ref": "gpt-oss-20b",
+      "api_name": "gpt-oss:20b",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "cached_input_per_1m": 0.035,
+        "output_per_1m": 0.3,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "qwen2.5-coder:14b"
+      "ref": "glm-5.3",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "cached_input_per_1m": 0.26,
+        "output_per_1m": 4.4,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "qwen2.5-coder:7b"
+      "ref": "glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "cached_input_per_1m": 0.03,
+        "output_per_1m": 0.5,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "codellama"
+      "ref": "kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "cached_input_per_1m": 0.3,
+        "output_per_1m": 15.0,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "starcoder2"
+      "ref": "kimi-k2.7-code",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "cached_input_per_1m": 0.19,
+        "output_per_1m": 4.0,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "granite-code"
+      "ref": "minimax-m3",
+      "pricing": {
+        "input_per_1m": 0.6,
+        "cached_input_per_1m": 0.12,
+        "output_per_1m": 2.4,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "gemma3"
+      "ref": "deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "cached_input_per_1m": 0.006,
+        "output_per_1m": 1.2,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "gemma3:27b"
+      "ref": "deepseek-v4-flash",
+      "api_name": "deepseek-v4-flash:0731",
+      "pricing": {
+        "input_per_1m": 0.44,
+        "cached_input_per_1m": 0.014,
+        "output_per_1m": 1.32,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "gemma3:12b"
+      "ref": "deepseek-v4-pro",
+      "api_name": "deepseek-v4-pro:0813",
+      "pricing": {
+        "input_per_1m": 1.32,
+        "cached_input_per_1m": 0.044,
+        "output_per_1m": 3.96,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "mistral"
+      "ref": "mistral-large-2512",
+      "api_name": "mistral-large-3:675b",
+      "pricing": {
+        "input_per_1m": 0.5,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "devstral"
+      "ref": "nemotron-3-ultra-550b-a55b",
+      "api_name": "nemotron-3-ultra",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "cached_input_per_1m": 0.1,
+        "output_per_1m": 3.0,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "phi4"
+      "ref": "nemotron-3-super-120b-a12b",
+      "api_name": "nemotron-3-super",
+      "pricing": {
+        "input_per_1m": 0.015,
+        "cached_input_per_1m": 0.015,
+        "output_per_1m": 0.6,
+        "currency": "USD"
+      }
     },
     {
-      "ref": "phi4-mini"
+      "ref": "nemotron-3-nano-30b-a3b",
+      "api_name": "nemotron-3-nano:30b",
+      "pricing": {
+        "input_per_1m": 0.06,
+        "output_per_1m": 0.24,
+        "currency": "USD"
+      }
     }
   ]
 }

@@ -15,6 +15,22 @@
   },
   "models": [
     {
+      "ref": "grok-4.7",
+      "pricing": {
+        "input_per_1m": 2.0,
+        "output_per_1m": 6.0,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/go/",
+          "verified_at": "2026-09-22",
+          "note": "Go rate for requests up to 200K tokens; above 200K it is $4.00/$12.00/$1.00."
+        }
+      }
+    },
+    {
       "ref": "grok-4.6",
       "pricing": {
         "input_per_1m": 2.0,
@@ -78,16 +94,6 @@
       }
     },
     {
-      "ref": "glm-5",
-      "status": "deprecated",
-      "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 1.92,
-        "currency": "USD",
-        "cached_input_per_1m": 0.12
-      }
-    },
-    {
       "ref": "kimi-k3",
       "attachments": {
         "images": true,
@@ -136,17 +142,33 @@
       }
     },
     {
-      "ref": "kimi-k2.5",
-      "status": "deprecated",
-      "attachments": {
-        "images": true,
-        "documents": true
-      },
+      "ref": "mimo-v2.6-flash",
       "pricing": {
-        "input_per_1m": 0.45,
-        "output_per_1m": 2.25,
-        "currency": "USD",
-        "cached_input_per_1m": 0.07
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/go/",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "mimo-v2.6-pro",
+      "pricing": {
+        "input_per_1m": 0.435,
+        "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.003625,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/go/",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
@@ -346,23 +368,6 @@
       }
     },
     {
-      "ref": "deepseek-v4.1-flash",
-      "api_name": "deepseek-flash",
-      "pricing": {
-        "input_per_1m": 0.15,
-        "output_per_1m": 0.6,
-        "cached_input_per_1m": 0.003,
-        "currency": "USD"
-      },
-      "sources": {
-        "pricing": {
-          "url": "https://opencode.ai/docs/go/",
-          "verified_at": "2026-09-17",
-          "note": "Go lists deepseek-flash as DeepSeek V4.1 Flash with a 4x request multiplier (through Sep 20, 2026) at the same off-peak token rate."
-        }
-      }
-    },
-    {
       "ref": "deepseek-v4-flash-vision-exp",
       "attachments": {
         "images": true
@@ -409,23 +414,7 @@
       }
     },
     {
-      "ref": "union-alpha",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "omen-alpha"
-    },
-    {
-      "ref": "ox-alpha-free",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
     }
   ]
 }

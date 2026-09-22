@@ -1,0 +1,34 @@
+{
+  "id": "mimo-v2.6-flash-free",
+  "label": "MiMo-V2.6-Flash Free",
+  "vendor": "aggregator",
+  "family": "mimo",
+  "context_window_tokens": 1048576,
+  "max_output_tokens": 131072,
+  "attachments": {
+    "images": true,
+    "documents": false,
+    "audio": true,
+    "video": true
+  },
+  "aliases": [
+    "xiaomi/mimo-v2.6-flash"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/xiaomi/mimo-v2.6-flash",
+      "verified_at": "2026-09-22",
+      "note": "1M context (1,048,576) from OpenRouter /api/v1/models. OpenCode Zen serves this checkpoint as the limited-time free endpoint mimo-v2.6-flash-free."
+    },
+    "max_output_tokens": {
+      "url": "https://openrouter.ai/api/v1/models/xiaomi/mimo-v2.6-flash",
+      "verified_at": "2026-09-22",
+      "note": "top_provider.max_completion_tokens 131072 from OpenRouter /api/v1/models."
+    },
+    "attachments": {
+      "url": "https://openrouter.ai/api/v1/models/xiaomi/mimo-v2.6-flash",
+      "verified_at": "2026-09-22",
+      "note": "text+image+video+audio input modalities from OpenRouter /api/v1/models."
+    }
+  }
+}

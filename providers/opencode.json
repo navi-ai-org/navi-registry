@@ -48,6 +48,22 @@
       }
     },
     {
+      "ref": "claude-opus-5-5",
+      "pricing": {
+        "input_per_1m": 4,
+        "output_per_1m": 20,
+        "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table (per 1M tokens): 4.00 in / 20.00 out / 0.20 cached read."
+        }
+      }
+    },
+    {
       "ref": "claude-opus-4-8",
       "context_window_tokens": 200000,
       "max_output_tokens": 16384,
@@ -90,16 +106,6 @@
       }
     },
     {
-      "ref": "claude-opus-4-1",
-      "status": "removed",
-      "pricing": {
-        "input_per_1m": 5,
-        "output_per_1m": 25,
-        "cached_input_per_1m": 0.5,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "claude-sonnet-5",
       "pricing": {
         "input_per_1m": 2,
@@ -130,17 +136,6 @@
       }
     },
     {
-      "ref": "claude-sonnet-4",
-      "status": "deprecated",
-      "max_output_tokens": 16384,
-      "pricing": {
-        "input_per_1m": 3,
-        "output_per_1m": 15,
-        "cached_input_per_1m": 0.3,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "claude-haiku-4-5",
       "pricing": {
         "input_per_1m": 1,
@@ -159,14 +154,53 @@
       }
     },
     {
+      "ref": "gpt-6-sol",
+      "pricing": {
+        "input_per_1m": 2,
+        "output_per_1m": 10,
+        "cached_input_per_1m": 0.2,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: 2.00 in / 10.00 out / 0.20 cached read (requests up to 272K tokens; above 272K it is 4.00/15.00/0.40)."
+        }
+      }
+    },
+    {
+      "ref": "gpt-6-luna",
+      "pricing": {
+        "input_per_1m": 0.1,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.01,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: 0.10 in / 0.50 out / 0.01 cached read (requests up to 272K tokens; above 272K it is 0.20/0.75/0.02)."
+        }
+      }
+    },
+    {
       "ref": "gpt-5.6-sol",
       "context_window_tokens": 272000,
       "max_output_tokens": 16384,
       "pricing": {
-        "input_per_1m": 5,
-        "output_per_1m": 30,
-        "cached_input_per_1m": 0.5,
+        "input_per_1m": 4,
+        "output_per_1m": 20,
+        "cached_input_per_1m": 0.4,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: GPT 5.6 Sol 4.00 in / 20.00 out / 0.40 cached read for requests up to 272K tokens; above 272K it is 8.00/30.00/0.80. Previous value (5/30/0.5) matched no published tier."
+        }
       }
     },
     {
@@ -284,16 +318,6 @@
       }
     },
     {
-      "ref": "gpt-5.2-codex",
-      "status": "deprecated",
-      "pricing": {
-        "input_per_1m": 1.75,
-        "output_per_1m": 14,
-        "cached_input_per_1m": 0.175,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "gpt-5.1",
       "max_output_tokens": 16384,
       "pricing": {
@@ -304,54 +328,8 @@
       }
     },
     {
-      "ref": "gpt-5.1-codex-max",
-      "status": "deprecated",
-      "pricing": {
-        "input_per_1m": 1.25,
-        "output_per_1m": 10,
-        "cached_input_per_1m": 0.125,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5.1-codex",
-      "status": "deprecated",
-      "max_output_tokens": 16384,
-      "attachments": {
-        "images": true,
-        "documents": true
-      },
-      "pricing": {
-        "input_per_1m": 1.07,
-        "output_per_1m": 8.5,
-        "cached_input_per_1m": 0.107,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5.1-codex-mini",
-      "status": "deprecated",
-      "max_output_tokens": 16384,
-      "pricing": {
-        "input_per_1m": 0.25,
-        "output_per_1m": 2,
-        "cached_input_per_1m": 0.025,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "gpt-5",
       "max_output_tokens": 16384,
-      "pricing": {
-        "input_per_1m": 1.07,
-        "output_per_1m": 8.5,
-        "cached_input_per_1m": 0.107,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "gpt-5-codex",
-      "status": "deprecated",
       "pricing": {
         "input_per_1m": 1.07,
         "output_per_1m": 8.5,
@@ -446,6 +424,22 @@
       }
     },
     {
+      "ref": "grok-4.7",
+      "pricing": {
+        "input_per_1m": 2,
+        "output_per_1m": 6,
+        "cached_input_per_1m": 0.5,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: 2.00 in / 6.00 out / 0.50 cached read (requests up to 200K tokens; above 200K it is 4.00/12.00/1.00)."
+        }
+      }
+    },
+    {
       "ref": "grok-4.5",
       "pricing": {
         "input_per_1m": 2,
@@ -488,6 +482,22 @@
       }
     },
     {
+      "ref": "qwen3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.47,
+        "cached_input_per_1m": 0.016,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: 0.15 in / 0.47 out / 0.016 cached read."
+        }
+      }
+    },
+    {
       "ref": "qwen3.6-plus",
       "max_output_tokens": 16384,
       "attachments": {
@@ -509,6 +519,22 @@
         "output_per_1m": 1.2,
         "cached_input_per_1m": 0.02,
         "currency": "USD"
+      }
+    },
+    {
+      "ref": "deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "cached_input_per_1m": 0.006,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: 0.30 in / 1.20 out / 0.006 cached read."
+        }
       }
     },
     {
@@ -604,21 +630,6 @@
       }
     },
     {
-      "ref": "kimi-k2.5",
-      "status": "deprecated",
-      "max_output_tokens": 16384,
-      "attachments": {
-        "images": true,
-        "documents": true
-      },
-      "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 3,
-        "cached_input_per_1m": 0.1,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "glm-5.3-flash",
       "pricing": {
         "input_per_1m": 0.15,
@@ -662,18 +673,6 @@
       }
     },
     {
-      "ref": "glm-5",
-      "status": "deprecated",
-      "context_window_tokens": 202000,
-      "max_output_tokens": 16384,
-      "pricing": {
-        "input_per_1m": 1,
-        "output_per_1m": 3.2,
-        "cached_input_per_1m": 0.2,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "minimax-m3",
       "context_window_tokens": 204800,
       "max_output_tokens": 8192,
@@ -701,16 +700,6 @@
       }
     },
     {
-      "ref": "minimax-m2.5",
-      "status": "deprecated",
-      "pricing": {
-        "input_per_1m": 0.3,
-        "output_per_1m": 1.2,
-        "cached_input_per_1m": 0.06,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "big-pickle",
       "pricing": {
         "input_per_1m": 0,
@@ -719,24 +708,7 @@
       }
     },
     {
-      "ref": "union-alpha",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "deepseek-v4-flash-free",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "ox-alpha-free",
-      "api_name": "x-preview-f-free",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,
@@ -775,32 +747,22 @@
       }
     },
     {
+      "ref": "mimo-v2.6-flash-free",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://opencode.ai/docs/zen/",
+          "verified_at": "2026-09-22",
+          "note": "Zen pricing table: listed as Free (limited-time free model)."
+        }
+      }
+    },
+    {
       "ref": "ling-3.0-flash-fin-free",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "hy3-free",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "laguna-s-2.1-free",
-      "pricing": {
-        "input_per_1m": 0,
-        "output_per_1m": 0,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "north-mini-code-free",
-      "status": "removed",
       "pricing": {
         "input_per_1m": 0,
         "output_per_1m": 0,

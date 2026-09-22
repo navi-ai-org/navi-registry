@@ -4,85 +4,71 @@
   "description": "Kimi models via Moonshot AI — multimodal, long-context, and reasoning models",
   "kind": "openai-chat-completions",
   "api_key_env": "MOONSHOT_API_KEY",
-  "base_url": "https://api.moonshot.cn/v1",
+  "base_url": "https://api.moonshot.ai/v1",
   "models": [
     {
       "ref": "kimi-k3",
       "pricing": {
         "input_per_1m": 3.0,
         "output_per_1m": 15.0,
-        "currency": "USD"
+        "currency": "USD",
+        "cached_input_per_1m": 0.3
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "verified_at": "2026-09-22",
+          "note": "Cache write $3.00 (5min TTL) / $6.00 (1h TTL); cached input (cache hit) $0.30."
+        }
+      }
+    },
+    {
+      "ref": "kimi-k2.7-code",
+      "pricing": {
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.19
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "verified_at": "2026-09-22",
+          "note": "Input $0.95 (cache miss) / $0.19 (cache hit), output $4.00."
+        }
+      }
+    },
+    {
+      "ref": "kimi-k2.7-code-highspeed",
+      "pricing": {
+        "input_per_1m": 1.9,
+        "output_per_1m": 8.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.38
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "verified_at": "2026-09-22",
+          "note": "Input $1.90 (cache miss) / $0.38 (cache hit), output $8.00."
+        }
       }
     },
     {
       "ref": "kimi-k2.6",
       "pricing": {
-        "input_per_1m": 0.66,
-        "output_per_1m": 3.41,
+        "input_per_1m": 0.95,
+        "output_per_1m": 4.0,
         "currency": "USD",
-        "cached_input_per_1m": 0.15
+        "cached_input_per_1m": 0.16
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.kimi.ai/docs/pricing/chat",
+          "verified_at": "2026-09-22",
+          "note": "Input $0.95 (cache miss) / $0.16 (cache hit), output $4.00."
+        }
       }
-    },
-    {
-      "ref": "kimi-k2.5",
-      "pricing": {
-        "input_per_1m": 0.375,
-        "output_per_1m": 2.025,
-        "currency": "USD",
-        "cached_input_per_1m": 0.203
-      }
-    },
-    {
-      "ref": "kimi-k2-thinking",
-      "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 2.5,
-        "currency": "USD",
-        "cached_input_per_1m": 0.15
-      }
-    },
-    {
-      "ref": "kimi-k2-0905",
-      "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 2.5,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "kimi-k2",
-      "pricing": {
-        "input_per_1m": 0.57,
-        "output_per_1m": 2.3,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "kimi-k2-0711-preview"
-    },
-    {
-      "ref": "kimi-latest",
-      "pricing": {
-        "input_per_1m": 0.66,
-        "output_per_1m": 3.41,
-        "currency": "USD",
-        "cached_input_per_1m": 0.15
-      }
-    },
-    {
-      "ref": "kimi-thinking-preview"
-    },
-    {
-      "ref": "moonshot-v1-128k"
-    },
-    {
-      "ref": "moonshot-v1-32k"
-    },
-    {
-      "ref": "moonshot-v1-8k"
-    },
-    {
-      "ref": "moonshot-v1-auto"
     }
   ]
 }

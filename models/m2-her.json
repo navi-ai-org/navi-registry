@@ -2,7 +2,7 @@
   "id": "m2-her",
   "vendor": "minimax",
   "family": "minimax",
-  "context_window_tokens": 32000,
+  "context_window_tokens": 64000,
   "supports_thinking": false,
   "attachments": {
     "images": false,
@@ -15,9 +15,9 @@
   ],
   "sources": {
     "context_window_tokens": {
-      "url": "https://api.novita.ai/openai/v1/models",
-      "verified_at": "2026-07-31",
-      "note": "Novita AI /models API for minimax/m2-her"
+      "url": "https://platform.minimax.io/docs/guides/text-chat",
+      "verified_at": "2026-09-22",
+      "note": "Vendor Supported Models table: M2-her context window 64 K; replaces prior Novita aggregator value (32000)"
     }
   }
 }

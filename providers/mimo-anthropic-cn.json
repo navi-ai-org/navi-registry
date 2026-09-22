@@ -5,5 +5,39 @@
   "extends": "mimo-anthropic",
   "kind": "anthropic-messages",
   "api_key_env": "MIMO_API_KEY",
-  "base_url": "https://token-plan-cn.xiaomimimo.com/anthropic"
+  "base_url": "https://token-plan-cn.xiaomimimo.com/anthropic",
+  "models": [
+    {
+      "ref": "mimo-v2.6-pro",
+      "pricing": {
+        "input_per_1m": 0.435,
+        "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.0036,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API rate; domestic CNY list: ¥3.00 in / ¥6.00 out per 1M. Token Plan is credit-based on the same price basis."
+        }
+      }
+    },
+    {
+      "ref": "mimo-v2.6-flash",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API rate; domestic CNY list: ¥1.00 in / ¥2.00 out per 1M. Token Plan is credit-based on the same price basis."
+        }
+      }
+    }
+  ]
 }

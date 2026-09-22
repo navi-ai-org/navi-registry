@@ -1,0 +1,12 @@
+{
+  "id": "mai-code-1.1-flash",
+  "vendor": "microsoft",
+  "family": "mai",
+  "sources": {
+    "id": {
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "verified_at": "2026-09-22",
+      "note": "MAI-Code-1.1-Flash listed as a GA model served by GitHub Copilot (provider: Microsoft); replaces MAI-Code-1-Flash, retired 2026-09-10. No published context window or output limit."
+    }
+  }
+}

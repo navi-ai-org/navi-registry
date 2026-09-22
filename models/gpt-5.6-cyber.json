@@ -1,0 +1,34 @@
+{
+  "id": "gpt-5.6-cyber",
+  "label": "GPT-5.6 Cyber",
+  "vendor": "openai",
+  "family": "gpt",
+  "context_window_tokens": 400000,
+  "max_output_tokens": 128000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.openai.com/docs/models/gpt-5.6-cyber",
+      "verified_at": "2026-09-22",
+      "note": "400,000 context window (272,000 max input tokens)"
+    },
+    "max_output_tokens": {
+      "url": "https://platform.openai.com/docs/models/gpt-5.6-cyber",
+      "verified_at": "2026-09-22",
+      "note": "128,000 max output tokens"
+    },
+    "supports_thinking": {
+      "url": "https://platform.openai.com/docs/models/gpt-5.6-cyber",
+      "verified_at": "2026-09-22",
+      "note": "reasoning token support; Responses API only"
+    },
+    "attachments": {
+      "url": "https://platform.openai.com/docs/models/gpt-5.6-cyber",
+      "verified_at": "2026-09-22",
+      "note": "input modalities: text, image"
+    }
+  }
+}

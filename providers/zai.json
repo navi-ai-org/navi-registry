@@ -15,43 +15,153 @@
   },
   "models": [
     {
+      "ref": "glm-5.3",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.03,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-5.3-flashx",
+      "pricing": {
+        "input_per_1m": 0.37,
+        "output_per_1m": 1.25,
+        "cached_input_per_1m": 0.075,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-5.2",
+      "pricing": {
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
       "ref": "glm-5.1",
       "pricing": {
-        "input_per_1m": 0.966,
-        "output_per_1m": 3.036,
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "glm-5",
       "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 1.92,
+        "input_per_1m": 1.0,
+        "output_per_1m": 3.2,
+        "cached_input_per_1m": 0.2,
         "currency": "USD"
-      }
-    },
-    {
-      "ref": "glm-5-turbo",
-      "pricing": {
-        "input_per_1m": 1.2,
-        "output_per_1m": 4.0,
-        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "glm-4.7",
       "pricing": {
-        "input_per_1m": 0.4,
-        "output_per_1m": 1.75,
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2,
+        "cached_input_per_1m": 0.11,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-4.7-flashx",
+      "pricing": {
+        "input_per_1m": 0.07,
+        "output_per_1m": 0.4,
+        "cached_input_per_1m": 0.01,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-4.7-flash",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22",
+          "note": "Listed as Free (no charge for input/output)."
+        }
       }
     },
     {
       "ref": "glm-4.6",
       "pricing": {
-        "input_per_1m": 0.43,
-        "output_per_1m": 1.74,
+        "input_per_1m": 0.6,
+        "output_per_1m": 2.2,
+        "cached_input_per_1m": 0.11,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
@@ -59,40 +169,75 @@
       "pricing": {
         "input_per_1m": 0.6,
         "output_per_1m": 2.2,
+        "cached_input_per_1m": 0.11,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
+    },
+    {
+      "ref": "glm-4.5-x",
+      "pricing": {
+        "input_per_1m": 2.2,
+        "output_per_1m": 8.9,
+        "cached_input_per_1m": 0.45,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
       "ref": "glm-4.5-air",
       "pricing": {
-        "input_per_1m": 0.13,
-        "output_per_1m": 0.85,
+        "input_per_1m": 0.2,
+        "output_per_1m": 1.1,
+        "cached_input_per_1m": 0.03,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
       }
     },
     {
-      "ref": "glm-4.5-x"
+      "ref": "glm-4.5-airx",
+      "pricing": {
+        "input_per_1m": 1.1,
+        "output_per_1m": 4.5,
+        "cached_input_per_1m": 0.22,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22"
+        }
+      }
     },
     {
-      "ref": "glm-4.5-flash"
-    },
-    {
-      "ref": "glm-4-plus"
-    },
-    {
-      "ref": "glm-4-flash"
-    },
-    {
-      "ref": "glm-4-long"
-    },
-    {
-      "ref": "glm-4-air"
-    },
-    {
-      "ref": "glm-4-airx"
-    },
-    {
-      "ref": "glm-4-0520"
+      "ref": "glm-4.5-flash",
+      "pricing": {
+        "input_per_1m": 0,
+        "output_per_1m": 0,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22",
+          "note": "Listed as Free (no charge for input/output)."
+        }
+      }
     }
   ]
 }

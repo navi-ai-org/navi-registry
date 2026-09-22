@@ -1,0 +1,46 @@
+{
+  "id": "gpt-oss-safeguard-20b",
+  "label": "GPT-OSS Safeguard 20B",
+  "vendor": "openai",
+  "family": "gpt",
+  "status": "preview",
+  "context_window_tokens": 131072,
+  "max_output_tokens": 65536,
+  "supports_thinking": true,
+  "attachments": {
+    "images": false,
+    "audio": false,
+    "video": false,
+    "documents": false
+  },
+  "aliases": [
+    "openai/gpt-oss-safeguard-20b"
+  ],
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://console.groq.com/docs/model/openai/gpt-oss-safeguard-20b",
+      "verified_at": "2026-09-22",
+      "note": "Groq model page: 131,072-token context, 65,536 max output."
+    },
+    "max_output_tokens": {
+      "url": "https://console.groq.com/docs/model/openai/gpt-oss-safeguard-20b",
+      "verified_at": "2026-09-22",
+      "note": "Groq model page: 131,072-token context, 65,536 max output."
+    },
+    "supports_thinking": {
+      "url": "https://console.groq.com/docs/model/openai/gpt-oss-safeguard-20b",
+      "verified_at": "2026-09-22",
+      "note": "Harmony-format reasoning with low/medium/high effort."
+    },
+    "attachments": {
+      "url": "https://console.groq.com/docs/model/openai/gpt-oss-safeguard-20b",
+      "verified_at": "2026-09-22",
+      "note": "Input modality: text only."
+    }
+  }
+}

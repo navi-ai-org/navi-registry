@@ -8,6 +8,54 @@
   "request_options": {},
   "models": [
     {
+      "ref": "gemini-3.8-flash",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 3.75,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.7-flash",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 3.75,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.6-flash",
+      "pricing": {
+        "input_per_1m": 0.75,
+        "output_per_1m": 3.75,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.5-flash",
+      "pricing": {
+        "input_per_1m": 1.5,
+        "output_per_1m": 9.0,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.5-flash-lite",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 2.5,
+        "currency": "USD"
+      }
+    },
+    {
+      "ref": "gemini-3.1-flash-lite",
+      "pricing": {
+        "input_per_1m": 0.25,
+        "output_per_1m": 1.5,
+        "currency": "USD"
+      }
+    },
+    {
       "ref": "gemini-3.1-pro-preview",
       "pricing": {
         "input_per_1m": 2.0,
@@ -32,9 +80,6 @@
       }
     },
     {
-      "ref": "gemini-2.5-pro-preview-06-05"
-    },
-    {
       "ref": "gemini-2.5-flash",
       "pricing": {
         "input_per_1m": 0.3,
@@ -43,39 +88,12 @@
       }
     },
     {
-      "ref": "gemini-2.5-flash-preview-05-20"
-    },
-    {
       "ref": "gemini-2.5-flash-lite",
       "pricing": {
         "input_per_1m": 0.1,
         "output_per_1m": 0.4,
         "currency": "USD"
       }
-    },
-    {
-      "ref": "gemini-2.0-flash"
-    },
-    {
-      "ref": "gemini-2.0-flash-001"
-    },
-    {
-      "ref": "gemini-2.0-flash-lite"
-    },
-    {
-      "ref": "gemini-1.5-pro"
-    },
-    {
-      "ref": "gemini-1.5-pro-002"
-    },
-    {
-      "ref": "gemini-1.5-flash"
-    },
-    {
-      "ref": "gemini-1.5-flash-002"
-    },
-    {
-      "ref": "gemini-1.5-flash-8b"
     }
   ],
   "defaults": {

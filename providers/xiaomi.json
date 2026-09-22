@@ -20,29 +20,36 @@
   },
   "models": [
     {
-      "ref": "mimo-v2.5-pro",
+      "ref": "mimo-v2.6-pro",
       "pricing": {
         "input_per_1m": 0.435,
         "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.0036,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API rates: cache-hit input $0.0036, cache-miss input $0.435, output $0.87 per 1M tokens."
+        }
       }
     },
     {
-      "ref": "mimo-v2.5",
+      "ref": "mimo-v2.6-flash",
       "pricing": {
-        "input_per_1m": 0.105,
+        "input_per_1m": 0.14,
         "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/docs/en-US/price/pay-as-you-go",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API rates: cache-hit input $0.0028, cache-miss input $0.14, output $0.28 per 1M tokens."
+        }
       }
-    },
-    {
-      "ref": "mimo-v2-pro"
-    },
-    {
-      "ref": "mimo-v2-omni"
-    },
-    {
-      "ref": "mimo-v2-flash"
     }
   ]
 }

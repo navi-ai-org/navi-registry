@@ -1,0 +1,35 @@
+{
+  "id": "grok-4.20-multi-agent-0309",
+  "label": "Grok 4.20 Multi-Agent",
+  "vendor": "xai",
+  "family": "grok",
+  "context_window_tokens": 1000000,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": false,
+    "documents": true
+  },
+  "aliases": [
+    "grok-4.20-multi-agent",
+    "grok-4.20-multi-agent-latest"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+      "verified_at": "2026-09-22",
+      "note": "Context window 1,000,000 tokens from the official xAI model page"
+    },
+    "supports_thinking": {
+      "url": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+      "verified_at": "2026-09-22",
+      "note": "\"Reasoning: Yes\" on the official xAI model page"
+    },
+    "attachments": {
+      "url": "https://docs.x.ai/developers/models/grok-4.20-multi-agent-0309",
+      "verified_at": "2026-09-22",
+      "note": "Modalities text, image -> text; document/file attachments via Files & Collections (https://docs.x.ai/developers/model-capabilities/files/chat-with-files)"
+    }
+  }
+}

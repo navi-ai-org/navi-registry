@@ -10,26 +10,40 @@
       "ref": "local-model"
     },
     {
-      "ref": "qwen2.5-coder"
+      "ref": "qwen3.8-27b"
     },
     {
-      "ref": "deepseek-coder",
-      "context_window_tokens": 1000000
+      "ref": "qwen3.6-35b-a3b"
     },
     {
-      "ref": "starcoder2"
+      "ref": "qwen3.6-27b"
     },
     {
-      "ref": "granite-code"
+      "ref": "qwen3-coder-next"
     },
     {
-      "ref": "llama3"
+      "ref": "qwen3-coder-30b-a3b-instruct"
     },
     {
-      "ref": "mistral"
+      "ref": "gpt-oss-20b"
     },
     {
-      "ref": "tinyllama"
+      "ref": "gpt-oss-120b"
+    },
+    {
+      "ref": "gemma-4-26b-a4b-it"
+    },
+    {
+      "ref": "gemma-4-31b-it"
+    },
+    {
+      "ref": "deepseek-r1-distill-qwen-32b"
+    },
+    {
+      "ref": "nemotron-3.5-lightning-30b-a3b"
+    },
+    {
+      "ref": "llama-3.3-70b-instruct"
     }
   ]
 }

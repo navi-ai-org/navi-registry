@@ -6,44 +6,30 @@
   "api_key_env": "OPENAI_API_KEY",
   "base_url": "https://api.openai.com/v1",
   "transcription_path": "/audio/transcriptions",
-  "default_model": "whisper-1",
+  "default_model": "gpt-transcribe",
   "supports_streaming": false,
   "models": [
     {
-      "name": "whisper-1",
-      "label": "Whisper v1",
-      "description": "OpenAI Whisper large-v2 hosted transcription",
-      "languages": [],
-      "sample_rate_hz": 16000,
-      "max_duration_seconds": 1500,
-      "max_file_bytes": 26214400,
-      "pricing": {
-        "per_minute": 0.006,
-        "currency": "USD"
-      }
-    },
-    {
-      "name": "gpt-4o-transcribe",
-      "label": "GPT-4o Transcribe",
-      "description": "Higher-quality GPT-4o speech-to-text",
+      "name": "gpt-transcribe",
+      "label": "GPT-Transcribe",
+      "description": "High-accuracy speech-to-text for file transcription (OpenAI's recommended transcription model)",
       "languages": [],
       "sample_rate_hz": 16000,
       "max_file_bytes": 26214400,
       "pricing": {
-        "per_minute": 0.006,
+        "per_minute": 0.0045,
         "currency": "USD"
-      }
-    },
-    {
-      "name": "gpt-4o-mini-transcribe",
-      "label": "GPT-4o Mini Transcribe",
-      "description": "Faster / cheaper GPT-4o mini speech-to-text",
-      "languages": [],
-      "sample_rate_hz": 16000,
-      "max_file_bytes": 26214400,
-      "pricing": {
-        "per_minute": 0.003,
-        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://platform.openai.com/docs/pricing",
+          "verified_at": "2026-09-22"
+        },
+        "max_file_bytes": {
+          "url": "https://platform.openai.com/docs/guides/speech-to-text",
+          "verified_at": "2026-09-22",
+          "note": "Files can be up to 25 MB"
+        }
       }
     }
   ]

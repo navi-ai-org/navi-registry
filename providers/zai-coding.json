@@ -15,32 +15,43 @@
   },
   "models": [
     {
-      "ref": "glm-5.1",
-      "max_output_tokens": 128000,
+      "ref": "glm-5.3",
       "pricing": {
-        "input_per_1m": 0.966,
-        "output_per_1m": 3.036,
+        "input_per_1m": 1.4,
+        "output_per_1m": 4.4,
+        "cached_input_per_1m": 0.26,
         "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22",
+          "note": "Coding Plan itself is subscription/credit-based (multipliers: in 6.9 / cached 1.7 / out 24 per docs.z.ai/devpack/overview); these are Z.AI's published pay-as-you-go token rates for GLM-5.3."
+        }
       }
     },
     {
-      "ref": "glm-5",
-      "max_output_tokens": 128000,
-      "supports_thinking": false,
+      "ref": "glm-5.3-flash",
+      "attachments": {
+        "images": true
+      },
       "pricing": {
-        "input_per_1m": 0.6,
-        "output_per_1m": 1.92,
+        "input_per_1m": 0.15,
+        "output_per_1m": 0.5,
+        "cached_input_per_1m": 0.03,
         "currency": "USD"
-      }
-    },
-    {
-      "ref": "glm-5-turbo",
-      "max_output_tokens": 128000,
-      "supports_thinking": false,
-      "pricing": {
-        "input_per_1m": 1.2,
-        "output_per_1m": 4.0,
-        "currency": "USD"
+      },
+      "sources": {
+        "attachments": {
+          "url": "https://docs.z.ai/devpack/latest-model",
+          "verified_at": "2026-09-22",
+          "note": "GLM-5.3-Flash is multimodal; the Coding Plan model-switch guide says Support Images can be checked (GLM-5.3 stays text-only)."
+        },
+        "pricing": {
+          "url": "https://docs.z.ai/guides/overview/pricing",
+          "verified_at": "2026-09-22",
+          "note": "Coding Plan itself is subscription/credit-based (multipliers: in 2.3 / cached 0.56 / out 8 per docs.z.ai/devpack/overview); these are Z.AI's published pay-as-you-go token rates for GLM-5.3-Flash."
+        }
       }
     }
   ]

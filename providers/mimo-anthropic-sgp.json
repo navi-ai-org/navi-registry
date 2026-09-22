@@ -5,5 +5,39 @@
   "extends": "mimo-anthropic",
   "kind": "anthropic-messages",
   "api_key_env": "MIMO_API_KEY",
-  "base_url": "https://token-plan-sgp.xiaomimimo.com/anthropic"
+  "base_url": "https://token-plan-sgp.xiaomimimo.com/anthropic",
+  "models": [
+    {
+      "ref": "mimo-v2.6-pro",
+      "pricing": {
+        "input_per_1m": 0.435,
+        "cached_input_per_1m": 0.0036,
+        "output_per_1m": 0.87,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API pricing."
+        }
+      }
+    },
+    {
+      "ref": "mimo-v2.6-flash",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "cached_input_per_1m": 0.0028,
+        "output_per_1m": 0.28,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://mimo.mi.com/static/docs/price/pay-as-you-go.md",
+          "verified_at": "2026-09-22",
+          "note": "Overseas (USD) real-time API pricing."
+        }
+      }
+    }
+  ]
 }

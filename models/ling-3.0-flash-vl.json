@@ -1,0 +1,40 @@
+{
+  "id": "ling-3.0-flash-vl",
+  "label": "Ling 3.0 Flash VL",
+  "vendor": "inclusion-ai",
+  "family": "ling",
+  "context_window_tokens": 262144,
+  "max_output_tokens": 32768,
+  "supports_thinking": true,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "aliases": [
+    "inclusionai/ling-3.0-flash-vl"
+  ],
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "Novita AI model list: context_size 262144."
+    },
+    "max_output_tokens": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "Novita AI model list: max_output_tokens 32768."
+    },
+    "attachments": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "input_modalities: text, image and video."
+    },
+    "supports_thinking": {
+      "url": "https://api.novita.ai/openai/v1/models",
+      "verified_at": "2026-09-22",
+      "note": "features include reasoning."
+    }
+  }
+}

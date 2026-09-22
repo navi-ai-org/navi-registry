@@ -1,0 +1,23 @@
+{
+  "id": "step-3.5-flash-2603",
+  "label": "Step 3.5 Flash 2603",
+  "vendor": "stepfun",
+  "family": "step",
+  "supports_thinking": true,
+  "reasoning_levels": [
+    "low",
+    "high"
+  ],
+  "sources": {
+    "supports_thinking": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-3.5-flash",
+      "verified_at": "2026-09-22",
+      "note": "Agent-optimized variant of step-3.5-flash with an optional low-reasoning mode; supports the reasoning_effort field."
+    },
+    "reasoning_levels": {
+      "url": "https://platform.stepfun.ai/docs/en/api-reference/chat/chat-completion-create",
+      "verified_at": "2026-09-22",
+      "note": "Chat Completions API: models with three reasoning tiers accept low/medium/high; step-3.5-flash-2603 accepts low and high only."
+    }
+  }
+}

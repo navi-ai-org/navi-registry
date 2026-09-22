@@ -31,25 +31,8 @@
       "api_name": "deepseek-ai/deepseek-coder-6.7b-instruct"
     },
     {
-      "ref": "deepseek-r1",
-      "api_name": "deepseek-ai/deepseek-r1",
-      "max_output_tokens": 8192,
-      "pricing": {
-        "input_per_1m": 0.7,
-        "output_per_1m": 2.5,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "deepseek-v4-flash",
-      "api_name": "deepseek-ai/deepseek-v4-flash-0731",
-      "max_output_tokens": 16384,
-      "pricing": {
-        "input_per_1m": 0.088606,
-        "output_per_1m": 0.177212,
-        "currency": "USD",
-        "cached_input_per_1m": 0.017721
-      }
+      "ref": "deepseek-v4.1-flash",
+      "api_name": "deepseek-ai/deepseek-v4.1-flash"
     },
     {
       "ref": "codegemma-1.1-7b",
@@ -120,58 +103,12 @@
       "api_name": "meta/codellama-70b"
     },
     {
-      "ref": "llama-3.1-70b-instruct",
-      "api_name": "meta/llama-3.1-70b-instruct",
-      "pricing": {
-        "input_per_1m": 0.4,
-        "output_per_1m": 0.4,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "llama-3.1-8b-instruct",
-      "api_name": "meta/llama-3.1-8b-instruct",
-      "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.08,
-        "currency": "USD",
-        "cached_input_per_1m": 0.025
-      }
-    },
-    {
       "ref": "llama-3.2-11b-vision-instruct",
       "api_name": "meta/llama-3.2-11b-vision-instruct"
     },
     {
-      "ref": "llama-3.2-1b-instruct",
-      "api_name": "meta/llama-3.2-1b-instruct",
-      "pricing": {
-        "input_per_1m": 0.027,
-        "output_per_1m": 0.201,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "llama-3.2-3b-instruct",
-      "api_name": "meta/llama-3.2-3b-instruct",
-      "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.33,
-        "currency": "USD"
-      }
-    },
-    {
       "ref": "llama-3.2-90b-vision-instruct",
       "api_name": "meta/llama-3.2-90b-vision-instruct"
-    },
-    {
-      "ref": "llama-3.3-70b-instruct",
-      "api_name": "meta/llama-3.3-70b-instruct",
-      "pricing": {
-        "input_per_1m": 0.1,
-        "output_per_1m": 0.32,
-        "currency": "USD"
-      }
     },
     {
       "ref": "llama2-70b",
@@ -196,25 +133,8 @@
       "api_name": "microsoft/phi-3.5-moe-instruct"
     },
     {
-      "ref": "phi-4",
-      "api_name": "microsoft/phi-4",
-      "pricing": {
-        "input_per_1m": 0.07,
-        "output_per_1m": 0.14,
-        "currency": "USD"
-      }
-    },
-    {
-      "ref": "minimax-m3",
-      "api_name": "minimaxai/minimax-m3"
-    },
-    {
       "ref": "codestral-22b-instruct-v0.1",
       "api_name": "mistralai/codestral-22b-instruct-v0.1"
-    },
-    {
-      "ref": "mistral-7b-instruct",
-      "api_name": "mistralai/mistral-7b-instruct"
     },
     {
       "ref": "mistral-7b-instruct-v0.3",
@@ -243,10 +163,6 @@
       "api_name": "mistralai/mixtral-8x22b-v0.1"
     },
     {
-      "ref": "mixtral-8x7b-instruct",
-      "api_name": "mistralai/mixtral-8x7b-instruct"
-    },
-    {
       "ref": "kimi-k2.6",
       "api_name": "moonshotai/kimi-k2.6",
       "pricing": {
@@ -255,6 +171,10 @@
         "currency": "USD",
         "cached_input_per_1m": 0.16
       }
+    },
+    {
+      "ref": "kimi-k3",
+      "api_name": "moonshotai/kimi-k3"
     },
     {
       "ref": "mistral-nemo-12b-instruct",
@@ -269,24 +189,8 @@
       "api_name": "nvidia/llama-3.1-nemotron-70b-instruct"
     },
     {
-      "ref": "llama-3.1-nemotron-nano-8b-v1",
-      "api_name": "nvidia/llama-3.1-nemotron-nano-8b-v1"
-    },
-    {
-      "ref": "llama-3.1-nemotron-nano-vl-8b-v1",
-      "api_name": "nvidia/llama-3.1-nemotron-nano-vl-8b-v1"
-    },
-    {
       "ref": "llama-3.1-nemotron-ultra-253b-v1",
       "api_name": "nvidia/llama-3.1-nemotron-ultra-253b-v1"
-    },
-    {
-      "ref": "llama-3.3-nemotron-super-49b-v1",
-      "api_name": "nvidia/llama-3.3-nemotron-super-49b-v1"
-    },
-    {
-      "ref": "llama-3.3-nemotron-super-49b-v1.5",
-      "api_name": "nvidia/llama-3.3-nemotron-super-49b-v1.5"
     },
     {
       "ref": "llama3-chatqa-1.5-70b",
@@ -295,15 +199,6 @@
     {
       "ref": "mistral-nemo-minitron-8b-8k-instruct",
       "api_name": "nvidia/mistral-nemo-minitron-8b-8k-instruct"
-    },
-    {
-      "ref": "nemotron-3-nano-30b-a3b",
-      "api_name": "nvidia/nemotron-3-nano-30b-a3b",
-      "pricing": {
-        "input_per_1m": 0.05,
-        "output_per_1m": 0.2,
-        "currency": "USD"
-      }
     },
     {
       "ref": "nemotron-3-nano-omni-30b-a3b-reasoning",
@@ -337,29 +232,8 @@
       "api_name": "nvidia/nemotron-4-340b-instruct"
     },
     {
-      "ref": "nemotron-mini-4b-instruct",
-      "api_name": "nvidia/nemotron-mini-4b-instruct"
-    },
-    {
-      "ref": "nemotron-nano-12b-v2-vl",
-      "api_name": "nvidia/nemotron-nano-12b-v2-vl"
-    },
-    {
       "ref": "nemotron-nano-3-30b-a3b",
       "api_name": "nvidia/nemotron-nano-3-30b-a3b"
-    },
-    {
-      "ref": "nvidia-nemotron-nano-9b-v2",
-      "api_name": "nvidia/nvidia-nemotron-nano-9b-v2"
-    },
-    {
-      "ref": "gpt-oss-120b",
-      "api_name": "openai/gpt-oss-120b",
-      "pricing": {
-        "input_per_1m": 0.037,
-        "output_per_1m": 0.17,
-        "currency": "USD"
-      }
     },
     {
       "ref": "gpt-oss-20b",
@@ -382,30 +256,6 @@
       }
     },
     {
-      "ref": "qwen2.5-coder-32b-instruct",
-      "api_name": "qwen/qwen2.5-coder-32b-instruct"
-    },
-    {
-      "ref": "step-3.7-flash",
-      "api_name": "stepfun-ai/step-3.7-flash",
-      "pricing": {
-        "input_per_1m": 0.2,
-        "output_per_1m": 1.15,
-        "currency": "USD",
-        "cached_input_per_1m": 0.04
-      }
-    },
-    {
-      "ref": "inkling",
-      "api_name": "thinkingmachines/inkling",
-      "pricing": {
-        "input_per_1m": 1.0,
-        "output_per_1m": 4.05,
-        "currency": "USD",
-        "cached_input_per_1m": 0.17
-      }
-    },
-    {
       "ref": "palmyra-creative-122b",
       "api_name": "writer/palmyra-creative-122b"
     },
@@ -422,14 +272,12 @@
       "api_name": "writer/palmyra-med-70b-32k"
     },
     {
-      "ref": "glm-5.2",
-      "api_name": "z-ai/glm-5.2",
-      "pricing": {
-        "input_per_1m": 1.4,
-        "output_per_1m": 4.4,
-        "currency": "USD",
-        "cached_input_per_1m": 0.14
-      }
+      "ref": "glm-5.3",
+      "api_name": "z-ai/glm-5.3"
+    },
+    {
+      "ref": "glm-5.3-flash",
+      "api_name": "z-ai/glm-5.3-flash"
     },
     {
       "ref": "zamba2-7b-instruct",

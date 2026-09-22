@@ -1,0 +1,46 @@
+{
+  "id": "step-5-preview",
+  "label": "Step 5 Preview",
+  "vendor": "stepfun",
+  "family": "step",
+  "status": "preview",
+  "context_window_tokens": 1000000,
+  "max_output_tokens": 64000,
+  "supports_thinking": true,
+  "reasoning_levels": [
+    "low",
+    "medium",
+    "high"
+  ],
+  "attachments": {
+    "images": true,
+    "video": true
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "verified_at": "2026-09-22",
+      "note": "Vendor model page: 1M-token context window (maximum input 1M tokens)."
+    },
+    "max_output_tokens": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "verified_at": "2026-09-22",
+      "note": "Vendor model page: 'Maximum output 64k tokens'."
+    },
+    "reasoning_levels": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "verified_at": "2026-09-22",
+      "note": "Three reasoning effort levels (low / medium / high) via reasoning_effort."
+    },
+    "supports_thinking": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "verified_at": "2026-09-22",
+      "note": "Vendor model page: reasoning effort low/medium/high; reasoning tokens are billed as output."
+    },
+    "attachments": {
+      "url": "https://platform.stepfun.ai/docs/en/guides/models/step-5-preview",
+      "verified_at": "2026-09-22",
+      "note": "Native text, image and video input per vendor model page."
+    }
+  }
+}

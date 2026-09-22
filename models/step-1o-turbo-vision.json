@@ -1,0 +1,25 @@
+{
+  "id": "step-1o-turbo-vision",
+  "label": "Step-1o Turbo Vision",
+  "vendor": "stepfun",
+  "family": "step",
+  "context_window_tokens": 32000,
+  "attachments": {
+    "images": true,
+    "audio": false,
+    "video": true,
+    "documents": false
+  },
+  "sources": {
+    "context_window_tokens": {
+      "url": "https://platform.stepfun.com/docs/zh/guides/models/vision",
+      "verified_at": "2026-09-22",
+      "note": "Vendor vision model list: context length is 32K tokens."
+    },
+    "attachments": {
+      "url": "https://platform.stepfun.com/docs/zh/guides/models/vision",
+      "verified_at": "2026-09-22",
+      "note": "Vendor vision model list: text, image and video input; text-only output."
+    }
+  }
+}

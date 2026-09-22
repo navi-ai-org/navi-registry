@@ -10,13 +10,52 @@
       "ref": "local-model"
     },
     {
-      "ref": "qwen2.5-coder-14b"
+      "ref": "qwen3.8-27b"
     },
     {
-      "ref": "qwen2.5-coder-7b"
+      "ref": "qwen3.6-27b"
     },
     {
-      "ref": "qwen2.5-coder-32b"
+      "ref": "qwen3.6-35b-a3b"
+    },
+    {
+      "ref": "qwen3.5-27b"
+    },
+    {
+      "ref": "gemma-4-26b-a4b-it"
+    },
+    {
+      "ref": "gemma-4-31b-it"
+    },
+    {
+      "ref": "gpt-oss-20b"
+    },
+    {
+      "ref": "gpt-oss-120b"
+    },
+    {
+      "ref": "qwen3-coder-next"
+    },
+    {
+      "ref": "qwen3-coder-30b-a3b-instruct"
+    },
+    {
+      "ref": "glm-4.7"
+    },
+    {
+      "ref": "muse-glimmer-30b"
+    },
+    {
+      "ref": "nemotron-3-nano-30b-a3b"
+    },
+    {
+      "ref": "nemotron-3-super-120b-a12b"
+    },
+    {
+      "ref": "qwen3-vl-30b-a3b-instruct"
+    },
+    {
+      "ref": "ministral-14b-2512"
     },
     {
       "ref": "deepseek-r1-distill-qwen-32b"
@@ -25,13 +64,10 @@
       "ref": "deepseek-r1-distill-llama-8b"
     },
     {
-      "ref": "mistral-small-instruct"
-    },
-    {
       "ref": "gemma-3-27b-it"
     },
     {
-      "ref": "llama-3.2-3b-instruct"
+      "ref": "mistral-small-instruct"
     }
   ]
 }
