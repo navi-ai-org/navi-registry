@@ -1,20 +1,20 @@
 {
-  "version": 63,
-  "updated_at": "2026-09-22T22:03:27Z",
+  "version": 64,
+  "updated_at": "2026-09-23T06:56:44Z",
   "coverage": {
-    "models_total": 623,
-    "models_with_pricing": 524,
-    "models_with_attachments": 621,
-    "models_with_modern_attachments": 621,
+    "models_total": 625,
+    "models_with_pricing": 526,
+    "models_with_attachments": 623,
+    "models_with_modern_attachments": 623,
     "models_legacy_attachments_only": 0,
     "models_missing_context_window": 3,
     "models_unverified_200k": 0,
-    "models_with_sources": 621,
-    "models_with_thinking": 507,
-    "models_with_ref": 623,
+    "models_with_sources": 623,
+    "models_with_thinking": 509,
+    "models_with_ref": 625,
     "canonical_models": 464,
     "models_by_status": {
-      "active": 616,
+      "active": 618,
       "deprecated": 0,
       "removed": 1,
       "preview": 6
@@ -1886,8 +1886,8 @@
     },
     "b-ai": {
       "file": "providers/b-ai.json",
-      "sha256": "1920fc54646e5506f42d172ed338e0ad80b2791dfbee5ffa82e71ffc11143e4d",
-      "model_count": 49
+      "sha256": "f13f9e557d3b258f467d164c3a8facbc316c91d1ff0dd9a2117c6b96c99cc173",
+      "model_count": 51
     },
     "charm-hyper": {
       "file": "providers/charm-hyper.json",

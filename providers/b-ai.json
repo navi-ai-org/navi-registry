@@ -494,6 +494,48 @@
       }
     },
     {
+      "ref": "mimo-v2.6-pro",
+      "pricing": {
+        "input_per_1m": 0.435,
+        "output_per_1m": 0.87,
+        "cached_input_per_1m": 0.0036,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/mimo-v2.6-pro/",
+          "verified_at": "2026-09-23",
+          "note": "B.AI Standard Pricing table: input $0.435, cache write $0.435, cache read $0.0036, output $0.87 per 1M tokens (same rates on the aggregate pricing page)."
+        },
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/mimo-v2.6-pro/",
+          "verified_at": "2026-09-23",
+          "note": "B.AI model page: 1M-token context, max output 131,072 tokens shared by reasoning and the final answer; text/image/video/audio input, text output; thinking on by default; Chat Completions accepts only tool_choice=auto."
+        }
+      }
+    },
+    {
+      "ref": "mimo-v2.6-flash",
+      "pricing": {
+        "input_per_1m": 0.14,
+        "output_per_1m": 0.28,
+        "cached_input_per_1m": 0.0028,
+        "currency": "USD"
+      },
+      "sources": {
+        "pricing": {
+          "url": "https://docs.b.ai/llmservice/models/mimo-v2.6-flash/",
+          "verified_at": "2026-09-23",
+          "note": "B.AI Standard Pricing table: input $0.14, cache write $0.14, cache read $0.0028, output $0.28 per 1M tokens (same rates on the aggregate pricing page)."
+        },
+        "context_window_tokens": {
+          "url": "https://docs.b.ai/llmservice/models/mimo-v2.6-flash/",
+          "verified_at": "2026-09-23",
+          "note": "B.AI model page: 1M-token context, max output 131,072 tokens shared by reasoning and the final answer; text/image/video/audio input, text output; switchable deep thinking; Chat Completions accepts only tool_choice=auto."
+        }
+      }
+    },
+    {
       "ref": "minimax-m2.7",
       "pricing": {
         "input_per_1m": 0.3,
