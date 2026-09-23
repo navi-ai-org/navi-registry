@@ -26,11 +26,9 @@ ROOT = Path(__file__).resolve().parent.parent
 PROVIDERS_DIR = ROOT / "providers"
 BASES_DIR = ROOT / "bases"
 MODELS_DIR = ROOT / "models"
-TRANSCRIPTION_PROVIDERS_DIR = ROOT / "transcription-providers"
 MANIFEST_PATH = ROOT / "manifest.json"
 PROVIDER_SCHEMA_PATH = ROOT / "schemas" / "provider.schema.json"
 MODEL_SCHEMA_PATH = ROOT / "schemas" / "model.schema.json"
-TRANSCRIPTION_SCHEMA_PATH = ROOT / "schemas" / "transcription-provider.schema.json"
 
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 # Canonical model ids may include dots, slashes is NOT allowed in filename id;
@@ -152,7 +150,6 @@ def schema_enum(schema: dict, prop: str, def_name: str | None = None) -> set[str
 
 
 PROVIDER_SCHEMA = load_json(PROVIDER_SCHEMA_PATH)
-TRANSCRIPTION_SCHEMA = load_json(TRANSCRIPTION_SCHEMA_PATH)
 MODEL_SCHEMA = load_json(MODEL_SCHEMA_PATH) if MODEL_SCHEMA_PATH.exists() else {}
 
 KNOWN_PROVIDER_KEYS = schema_property_keys(PROVIDER_SCHEMA)
@@ -171,13 +168,6 @@ VALID_MODEL_STATUS_SCHEMA = (
 
 KNOWN_CANONICAL_KEYS = schema_property_keys(MODEL_SCHEMA) if MODEL_SCHEMA else set()
 REQUIRED_CANONICAL_KEYS = schema_required(MODEL_SCHEMA) if MODEL_SCHEMA else {"id"}
-
-KNOWN_TRANSCRIPTION_KEYS = schema_property_keys(TRANSCRIPTION_SCHEMA)
-REQUIRED_TRANSCRIPTION_KEYS = schema_required(TRANSCRIPTION_SCHEMA)
-KNOWN_TRANSCRIPTION_MODEL_KEYS = schema_property_keys(
-    TRANSCRIPTION_SCHEMA, "transcription_model"
-)
-VALID_TRANSCRIPTION_KINDS = schema_enum(TRANSCRIPTION_SCHEMA, "kind") or set()
 
 
 def require_keys(data: dict, required: set, pid: str) -> None:
@@ -222,7 +212,6 @@ def load_base_definition(base_id: str, stack: list[str] | None = None) -> dict:
     candidates = [
         BASES_DIR / f"{base_id}.json",
         PROVIDERS_DIR / f"{base_id}.json",
-        TRANSCRIPTION_PROVIDERS_DIR / f"{base_id}.json",
     ]
     path = next((p for p in candidates if p.exists()), None)
     if path is None:
@@ -661,102 +650,6 @@ def validate_provider(
     return flat
 
 
-def validate_transcription_provider(data: dict, filename: str) -> dict:
-    if not isinstance(data, dict):
-        raise ValidationError("provider root must be an object")
-
-    flat = resolve_extends(data)
-    pid = flat.get("id", filename)
-
-    required = set(REQUIRED_TRANSCRIPTION_KEYS) | {"models"}
-    require_keys(flat, required, pid)
-
-    unknown = set(flat.keys()) - KNOWN_TRANSCRIPTION_KEYS
-    if unknown:
-        raise ValidationError(f"unknown fields: {sorted(unknown)}")
-
-    check_type(flat["id"], str, "id")
-    if not ID_RE.match(flat["id"]):
-        raise ValidationError(f"id: '{flat['id']}' must match ^[a-z0-9][a-z0-9-]*$")
-    check_type(flat["label"], str, "label")
-    check_type(flat.get("description", ""), str, "description")
-    check_type(flat["kind"], str, "kind")
-    check_type(flat["api_key_env"], str, "api_key_env")
-    check_type(flat["base_url"], str, "base_url")
-
-    if flat["kind"] not in VALID_TRANSCRIPTION_KINDS:
-        raise ValidationError(
-            f"kind: '{flat['kind']}' is not valid. "
-            f"Must be one of {sorted(VALID_TRANSCRIPTION_KINDS)}"
-        )
-
-    check_type(flat.get("transcription_path"), str, "transcription_path")
-    check_type(flat.get("default_model"), str, "default_model")
-    check_type(flat.get("supports_streaming"), bool, "supports_streaming")
-
-    models = flat["models"]
-    if not isinstance(models, list) or len(models) == 0:
-        raise ValidationError("models: must be a non-empty array")
-
-    seen_names: set[str] = set()
-    for i, model in enumerate(models):
-        if not isinstance(model, dict):
-            raise ValidationError(f"models[{i}]: must be an object")
-        require_keys(model, {"name"}, f"{pid}/models[{i}]")
-
-        unknown_m = set(model.keys()) - KNOWN_TRANSCRIPTION_MODEL_KEYS
-        if unknown_m:
-            raise ValidationError(
-                f"models[{i}] ({model.get('name', '?')}): unknown fields: {sorted(unknown_m)}"
-            )
-
-        check_type(model["name"], str, f"models[{i}].name")
-        if model["name"] in seen_names:
-            raise ValidationError(
-                f"models[{i}].name: duplicate model name '{model['name']}'"
-            )
-        seen_names.add(model["name"])
-
-        check_type(model.get("label"), str, f"models[{i}].label")
-        check_type(model.get("description"), str, f"models[{i}].description")
-
-        status = model.get("status")
-        if status is not None:
-            check_type(status, str, f"models[{i}].status")
-            if status not in VALID_MODEL_STATUS:
-                raise ValidationError(
-                    f"models[{i}].status: '{status}' is not valid. "
-                    f"Must be one of {sorted(VALID_MODEL_STATUS)}"
-                )
-
-        check_type(model.get("languages"), list, f"models[{i}].languages")
-        check_type(model.get("sample_rate_hz"), int, f"models[{i}].sample_rate_hz")
-        check_type(
-            model.get("max_duration_seconds"), int, f"models[{i}].max_duration_seconds"
-        )
-        check_type(model.get("max_file_bytes"), int, f"models[{i}].max_file_bytes")
-        validate_sources(model.get("sources"), f"models[{i}].sources")
-
-        pricing = model.get("pricing")
-        if pricing is not None:
-            if not isinstance(pricing, dict):
-                raise ValidationError(f"models[{i}].pricing: must be an object")
-            known_pricing_keys = {"per_minute", "currency"}
-            unknown_p = set(pricing.keys()) - known_pricing_keys
-            if unknown_p:
-                raise ValidationError(
-                    f"models[{i}].pricing: unknown fields: {sorted(unknown_p)}"
-                )
-            check_type(
-                pricing.get("per_minute"),
-                (int, float),
-                f"models[{i}].pricing.per_minute",
-            )
-            check_type(pricing.get("currency"), str, f"models[{i}].pricing.currency")
-
-    return flat
-
-
 def compute_sha256(path: Path) -> str:
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -919,47 +812,12 @@ def main() -> int:
             print(f"  FAIL {pf.name}: {e}", file=sys.stderr)
             errors += 1
 
-    # ── Transcription ────────────────────────────────────────────────────
-    transcription_entries = {}
-    transcription_models = 0
-    transcription_files = (
-        sorted(TRANSCRIPTION_PROVIDERS_DIR.glob("*.json"))
-        if TRANSCRIPTION_PROVIDERS_DIR.is_dir()
-        else []
-    )
-
-    print("\nTranscription providers:")
-    if not transcription_files:
-        print("  (none)")
-    for pf in transcription_files:
-        try:
-            data = load_json(pf)
-            flat = validate_transcription_provider(data, pf.name)
-            pid = flat["id"]
-            model_count = len(flat.get("models", []))
-            transcription_models += model_count
-            sha = compute_sha256(pf)
-            if pid in transcription_entries:
-                print(f"  FAIL duplicate id '{pid}' in {pf.name}", file=sys.stderr)
-                errors += 1
-                continue
-            transcription_entries[pid] = {
-                "file": f"transcription-providers/{pf.name}",
-                "sha256": sha,
-                "model_count": model_count,
-            }
-            print(f"  OK   {pid:30s}  models={model_count:3d}  sha256={sha[:12]}...")
-        except (ValidationError, json.JSONDecodeError, KeyError) as e:
-            print(f"  FAIL {pf.name}: {e}", file=sys.stderr)
-            errors += 1
-
     if errors:
         print(f"\n{errors} validation error(s)", file=sys.stderr)
         return 1
 
     coverage = compute_coverage(flattened_providers, catalog)
     new_providers = dict(sorted(entries.items()))
-    new_transcription = dict(sorted(transcription_entries.items()))
 
     # Catalog fingerprint for version bump
     catalog_index = {
@@ -979,11 +837,9 @@ def main() -> int:
         with open(MANIFEST_PATH) as f:
             old = json.load(f)
         old_providers = old.get("providers", {})
-        old_transcription = old.get("transcription_providers", {})
         old_catalog = old.get("models", {})
         if (
             old_providers == new_providers
-            and old_transcription == new_transcription
             and old_catalog == catalog_index
         ):
             version = old.get("version", 1)
@@ -997,7 +853,6 @@ def main() -> int:
         "coverage": coverage,
         "models": catalog_index,
         "providers": new_providers,
-        "transcription_providers": new_transcription,
     }
 
     with open(MANIFEST_PATH, "w", newline="") as f:
@@ -1007,9 +862,7 @@ def main() -> int:
     print(
         f"\nmanifest.json: version={version} "
         f"providers={len(entries)} models={total_models} "
-        f"canonical={len(catalog)} "
-        f"transcription_providers={len(transcription_entries)} "
-        f"transcription_models={transcription_models}"
+        f"canonical={len(catalog)}"
     )
     print(
         "coverage: "

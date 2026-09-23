@@ -12,10 +12,8 @@ A **data registry**, not a software project. It holds JSON definitions of LLM in
 models/*.json                                 Canonical model catalog (capabilities once)
 providers/*.json                              Thin providers: ref + pricing/overrides
 bases/*.json                                  Shared base catalogs for extends
-transcription-providers/*.json                Remote STT / dictation providers
 schemas/model.schema.json                     JSON Schema for canonical models
 schemas/provider.schema.json                  JSON Schema for LLM providers (ref or legacy)
-schemas/transcription-provider.schema.json    JSON Schema for STT providers
 scripts/validate.py                           Validator + ref flatten + manifest generator
 scripts/probe.py                              API probe + metadata auto-fill (ref-aware)
 scripts/build_model_catalog.py                Build/rebuild models/ and rewrite providers to refs
@@ -111,13 +109,10 @@ One of exactly four values for **LLM** providers:
 | `anthropic-messages` | Anthropic Messages API |
 | `gemini-generate-content` | Google Gemini Generate Content |
 
-**Transcription / dictation** providers live under `transcription-providers/` with their own kinds:
-| Kind | Protocol |
-|---|---|
-| `openai-audio-transcriptions` | OpenAI-compatible `POST /audio/transcriptions` (OpenAI Whisper, Groq Whisper) |
-| `wispr-flow` | Wispr Flow `POST /api` (base64 WAV) |
-
-Required STT fields: `id`, `label`, `kind`, `api_key_env`, `base_url`, and `models` after flatten. Optional: `transcription_path`, `default_model`, `supports_streaming`, model `pricing.per_minute`.
+LLM providers only. Speech-to-text / dictation is deliberately out of scope: it was
+removed from NAVI (and from this registry) because a solo maintainer cannot carry the
+cost of keeping per-vendor STT APIs current. Users who want dictation wire up their own
+external service.
 
 ### `api_key_env`
 

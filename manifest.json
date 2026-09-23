@@ -2027,22 +2027,5 @@
       "sha256": "a9bf04d8cd7200d8c7d44081f3803608e18d5b023c8aa93a8bfa25025c197d42",
       "model_count": 2
     }
-  },
-  "transcription_providers": {
-    "groq": {
-      "file": "transcription-providers/groq.json",
-      "sha256": "8f0e5c80a1b49c1edf7ff13d7adf4b086b688aabbba3ed12aa1af384356ea525",
-      "model_count": 2
-    },
-    "openai": {
-      "file": "transcription-providers/openai.json",
-      "sha256": "98e0c9240e4bccec98a1d18d70137eac2fa99648b292a72f7042adc3f8b07896",
-      "model_count": 1
-    },
-    "wispr-flow": {
-      "file": "transcription-providers/wispr-flow.json",
-      "sha256": "09e5620797e5d3d1408e4e2fcf3b42484b8fa71e091f3960b6a36bbc9a8d8c46",
-      "model_count": 1
-    }
   }
 }
