@@ -148,6 +148,12 @@
           "verified_at": "2026-09-22",
           "note": "Listed under Groq's preview models."
         }
+      },
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.06
       }
     }
   ]

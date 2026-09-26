@@ -32,7 +32,13 @@
     },
     {
       "ref": "deepseek-v4.1-flash",
-      "api_name": "deepseek-ai/deepseek-v4.1-flash"
+      "api_name": "deepseek-ai/deepseek-v4.1-flash",
+      "pricing": {
+        "input_per_1m": 0.3,
+        "output_per_1m": 1.2,
+        "currency": "USD",
+        "cached_input_per_1m": 0.006
+      }
     },
     {
       "ref": "codegemma-1.1-7b",
@@ -174,7 +180,13 @@
     },
     {
       "ref": "kimi-k3",
-      "api_name": "moonshotai/kimi-k3"
+      "api_name": "moonshotai/kimi-k3",
+      "pricing": {
+        "input_per_1m": 3.0,
+        "output_per_1m": 15.0,
+        "currency": "USD",
+        "cached_input_per_1m": 0.3
+      }
     },
     {
       "ref": "mistral-nemo-12b-instruct",
@@ -273,11 +285,23 @@
     },
     {
       "ref": "glm-5.3",
-      "api_name": "z-ai/glm-5.3"
+      "api_name": "z-ai/glm-5.3",
+      "pricing": {
+        "input_per_1m": 0.3794,
+        "output_per_1m": 1.1924,
+        "currency": "USD",
+        "cached_input_per_1m": 0.07046
+      }
     },
     {
       "ref": "glm-5.3-flash",
-      "api_name": "z-ai/glm-5.3-flash"
+      "api_name": "z-ai/glm-5.3-flash",
+      "pricing": {
+        "input_per_1m": 0.04,
+        "output_per_1m": 0.5,
+        "currency": "USD",
+        "cached_input_per_1m": 0.015
+      }
     },
     {
       "ref": "zamba2-7b-instruct",
