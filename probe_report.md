@@ -1,10 +1,10 @@
 # Registry Probe Report
 
 ## Summary
-- Auto-filled fields: **5**
+- Auto-filled fields: **0**
 - Context windows filled: **0**
 - Max output filled: **0**
-- New models (not in registry): **466**
+- New models (not in registry): **470**
 - Removed models (local only): **0**
 - Needs manual review (probed): **1**
 - Needs manual review (unprobed): **1**
@@ -12,20 +12,11 @@
 - Needs pricing: **57**
 - Errors: **9**
 
-## Auto-filled Fields
-
-| Provider | Model | Fields |
-|---|---|---|
-| groq | minimaxai/minimax-m2.7 | pricing |
-| nvidia | deepseek-ai/deepseek-v4.1-flash | pricing |
-| nvidia | moonshotai/kimi-k3 | pricing |
-| nvidia | z-ai/glm-5.3 | pricing |
-| nvidia | z-ai/glm-5.3-flash | pricing |
-
 ## New Models (not in local registry)
 
 - `opencode/claude-sonnet-4`
 - `opencode/claude-sonnet-5-5`
+- `opencode/fledge-alpha-free`
 - `opencode/glm-5`
 - `opencode/gpt-5-codex`
 - `opencode/gpt-5.1-codex`
@@ -36,6 +27,7 @@
 - `opencode/jev-1.13`
 - `opencode/jev-1.13-free`
 - `opencode/kimi-k2.5`
+- `opencode/ling-3.1-flash-free`
 - `opencode/longcat-2.5-preview-free`
 - `opencode/minimax-m2.5`
 - `opencode/qwen3.8-max`
@@ -85,6 +77,7 @@
 - `openrouter/anthropic/claude-sonnet-5.5`
 - `openrouter/anthropic/claude-sonnet-5.5:batch`
 - `openrouter/anthropic/claude-sonnet-5:batch`
+- `openrouter/apodex/apodex-1.1-mini:free`
 - `openrouter/arcee-ai/trinity-large-thinking`
 - `openrouter/baidu/ernie-4.5-vl-424b-a47b`
 - `openrouter/bytedance-seed/seed-1.6`
@@ -163,6 +156,7 @@
 - `openrouter/inclusionai/ling-3.0-flash-fin`
 - `openrouter/inclusionai/ling-3.0-flash-sante:free`
 - `openrouter/inclusionai/ling-3.0-flash-vl`
+- `openrouter/inclusionai/ling-3.1-flash`
 - `openrouter/inference-net/schematron-v2-small`
 - `openrouter/inference-net/schematron-v2-turbo`
 - `openrouter/kwaipilot/kat-coder-pro-v2.5`
@@ -239,6 +233,7 @@
 - `openrouter/nvidia/nemotron-3.5-content-safety:free`
 - `openrouter/nvidia/nemotron-3.5-lightning`
 - `openrouter/nvidia/nemotron-3.5-lightning:free`
+- `openrouter/nvidia/switchyard`
 - `openrouter/openai/gpt-3.5-turbo`
 - `openrouter/openai/gpt-3.5-turbo-0613`
 - `openrouter/openai/gpt-3.5-turbo-16k`
@@ -318,8 +313,6 @@
 - `openrouter/openai/gpt-6-sol:batch`
 - `openrouter/openai/gpt-6.1-sol`
 - `openrouter/openai/gpt-6.1-sol-pro`
-- `openrouter/openai/gpt-6.1-sol-pro:batch`
-- `openrouter/openai/gpt-6.1-sol:batch`
 - `openrouter/openai/gpt-audio`
 - `openrouter/openai/gpt-audio-mini`
 - `openrouter/openai/gpt-chat-latest`
@@ -438,6 +431,7 @@
 - `openrouter/thinkingmachines/inkling:free`
 - `openrouter/typesafe/jev-router`
 - `openrouter/unbiased/pareto`
+- `openrouter/unbiased/pareto-26.10-preview`
 - `openrouter/undi95/remm-slerp-l2-13b`
 - `openrouter/upstage/solar-mini4`
 - `openrouter/upstage/solar-pro-3`
