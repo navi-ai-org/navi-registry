@@ -177,7 +177,8 @@
         "input_per_1m": 0.455,
         "output_per_1m": 1.82,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "qwen3-32b",
