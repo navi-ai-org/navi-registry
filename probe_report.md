@@ -1,32 +1,27 @@
 # Registry Probe Report
 
 ## Summary
-- Auto-filled fields: **5**
+- Auto-filled fields: **0**
 - Context windows filled: **0**
 - Max output filled: **0**
-- New models (not in registry): **466**
-- Removed models (local only): **0**
+- New models (not in registry): **483**
+- Removed models (local only): **16**
 - Needs manual review (probed): **1**
 - Needs manual review (unprobed): **1**
 - Default context window (200k, likely unset): **7**
 - Needs pricing: **57**
 - Errors: **9**
 
-## Auto-filled Fields
-
-| Provider | Model | Fields |
-|---|---|---|
-| groq | minimaxai/minimax-m2.7 | pricing |
-| nvidia | deepseek-ai/deepseek-v4.1-flash | pricing |
-| nvidia | moonshotai/kimi-k3 | pricing |
-| nvidia | z-ai/glm-5.3 | pricing |
-| nvidia | z-ai/glm-5.3-flash | pricing |
-
 ## New Models (not in local registry)
 
-- `opencode/claude-sonnet-4`
+- `opencode/beam-free`
+- `opencode/claude-haiku-5-5`
+- `opencode/claude-opus-5-5-backup`
 - `opencode/claude-sonnet-5-5`
+- `opencode/deepseek-v4.1-flash-free`
+- `opencode/gemini-4-argon`
 - `opencode/glm-5`
+- `opencode/glm-5.3-flash-free`
 - `opencode/gpt-5-codex`
 - `opencode/gpt-5.1-codex`
 - `opencode/gpt-5.1-codex-max`
@@ -38,14 +33,18 @@
 - `opencode/kimi-k2.5`
 - `opencode/longcat-2.5-preview-free`
 - `opencode/minimax-m2.5`
+- `opencode/mistral-large-4`
+- `opencode/nemotron-3.5-super-vl-free`
 - `opencode/qwen3.8-max`
 - `opencode/space-bunny-free`
-- `opencode-go/deepseek-flash`
-- `opencode-go/glm-5`
+- `opencode/test`
+- `opencode-go/beam-free`
+- `opencode-go/claude-haiku-5-5`
+- `opencode-go/gemini-4-argon-contributor`
 - `opencode-go/gpt-6-luna`
-- `opencode-go/kimi-k2.5`
 - `opencode-go/longcat-2.5-preview-free`
-- `opencode-go/space-bunny-free`
+- `opencode-go/space-bunny`
+- `opencode-go/step-5-preview`
 - `openrouter/aion-labs/aion-2.0`
 - `openrouter/aion-labs/aion-3.0`
 - `openrouter/aion-labs/aion-3.0-mini`
@@ -64,6 +63,8 @@
 - `openrouter/anthropic/claude-fable-5:batch`
 - `openrouter/anthropic/claude-haiku-4.5`
 - `openrouter/anthropic/claude-haiku-4.5:batch`
+- `openrouter/anthropic/claude-haiku-5.5`
+- `openrouter/anthropic/claude-haiku-5.5:batch`
 - `openrouter/anthropic/claude-opus-4.1`
 - `openrouter/anthropic/claude-opus-4.1:batch`
 - `openrouter/anthropic/claude-opus-4.5`
@@ -86,7 +87,6 @@
 - `openrouter/anthropic/claude-sonnet-5.5:batch`
 - `openrouter/anthropic/claude-sonnet-5:batch`
 - `openrouter/arcee-ai/trinity-large-thinking`
-- `openrouter/baidu/ernie-4.5-vl-424b-a47b`
 - `openrouter/bytedance-seed/seed-1.6`
 - `openrouter/bytedance-seed/seed-1.6-flash`
 - `openrouter/bytedance-seed/seed-2-1-turbo`
@@ -113,8 +113,10 @@
 - `openrouter/deepseek/deepseek-v4-flash-vision-exp`
 - `openrouter/deepseek/deepseek-v4-pro-0813`
 - `openrouter/deepseek/deepseek-v4.1-flash`
+- `openrouter/deepseek/deepseek-v4.1-flash-1017`
 - `openrouter/deepseek/deepseek-v4.1-flash:batch`
 - `openrouter/dots-studio/dots-3-note-preview:free`
+- `openrouter/elorian/glimpse`
 - `openrouter/fireworks/ember-1`
 - `openrouter/google/gemini-2.5-flash-image`
 - `openrouter/google/gemini-2.5-flash-lite`
@@ -144,6 +146,9 @@
 - `openrouter/google/gemini-3.7-flash:batch`
 - `openrouter/google/gemini-3.8-flash`
 - `openrouter/google/gemini-3.8-flash:batch`
+- `openrouter/google/gemini-4-argon`
+- `openrouter/google/gemini-4-argon:batch`
+- `openrouter/google/gemini-nano-banana-2.1`
 - `openrouter/google/gemma-2-27b-it`
 - `openrouter/google/gemma-3-12b-it`
 - `openrouter/google/gemma-3-27b-it`
@@ -160,13 +165,12 @@
 - `openrouter/inception/mercury-2`
 - `openrouter/inception/mercury-2.5`
 - `openrouter/inclusionai/ling-3.0-flash`
-- `openrouter/inclusionai/ling-3.0-flash-fin`
-- `openrouter/inclusionai/ling-3.0-flash-sante:free`
 - `openrouter/inclusionai/ling-3.0-flash-vl`
+- `openrouter/inclusionai/ling-3.1-flash`
 - `openrouter/inference-net/schematron-v2-small`
 - `openrouter/inference-net/schematron-v2-turbo`
-- `openrouter/kwaipilot/kat-coder-pro-v2.5`
 - `openrouter/liquid/lfm-2.5-2.6b:free`
+- `openrouter/liquid/lfm-2.5-24b-a2b`
 - `openrouter/mancer/weaver`
 - `openrouter/meituan/longcat-2.0`
 - `openrouter/meta-llama/llama-3.1-70b-instruct`
@@ -181,6 +185,8 @@
 - `openrouter/meta/muse-spark-1.2-contributor`
 - `openrouter/meta/muse-spark-1.3`
 - `openrouter/meta/muse-spark-1.3-contributor`
+- `openrouter/meta/muse-spark-open`
+- `openrouter/meta/muse-wonder`
 - `openrouter/microsoft/phi-4`
 - `openrouter/microsoft/wizardlm-2-8x22b`
 - `openrouter/minimax/minimax-01`
@@ -201,6 +207,7 @@
 - `openrouter/mistralai/mistral-large-2407`
 - `openrouter/mistralai/mistral-large-2512`
 - `openrouter/mistralai/mistral-large-2512:batch`
+- `openrouter/mistralai/mistral-large-4-0`
 - `openrouter/mistralai/mistral-medium-3`
 - `openrouter/mistralai/mistral-medium-3-5`
 - `openrouter/mistralai/mistral-medium-3-5:batch`
@@ -215,6 +222,8 @@
 - `openrouter/mistralai/mistral-small-3.2-24b-instruct`
 - `openrouter/mistralai/mixtral-8x22b-instruct`
 - `openrouter/mistralai/voxtral-small-24b-2507`
+- `openrouter/moondream/moondream3-preview`
+- `openrouter/moondream/moondream3.1-9b-a2b`
 - `openrouter/moonshotai/kimi-k2-0905`
 - `openrouter/moonshotai/kimi-k2-thinking`
 - `openrouter/moonshotai/kimi-k2.5`
@@ -239,6 +248,9 @@
 - `openrouter/nvidia/nemotron-3.5-content-safety:free`
 - `openrouter/nvidia/nemotron-3.5-lightning`
 - `openrouter/nvidia/nemotron-3.5-lightning:free`
+- `openrouter/nvidia/nemotron-3.5-super-vl`
+- `openrouter/nvidia/nemotron-3.5-super-vl:free`
+- `openrouter/nvidia/switchyard`
 - `openrouter/openai/gpt-3.5-turbo`
 - `openrouter/openai/gpt-3.5-turbo-0613`
 - `openrouter/openai/gpt-3.5-turbo-16k`
@@ -361,30 +373,21 @@
 - `openrouter/qwen/qwen-2.5-7b-instruct`
 - `openrouter/qwen/qwen-2.5-coder-32b-instruct`
 - `openrouter/qwen/qwen-plus`
-- `openrouter/qwen/qwen-plus-2025-07-28`
 - `openrouter/qwen/qwen2.5-vl-72b-instruct`
 - `openrouter/qwen/qwen3-14b`
 - `openrouter/qwen/qwen3-235b-a22b-2507`
 - `openrouter/qwen/qwen3-235b-a22b-thinking-2507`
 - `openrouter/qwen/qwen3-30b-a3b`
 - `openrouter/qwen/qwen3-30b-a3b-instruct-2507`
-- `openrouter/qwen/qwen3-30b-a3b-thinking-2507`
-- `openrouter/qwen/qwen3-8b`
 - `openrouter/qwen/qwen3-coder-30b-a3b-instruct`
 - `openrouter/qwen/qwen3-coder-flash`
 - `openrouter/qwen/qwen3-coder-next`
-- `openrouter/qwen/qwen3-coder-plus`
-- `openrouter/qwen/qwen3-max`
-- `openrouter/qwen/qwen3-max-thinking`
 - `openrouter/qwen/qwen3-next-80b-a3b-instruct`
 - `openrouter/qwen/qwen3-next-80b-a3b-thinking`
 - `openrouter/qwen/qwen3-vl-235b-a22b-instruct`
-- `openrouter/qwen/qwen3-vl-235b-a22b-thinking`
 - `openrouter/qwen/qwen3-vl-30b-a3b-instruct`
 - `openrouter/qwen/qwen3-vl-30b-a3b-thinking`
-- `openrouter/qwen/qwen3-vl-32b-instruct`
 - `openrouter/qwen/qwen3-vl-8b-instruct`
-- `openrouter/qwen/qwen3-vl-8b-thinking`
 - `openrouter/qwen/qwen3.5-122b-a10b`
 - `openrouter/qwen/qwen3.5-27b`
 - `openrouter/qwen/qwen3.5-35b-a3b`
@@ -396,18 +399,18 @@
 - `openrouter/qwen/qwen3.6-27b`
 - `openrouter/qwen/qwen3.6-35b-a3b`
 - `openrouter/qwen/qwen3.6-flash`
-- `openrouter/qwen/qwen3.6-max-preview`
 - `openrouter/qwen/qwen3.6-plus`
 - `openrouter/qwen/qwen3.7-flash`
 - `openrouter/qwen/qwen3.7-max`
 - `openrouter/qwen/qwen3.7-plus`
+- `openrouter/qwen/qwen3.7-plus:batch`
 - `openrouter/qwen/qwen3.8-2.4t-a95b`
 - `openrouter/qwen/qwen3.8-27b`
-- `openrouter/qwen/qwen3.8-27b:free`
 - `openrouter/qwen/qwen3.8-flash`
 - `openrouter/qwen/qwen3.8-max-0902`
 - `openrouter/qwen/qwen3.8-max-prime`
 - `openrouter/qwen/qwen3.8-omni-flash`
+- `openrouter/reflection/beam-1.0-501b-a23b`
 - `openrouter/rekaai/reka-edge`
 - `openrouter/rekaai/reka-flash-3`
 - `openrouter/relace/relace-apply-3`
@@ -419,9 +422,11 @@
 - `openrouter/sao10k/l3-lunaris-8b`
 - `openrouter/sao10k/l3.1-euryale-70b`
 - `openrouter/sao10k/l3.3-euryale-70b`
-- `openrouter/stealth/space-bunny-alpha`
+- `openrouter/scaledown/extract`
+- `openrouter/scaledown/summarize`
 - `openrouter/stepfun/step-3.5-flash`
 - `openrouter/stepfun/step-3.7-flash`
+- `openrouter/stepfun/step-5-preview`
 - `openrouter/tencent/hunyuan-a13b-instruct`
 - `openrouter/tencent/hy-mt2-1.8b`
 - `openrouter/tencent/hy-mt2-30b-a3b`
@@ -437,7 +442,7 @@
 - `openrouter/thinkingmachines/inkling-small:free`
 - `openrouter/thinkingmachines/inkling:free`
 - `openrouter/typesafe/jev-router`
-- `openrouter/unbiased/pareto`
+- `openrouter/unbiased/pareto-26.9`
 - `openrouter/undi95/remm-slerp-l2-13b`
 - `openrouter/upstage/solar-mini4`
 - `openrouter/upstage/solar-pro-3`
@@ -455,6 +460,7 @@
 - `openrouter/xiaomi/mimo-v2.6-flash`
 - `openrouter/xiaomi/mimo-v2.6-pro`
 - `openrouter/xiaomi/mimo-v2.6-pro-ultraspeed`
+- `openrouter/xingchen-agi/xing4.0-29b-a4b:free`
 - `openrouter/z-ai/glm-4.5-air`
 - `openrouter/z-ai/glm-4.5v`
 - `openrouter/z-ai/glm-4.6`
@@ -487,9 +493,31 @@
 - `openrouter/~openai/gpt-mini-latest`
 - `openrouter/~openai/gpt-sol-latest`
 - `openrouter/~openai/gpt-terra-latest`
+- `openrouter/~unbiased/pareto-latest`
 - `openrouter/~x-ai/grok-latest`
 - `openrouter/~z-ai/glm-flash-latest`
 - `openrouter/~z-ai/glm-latest`
+
+## Removed Models (local only, may need pruning)
+
+When `--apply` is used, these models are tagged `status: removed`.
+
+- `opencode/deepseek-v4-flash-free`
+- `opencode/deepseek-v4-flash-vision-exp`
+- `opencode/ling-3.0-flash-fin-free`
+- `opencode/mimo-v2.5-free`
+- `opencode/muse-spark-1.2-contributor-free`
+- `opencode/muse-spark-1.3-contributor-free`
+- `opencode/nemotron-3-ultra-free`
+- `opencode-go/deepseek-v4-flash`
+- `opencode-go/deepseek-v4-flash-vision-exp`
+- `opencode-go/grok-4.5`
+- `opencode-go/hy3-preview`
+- `opencode-go/mimo-v2-omni`
+- `opencode-go/mimo-v2-pro`
+- `opencode-go/qwen3.5-plus`
+- `openrouter/anthropic/claude-sonnet-4`
+- `openrouter/qwen/qwen3-235b-a22b`
 
 ## Needs Manual Review (probed providers, no attachment info)
 
