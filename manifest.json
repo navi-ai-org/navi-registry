@@ -1,6 +1,6 @@
 {
-  "version": 65,
-  "updated_at": "2026-09-30T14:24:31Z",
+  "version": 66,
+  "updated_at": "2026-10-24T12:20:16Z",
   "coverage": {
     "models_total": 625,
     "models_with_pricing": 531,
@@ -14,9 +14,9 @@
     "models_with_ref": 625,
     "canonical_models": 464,
     "models_by_status": {
-      "active": 618,
+      "active": 602,
       "deprecated": 0,
-      "removed": 1,
+      "removed": 17,
       "preview": 6
     }
   },
@@ -1989,17 +1989,17 @@
     },
     "opencode": {
       "file": "providers/opencode.json",
-      "sha256": "f501155a09e1d534610c6cd95fbcf5e58627eba1cf9147d549c48002aaaad31c",
+      "sha256": "303a21524fd2bddc6ab573950ce65ef35e6436b6fa49d39172de6264b381c26b",
       "model_count": 68
     },
     "opencode-go": {
       "file": "providers/opencode-go.json",
-      "sha256": "d9eccf9538a0a8acedbfb9281c1a8a160b1fd4846fa74b9c6679d97ef320e349",
+      "sha256": "3e29e2c403279631c7580391807bef04c111a82870b032798e62511d8e4bc04b",
       "model_count": 37
     },
     "openrouter": {
       "file": "providers/openrouter.json",
-      "sha256": "63e18928dd090d13fc26fddaef25671e039b85d71dbbc1220f8899e9d65f0101",
+      "sha256": "8e5ab59b746b107a8af5770aeee5460c9a72f65f1bec50807754c4e60b39f6ef",
       "model_count": 20
     },
     "stepfun": {

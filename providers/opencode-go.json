@@ -46,7 +46,8 @@
         "output_per_1m": 6.0,
         "cached_input_per_1m": 0.3,
         "currency": "USD"
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "gpt-5.6-luna",
@@ -190,10 +191,12 @@
       }
     },
     {
-      "ref": "mimo-v2-pro"
+      "ref": "mimo-v2-pro",
+      "status": "removed"
     },
     {
-      "ref": "mimo-v2-omni"
+      "ref": "mimo-v2-omni",
+      "status": "removed"
     },
     {
       "ref": "minimax-m3",
@@ -317,7 +320,8 @@
       }
     },
     {
-      "ref": "qwen3.5-plus"
+      "ref": "qwen3.5-plus",
+      "status": "removed"
     },
     {
       "ref": "deepseek-v4-pro",
@@ -349,7 +353,8 @@
           "verified_at": "2026-09-17",
           "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC, Mon-Fri) are $0.30/$1.20/$0.006."
         }
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "deepseek-v4.1-flash",
@@ -384,7 +389,8 @@
           "verified_at": "2026-09-17",
           "note": "Off-Peak rate; Peak hours (01:00-04:00, 06:00-10:00 UTC, Mon-Fri) are $0.30/$1.20/$0.006."
         }
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "hy3",
@@ -411,7 +417,8 @@
         "output_per_1m": 0.6,
         "currency": "USD",
         "cached_input_per_1m": 0.06
-      }
+      },
+      "status": "removed"
     },
     {
       "ref": "omen-alpha"
